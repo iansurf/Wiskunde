@@ -1,0 +1,72 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Verification: Rotation Matrix Forms a Group}
+
+The rotation matrix is given by:
+\begin{equation}
+R(a) = \begin{bmatrix}
+\cos(a) & -\sin(a) \\
+\sin(a) & \cos(a)
+\end{bmatrix}.
+\end{equation}
+The set of all such matrices corresponds to rotations by any angle \(a \in \mathbb{R}\). We verify the group properties under matrix multiplication:
+
+\subsection*{1. Closure}
+If \( R(a) \) and \( R(b) \) are two rotation matrices, their product is:
+\begin{align*}
+R(a) \cdot R(b) &= \begin{bmatrix}
+\cos(a) & -\sin(a) \\
+\sin(a) & \cos(a)
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\cos(b) & -\sin(b) \\
+\sin(b) & \cos(b)
+\end{bmatrix} \\
+&= \begin{bmatrix}
+\cos(a+b) & -\sin(a+b) \\
+\sin(a+b) & \cos(a+b)
+\end{bmatrix}.
+\end{align*}
+This is another rotation matrix \( R(a+b) \). Therefore, the set is closed under multiplication.
+
+\subsection*{2. Associativity}
+Matrix multiplication is associative. Hence, for all \( R(a), R(b), R(c) \),
+\begin{equation}
+R(a) \cdot (R(b) \cdot R(c)) = (R(a) \cdot R(b)) \cdot R(c).
+\end{equation}
+
+\subsection*{3. Identity Element}
+The identity element is the rotation matrix corresponding to \(a = 0\):
+\begin{equation}
+R(0) = \begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}.
+\end{equation}
+Multiplying \( R(0) \) with any \( R(a) \) leaves \( R(a) \) unchanged:
+\begin{equation}
+R(a) \cdot R(0) = R(0) \cdot R(a) = R(a).
+\end{equation}
+
+\subsection*{4. Inverse Element}
+The inverse of \( R(a) \) is \( R(-a) \), the rotation by the negative angle:
+\begin{equation}
+R(-a) = \begin{bmatrix}
+\cos(-a) & -\sin(-a) \\
+\sin(-a) & \cos(-a)
+\end{bmatrix} = \begin{bmatrix}
+\cos(a) & \sin(a) \\
+-\sin(a) & \cos(a)
+\end{bmatrix}.
+\end{equation}
+Multiplying \( R(a) \cdot R(-a) \) or \( R(-a) \cdot R(a) \) results in the identity matrix.
+
+\subsection*{Conclusion}
+The set of all \( 2 \times 2 \) rotation matrices forms a \textbf{group} under matrix multiplication. This group is called the \textbf{special orthogonal group in two dimensions}, denoted as \( SO(2) \). It represents all possible rotations in \( \mathbb{R}^2 \) and satisfies all group properties.
+
+\end{document}
