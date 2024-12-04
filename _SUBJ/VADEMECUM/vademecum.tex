@@ -8,6 +8,7 @@
 \usepackage{multicol}
 \usepackage{titlesec}
 \usepackage{hyperref}
+\usepackage{adjustbox}
 
 % Set up compact sections
 \titlespacing*{\section}{0pt}{*2}{*1}
@@ -285,28 +286,36 @@ Wortel &
 
 \newpage
 
-\newpage
-
 \section{Goniometrie}
 \subsection{De Goniometrische Cirkel}
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{imagegon.png}
-\label{fig:voorbeeld}
+\includegraphics[width=0.8\textwidth]{image_goniometrie.png}
+\label{fig:goniometrie}
 \end{figure}
 
 \subsection{formules uit de goniometrie}
-\[
-\begin{array}{|c|c|}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{image_sin_cos_tan.png}
+\label{fig:sin_cos_tan}
+\end{figure}
+
+{
+\[\begin{array}{|c|c|}
 \hline
-\begin{array}{c}
-\csc \beta \quad \sec \beta \quad \cot \beta \\
-\leftarrow \quad \leftarrow \quad \leftarrow \\
-\textbf{os} \quad \textbf{as} \quad \textbf{oa} \\
-\rightarrow \quad \rightarrow \quad \rightarrow \\
-\sin \beta \quad \cos \beta \quad \tan \beta
+\begin{array}{*{20}{c}}
+{\csc \beta }&{sec\beta }&{\cot \beta }\\
+ \leftarrow & \leftarrow & \leftarrow \\
+{os}&{as}&{oa}\\
+ \to & \to & \to \\
+{\sin \beta }&{\cos \beta }&{\tan \beta }
 \end{array}
+
 & % Scheiding van de twee kolommen
+
 \begin{array}{l}
 \text{waarin:} 
 \left\{
@@ -324,21 +333,23 @@ Wortel &
 \[
 \begin{array}{|c|c|}
 \hline
-\text{sin} \, \beta = \frac{b}{a} \hspace{1cm} \text{cos} \, \beta = \frac{c}{a} \hspace{1cm} \text{tan} \, \beta = \frac{b}{c} \hspace{1cm} \text{cot} \, \beta = \frac{c}{b} \hspace{1cm} \text{sec} \, \beta = \frac{a}{c} \hspace{1cm} \text{csc} \, \beta = \frac{a}{b} \\
+\text{sin} \, \beta = \frac{b}{a} \hspace{1cm} \text{cos} \, \beta = \frac{c}{a} \hspace{1cm} \text{tan} \, \beta = \frac{b}{c} \\
+\hline
+\text{csc} \, \beta = \frac{a}{b} \hspace{1cm} \text{sec} \, \beta = \frac{a}{c} \hspace{1cm} \text{cot} \, \beta = \frac{c}{b} \\
 \hline
 \text{tan} \, \alpha = \frac{\sin \alpha}{\cos \alpha} \hspace{1cm} \text{cot} \, \alpha = \frac{\cos \alpha}{\sin \alpha} \hspace{1cm} \text{cot} \, \alpha = \frac{1}{\tan \alpha} \\
 \hline
-\text{sec} \, \alpha = \frac{1}{\cos \alpha} \hspace{1cm} \text{csc} \, \alpha = \frac{1}{\sin \alpha} \hspace{1cm} \\
+\text{sec} \, \alpha = \frac{1}{\cos \alpha} \hspace{1cm} \text{csc} \, \alpha = \frac{1}{\sin \alpha}\\
 \hline
 \end{array}
 \]
-
 
 \[
 \boxed{\sin^2{\alpha} + \cos^2{\alpha} = 1} \hspace{1cm}
 \boxed{\tan^2{\alpha} + 1 = \sec^2{\alpha}} \hspace{1cm}
 \boxed{1 + \cot^2{\alpha} = \csc^2{\alpha}}
 \]
+
 \newpage
 \begin{figure}
     \centering
@@ -346,6 +357,7 @@ Wortel &
   
     \label{fig:enter-label}
 \end{figure}
+
 \[
 \begin{array}{|c|c|c|}
 \hline
