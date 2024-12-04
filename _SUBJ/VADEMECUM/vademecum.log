@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  4 DEC 2024 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  4 DEC 2024 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,42 +917,40 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [4]
 
 [5]
-<imagegon.png, id=216, 298.2342pt x 177.7842pt>
+
+[6]
+<imagegon.png, id=225, 298.2342pt x 177.7842pt>
 File: imagegon.png Graphic file (type png)
 <use imagegon.png>
-Package pdftex.def Info: imagegon.png  used on input line 255.
+Package pdftex.def Info: imagegon.png  used on input line 285.
 (pdftex.def)             Requested size: 318.67236pt x 189.9749pt.
 
 
-[6 <./imagegon.png>]
-<imagfde.png, id=223, 306.9066pt x 193.2018pt>
+[7 <./imagegon.png>]
+<imagfde.png, id=233, 306.9066pt x 193.2018pt>
 File: imagfde.png Graphic file (type png)
 <use imagfde.png>
-Package pdftex.def Info: imagfde.png  used on input line 306.
+Package pdftex.def Info: imagfde.png  used on input line 336.
 (pdftex.def)             Requested size: 398.33894pt x 250.78198pt.
 
 
-[7 <./imagfde.png>]
+[8 <./imagfde.png>]
 
-[8]
+[9]
 
-[9] (vademecum.aux)
+[10] (vademecum.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: 73778AE6F524EEE2BC009FB42F7917C2;4821.
+(rerunfilecheck)             Checksum: ED2E7C88543353B3D196557ED7C5262F;4970.
  ) 
 Here is how much of TeX's memory you used:
- 21521 strings out of 473682
- 400464 string characters out of 5715408
+ 21524 strings out of 473682
+ 400501 string characters out of 5715408
  790970 words of memory out of 5000000
- 44215 multiletter control sequences out of 15000+600000
+ 44216 multiletter control sequences out of 15000+600000
  568777 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,21n,107p,427b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -982,9 +980,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
 /Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 symbols/msam7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on vademecum.pdf (9 pages, 354537 bytes).
+Output written on vademecum.pdf (10 pages, 356809 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 295 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 
