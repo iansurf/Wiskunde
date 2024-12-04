@@ -1,4 +1,5 @@
 \documentclass[a5paper]{article}
+\usepackage[dutch]{babel}
 \usepackage{tikz}
 \usepackage[margin=0.4cm]{geometry}
 \usepackage{amsmath, amssymb, amsfonts}
@@ -16,14 +17,18 @@
 
 \title{Formularium Wiskunde}
 \author{Ian Claesen}
-\date{}
+\date{\today}
 \maketitle
 
+\scriptsize
 \tableofcontents
+
+\newpage
+\normalsize
 
 \section{Algebra}
 \subsection{Volgorde van Bewerking}
-Haakjes wegwerken, machtsverheffen, worteltrekken, vermenigvuldigen en delen, optellen en aftrekken. Om deze volgorde te onthouden, gebruik de ezelsbrug: \\ \textit{Heel Mooie Witte Vaatwassers Doen Onze Afwas}.
+Haakjes wegwerken, machtsverheffen, worteltrekken, vermenigvuldigen en delen, optellen en aftrekken.
 
 \subsection{Absolute Waarde}
 De absolute waarde van een getal $a$ wordt genoteerd als $|a|$ en is altijd positief.
@@ -32,8 +37,6 @@ De absolute waarde van een getal $a$ wordt genoteerd als $|a|$ en is altijd posi
 a & \text{if } a \geq 0 \\
 -a & \text{if } a < 0 
 \end{cases}\]
-
-\newpage
 
 \section{Machten en wortels}
 \subsection{Machten met Gehele Exponenten}
@@ -102,6 +105,9 @@ n\,\, oneven\Rightarrow\sqrt[n]{a^n}=a
 \hline
 \end{array}
 \]
+
+\newpage
+
 \subsection{$\frac{m}{n}$-de machtswortel in $\mathbb{R}$ }
 \[
 \begin{array}{|c|c|}
@@ -119,7 +125,6 @@ a^m.a^n=a^{m+n}\\
 \hline
 \end{array}
 \]
-\newpage
 
 \section{Veeltermen}
 \subsection{Vierkantsvergelijking}
@@ -162,6 +167,8 @@ ax^2 + bx + c = a(x - x_1)(x - x_2) = a(x^2 - Sx + P) & \\
 \hline
 \end{array}
 \]
+
+\newpage
 
 \subsection{Euclidische Deling}
 We gaan de derdegraadsveelterm $2x^3 + 3x^2 - 4x + 5$ delen door de eerstegraadsveelterm $x + 2$ met behulp van de praktische werkwijze van lange deling.
@@ -225,6 +232,8 @@ De rest is $25$, wat een graad heeft die kleiner is dan de graad van de deler $x
 
     \draw[->, thick, red] (2.7, -0.3) -- (3.5, 0.45);
     \node[below] at (3.5, 0.75) {+24};
+    
+    \draw[thick, -] (3.2, 0) -- (3.2, -0.5); % Vertical axis
 \end{tikzpicture}
 
 \newpage
