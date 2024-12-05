@@ -10,6 +10,9 @@
 \usepackage{hyperref}
 \usepackage{adjustbox}
 
+\usepackage{array}  % For better table alignment
+\usepackage{float}  % To control the placement of the table
+
 % Set up compact sections
 \titlespacing*{\section}{0pt}{*2}{*1}
 \titlespacing*{\subsection}{0pt}{*1.5}{*0.8}
@@ -299,7 +302,7 @@ Wortel &
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\textwidth]{image_sin_cos_tan.png}
+\includegraphics[width=0.4\textwidth]{image_goniometrie_sin_cos_tan.png}
 \label{fig:sin_cos_tan}
 \end{figure}
 
@@ -353,7 +356,7 @@ Wortel &
 \newpage
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{imagfde.png}
+    \includegraphics[width=1\linewidth]{image_goniometrie_verwante_hoeken.png}
   
     \label{fig:enter-label}
 \end{figure}
@@ -389,6 +392,36 @@ Wortel &
 \]
 
 \newpage
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|>{\centering\arraybackslash}m{0.4\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+        \hline
+        \begin{minipage}[t]{0.4\textwidth}
+            \begin{itemize}
+                \item \textbf{De sinusregel:}
+                \[
+                \frac{a}{\sin \hat{A}} = \frac{b}{\sin \hat{B}} = \frac{c}{\sin \hat{C}}
+                \]
+                \item \textbf{De cosinusregel:}
+                \[
+                \begin{aligned}
+                    a^2 &= b^2 + c^2 - 2bc\cos \hat{A} \\
+                    b^2 &= c^2 + a^2 - 2ca\cos \hat{B} \\
+                    c^2 &= a^2 + b^2 - 2ab\cos \hat{C}
+                \end{aligned}
+                \]
+            \end{itemize}
+        \end{minipage}
+        &
+        \begin{minipage}[t]{0.4\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth]{image_goniometrie_sin_cos_regel.png}
+            \label{fig:sin_cos_regel}
+        \end{minipage} \\ 
+        \hline
+    \end{tabular}
+\end{table}
 
 \section{Meetkunde}
 \subsection{De Cirkel}

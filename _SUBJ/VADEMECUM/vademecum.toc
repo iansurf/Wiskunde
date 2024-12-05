@@ -26,10 +26,10 @@
 \contentsline {subsection}{\numberline {7.2}Afgeleiden}{8}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Matrices}{8}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Rekenregels}{8}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Combinatieleer}{8}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Keuzes zonder Herhaling}{8}{subsection.9.1}%
-\contentsline {section}{\numberline {10}Kansrekening}{8}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Voorwaardelijke Kans}{8}{subsection.10.1}%
+\contentsline {section}{\numberline {9}Combinatieleer}{9}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Keuzes zonder Herhaling}{9}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Kansrekening}{9}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Voorwaardelijke Kans}{9}{subsection.10.1}%
 \contentsline {section}{\numberline {11}Statistiek}{9}{section.11}%
 \contentsline {subsection}{\numberline {11.1}Normaalverdeling}{9}{subsection.11.1}%
 \contentsline {section}{\numberline {12}Diversen}{9}{section.12}%
