@@ -535,66 +535,67 @@ Wortel &
 
 \end{tikzpicture}
 
-\section{Meetkunde}
-\subsection{De Cirkel}
-De vergelijking van een cirkel met middelpunt $(a, b)$ en straal $r$ is:
-\[
-(x-a)^2 + (y-b)^2 = r^2
-\]
+\subsection{Cyclometrische formules}
 
-\subsection{De Parabool}
-De standaardvergelijking van een parabool met top in de oorsprong is:
-\[
-y = ax^2
-\]
+\[\begin{array}{*{20}{l}}
+{y = {\mathop{\rm Bgsin}\nolimits} x \Leftrightarrow \left( {x = \sin y\;\; \wedge y \in \left[ { - \frac{\pi }{2},\frac{\pi }{2}} \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
+{y = {\mathop{\rm Bgcos}\nolimits} x \Leftrightarrow \left( {x = \cos y\;\; \wedge y \in \left[ {0,\pi } \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
+{y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in } \right)}
+\end{array}\]
 
-\section{Analyse}
-\subsection{Limieten van Functies}
-De limiet van een functie $f(x)$ als $x$ nadert tot $a$ wordt genoteerd als:
-\[
-\lim_{x \to a} f(x)
-\]
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{image_goniometrie_cyclof.png}
+    \label{fig:enter-label}
+\end{figure}
 
-\subsection{Afgeleiden}
-De afgeleide van een functie $f(x)$ wordt gegeven door:
-\[
-f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
-\]
+\[\begin{array}{*{20}{c}}
+{\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x\forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in }\\
+{\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x\forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in }\\
+{tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x\forall x \in }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2}\forall x \in \left[ { - 1,1} \right]}\\
+{cotg\left( {{\mathop{\rm Bgcot}\nolimits} x} \right) = x\forall x \in }&{{\mathop{\rm Bgcot}\nolimits} x + {\mathop{\rm Bgtan}\nolimits} x = \frac{\pi }{2}\forall x \in }\\
+{\cos \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = \sqrt {1 - {x^2}} \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgtan}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgtan}\nolimits} x\forall x \in }\\
+{\sin \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = \sqrt {1 - {x^2}} \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcot}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgcot}\nolimits} x\forall x \in }\\
+{Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x\forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
+\end{array}\]
 
-\section{Matrices}
-\subsection{Rekenregels}
-Voor matrices $A$, $B$ en $C$ gelden de volgende eigenschappen:
-\begin{itemize}
-    \item Commutativiteit van optelling: $A + B = B + A$
-    \item Associativiteit van optelling: $A + (B + C) = (A + B) + C$
-    \item Distributiviteit: $A(B + C) = AB + AC$
-\end{itemize}
-
-\section{Combinatieleer}
-\subsection{Keuzes zonder Herhaling}
-\textbf{Variaties}: Geordende keuze van $p$ elementen uit $n$ elementen.\\
-\textbf{Permutaties}: Het rangschikken van $n$ verschillende elementen.
-
-\section{Kansrekening}
-\subsection{Voorwaardelijke Kans}
-De voorwaardelijke kans van $A$ gegeven $B$ is:
-\[
-P(A|B) = \frac{P(A \cap B)}{P(B)}
-\]
-
-\section{Statistiek}
-\subsection{Normaalverdeling}
-De normaalverdeling wordt gegeven door de dichtheidsfunctie:
-\[
-f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
-\]
+\newpage
 
 \section{Diversen}
-\subsection{Wiskundige Symbolen}
-\begin{itemize}
-    \item $\in$: is een element van
-    \item $\forall$: voor alle
-    \item $\exists$: er bestaat
-\end{itemize}
+\subsection{Wiskundige Symbolen (ISO 31/XI)}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Description} \\
+\hline
+$x \in A$ & is een element van de verzameling \\
+$x \not\in A$ & is geen element van de verzameling \\
+$\{x_1, x_2, \dots, x_n\}$ & de verzameling door opsomming \\
+$\{ x \in \left. A \right|p(x)\}$ & de verzameling waar de elementen voldoen aan de eigenschap $p(x)$ \\
+\hline
+$\emptyset$ & de lege verzameling \\
+$\mathbb{N}$ & de natuurlijke getallen $(0,1,2,\dots)$ \\
+$\mathbb{Z}$ & de gehele getallen $(\dots, -2,-1,0,1,2,\dots)$ \\
+$\mathbb{Q}$ & de rationale getallen (breuken van $\mathbb{Z}$) \\
+$\mathbb{R}$ & de reële getallen \\
+$\mathbb{C}$ & de complexe getallen \\
+\hline
+$B \subseteq A$ & $B$ behoort tot $A$ (kan er mee samenvallen) \\
+$B \subset A$ & $B$ behoort strikt tot $A$ \\
+$A \cup B$ & samenvoeging van $A$ en $B$ (unie) \\
+$A \cap B$ & doorsnede van $A$ en $B$ (de gemeenschappelijke elementen) \\
+$A \setminus B$ & $A$ verschilt $B$, wat tot $A$ behoort en niet tot $B$ \\
+$\mathcal{C}_U A$ & het complement van $A$ in het universum $U$ \\
+\hline
+$(a,b)$ & het geordend paar \\
+$(a_1, a_2, \dots, a_n)$ & een geordend $n$-tal \\
+$A \times B$ & de productverzameling van $A$ en $B$ \\
+$\#$ & rangnummer of aantal \\
+\hline
+\end{tabular}
+\end{table}
 
 \end{document}
