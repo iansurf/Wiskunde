@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  8 DEC 2024 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  8 DEC 2024 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,15 +929,15 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(11.38092pt, 398.33894pt, 11.38092pt)
-* v-part:(T,H,B)=(11.38092pt, 574.74603pt, 11.38092pt)
+* h-part:(L,W,R)=(14.22636pt, 392.64806pt, 14.22636pt)
+* v-part:(T,H,B)=(14.22636pt, 569.05515pt, 14.22636pt)
 * \paperwidth=421.10078pt
 * \paperheight=597.50787pt
-* \textwidth=398.33894pt
-* \textheight=574.74603pt
-* \oddsidemargin=-60.88907pt
-* \evensidemargin=-60.88907pt
-* \topmargin=-97.88907pt
+* \textwidth=392.64806pt
+* \textheight=569.05515pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1036,53 +1036,60 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [4]
 
 [5]
-<image_goniometrie.png, id=177, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=182, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
 Package pdftex.def Info: image_goniometrie.png  used on input line 301.
-(pdftex.def)             Requested size: 318.67236pt x 189.9749pt.
-<image_goniometrie_sin_cos_tan.png, id=179, 215.00325pt x 109.6095pt>
+(pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
+<image_goniometrie_sin_cos_tan.png, id=184, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
 309.
-(pdftex.def)             Requested size: 159.33315pt x 81.22849pt.
+(pdftex.def)             Requested size: 157.05682pt x 80.06776pt.
 
 
 [6 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=186, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=191, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
 ine 363.
-(pdftex.def)             Requested size: 398.33894pt x 250.78198pt.
+(pdftex.def)             Requested size: 392.64806pt x 247.20015pt.
 
 
 [7 <./image_goniometrie_verwante_hoeken.png>]
-<image_goniometrie_sin_cos_regel.png, id=193, 158.994pt x 134.904pt>
+<image_goniometrie_sin_cos_regel.png, id=198, 158.994pt x 134.904pt>
 File: image_goniometrie_sin_cos_regel.png Graphic file (type png)
 <use image_goniometrie_sin_cos_regel.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_regel.png  used on input lin
 e 423.
-(pdftex.def)             Requested size: 143.39885pt x 121.67801pt.
+(pdftex.def)             Requested size: 141.35017pt x 119.93861pt.
 
-Overfull \hbox (6.39087pt too wide) detected at line 491
+Overfull \hbox (12.08176pt too wide) detected at line 491
 []
  []
 
 
 
 [8 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=200, 820.86674pt x 322.20375pt>
+<image_goniometrie_cyclof.png, id=205, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
 Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 552.
-(pdftex.def)             Requested size: 239.00578pt x 93.81033pt.
+(pdftex.def)             Requested size: 235.59122pt x 92.47307pt.
 
 
 [9 <./image_goniometrie_cyclof.png>]
+Overfull \hbox (9.94469pt too wide) in paragraph at lines 570--601
+[]$ 
+ []
 
-[10] (vademecum.aux)
+
+
+[10]
+
+[11] (vademecum.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1092,17 +1099,17 @@ L3 programming layer <2024-11-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: 045ECED66DC98E06B266FA64C321317B;4321.
+(rerunfilecheck)             Checksum: CD97B899CA0BE32D7F4C6F9FC1435C2D;4410.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 313 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 23899 strings out of 473682
- 445411 string characters out of 5715408
+ 23902 strings out of 473682
+ 445438 string characters out of 5715408
  844025 words of memory out of 5000000
- 46541 multiletter control sequences out of 15000+600000
+ 46542 multiletter control sequences out of 15000+600000
  568431 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,21n,107p,427b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1132,9 +1139,9 @@ ers/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
 bols/msam7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Administrator/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (10 pages, 464665 bytes).
+Output written on vademecum.pdf (11 pages, 468891 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

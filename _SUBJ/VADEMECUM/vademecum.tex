@@ -1,7 +1,7 @@
 \documentclass[a5paper]{article}
 \usepackage[dutch]{babel}
 \usepackage{tikz}
-\usepackage[margin=0.4cm]{geometry}
+\usepackage[margin=0.5cm]{geometry}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{graphicx}
 \usepackage{enumitem}
@@ -565,9 +565,45 @@ Wortel &
 
 \newpage
 
-\section{\normalsize Diversen}
-\subsection{\normalsize Wiskundige Symbolen (ISO 31/XI)}
-\[
+\section{Meetkunde}
+
+$
+\begin{array}{|l|l|}
+\hline
+\text{Afstand 2 punten} & \left| {{P_1}({x_1},{y_1}),{P_2}({x_2},{y_2})} \right| = \sqrt {{{({x_2} - {x_1})}^2} + {{({y_2} - {y_1})}^2}}  \\
+ & \begin{array}{l}
+\left| {{P_1}({x_1},{y_1},{z_1}),{P_2}({x_2},{y_2},{z_2})} \right| = \\
+\sqrt {{{({x_2} - {x_1})}^2} + {{({y_2} - {y_1})}^2} + {{({z_2} - {z_1})}^2}} 
+\end{array} \\
+\hline
+\text{Midden v/e lijnstuk} & co(M) = (\frac{{({x_1} + {x_2})}}{2},\frac{{({y_1} + {y_2})}}{2})\\
+\hline
+\text{Zwaartepunt v/e driehoek} & co(Z) = (\frac{{({x_1} + {x_2} + {x_3})}}{3},\frac{{({y_1} + {y_2} + {y_3})}}{3})\\
+\hline
+\end{array}
+$
+\newline
+$
+\begin{array}{|l|l|}
+\hline
+\text{Vergelijking v/e rechte dr punt met rico m} & y - {y_1} = m(x - {x_1})  \\
+\hline
+\text{Vergelijking v/e rechte dr punt met rico m} & y - {y_1} = \frac{{{y_2} - {y_1}}}{{{x_2} - {x_1}}}(x - {x_1})  \\
+\hline
+\text{Vergelijking v/e rechte dr snijpunt met x-as (r,0) en y-as (0,s)} & \frac{x}{r} + \frac{y}{s} = 1  \\
+\hline
+\text{Hoek tussen twee rechten a,b met rico m1,m2} & \cos (\widehat {ab}) = \frac{{\left| {1 + {m_1}{m_2}} \right|}}{{\sqrt {1 + {m_1}^2} \sqrt {1 + {m_2}^2} }}  \\
+\hline
+\text{Afstand tussen rechte a->ux+vy+w=0 en P(x1,y1)} & d(P,a) = \frac{{\left| {u{x_1} + v{y_1} + w} \right|}}{{\sqrt {{u^2} + {v^2}} }}  \\
+\hline
+\end{array}
+$
+
+\newpage
+
+\section{Diversen}
+\subsection{Wiskundige Symbolen (ISO 31/XI)}
+$
 \begin{array}{|l|l|}
 \hline
 x \in A & \text{is een element van de verzameling} \\
@@ -595,9 +631,9 @@ A \times B & \text{de productverzameling van } A \text{ en } B \\
 \# & \text{rangnummer of aantal} \\
 \hline
 \end{array}
-\]
-\subsection{\normalsize Logische symbolen}
-\[
+$
+\subsection{Logische symbolen}
+$
 \begin{array}{|l|l|}
 \hline
 p \land q & \text{conjunctie, de beweringen } p \text{ en } q \text{ zijn geldig} \\
@@ -609,7 +645,5 @@ p \Leftrightarrow q & \text{equivalentie, de beweringen } p \text{ en } q \text{
 \exists x & \text{existentiële kwantor, er zijn elementen die voldoen aan} \\
 \hline
 \end{array}
-\]
-
-
+$
 \end{document}
