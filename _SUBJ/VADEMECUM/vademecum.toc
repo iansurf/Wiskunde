@@ -22,6 +22,6 @@
 \contentsline {subsection}{\numberline {5.4}Formules van Simpson}{8}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Belangrijke goniometrische waarden}{9}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Cyclometrische formules}{9}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Diversen}{10}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Wiskundige Symbolen (ISO 31/XI)}{10}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Logische symbolen}{11}{subsection.6.2}%
+\contentsline {section}{\numberline {6}\normalsize Diversen}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}\normalsize Wiskundige Symbolen (ISO 31/XI)}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\normalsize Logische symbolen}{10}{subsection.6.2}%

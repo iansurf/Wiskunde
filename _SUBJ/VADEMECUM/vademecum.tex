@@ -13,9 +13,13 @@
 \usepackage{array}  % For better table alignment
 \usepackage{float}  % To control the placement of the table
 
-% Set up compact sections
-\titlespacing*{\section}{0pt}{*2}{*1}
-\titlespacing*{\subsection}{0pt}{*1.5}{*0.8}
+% Adjust spacing for sections and subsections
+\titlespacing*{\section}{0pt}{*1}{0pt} % Reduce spacing after section heading
+\titlespacing*{\subsection}{0pt}{*0.5}{0pt} % Reduce spacing after subsection heading
+
+
+% Adjust table spacing
+\setlength{\textfloatsep}{0pt} % Reduce spacing before and after tables
 
 \begin{document}
 
@@ -561,56 +565,51 @@ Wortel &
 
 \newpage
 
-\section{Diversen}
-\subsection{Wiskundige Symbolen (ISO 31/XI)}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|l|l|}
+\section{\normalsize Diversen}
+\subsection{\normalsize Wiskundige Symbolen (ISO 31/XI)}
+\[
+\begin{array}{|l|l|}
 \hline
-$x \in A$ & is een element van de verzameling \\
-$x \not\in A$ & is geen element van de verzameling \\
-$\{x_1, x_2, \dots, x_n\}$ & de verzameling door opsomming \\
-$\{ x \in \left. A \right|p(x)\}$ & de verzameling waar de elementen voldoen aan de eigenschap $p(x)$ \\
+x \in A & \text{is een element van de verzameling} \\
+x \not\in A & \text{is geen element van de verzameling} \\
+\{x_1, x_2, \dots, x_n\} & \text{de verzameling door opsomming} \\
+\{ x \in \left. A \right|p(x)\} & \text{de verzameling waar de elementen voldoen aan de eigenschap } p(x) \\
 \hline
-$\emptyset$ & de lege verzameling \\
-$\mathbb{N}$ & de natuurlijke getallen $(0,1,2,\dots)$ \\
-$\mathbb{Z}$ & de gehele getallen $(\dots, -2,-1,0,1,2,\dots)$ \\
-$\mathbb{Q}$ & de rationale getallen (breuken van $\mathbb{Z}$) \\
-$\mathbb{R}$ & de reële getallen \\
-$\mathbb{C}$ & de complexe getallen \\
+\emptyset & \text{de lege verzameling} \\
+\mathbb{N} & \text{de natuurlijke getallen } (0,1,2,\dots) \\
+\mathbb{Z} & \text{de gehele getallen } (\dots, -2,-1,0,1,2,\dots) \\
+\mathbb{Q} & \text{de rationale getallen (breuken van } \mathbb{Z} \text{)} \\
+\mathbb{R} & \text{de reële getallen} \\
+\mathbb{C} & \text{de complexe getallen} \\
 \hline
-$B \subseteq A$ & $B$ behoort tot $A$ (kan er mee samenvallen) \\
-$B \subset A$ & $B$ behoort strikt tot $A$ \\
-$A \cup B$ & samenvoeging van $A$ en $B$ (unie) \\
-$A \cap B$ & doorsnede van $A$ en $B$ (de gemeenschappelijke elementen) \\
-$A \setminus B$ & $A$ verschilt $B$, wat tot $A$ behoort en niet tot $B$ \\
-$\mathcal{C}_U A$ & het complement van $A$ in het universum $U$ \\
+B \subseteq A & B \text{ behoort tot } A \text{ (kan er mee samenvallen)} \\
+B \subset A & B \text{ behoort strikt tot } A \\
+A \cup B & \text{samenvoeging van } A \text{ en } B \text{ (unie)} \\
+A \cap B & \text{doorsnede van } A \text{ en } B \text{ (de gemeenschappelijke elementen)} \\
+A \setminus B & A \text{ verschilt } B \text{, wat tot } A \text{ behoort en niet tot } B \\
+\mathcal{C}_U A & \text{het complement van } A \text{ in het universum } U \\
 \hline
-$(a,b)$ & het geordend paar \\
-$(a_1, a_2, \dots, a_n)$ & een geordend $n$-tal \\
-$A \times B$ & de productverzameling van $A$ en $B$ \\
-$\#$ & rangnummer of aantal \\
+(a,b) & \text{het geordend paar} \\
+(a_1, a_2, \dots, a_n) & \text{een geordend } n \text{-tal} \\
+A \times B & \text{de productverzameling van } A \text{ en } B \\
+\# & \text{rangnummer of aantal} \\
 \hline
-\end{tabular}
-\end{table}
-
-\newpage
-\subsection{Logische symbolen}
-\begin{table}[h!]
-\centering
-\begin{tabular}{|l|l|}
+\end{array}
+\]
+\subsection{\normalsize Logische symbolen}
+\[
+\begin{array}{|l|l|}
 \hline
-$p \land q$ & conjunctie, de beweringen $p$ en $q$ zijn geldig \\
-$p \lor q$ & disjunctie, de bewering $p$ of $q$ is geldig \\
-$\lnot p$ & negatie, de bewering $p$ is niet geldig \\
-$p \Rightarrow q$ & implicatie, als $p$ dan $q$ \\
-$p \Leftrightarrow q$ & equivalentie, de beweringen $p$ en $q$ zijn gelijkwaardig \\
-$\forall x$ & universele kwantor, voor alle elementen geldt \\
-$\exists x$ & existentiële kwantor, er zijn elementen die voldoen aan \\
+p \land q & \text{conjunctie, de beweringen } p \text{ en } q \text{ zijn geldig} \\
+p \lor q & \text{disjunctie, de bewering } p \text{ of } q \text{ is geldig} \\
+\lnot p & \text{negatie, de bewering } p \text{ is niet geldig} \\
+p \Rightarrow q & \text{implicatie, als } p \text{ dan } q \\
+p \Leftrightarrow q & \text{equivalentie, de beweringen } p \text{ en } q \text{ zijn gelijkwaardig} \\
+\forall x & \text{universele kwantor, voor alle elementen geldt} \\
+\exists x & \text{existentiële kwantor, er zijn elementen die voldoen aan} \\
 \hline
-\end{tabular}
-\end{table}
+\end{array}
+\]
 
 
 \end{document}
