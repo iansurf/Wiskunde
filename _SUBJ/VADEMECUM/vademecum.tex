@@ -544,7 +544,7 @@ Wortel &
 \[\begin{array}{*{20}{l}}
 {y = {\mathop{\rm Bgsin}\nolimits} x \Leftrightarrow \left( {x = \sin y\;\; \wedge y \in \left[ { - \frac{\pi }{2},\frac{\pi }{2}} \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
 {y = {\mathop{\rm Bgcos}\nolimits} x \Leftrightarrow \left( {x = \cos y\;\; \wedge y \in \left[ {0,\pi } \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
-{y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in } \right)}
+{y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in \mathbb {R} } \right)}
 \end{array}\]
 
 \begin{figure}[h!]
@@ -554,13 +554,13 @@ Wortel &
 \end{figure}
 
 \[\begin{array}{*{20}{c}}
-{\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x\forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in }\\
-{\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x\forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in }\\
-{tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x\forall x \in }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2}\forall x \in \left[ { - 1,1} \right]}\\
-{cotg\left( {{\mathop{\rm Bgcot}\nolimits} x} \right) = x\forall x \in }&{{\mathop{\rm Bgcot}\nolimits} x + {\mathop{\rm Bgtan}\nolimits} x = \frac{\pi }{2}\forall x \in }\\
-{\cos \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = \sqrt {1 - {x^2}} \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgtan}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgtan}\nolimits} x\forall x \in }\\
-{\sin \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = \sqrt {1 - {x^2}} \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcot}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgcot}\nolimits} x\forall x \in }\\
-{Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x\forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
+{\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
+{\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
+{tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \left[ { - 1,1} \right]}\\
+{cotg\left( {{\mathop{\rm Bgcot}\nolimits} x} \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgcot}\nolimits} x + {\mathop{\rm Bgtan}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \mathbb {R} }\\
+{\cos \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = \sqrt {1 - {x^2}} \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgtan}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgtan}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
+{\sin \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = \sqrt {1 - {x^2}}  \wedge\forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcot}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgcot}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
+{Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
 \end{array}\]
 
 \newpage
@@ -595,6 +595,38 @@ $
 \text{Hoek tussen twee rechten a,b met rico m1,m2} & \cos (\widehat {ab}) = \frac{{\left| {1 + {m_1}{m_2}} \right|}}{{\sqrt {1 + {m_1}^2} \sqrt {1 + {m_2}^2} }}  \\
 \hline
 \text{Afstand tussen rechte a->ux+vy+w=0 en P(x1,y1)} & d(P,a) = \frac{{\left| {u{x_1} + v{y_1} + w} \right|}}{{\sqrt {{u^2} + {v^2}} }}  \\
+\hline
+\end{array}
+$
+
+\subsection{De cirkel}
+
+$
+\begin{array}{|l|l|}
+\hline
+\text{Cartesiaanse vergelijking} & {(x - {x_1})^2} + {(y - {y_1})^2} = {r^2}  \\
+\hline
+\text{Algemene vergelijking} & {x^2} + {y^2} + 2ax + 2by + c = 0\quad  \wedge \quad {a^2} + {b^2} - c \ge 0  \\
+\hline
+\text{Parameter vergelijking} & \left\{ {\begin{array}{*{20}{c}}
+{x = {x_M} + r.\cos t}\\
+{y = {y_M} + r.\sin t}
+\end{array}} \right.\;\quad \quad met\;t \in \left[ {0,2\pi } \right[  \\
+\hline
+\end{array}
+$
+
+\subsection{De parabool}
+
+$
+\begin{array}{|l|l|}
+\hline
+\text{Top vergelijking} & {y^2} = 2px  \\
+\hline
+\text{Parameter vergelijking} & \begin{array}{l}
+x = 2p{\lambda ^2}\quad \quad met\;\lambda  \in \mathbb {R} \\
+y = 2p\lambda 
+\end{array}  \\
 \hline
 \end{array}
 $
