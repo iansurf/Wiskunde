@@ -455,8 +455,9 @@ De{\rm{ }}cosinusregel:\\
 \hline
 \end{array}
 \]
+
 \subsection{Omgekeerde formules van Simpson}
-\[
+$
 \begin{array}{|c|c|}
 \hline
 \sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta & 
@@ -470,9 +471,9 @@ De{\rm{ }}cosinusregel:\\
 \cos(\alpha + \beta) - \cos(\alpha - \beta) = -2\sin\alpha\sin\beta \\
 \hline
 \end{array}
-\]
+$
 \subsection{Formules van Simpson}
-\[
+$
 \begin{array}{|c|c|}
 \hline
 \begin{aligned}
@@ -485,7 +486,7 @@ De{\rm{ }}cosinusregel:\\
 \end{aligned} \\
 \hline
 \end{array}
-\]
+$
 
 \newpage
 \subsection{Belangrijke goniometrische waarden}
@@ -537,20 +538,18 @@ De{\rm{ }}cosinusregel:\\
 \end{tikzpicture}
 
 \subsection{Cyclometrische formules}
-
-\[\begin{array}{*{20}{l}}
+$\begin{array}{*{20}{l}}
 {y = {\mathop{\rm Bgsin}\nolimits} x \Leftrightarrow \left( {x = \sin y\;\; \wedge y \in \left[ { - \frac{\pi }{2},\frac{\pi }{2}} \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
 {y = {\mathop{\rm Bgcos}\nolimits} x \Leftrightarrow \left( {x = \cos y\;\; \wedge y \in \left[ {0,\pi } \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
 {y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in \mathbb {R} } \right)}
-\end{array}\]
-
+\end{array}$
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\linewidth]{image_goniometrie_cyclof.png}
     \label{fig:enter-label}
 \end{figure}
 
-\[\begin{array}{*{20}{c}}
+$\begin{array}{*{20}{l}}
 {\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
 {\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
 {tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \left[ { - 1,1} \right]}\\
@@ -558,7 +557,7 @@ De{\rm{ }}cosinusregel:\\
 {\cos \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = \sqrt {1 - {x^2}} \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgtan}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgtan}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
 {\sin \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = \sqrt {1 - {x^2}}  \wedge\forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcot}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgcot}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
 {Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
-\end{array}\]
+\end{array}$
 
 \newpage
 
@@ -728,7 +727,211 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \end{tabular}
 \end{table}
 
+\subsection{Basis reële functies}
 
+\begin{tabular}{|m{0.3\textwidth}|m{0.6\textwidth}|}
+\hline
+\textbf{Functie} & \textbf{Definitie} \\
+\hline
+Identiteitsfunctie & $ f(x) = x $ \\
+\hline
+Constante functie & $ f(x) = c, \; c \in \mathbb{R} $ \\
+\hline
+Lineaire functie & $ f(x) = mx + b, \; m, b \in \mathbb{R} $ \\
+\hline
+Kwadratische functie & $ f(x) = ax^2 + bx + c, \; a, b, c \in \mathbb{R}, \; a \neq 0 $ \\
+\hline
+Cubische functie & $ f(x) = ax^3 + bx^2 + cx + d, \; a, b, c, d \in \mathbb{R}, \; a \neq 0 $ \\
+\hline
+Polynoomfunctie & $ f(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0, \; a_i \in \mathbb{R} \newline a_n \neq 0 $ \\
+\hline
+Rationale functie & $ f(x) = \frac{P(x)}{Q(x)}, \; P(x), Q(x) \text{ zijn polynomen}, \; Q(x) \neq 0 $ \\
+\hline
+Exponenti\"ele functie & $ f(x) = a^x, \; a > 0, \; a \neq 1 $\\
+\hline
+Logaritmische functie & $ f(x) = \log_a(x), \; a > 0, \; a \neq 1, \; x > 0 $ \\
+\hline
+Absolute-waarde functie & $
+    f(x) = |x| =
+    \begin{cases}
+    x, & x \geq 0 \\
+    -x, & x < 0
+    \end{cases}
+$ \\
+\hline
+Goniometrische functies & $
+	f(x) = \sin(x) \newline
+	f(x) = \cos(x) \newline
+	f(x) = \tan(x) \; x \neq \frac{\pi}{2} + k\pi, \; k \in \mathbb{Z}
+$ \\
+\hline
+Inverse goniometrische functies & $
+	f(x) = \arcsin(x), \; x \in [-1, 1] \newline
+	f(x) = \arccos(x), \; x \in [-1, 1] \newline
+	f(x) = \arctan(x), \; x \in \mathbb{R}$ \\
+\hline
+Hyperbolische functies & $
+    f(x) = \sinh(x) = \frac{e^x - e^{-x}}{2} \newline
+    f(x) = \cosh(x) = \frac{e^x + e^{-x}}{2} \newline
+    f(x) = \tanh(x) = \frac{\sinh(x)}{\cosh(x)}, \; x \in \mathbb{R}
+\) \\
+\hline
+Stukjesfunctie & $
+    f(x) =
+    \begin{cases}
+    x^2, & x < 0 \\
+    x + 1, & x \geq 0
+    \end{cases}
+$ \\
+\hline
+\end{tabular}
+
+\newpage
+
+\section{Analyse}
+\subsection{Limieten van rijen)}
+$\begin{array}{|l|}
+\hline
+\mathop {\lim }\limits_{n \to  \pm \infty } \left( {{a_m}{n^m} + {a_{m - 1}}{n^{m - 1}} + ... + {a_1}n + {a_0}} \right) = \mathop {\lim }\limits_{n \to  \pm \infty } {a_m}{n^m}\\
+\hline
+\mathop {\lim }\limits_{n \to  \pm \infty } \frac{{\left( {{a_m}{n^m} + {a_{m - 1}}{n^{m - 1}} + ... + {a_1}n + {a_0}} \right)}}{{\left( {{b_q}{n^p} + {b_{q - 1}}{n^{p - 1}} + ... + {b_1}n + {b_0}} \right)}} = \mathop {\lim }\limits_{n \to  \pm \infty } \frac{{{a_m}{n^m}}}{{{b_q}{n^p}}} \\
+\hline
+\end{array}$
+\subsection{Limieten van functies)}
+$\begin{array}{|l|}
+\hline
+\mathop {\lim }\limits_{x \to a} \left[ {f\left( x \right) \pm g\left( x \right)} \right] = \mathop {\lim }\limits_{x \to a} f\left( x \right) \pm \mathop {\lim }\limits_{x \to a} g\left( x \right)\\
+\hline
+\mathop {\lim }\limits_{x \to a} \left[ {f\left( x \right).g\left( x \right)} \right] = \mathop {\lim }\limits_{x \to a} f\left( x \right).\mathop {\lim }\limits_{x \to a} g\left( x \right)\\
+\hline
+\mathop {\lim }\limits_{x \to a} {\left[ {f\left( x \right)} \right]^n} = {\left[ {\mathop {\lim }\limits_{x \to a} f\left( x \right)} \right]^n}\quad \quad \left( {n \in {_0}} \right)\\
+\hline
+\mathop {\lim }\limits_{x \to a} \sqrt[n]{{f\left( x \right)}} = \sqrt[n]{{\mathop {\lim }\limits_{x \to a} f\left( x \right)}}\\
+\hline
+\mathop {\lim }\limits_{x \to a} \frac{{f\left( x \right)}}{{g\left( x \right)}} = \frac{{\mathop {\lim }\limits_{x \to a} f\left( x \right)}}{{\mathop {\lim }\limits_{x \to a} g\left( x \right)}}\\
+\mathop {\lim }\limits_{x \to  \pm \infty } \left( {{a_n}{x^n} + {a_{n - 1}}{x^{n - 1}} + ... + {a_1}x + {a_0}} \right) = \mathop {\lim }\limits_{x \to  \pm \infty } {a_n}{x^n}\\
+\hline
+\mathop {\lim }\limits_{x \to  \pm \infty } \frac{{{a_n}{x^n} + {a_{n - 1}}{x^{n - 1}} + ... + {a_1}x + {a_0}}}{{{b_m}{x^m} + {b_{m - 1}}{x^{m - 1}} + ... + {b_1}x + {b_0}}} = \mathop {\lim }\limits_{x \to  \pm \infty } \frac{{{a_n}{x^n}}}{{{b_m}{x^m}}} \\
+\hline
+\end{array}$
+
+\vspace{3mm}
+
+$\begin{array}{|l|l|}
+\hline
+\begin{array}{l}
+\mathop {\lim }\limits_{x \to a} \sin (x) = \sin (a)\\
+\mathop {\lim }\limits_{x \to a} \cos (x) = \cos (a)
+\end{array}
+&
+\begin{array}{l}
+\mathop {\lim }\limits_{x \to 0} \frac{{\sin x}}{x} = 1\\
+\mathop {\lim }\limits_{x \to 0} \frac{{\tan x}}{x} = 1
+\end{array} \\
+\hline
+\end{array}$
+
+\newpage
+
+\subsection{Afgeleiden - differentialen}
+\fontsize{14pt}{15pt}\selectfont
+$\begin{array}{|l|l|}
+\hline
+\begin{array}{l}
+Dc = 0\\
+D\;(c.f) = c.Df\\
+D\left( {f \pm g} \right) = Df \pm Dg\\
+D\left( {f.g} \right) = fDg + gDf\\
+D\left( {\frac{f}{g}} \right) = \frac{{gDf - fDg}}{{{g^2}}}\\
+D{x^n} = n{x^{n - 1}}\\
+D{x^{ - 1}} =  - 1.{x^{ - 2}}\\
+D\sin x = \cos x\\
+D\cos x =  - \sin x\\
+D\tan x = {\sec ^2}x = \frac{1}{{{{\cos }^2}x}}\\
+D\cot x =  - cs{c^2}x = \frac{{ - 1}}{{{{\sin }^2}x}}\\
+D{\mathop{\rm Bgsin}\nolimits} x = \frac{1}{{\sqrt {1 - {x^2}} }}\\
+D{\mathop{\rm Bgcos}\nolimits} x = \frac{{ - 1}}{{\sqrt {1 - {x^2}} }}\\
+D{\mathop{\rm Bgtan}\nolimits} x = \frac{1}{{1 + {x^2}}}\\
+D{\mathop{\rm sh}\nolimits} x = {\mathop{\rm ch}\nolimits} x\\
+D{\mathop{\rm ch}\nolimits} x = {\mathop{\rm sh}\nolimits} x\\
+D{\mathop{\rm th}\nolimits} x = \frac{1}{{c{h^2}x}}\\
+D{e^x} = {e^x}\\
+D{a^x} = {a^x}\ln a\\
+D\ln x = \frac{1}{x}\quad D\ln \left| x \right| = \frac{1}{x}\\
+D{}^a\log x = \frac{1}{{x\ln a}}\\
+D\ln \left| {x + \sqrt {{x^2} + k} } \right| = \frac{1}{{\sqrt {{x^2} + k} }}\\
+D{u^v} = v{u^{v - 1}}Du + {u^v}\ln uDv
+\end{array}
+&
+\begin{array}{l}
+dc = 0\\
+d{x^n} = n{x^{n - 1}}dx\\
+d{x^{ - 1}} =  - 1.{x^{ - 2}}dx\\
+d\sin x = \cos xdx\\
+d\cos x =  - \sin xdx\\
+d\tan x = {\sec ^2}xdx = \frac{1}{{{{\cos }^2}x}}dx\\
+d\cot x =  - cs{c^2}xdx = \frac{{ - 1}}{{{{\sin }^2}x}}dx\\
+d{\mathop{\rm Bgsin}\nolimits} x = \frac{{dx}}{{\sqrt {1 - {x^2}} }}\\
+d{\mathop{\rm Bgcos}\nolimits} x = \frac{{ - dx}}{{\sqrt {1 - {x^2}} }}\\
+d{\mathop{\rm Bgtan}\nolimits} x = \frac{{dx}}{{1 + {x^2}}}\\
+dshx = chxdx\\
+dchx = shxdx\\
+dthx = \frac{{dx}}{{c{h^2}x}}\\
+d{}^a\log x = \frac{{dx}}{{x\ln a}}\\
+d\ln \left| x \right| = \frac{{dx}}{x}\\
+d{a^x} = {a^x}\ln adx\\
+d{e^x} = {e^x}dx\\
+d\ln \left| {x + \sqrt {{x^2} + k} } \right| = \frac{{dx}}{{\sqrt {{x^2} + k} }}\\
+d\left( {f + g} \right) = df + dg\\
+d\left( {f.g} \right) = fdg + gdf\\
+d\left( {\frac{f}{g}} \right) = \frac{{gdf - fdg}}{{{g^2}}}
+\end{array} \\
+\hline
+\end{array}$
+\normalsize
+
+\newpage
+
+\subsection{Afgeleiden - fundamentele integralen}
+Bg = arc
+\newline
+\fontsize{14pt}{15pt}\selectfont
+$
+\begin{array}{|l|l|}
+\hline
+\textbf{Afgeleiden} & \textbf{Integraal} \\
+\hline
+D[c] = 0 & \int dx = x + C \\
+\hline
+D[x^n] = n x^{n-1} & \int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1) \\
+\hline
+D[\sin x] = \cos x & \int \cos x \, dx = \sin x + C \\
+\hline
+D[\cos x] = -\sin x & \int \sin x \, dx = -\cos x + C \\
+\hline
+D[\tan x] = \sec^2 x = \frac{1}{{{{\cos }^2}x}} & \int \frac{1}{{{{\cos }^2}x}} \, dx = \tan x + C \\
+\hline
+D[\cot x] = -\csc^2 x = \frac{-1}{{{{\sin }^2}x}} & \int \frac{1}{{{{\sin }^2}x}} \, dx = -\cot x + C \\
+\hline
+D[\arcsin x] = \frac{1}{\sqrt{1-x^2}} & \int \frac{dx}{\sqrt{1-x^2}} = \arcsin x + C \\
+\hline
+D[\arccos x] = \frac{-1}{\sqrt{1-x^2}} & \int \frac{dx}{\sqrt{1-x^2}} = -\arccos x + C \\
+\hline
+D[\arctan x] = \frac{1}{1+x^2} & \int \frac{dx}{1+x^2} = \arctan x + C \\
+\hline
+D[e^x] = e^x & \int e^x dx = e^x + C \\
+\hline
+D[a^x] = a^x \ln a & \int a^x dx = \frac{a^x}{\ln a} + C \\
+\hline
+D[\ln x] = \frac{1}{x} & \int \frac{dx}{x} = \ln |x| + C \\
+\hline
+D\left[\ln \left| x + \sqrt{x^2 + k} \right| \right] = \frac{1}{\sqrt{x^2 + k}} & \int \frac{dx}{\sqrt{x^2 + k}} = \ln \left| x + \sqrt{x^2 + k} \right| + C \\
+\hline
+D{}^a\log x = \frac{1}{{x\ln a}} & * \\
+\hline
+\end{array}
+$
+\normalsize
 
 \section{Diversen}
 \subsection{Wiskundige Symbolen (ISO 31/XI)}
