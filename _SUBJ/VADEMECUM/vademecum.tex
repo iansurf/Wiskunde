@@ -13,6 +13,10 @@
 \usepackage{array}  % For better table alignment
 \usepackage{float}  % To control the placement of the table
 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{caption}
+
 % Adjust spacing for sections and subsections
 \titlespacing*{\section}{0pt}{*1}{0pt} % Reduce spacing after section heading
 \titlespacing*{\subsection}{0pt}{*0.5}{0pt} % Reduce spacing after subsection heading
@@ -970,6 +974,318 @@ $\int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )$
 \newline
 $\int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
+
+\newpage
+\section{Statistiek}
+\subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
+
+\begin{flushleft}
+{Dit is een test van een steekproefgemiddelde $\bar{z}$ volgens steekproefgemiddeldeverdeling $X \approx \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})$ in de populatie $\mathcal{N}(\mu, \sigma)$}
+\end{flushleft}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Twee-zijdige test} & \textbf{Links-zijdige test} & \textbf{Rechts-zijdige test} \\
+\hline
+$\begin{array}{l}
+H_0 : \mu = \mu_0 \\
+H_A : \mu \ne \mu_0
+\end{array}$ &
+$\begin{array}{l}
+H_0 : \mu = \mu_0 \\
+H_A : \mu < \mu_0
+\end{array}$ &
+$\begin{array}{l}
+H_0 : \mu = \mu_0 \\
+H_A : \mu > \mu_0
+\end{array}$ \\
+\hline
+
+% TikZ-plots met α-labels
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={-1.96, 1.96},
+    xticklabels={$g_{-}$, $g_{+}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=-3:-1.96, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \addplot [red, domain=1.96:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.5,0.1) {\small $\alpha/2$};
+    \node at (axis cs:2.5,0.1) {\small $\alpha/2$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={-1.645},
+    xticklabels={$g_{-}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=-3:-1.645, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.3,0.1) {\small $\alpha$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={1.645},
+    xticklabels={$g_{+}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=1.645:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:2.3,0.1) {\small $\alpha$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+\\
+\hline
+$\displaystyle H_A : \bar{z} \le g_{-} \,\, \vee \,\, \bar{x} \ge g_{+}$ &
+$\displaystyle H_A : \bar{z} \le g_{-}$ &
+$\displaystyle H_A : \bar{z} \ge g_{+}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test van een hypothese over een populatieproportie}
+
+\begin{flushleft}
+{Dit is een test op een populatieproportie $\hat{p}$ volgens een binomiaalverdeling $X \approx \mathcal{B}(n,p) \approx \mathcal{N}(np,{\sqrt{n}} . {\sqrt{p(1-p)}})$}
+\end{flushleft}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Twee-zijdige test} & \textbf{Links-zijdige test} & \textbf{Rechts-zijdige test} \\
+\hline
+$\begin{array}{l}
+H_0 : p = p_0 \\
+H_A : p \ne p_0
+\end{array}$ &
+$\begin{array}{l}
+H_0 : p = p_0 \\
+H_A : p < p_0
+\end{array}$ &
+$\begin{array}{l}
+H_0 : p = p_0 \\
+H_A : p > p_0
+\end{array}$ \\
+\hline
+
+% TikZ-plots voor proportietoets
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={-1.96, 1.96},
+    xticklabels={$g_{-}$, $g_{+}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=-3:-1.96, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \addplot [red, domain=1.96:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.5,0.1) {\small $\alpha/2$};
+    \node at (axis cs:2.5,0.1) {\small $\alpha/2$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={-1.645},
+    xticklabels={$g_{-}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=-3:-1.645, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.3,0.1) {\small $\alpha$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    x tick label style={yshift=-5pt},
+    xtick style={color=black, thick},
+    xtick={1.645},
+    xticklabels={$g_{+}$},
+    tick label style={font=\footnotesize}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [red, domain=1.645:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:2.3,0.1) {\small $\alpha$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+\\
+\hline
+$\displaystyle H_A : \hat{p} \le g_{-} \,\, \vee \,\, \hat{p} \ge g_{+}$ &
+$\displaystyle H_A : \hat{p} \le g_{-}$ &
+$\displaystyle H_A : \hat{p} \ge g_{+}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\subsection{P-waarde (grafisch voorgesteld)}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Twee-zijdige toets} & \textbf{Links-zijdige toets} & \textbf{Rechts-zijdige toets} \\
+\hline
+
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    xtick={-2.4, 2.4},
+    xticklabels={$-z_{\text{obs}}$, $z_{\text{obs}}$},
+    x tick label style={yshift=-5pt},
+    tick label style={font=\footnotesize},
+    xtick style={color=black, thick}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [blue, domain=-3:-2.4, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \addplot [blue, domain=2.4:3, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.8,0.05) {\small $p/2$};
+    \node at (axis cs:2.8,0.05) {\small $p/2$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    xtick={-2.4},
+    xticklabels={$z_{\text{obs}}$},
+    x tick label style={yshift=-5pt},
+    tick label style={font=\footnotesize},
+    xtick style={color=black, thick}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [blue, domain=-3:-2.4, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:-2.8,0.05) {\small $p$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\vspace{2mm}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis x line=bottom,
+    axis y line=none,
+    domain=-3:3,
+    samples=100,
+    ymin=0,
+    width=5cm,
+    height=4cm,
+    xtick={2.4},
+    xticklabels={$z_{\text{obs}}$},
+    x tick label style={yshift=-5pt},
+    tick label style={font=\footnotesize},
+    xtick style={color=black, thick}
+  ]
+    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot [blue, domain=2.4:3, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+    \node at (axis cs:2.8,0.05) {\small $p$};
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+\\
+\hline
+$\displaystyle H_A : \mu \ne \mu_0$ &
+$\displaystyle H_A : \mu < \mu_0$ &
+$\displaystyle H_A : \mu > \mu_0$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
 \section{Diversen}
 \subsection{Wiskundige Symbolen (ISO 31/XI)}
 $
