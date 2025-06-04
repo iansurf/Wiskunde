@@ -206,12 +206,12 @@ We kunnen de deling als volgt uitdrukken:
 2x^3 + 3x^2 - 4x + 5 = (x + 2)(2x^2 - x - 2) + 9
 \]
 
-De rest is $25$, wat een graad heeft die kleiner is dan de graad van de deler $x + 2$.
+De rest is $9$, wat een graad heeft die kleiner is dan de graad van de deler $x + 2$.
 
 
 \subsection{Schema van Horner}
 \[
-\frac{(3x^3-5x^2+10x-52)}{(x-2)}
+\frac{(3x^3-5x^2+10x-5)}{(x-2)}
 \]
 
 \begin{tikzpicture}[scale=1.5, every node/.style={font=\small}]
@@ -980,7 +980,7 @@ $\int {u\;dv}  = u.v - \int {v\;du} $
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 
 \begin{flushleft}
-{Dit is een test van een steekproefgemiddelde $\bar{z}$ volgens steekproefgemiddeldeverdeling $X \approx \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})$ in de populatie $\mathcal{N}(\mu, \sigma)$}
+{Dit is een test van een steekproefgemiddelde $\bar{x}$ volgens steekproefgemiddeldeverdeling $X \approx \mathcal{N}({\mu _{\bar x}}, {\sigma _{\bar x}} ) \approx \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}}) $ in de populatie $\mathcal{N}(\mu, \sigma)$}. Gebruikmakend van significantieniveau $\alpha$.
 \end{flushleft}
 
 \begin{center}
@@ -1025,6 +1025,7 @@ H_A : \mu > \mu_0
     \addplot [red, domain=1.96:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:-2.5,0.1) {\small $\alpha/2$};
     \node at (axis cs:2.5,0.1) {\small $\alpha/2$};
+    \node at (axis cs:1.8,0.4) {\footnotesize $\mathcal{N}({\mu _{\bar x}}, {\sigma _{\bar x}} )$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
@@ -1049,6 +1050,7 @@ H_A : \mu > \mu_0
     \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
     \addplot [red, domain=-3:-1.645, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:-2.3,0.1) {\small $\alpha$};
+    \node at (axis cs:1.8,0.4) {\footnotesize $\mathcal{N}({\mu _{\bar x}}, {\sigma _{\bar x}} )$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
@@ -1073,14 +1075,15 @@ H_A : \mu > \mu_0
     \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
     \addplot [red, domain=1.645:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:2.3,0.1) {\small $\alpha$};
+    \node at (axis cs:1.8,0.4) {\footnotesize $\mathcal{N}({\mu _{\bar x}}, {\sigma _{\bar x}} )$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
 \\
 \hline
-$\displaystyle H_A : \bar{z} \le g_{-} \,\, \vee \,\, \bar{x} \ge g_{+}$ &
-$\displaystyle H_A : \bar{z} \le g_{-}$ &
-$\displaystyle H_A : \bar{z} \ge g_{+}$ \\
+$\displaystyle H_A : {z _{\bar x}} \le g_{-} \,\, \vee \,\, \bar{x} \ge g_{+}$ &
+$\displaystyle H_A : {z _{\bar x}} \le g_{-}$ &
+$\displaystyle H_A : {z _{\bar x}} \ge g_{+}$ \\
 \hline
 \end{tabular}
 \end{center}
@@ -1088,7 +1091,7 @@ $\displaystyle H_A : \bar{z} \ge g_{+}$ \\
 \subsection{Test van een hypothese over een populatieproportie}
 
 \begin{flushleft}
-{Dit is een test op een populatieproportie $\hat{p}$ volgens een binomiaalverdeling $X \approx \mathcal{B}(n,p) \approx \mathcal{N}(np,{\sqrt{n}} . {\sqrt{p(1-p)}})$}
+{Dit is een test op een populatieproportie $\hat{p}$ volgens een binomiaalverdeling $X \approx \mathcal{B}(n,p) \approx \mathcal{N}(np,{\sqrt{n}} . {\sqrt{p(1-p)}})$}. Gebruikmakend van significantieniveau $\alpha$.
 \end{flushleft}
 
 \begin{center}
@@ -1133,6 +1136,7 @@ H_A : p > p_0
     \addplot [red, domain=1.96:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:-2.5,0.1) {\small $\alpha/2$};
     \node at (axis cs:2.5,0.1) {\small $\alpha/2$};
+    \node at (axis cs:1,0.4) {\footnotesize $\mathcal{N}$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
@@ -1157,6 +1161,7 @@ H_A : p > p_0
     \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
     \addplot [red, domain=-3:-1.645, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:-2.3,0.1) {\small $\alpha$};
+    \node at (axis cs:1,0.4) {\footnotesize $\mathcal{N}$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
@@ -1181,6 +1186,7 @@ H_A : p > p_0
     \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
     \addplot [red, domain=1.645:3, fill=red, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
     \node at (axis cs:2.3,0.1) {\small $\alpha$};
+    \node at (axis cs:1,0.4) {\footnotesize $\mathcal{N}$};
   \end{axis}
 \end{tikzpicture}
 \end{minipage}
@@ -1195,95 +1201,84 @@ $\displaystyle H_A : \hat{p} \ge g_{+}$ \\
 
 \newpage
 
-\subsection{P-waarde (grafisch voorgesteld)}
+\subsection{Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}
 
 \begin{center}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|p{4.8cm}|p{3.8cm}|p{4cm}|}
 \hline
-\textbf{Twee-zijdige toets} & \textbf{Links-zijdige toets} & \textbf{Rechts-zijdige toets} \\
+\textbf{Twee-zijdige toets} & \textbf{Links éénzijdige toets} & \textbf{Rechts éénzijdige toets} \\
 \hline
-
-\begin{minipage}{4cm}
-\vspace{2mm}
-\begin{tikzpicture}
-  \begin{axis}[
-    axis x line=bottom,
-    axis y line=none,
-    domain=-3:3,
-    samples=100,
-    ymin=0,
-    width=5cm,
-    height=4cm,
-    xtick={-2.4, 2.4},
-    xticklabels={$-z_{\text{obs}}$, $z_{\text{obs}}$},
-    x tick label style={yshift=-5pt},
-    tick label style={font=\footnotesize},
-    xtick style={color=black, thick}
-  ]
-    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
-    \addplot [blue, domain=-3:-2.4, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
-    \addplot [blue, domain=2.4:3, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
-    \node at (axis cs:-2.8,0.05) {\small $p/2$};
-    \node at (axis cs:2.8,0.05) {\small $p/2$};
-  \end{axis}
-\end{tikzpicture}
-\end{minipage}
+\begin{tabular}{@{}l@{}}
+$H_0: \mu = \mu_0$ \\
+$H_1: \mu \ne \mu_0$
+\end{tabular}
 &
-\begin{minipage}{4cm}
-\vspace{2mm}
-\begin{tikzpicture}
-  \begin{axis}[
-    axis x line=bottom,
-    axis y line=none,
-    domain=-3:3,
-    samples=100,
-    ymin=0,
-    width=5cm,
-    height=4cm,
-    xtick={-2.4},
-    xticklabels={$z_{\text{obs}}$},
-    x tick label style={yshift=-5pt},
-    tick label style={font=\footnotesize},
-    xtick style={color=black, thick}
-  ]
-    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
-    \addplot [blue, domain=-3:-2.4, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
-    \node at (axis cs:-2.8,0.05) {\small $p$};
-  \end{axis}
-\end{tikzpicture}
-\end{minipage}
+\begin{tabular}{@{}l@{}}
+$H_0: \mu = \mu_0$ \\
+$H_1: \mu < \mu_0$
+\end{tabular}
 &
-\begin{minipage}{4cm}
-\vspace{2mm}
-\begin{tikzpicture}
-  \begin{axis}[
-    axis x line=bottom,
-    axis y line=none,
-    domain=-3:3,
-    samples=100,
-    ymin=0,
-    width=5cm,
-    height=4cm,
-    xtick={2.4},
-    xticklabels={$z_{\text{obs}}$},
-    x tick label style={yshift=-5pt},
-    tick label style={font=\footnotesize},
-    xtick style={color=black, thick}
-  ]
-    \addplot [very thick, black] {exp(-x^2/2)/sqrt(2*pi)};
-    \addplot [blue, domain=2.4:3, fill=blue, opacity=0.3] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
-    \node at (axis cs:2.8,0.05) {\small $p$};
-  \end{axis}
-\end{tikzpicture}
-\end{minipage}
+\begin{tabular}{@{}l@{}}
+$H_0: \mu = \mu_0$ \\
+$H_1: \mu > \mu_0$
+\end{tabular}
 \\
 \hline
-$\displaystyle H_A : \mu \ne \mu_0$ &
-$\displaystyle H_A : \mu < \mu_0$ &
-$\displaystyle H_A : \mu > \mu_0$ \\
+\begin{tabular}{@{}l@{}}
+Als $\bar{x} < \mu$ $\rightarrow$ $P = 2 \cdot P(X \leq \bar{x})$ \\
+Als $\bar{x} > \mu$ $\rightarrow$ $P = 2 \cdot P(X \geq \bar{x})$
+\end{tabular}
+&
+$P = P(X \leq \bar{x})$
+&
+$P = P(X \geq \bar{x})$ \\
+\hline
+$P \leq \alpha$ & $P \leq \alpha$ & $P \leq \alpha$ \\
 \hline
 \end{tabular}
 \end{center}
+
+
+\subsection{Test van een hypothese over een populatieproportie via de P-waarde}
+
+\begin{center}
+\begin{tabular}{|p{4.8cm}|p{3.8cm}|p{4cm}|}
+\hline
+\textbf{Twee-zijdige toets} & \textbf{Linkszijdige toets} & \textbf{Rechtszijdige toets} \\
+\hline
+\begin{tabular}{@{}l@{}}
+$H_0: p = p_0$ \\
+$H_1: p \ne p_0$
+\end{tabular}
+&
+\begin{tabular}{@{}l@{}}
+$H_0: p = p_0$ \\
+$H_1: p < p_0$
+\end{tabular}
+&
+\begin{tabular}{@{}l@{}}
+$H_0: p = p_0$ \\
+$H_1: p > p_0$
+\end{tabular}
+\\
+\hline
+\begin{tabular}{@{}l@{}}
+Als $\hat{p} < p$ $\rightarrow$ $P = 2 \cdot P(X \leq \hat{p})$ \\
+Als $\hat{p} > p$ $\rightarrow$ $P = 2 \cdot P(X \geq \hat{p})$
+\end{tabular}
+&
+$P = P(X \leq \hat{p})$
+&
+$P = P(X \geq \hat{p})$ \\
+\hline
+Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+
 
 \newpage
 \section{Diversen}

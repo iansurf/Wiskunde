@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  2 JUN 2025 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  3 JUN 2025 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1194,12 +1194,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5]
 
 [6]
-<image_goniometrie.png, id=281, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=286, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
 Package pdftex.def Info: image_goniometrie.png  used on input line 305.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=283, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=288, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
@@ -1208,7 +1208,7 @@ Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line
 
 
 [7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=293, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=298, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
@@ -1217,7 +1217,7 @@ ine 367.
 
 
 [8 <./image_goniometrie_verwante_hoeken.png>]
-<image_goniometrie_sin_cos_regel.png, id=300, 158.994pt x 134.904pt>
+<image_goniometrie_sin_cos_regel.png, id=305, 158.994pt x 134.904pt>
 File: image_goniometrie_sin_cos_regel.png Graphic file (type png)
 <use image_goniometrie_sin_cos_regel.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_regel.png  used on input lin
@@ -1231,7 +1231,7 @@ $[]$
 
 
 [9 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=307, 820.86674pt x 322.20375pt>
+<image_goniometrie_cyclof.png, id=312, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
 Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 552.
@@ -1243,7 +1243,7 @@ Overfull \hbox (9.94469pt too wide) in paragraph at lines 570--601
 []$ 
  []
 
-<image_ellips.png, id=314, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=319, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
 Package pdftex.def Info: image_ellips.png  used on input line 650.
@@ -1255,7 +1255,7 @@ Overfull \hbox (5.91716pt too wide) detected at line 671
 []
  []
 
-<image_hyperbool.png, id=321, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=326, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
 Package pdftex.def Info: image_hyperbool.png  used on input line 676.
@@ -1297,6 +1297,16 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 926--966
 [17]
 
 [18]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1207--1239
+ [] 
+ []
+
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1245--1277
+ [] 
+ []
+
+
 
 [19]
 
@@ -1309,20 +1319,14 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `vademecum.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `vademecum.out':
-(rerunfilecheck)             Before: 9B33A0A8A5B0B0D44574DA67F8129A2D;7849
-(rerunfilecheck)             After:  7459BE09DBE8322ABFA34EFD2C54EE49;7941.
+Package rerunfilecheck Info: File `vademecum.out' has not changed.
+(rerunfilecheck)             Checksum: 9025EF20B91A0B81E67DF7D9B8D18A4B;8640.
  ) 
 Here is how much of TeX's memory you used:
- 35718 strings out of 473682
- 825445 string characters out of 5715408
- 1369077 words of memory out of 5000000
- 58180 multiletter control sequences out of 15000+600000
+ 35701 strings out of 473682
+ 825125 string characters out of 5715408
+ 1372566 words of memory out of 5000000
+ 58162 multiletter control sequences out of 15000+600000
  569975 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,28n,117p,732b,2416s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1335,32 +1339,34 @@ Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
 10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmmi12.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Administrator/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Administrator
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Administrator
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
 rs/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Administrator/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Administrato
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Use
-rs/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr6.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Administrator/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Administrator/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/User
-s/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Administrator/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Adminis
-trator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.
-pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (20 pages, 597850 bytes).
+mmi8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Administrator/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Administrato
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
+ers/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr5.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Administrator/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Administrator/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/
+Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Administrator/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Administrator/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Administrato
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (20 pages, 613637 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 510 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
