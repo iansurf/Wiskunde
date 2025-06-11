@@ -9,6 +9,7 @@
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{adjustbox}
+\usepackage{tabularx}
 
 \usepackage{array}  % For better table alignment
 \usepackage{float}  % To control the placement of the table
@@ -842,23 +843,144 @@ $\begin{array}{|l|l|}
 \newpage
 
 \subsection{Methodes bij het berekenen van limieten van functies}
-\underline{Veeltermfunctie :} $\mathop {\lim }\limits_{x \to a} f\left( x \right) = $ \newline
-Eindige a	limiet = functiewaarde \newline
+\par\vspace{0.3cm}
+% 
+% VEELTERM F
+%
+\underline{Veeltermfunctie :} $\mathop {\lim }\limits_{x \to a} f\left( x \right) = $ Eindige a	limiet = functiewaarde \newline
 Oneindige a	limiet = limiet van de hoogstegraadsterm \newline
+\par\vspace{0.3cm}
+% 
+% RAT. F
+%
 \underline{Gebroken rationale functie :} \newline
 Eindige a \newline
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}m{3.5cm}|X|}
+\hline
+\( a \in \mathrm{dom} \, f(x) \) & limiet = functiewaarde \\
+\hline
+\textbf{geval} \( \frac{r}{0} \land r \in \mathbb{R} \) & linker- en rechterlimiet zijn \( \infty \); teken afleiden uit het teken van \( r \) en de noemer \\
+\hline
+\textbf{geval} \( \frac{0}{0} \) & deel teller en noemer door \( (x - a) \), bereken de limiet van de bekomen functie \\
+\hline
+\end{tabularx}
+Oneindige \( a \)\newline
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+limiet = limiet van quotiënt hoogste graadstermen \\
+\hline
+\end{tabularx}
+\par\vspace{0.3cm}
+% 
+% IRRAT. F
+%
+\underline{Irrationale functie :} \newline
+Eindige a \newline
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}m{4.5cm}|X|}
+\hline
+\( a \in \mathrm{dom} \, f(x) \) & limiet = functiewaarde \\
+\hline
+\begin{tabular}[c]{@{}c@{}}%
+\( a \in \mathrm{adh} \, \mathrm{dom} \, f(x) \) \\
+\( \displaystyle \frac{r}{0} \land r \in \mathbb{R} \)
+\end{tabular} 
+& linker- en rechterlimiet zijn \( \infty \); teken afleiden uit het teken van \( r \) en de noemer \\
+\hline
+\begin{tabular}[c]{@{}c@{}}%
+\( a \in \mathrm{adh} \, \mathrm{dom} \, f(x) \) \\
+\( \displaystyle \frac{0}{0} \land r \in \mathbb{R} \)
+\end{tabular} 
+& vermenigvuldig teller en noemer met de toegevoegde wortelvorm, deel teller en noemer door $\left( {x - a} \right)$ , bereken de limiet van de bekomen functie \\
+\hline
+\( a \notin \mathrm{adh} \, \mathrm{dom} \, f(x) \)
+& geen limiet \\
+\hline
+\end{tabularx}
+Oneindige \( a \) \newline
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}m{4.5cm}|X|}
+\hline
+\( \pm \infty \in \mathrm{adh} \, \mathrm{dom} \, f(x) \) en \( f(\pm \infty) \) is te berekenen 
+& limiet = resultaat berekening \\
+\hline
+\( \pm \infty \in \mathrm{adh} \, \mathrm{dom} \, f(x) \) \newline geval \( \dfrac{\infty}{\infty} \) 
+& zet in de teller en de noemer de hoogste macht van \( x \) voorop, vereenvoudig en bereken de limiet van de bekomen functie \\
+\hline
+\( \pm \infty \in \mathrm{adh} \, \mathrm{dom} \, f(x) \) \newline geval \( \infty - \infty \)
+& herleid tot het vorige geval door teller en noemer te vermenigvuldigen met de toegevoegde wortelvorm \\
+\hline
+\( a \notin \mathrm{adh} \, \mathrm{dom} \, f(x) \) 
+& geen limiet \\
+\hline
+\end{tabularx}
+\par\vspace{0.3cm}
+% 
+% Hopital
+%
+\underline{Regel l’Hôptal:} \newline
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+$\begin{array}{l}
+\mathop {\lim }\limits_{x \to a} f\left( x \right) = \mathop {\lim }\limits_{x \to a} g\left( x \right) = \;0\;\; \vee \;\; \pm \infty \\
+\mathop {\lim }\limits_{x \to a} \frac{{f\left( x \right)}}{{g\left( x \right)}} = \mathop {\lim }\limits_{x \to a} \frac{{f'\left( x \right)}}{{g'\left( x \right)}}
+\end{array}$ \\
+\hline
+\end{tabularx}
 
-$
-\begin{array}{|l|l|}
+\newpage
+
+\par\vspace{0.3cm}
+\underline{Bewerkingen met oneindig en onbepaalde vormen:} \newline
+
+\begin{tabular}{|>{\centering\arraybackslash}m{6.5cm}|>{\centering\arraybackslash}m{5cm}|}
 \hline
-a \in \text{dom}\, f(x) & \lim_{x \to a} f(x) = f(a) \\
-\hline
-\text{geval }\, \frac{r}{0}\, \wedge \,r \in \mathbb{R} & \text{linker- en rechterlimiet zijn }\infty \\ \text{teken afleiden uit het teken van r en noemer} \\
-\hline
-\text{geval } \frac{0}{0} & \text{deel teller en noemer door } (x-a) \text{, bereken de limiet van de bekomen functie} \\
-\hline
-\end{array}
-$
+\textbf{Bewerkingen} & \textbf{Geen betekenis} \\ \hline
+
+\( x + (-\infty) = -\infty + x = (-\infty) + x \) &
+\( (+\infty) + (-\infty) \) \\ \hline
+
+\( x + (+\infty) = +\infty + x = (+\infty) + x \) &
+\( (-\infty) + (+\infty) \) \\ \hline
+
+\( x \cdot (+\infty) = (+\infty) \cdot x = +\infty \) als \( x > 0 \) &
+\( 0 \cdot (+\infty), (+\infty) \cdot 0 \) \\ \hline
+
+\( x \cdot (+\infty) = (+\infty) \cdot x = -\infty \) als \( x < 0 \) &
+\( 0 \cdot (-\infty), (-\infty) \cdot 0 \) \\ \hline
+
+\( x \cdot (-\infty) = (-\infty) \cdot x = -\infty \) als \( x > 0 \) &
+\( \frac{1}{0} \) \\ \hline
+
+\( x \cdot (-\infty) = (-\infty) \cdot x = +\infty \) als \( x < 0 \) &
+\( 1^{+\infty} \) \\ \hline
+
+\( (+\infty) + (+\infty) = +\infty \) &
+\( 0^0 \) \\ \hline
+
+\( (-\infty) + (-\infty) = -\infty \) &
+\( (+\infty)^0 \) \\ \hline
+
+\( (+\infty) \cdot (+\infty) = (-\infty) \cdot (-\infty) = +\infty \) &
+\\ \hline
+
+\( (+\infty) \cdot (-\infty) = (-\infty) \cdot (+\infty) = -\infty \) &
+\\ \hline
+
+\( (+\infty)^n = +\infty \) als \( n \) even is &
+\\ \hline
+
+\( (-\infty)^n = -\infty \) als \( n \) oneven is &
+\\ \hline
+
+\( \frac{1}{+\infty} = \frac{1}{-\infty} = 0 \) &
+\\ \hline
+
+\( \sqrt[n]{+\infty} = +\infty \) &
+\\ \hline
+
+\( \sqrt[n]{-\infty} = -\infty \) als \( n \) oneven is &
+\\ \hline
+
+\end{tabular}
 
 \newpage
 

@@ -35,14 +35,14 @@
 \contentsline {subsection}{\numberline {7.2}Limieten van functies}{14}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Limieten van goniometrische}{14}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}Methodes bij het berekenen van limieten van functies}{15}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Afgeleiden - differentialen}{16}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Afgeleiden - fundamentele integralen}{17}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Partiële integratie}{17}{subsection.7.7}%
-\contentsline {section}{\numberline {8}Statistiek}{18}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{18}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Test van een hypothese over een populatieproportie}{18}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{19}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Test van een hypothese over een populatieproportie via de P-waarde}{19}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Diversen}{20}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Wiskundige Symbolen (ISO 31/XI)}{20}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Logische symbolen}{20}{subsection.9.2}%
+\contentsline {subsection}{\numberline {7.5}Afgeleiden - differentialen}{17}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Afgeleiden - fundamentele integralen}{18}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Partiële integratie}{18}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Statistiek}{19}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{19}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Test van een hypothese over een populatieproportie}{19}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{20}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Test van een hypothese over een populatieproportie via de P-waarde}{20}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Diversen}{21}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Wiskundige Symbolen (ISO 31/XI)}{21}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Logische symbolen}{21}{subsection.9.2}%
