@@ -511,6 +511,71 @@ $
 \end{array}
 \]
 
+% \usepackage{tikz}  % in de preambule
+
+\begin{center}
+\begin{tabular}{c c}
+% --- Linkerzijde: Goniometrische cirkel QI ---
+\begin{tikzpicture}[scale=3.5, font=\footnotesize]
+  % Stijlen
+  \tikzset{
+    help/.style={densely dashed, thin, gray},
+    pt/.style={circle, fill=black, inner sep=0.6pt}
+  }
+
+  % Assen
+  \draw[->] (-0.02,0) -- (1.05,0) node[right] {$x=\cos\theta$};
+  \draw[->] (0,-0.02) -- (0,1.05) node[above] {$y=\sin\theta$};
+
+  % Eerste kwadrant boog
+  \fill[gray!10] (0,0) -- (0:1) arc (0:90:1) -- cycle;
+  \draw[thick] (0:1) arc (0:90:1);
+
+  % Ticks bij 1
+  \draw (1,0) -- ++(0,0.015) node[below=3pt] {$1$};
+  \draw (0,1) -- ++(0.015,0) node[left=3pt] {$1$};
+
+  % --- 30 graden ---
+  \coordinate (P30) at (30:1);
+  \draw[thick] (0,0) -- (P30);
+  \draw[help] (P30) -- ({cos(30)},0);
+  \draw[help] (P30) -- (0,{sin(30)});
+  \fill[pt] (P30);
+  \node at (24:0.30) {$30^\circ$};
+  \node[above right] at (P30) {$\left(\tfrac{\sqrt{3}}{2},\,\tfrac{1}{2}\right)$};
+
+  % --- 45 graden ---
+  \coordinate (P45) at (45:1);
+  \draw[thick] (0,0) -- (P45);
+  \draw[help] (P45) -- ({cos(45)},0);
+  \draw[help] (P45) -- (0,{sin(45)});
+  \fill[pt] (P45);
+  \node at (41:0.38) {$45^\circ$};
+  \node[above right] at (P45) {$\left(\tfrac{\sqrt{2}}{2},\,\tfrac{\sqrt{2}}{2}\right)$};
+
+  % --- 60 graden ---
+  \coordinate (P60) at (60:1);
+  \draw[thick] (0,0) -- (P60);
+  \draw[help] (P60) -- ({cos(60)},0);
+  \draw[help] (P60) -- (0,{sin(60)});
+  \fill[pt] (P60);
+  \node at (56:0.48) {$60^\circ$};
+  \node[above left] at (P60) {$\left(\tfrac{1}{2},\,\tfrac{\sqrt{3}}{2}\right)$};
+\end{tikzpicture}
+&
+% --- Rechterzijde: Compact tabel ---
+\(
+\begin{array}{c|cc}
+\theta & \sin\theta & \cos\theta\\\hline
+30^\circ & \tfrac{\sqrt{1}}{2} & \tfrac{\sqrt{3}}{2} \\[6pt]
+45^\circ & \tfrac{\sqrt{2}}{2} & \tfrac{\sqrt{2}}{2} \\[6pt]
+60^\circ & \tfrac{\sqrt{3}}{2} & \tfrac{\sqrt{1}}{2}
+\end{array}
+\)
+\end{tabular}
+\end{center}
+
+
 \begin{tikzpicture}
 
 % Draw the circle
@@ -541,6 +606,8 @@ $
 \draw[thick,->] (0:0.7) arc[start angle=0, end angle=60, radius=0.7];
 
 \end{tikzpicture}
+
+\newpage
 
 \subsection{Cyclometrische formules}
 $\begin{array}{*{20}{l}}

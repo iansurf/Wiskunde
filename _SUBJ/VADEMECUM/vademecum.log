@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  11 JUN 2025 19:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  2 SEP 2025 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1243,88 +1243,90 @@ $[]$
 
 
 [9 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=312, 820.86674pt x 322.20375pt>
+
+[10]
+<image_goniometrie_cyclof.png, id=320, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
-Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 553.
+Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 620.
 (pdftex.def)             Requested size: 235.59122pt x 92.47307pt.
 
 
-[10 <./image_goniometrie_cyclof.png>]
-Overfull \hbox (9.94469pt too wide) in paragraph at lines 571--602
+[11 <./image_goniometrie_cyclof.png>]
+Overfull \hbox (9.94469pt too wide) in paragraph at lines 638--669
 []$ 
  []
 
-<image_ellips.png, id=319, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=327, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
-Package pdftex.def Info: image_ellips.png  used on input line 651.
+Package pdftex.def Info: image_ellips.png  used on input line 718.
 (pdftex.def)             Requested size: 141.35017pt x 86.29868pt.
 
 
-[11 <./image_ellips.png>]
-Overfull \hbox (5.91716pt too wide) detected at line 672
+[12 <./image_ellips.png>]
+Overfull \hbox (5.91716pt too wide) detected at line 739
 []
  []
 
-<image_hyperbool.png, id=326, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=334, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
-Package pdftex.def Info: image_hyperbool.png  used on input line 677.
+Package pdftex.def Info: image_hyperbool.png  used on input line 744.
 (pdftex.def)             Requested size: 141.35017pt x 81.17392pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--773
+Underfull \hbox (badness 10000) in paragraph at lines 840--840
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
 
 
-[12 <./image_hyperbool.png>]
-
-[13]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 799.
-
+[13 <./image_hyperbool.png>]
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 850--852
-
- []
-
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 866.
 
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 932--933
+Underfull \hbox (badness 10000) in paragraph at lines 917--919
 
  []
 
 
 
 [16]
+Underfull \hbox (badness 10000) in paragraph at lines 999--1000
+
+ []
+
+
 
 [17]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1048--1088
+
+[18]
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1115--1155
 []$ 
  []
 
 
 
-[18]
-
 [19]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1329--1361
- [] 
- []
-
-
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1367--1399
- [] 
- []
-
-
 
 [20]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1396--1428
+ [] 
+ []
 
-[21] (vademecum.aux)
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1434--1466
+ [] 
+ []
+
+
+
+[21]
+
+[22] (vademecum.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1337,10 +1339,10 @@ Package rerunfilecheck Info: File `vademecum.out' has not changed.
 (rerunfilecheck)             Checksum: 9025EF20B91A0B81E67DF7D9B8D18A4B;8640.
  ) 
 Here is how much of TeX's memory you used:
- 35762 strings out of 473682
- 826138 string characters out of 5715408
- 1373694 words of memory out of 5000000
- 58219 multiletter control sequences out of 15000+600000
+ 35820 strings out of 473682
+ 827093 string characters out of 5715408
+ 1373252 words of memory out of 5000000
+ 58276 multiletter control sequences out of 15000+600000
  569975 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,28n,117p,732b,2416s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1349,38 +1351,40 @@ onts/cm/cmbx10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Administrator/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Administrator/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/
-Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Administrator/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Administrator
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
-rs/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Administrator/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Administrato
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
-ers/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr5.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Administrator/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Administrator/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/
-Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy5.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Administrator/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Administrator/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
-s/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
-ls/msam10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Administrato
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (21 pages, 618754 bytes).
+Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra
+/cmex8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Administrator/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Administ
+rator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
+:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Administrator/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Adminis
+trator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr5.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Administrator/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Administr
+ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Administrator/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Administr
+ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/symbols/msam10.pfb><C:/Users/Administrator/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
+C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/symbols/msbm7.pfb>
+Output written on vademecum.pdf (22 pages, 634308 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
+ 524 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
