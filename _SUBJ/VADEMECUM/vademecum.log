@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  2 SEP 2025 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  2 SEP 2025 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1341,7 +1341,7 @@ Package rerunfilecheck Info: File `vademecum.out' has not changed.
 Here is how much of TeX's memory you used:
  35820 strings out of 473682
  827093 string characters out of 5715408
- 1373252 words of memory out of 5000000
+ 1374252 words of memory out of 5000000
  58276 multiletter control sequences out of 15000+600000
  569975 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1382,7 +1382,7 @@ ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (22 pages, 634308 bytes).
+Output written on vademecum.pdf (22 pages, 634331 bytes).
 PDF statistics:
  524 PDF objects out of 1000 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)

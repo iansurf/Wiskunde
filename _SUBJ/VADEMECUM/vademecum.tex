@@ -511,13 +511,10 @@ $
 \end{array}
 \]
 
-% \usepackage{tikz}  % in de preambule
-
 \begin{center}
-\begin{tabular}{c c}
+\begin{minipage}[t]{0.60\linewidth}\vspace{0pt}
 % --- Linkerzijde: Goniometrische cirkel QI ---
 \begin{tikzpicture}[scale=3.5, font=\footnotesize]
-  % Stijlen
   \tikzset{
     help/.style={densely dashed, thin, gray},
     pt/.style={circle, fill=black, inner sep=0.6pt}
@@ -560,20 +557,23 @@ $
   \draw[help] (P60) -- (0,{sin(60)});
   \fill[pt] (P60);
   \node at (56:0.48) {$60^\circ$};
-  \node[above left] at (P60) {$\left(\tfrac{1}{2},\,\tfrac{\sqrt{3}}{2}\right)$};
+  \node[above right] at (P60) {$\left(\tfrac{1}{2},\,\tfrac{\sqrt{3}}{2}\right)$};
 \end{tikzpicture}
-&
-% --- Rechterzijde: Compact tabel ---
-\(
+\end{minipage}\hfill
+\begin{minipage}[t]{0.35\linewidth}\vspace{0pt}
+% --- Rechterzijde: Compacte tabel ---
+\[
 \begin{array}{c|cc}
 \theta & \sin\theta & \cos\theta\\\hline
 30^\circ & \tfrac{\sqrt{1}}{2} & \tfrac{\sqrt{3}}{2} \\[6pt]
 45^\circ & \tfrac{\sqrt{2}}{2} & \tfrac{\sqrt{2}}{2} \\[6pt]
 60^\circ & \tfrac{\sqrt{3}}{2} & \tfrac{\sqrt{1}}{2}
 \end{array}
-\)
-\end{tabular}
+\]
+\end{minipage}
 \end{center}
+
+
 
 
 \begin{tikzpicture}
