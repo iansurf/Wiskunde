@@ -363,6 +363,7 @@ Wortel &
 \]
 
 \newpage
+\subsection{Verwante hoeken}
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{image_goniometrie_verwante_hoeken.png}
@@ -402,98 +403,6 @@ Wortel &
 
 \newpage
 
-\begin{table}[H]
-    \begin{tabular}{|>{\centering\arraybackslash}m{0.5\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
-        \hline
-                \[\begin{array}{*{20}{c}}
-\begin{array}{c}
-De{\rm{ }}sinusregel:\\
-\frac{a}{{\sin \hat A}} = \frac{b}{{\sin \hat B}} = \frac{c}{{\sin \hat C}}
-\end{array}\\
-\begin{array}{c}
-De{\rm{ }}cosinusregel:\\
-\left\{ \begin{array}{l}
-{a^2} = {b^2} + {c^2} - 2bc\cos \hat A\\
-{b^2} = {c^2} + {a^2} - 2ca\cos \hat B\\
-{c^2} = {a^2} + {b^2} - 2ab\cos \hat C
-\end{array} \right.
-\end{array}
-\end{array}\]
-        &
-        \begin{minipage}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[width=0.9\textwidth]{image_goniometrie_sin_cos_regel.png}
-            \label{fig:sin_cos_regel}
-        \end{minipage} \\ 
-        \hline
-    \end{tabular}
-\end{table}
-
-\[
-\begin{array}{|l|l|}
-\hline
-\sin(\alpha \pm \beta) = \sin\alpha \cos\beta \pm \cos\alpha \sin\beta & \sin 2\alpha = 2\sin\alpha \cos\alpha \\
-\hline
-\cos(\alpha \pm \beta) = \cos\alpha \cos\beta \mp \sin\alpha \sin\beta & 
-\begin{aligned}
-\cos 2\alpha &= \cos^2\alpha - \sin^2\alpha \\
-&= 1 - 2\sin^2\alpha \quad (*) \\
-&= 2\cos^2\alpha - 1 \quad (**)
-\end{aligned} \\
-\hline
-\tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha \tan\beta} & 
-\tan 2\alpha = \frac{2\tan\alpha}{1 - \tan^2\alpha} \\
-\hline
-\end{array}
-\]
-
-\[
-\begin{array}{|l|l|l|}
-\hline
-\sin^2\alpha = \frac{1 - \cos 2\alpha}{2} \quad (*) & \sin 2\alpha = \frac{2\tan\alpha}{1 + \tan^2\alpha} & 
-\sin\alpha = \frac{2t}{1 + t^2} \quad \land \quad \tan\frac{\alpha}{2} = t \\
-\cos^2\alpha = \frac{1 + \cos 2\alpha}{2} \quad (**) & \cos 2\alpha = \frac{1 - \tan^2\alpha}{1 + \tan^2\alpha} & 
-\cos\alpha = \frac{1 - t^2}{1 + t^2} \\
-\sin\frac{\alpha}{2} = \pm\sqrt{\frac{1 - \cos\alpha}{2}} & \tan 2\alpha = \frac{2\tan\alpha}{1 - \tan^2\alpha} & 
-\tan\alpha = \frac{2t}{1 - t^2} \\
-\cos\frac{\alpha}{2} = \pm\sqrt{\frac{1 + \cos\alpha}{2}} & & \\
-\hline
-\end{array}
-\]
-
-\subsection{Omgekeerde formules van Simpson}
-$
-\begin{array}{|c|c|}
-\hline
-\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta & 
-\sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta \\
-& 
-\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta \\
-\hline
-\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta & 
-\cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha\cos\beta \\
-& 
-\cos(\alpha + \beta) - \cos(\alpha - \beta) = -2\sin\alpha\sin\beta \\
-\hline
-\end{array}
-$
-\subsection{Formules van Simpson}
-$
-\begin{array}{|c|c|}
-\hline
-\begin{aligned}
-\sin \alpha + \sin \beta &= 2\sin\left(\frac{\alpha + \beta}{2}\right)\cos\left(\frac{\alpha - \beta}{2}\right) \\
-\sin \alpha - \sin \beta &= 2\cos\left(\frac{\alpha + \beta}{2}\right)\sin\left(\frac{\alpha - \beta}{2}\right)
-\end{aligned} & 
-\begin{aligned}
-\cos \alpha + \cos \beta &= 2\cos\left(\frac{\alpha + \beta}{2}\right)\cos\left(\frac{\alpha - \beta}{2}\right) \\
-\cos \alpha - \cos \beta &= -2\sin\left(\frac{\alpha + \beta}{2}\right)\sin\left(\frac{\alpha - \beta}{2}\right)
-\end{aligned} \\
-\hline
-\end{array}
-$
-
-\newpage
 \subsection{Belangrijke goniometrische waarden}
 \[
 \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
@@ -573,9 +482,7 @@ $
 \end{minipage}
 \end{center}
 
-
-
-
+\subsection{Radiaal}
 \begin{tikzpicture}
 
 % Draw the circle
@@ -607,6 +514,103 @@ $
 
 \end{tikzpicture}
 
+\newpage
+
+\subsection{Sinusregel en cosinusregel}
+
+\begin{table}[H]
+    \begin{tabular}{|>{\centering\arraybackslash}m{0.5\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+        \hline
+\[
+\text{Sinusregel:} \quad 
+\frac{a}{\sin \hat A} 
+= \frac{b}{\sin \hat B} 
+= \frac{c}{\sin \hat C}
+\]
+
+\[
+\text{Cosinusregel:} \quad
+\begin{cases}
+a^{2} = b^{2} + c^{2} - 2bc \cos \hat A \\[6pt]
+b^{2} = c^{2} + a^{2} - 2ca \cos \hat B \\[6pt]
+c^{2} = a^{2} + b^{2} - 2ab \cos \hat C
+\end{cases}
+\]
+        &
+        \begin{minipage}[t]{0.4\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth]{image_goniometrie_sin_cos_regel.png}
+            \label{fig:sin_cos_regel}
+        \end{minipage} \\ 
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Som- en verschilformules}
+
+\[
+\begin{array}{|l|l|}
+\hline
+\sin(\alpha \pm \beta) = \sin\alpha \cos\beta \pm \cos\alpha \sin\beta & 
+\sin 2\alpha = 2\sin\alpha \cos\alpha \\ \hline
+\cos(\alpha \pm \beta) = \cos\alpha \cos\beta \mp \sin\alpha \sin\beta & 
+\begin{aligned}
+\cos 2\alpha &= \cos^2\alpha - \sin^2\alpha \\[4pt]
+             &= 1 - 2\sin^2\alpha \quad (*) \\[4pt]
+             &= 2\cos^2\alpha - 1 \quad (**)
+\end{aligned} \\ \hline
+\tan(\alpha \pm \beta) = \dfrac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha \tan\beta} & 
+\tan 2\alpha = \dfrac{2\tan\alpha}{1 - \tan^2\alpha} \\ \hline
+\end{array}
+\]
+
+\[
+\begin{array}{|l|l|l|}
+\hline
+\sin^2\alpha = \dfrac{1 - \cos 2\alpha}{2} \quad (*) & 
+\sin 2\alpha = \dfrac{2\tan\alpha}{1 + \tan^2\alpha} & 
+\sin\alpha = \dfrac{2t}{1 + t^2}, \quad \tan\dfrac{\alpha}{2} = t \\ \hline
+\cos^2\alpha = \dfrac{1 + \cos 2\alpha}{2} \quad (**) & 
+\cos 2\alpha = \dfrac{1 - \tan^2\alpha}{1 + \tan^2\alpha} & 
+\cos\alpha = \dfrac{1 - t^2}{1 + t^2} \\ \hline
+\sin\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1 - \cos\alpha}{2}} & 
+\tan 2\alpha = \dfrac{2\tan\alpha}{1 - \tan^2\alpha} & 
+\tan\alpha = \dfrac{2t}{1 - t^2} \\ \hline
+\cos\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1 + \cos\alpha}{2}} & & \\ \hline
+\end{array}
+\]
+
+\subsection{Omgekeerde formules van Simpson}
+$
+\begin{array}{|c|c|}
+\hline
+\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta & 
+\sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta \\
+& 
+\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta \\
+\hline
+\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta & 
+\cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha\cos\beta \\
+& 
+\cos(\alpha + \beta) - \cos(\alpha - \beta) = -2\sin\alpha\sin\beta \\
+\hline
+\end{array}
+$
+\subsection{Formules van Simpson}
+$
+\begin{array}{|c|c|}
+\hline
+\begin{aligned}
+\sin \alpha + \sin \beta &= 2\sin\left(\frac{\alpha + \beta}{2}\right)\cos\left(\frac{\alpha - \beta}{2}\right) \\
+\sin \alpha - \sin \beta &= 2\cos\left(\frac{\alpha + \beta}{2}\right)\sin\left(\frac{\alpha - \beta}{2}\right)
+\end{aligned} & 
+\begin{aligned}
+\cos \alpha + \cos \beta &= 2\cos\left(\frac{\alpha + \beta}{2}\right)\cos\left(\frac{\alpha - \beta}{2}\right) \\
+\cos \alpha - \cos \beta &= -2\sin\left(\frac{\alpha + \beta}{2}\right)\sin\left(\frac{\alpha - \beta}{2}\right)
+\end{aligned} \\
+\hline
+\end{array}
+$
 \newpage
 
 \subsection{Cyclometrische formules}

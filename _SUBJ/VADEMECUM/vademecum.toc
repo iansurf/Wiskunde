@@ -18,10 +18,14 @@
 \contentsline {section}{\numberline {5}Goniometrie}{7}{section.5}%
 \contentsline {subsection}{\numberline {5.1}De Goniometrische Cirkel}{7}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}formules uit de goniometrie}{7}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Omgekeerde formules van Simpson}{9}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Formules van Simpson}{9}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Belangrijke goniometrische waarden}{10}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Cyclometrische formules}{11}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.3}Verwante hoeken}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Belangrijke goniometrische waarden}{9}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Radiaal}{9}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Sinusregel en cosinusregel}{10}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Som- en verschilformules}{10}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Omgekeerde formules van Simpson}{10}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Formules van Simpson}{10}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Cyclometrische formules}{11}{subsection.5.10}%
 \contentsline {section}{\numberline {6}Meetkunde}{12}{section.6}%
 \contentsline {subsection}{\numberline {6.1}De cirkel}{12}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}De parabool}{12}{subsection.6.2}%
