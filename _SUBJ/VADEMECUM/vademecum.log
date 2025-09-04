@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  3 SEP 2025 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  4 SEP 2025 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,12 +1206,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5]
 
 [6]
-<image_goniometrie.png, id=301, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=306, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
 Package pdftex.def Info: image_goniometrie.png  used on input line 306.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=303, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=308, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
@@ -1220,7 +1220,7 @@ Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line
 
 
 [7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=313, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=318, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
@@ -1231,7 +1231,7 @@ ine 369.
 [8 <./image_goniometrie_verwante_hoeken.png>]
 
 [9]
-<image_goniometrie_sin_cos_regel.png, id=328, 158.994pt x 134.904pt>
+<image_goniometrie_sin_cos_regel.png, id=333, 158.994pt x 134.904pt>
 File: image_goniometrie_sin_cos_regel.png Graphic file (type png)
 <use image_goniometrie_sin_cos_regel.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_regel.png  used on input lin
@@ -1245,7 +1245,7 @@ $[]$
 
 
 [10 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=335, 820.86674pt x 322.20375pt>
+<image_goniometrie_cyclof.png, id=340, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
 Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 624.
@@ -1257,7 +1257,7 @@ Overfull \hbox (9.94469pt too wide) in paragraph at lines 642--673
 []$ 
  []
 
-<image_ellips.png, id=343, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=347, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
 Package pdftex.def Info: image_ellips.png  used on input line 722.
@@ -1269,7 +1269,7 @@ Overfull \hbox (5.91716pt too wide) detected at line 743
 []
  []
 
-<image_hyperbool.png, id=350, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=354, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
 Package pdftex.def Info: image_hyperbool.png  used on input line 748.
@@ -1335,20 +1335,14 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `vademecum.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `vademecum.out':
-(rerunfilecheck)             Before: BC12D6F853780DC44AB3B378BD99953E;9063
-(rerunfilecheck)             After:  5DD1679FA13AE8472C6CEB35954EC62A;9248.
+Package rerunfilecheck Info: File `vademecum.out' has not changed.
+(rerunfilecheck)             Checksum: 5DD1679FA13AE8472C6CEB35954EC62A;9248.
  ) 
 Here is how much of TeX's memory you used:
- 35827 strings out of 473682
- 827198 string characters out of 5715408
- 1374252 words of memory out of 5000000
- 58279 multiletter control sequences out of 15000+600000
+ 35828 strings out of 473682
+ 827215 string characters out of 5715408
+ 1374253 words of memory out of 5000000
+ 58280 multiletter control sequences out of 15000+600000
  569975 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,24n,117p,732b,2416s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1388,9 +1382,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (22 pages, 636013 bytes).
+Output written on vademecum.pdf (22 pages, 637359 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
+ 544 PDF objects out of 1000 (max. 8388607)
  83 named destinations out of 1000 (max. 500000)
- 448 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 456 words of extra memory for PDF output out of 10000 (max. 10000000)
 
