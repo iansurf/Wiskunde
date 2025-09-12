@@ -958,8 +958,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_{0}=\beta_{0} \\
-  .
+  \alpha_{0}=\beta_{0}
   \end{array}
   \end{array}
   \]
@@ -989,13 +988,12 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \[
   \begin{array}{c}
   \begin{bmatrix}
-  u_{0} & v_{0} & w_{0} & \vdots \\
-  0 & 0 & 0 & \vdots
+  u' & v' & w' & t' & \vdots \\
+  0  & 0  & 0  & 0  & \vdots
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_{0},\beta_{0} \\
-  .
+  \alpha=\beta
   \end{array}
   \end{array}
   \]
@@ -1003,16 +1001,16 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 };
 
 \node (box6) [draw, inner sep=2pt, minimum width=5cm, below=1cm of box4] {
-  \begin{minipage}{0.4\linewidth}
+ \begin{minipage}{0.4\linewidth}
   \[
   \begin{array}{c}
   \begin{bmatrix}
-  u' & v' & w' & \vdots \\
-   0 & v" & w" & \vdots
+  u' & v' & w' & t'  & \vdots \\
+  0  & 0  & 0  & t'' & \vdots
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_0 \cap \beta_0 = d_{0}
+  \alpha_{0} \cap \beta = \emptyset
   \end{array}
   \end{array}
   \]
