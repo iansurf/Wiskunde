@@ -1,6 +1,8 @@
 \documentclass[a5paper]{article}
 \usepackage[dutch]{babel}
 \usepackage{tikz}
+\usetikzlibrary{positioning}
+
 \usepackage[margin=0.5cm]{geometry}
 \usepackage{amsmath, amssymb, amsfonts,mathtools,bm}
 \usepackage{graphicx}
@@ -10,6 +12,7 @@
 \usepackage{hyperref}
 \usepackage{adjustbox}
 \usepackage{tabularx}
+
 
 \providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
 \providecommand{\norm}[1]{\lVert #1\rVert} % norm
@@ -904,12 +907,10 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 
 
 \begin{center}
-% optioneel wat instellingen voor de rand
-\setlength{\fboxsep}{1pt}   % binnenmarge
-\setlength{\fboxrule}{0.6pt}% lijndikte
-
-\fbox{%
-  \begin{minipage}[t]{0.47\linewidth}
+\begin{tikzpicture}[>=stealth]
+% ----------------- First row -----------------
+\node (box1) [draw, inner sep=1pt, minimum width=7cm, anchor=north west] at (0,0) {
+  \begin{minipage}{0.4\linewidth}
   \[
   \begin{array}{c @{\qquad} c}
   \alpha_0 \cap \beta_0 = \Box_0 &
@@ -925,9 +926,10 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{array}
   \]
   \end{minipage}
-}
-\fbox{%
-  \begin{minipage}[t]{0.47\linewidth}
+};
+
+\node (box2) [draw, inner sep=1pt, minimum width=7cm, anchor=north west] at (7,0) {
+  \begin{minipage}{0.4\linewidth}
   \[
   \begin{array}{c @{\qquad} c}
   \alpha \cap \beta = \Box &
@@ -943,7 +945,52 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{array}
   \]
   \end{minipage}
-}\hfill
+};
+
+% ----------------- Second row (copy) -----------------
+\node (box3) [draw, inner sep=2pt, minimum width=6cm, below=2.5cm of box1] {
+  \begin{minipage}{0.47\linewidth}
+  \[
+  \begin{array}{c @{\qquad} c}
+  \alpha_0 \cap \beta_0 = \Box_0 &
+  \begin{bmatrix}
+  u_{1} & v_{1} & w_{1} & \vdots \\
+  u_{2} & v_{2} & w_{2} & \vdots
+  \end{bmatrix}
+  \;\;
+  \begin{array}{c}
+  \alpha_{0} \\
+  \beta_{0}
+  \end{array}
+  \end{array}
+  \]
+  \end{minipage}
+};
+
+\node (box4) [draw, inner sep=2pt, minimum width=6cm, below=2.5cm of box2] {
+  \begin{minipage}{0.47\linewidth}
+  \[
+  \begin{array}{c @{\qquad} c}
+  \alpha_0 \cap \beta_0 = \Box_0 &
+  \begin{bmatrix}
+  u_{1} & v_{1} & w_{1} & \vdots \\
+  u_{2} & v_{2} & w_{2} & \vdots
+  \end{bmatrix}
+  \;\;
+  \begin{array}{c}
+  \alpha_{0} \\
+  \beta_{0}
+  \end{array}
+  \end{array}
+  \]
+  \end{minipage}
+};
+
+% ----------------- Arrows -----------------
+\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\;\;$RREF};
+\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, left] {$\;\;$RREF};
+
+\end{tikzpicture}
 \end{center}
 
 
