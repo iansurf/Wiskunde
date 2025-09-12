@@ -33,20 +33,22 @@
 \contentsline {subsection}{\numberline {6.4}De hyperbool}{13}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Oppervlakte Formules}{13}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Volume Formules}{13}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Basis reële functies}{14}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Analyse}{15}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Limieten van rijen)}{15}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Limieten van functies}{15}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Limieten van goniometrische}{15}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Methodes bij het berekenen van limieten van functies}{16}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Afgeleiden - differentialen}{18}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Afgeleiden - fundamentele integralen}{19}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Partiële integratie}{19}{subsection.7.7}%
-\contentsline {section}{\numberline {8}Statistiek}{20}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{20}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Test van een hypothese over een populatieproportie}{20}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{21}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Test van een hypothese over een populatieproportie via de P-waarde}{21}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Diversen}{22}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Wiskundige Symbolen (ISO 31/XI)}{22}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Logische symbolen}{22}{subsection.9.2}%
+\contentsline {section}{\numberline {7}Ruimte meetkunde}{14}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{14}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Basis reële functies}{15}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Analyse}{16}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Limieten van rijen)}{16}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Limieten van functies}{16}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Limieten van goniometrische}{16}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Methodes bij het berekenen van limieten van functies}{17}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Afgeleiden - differentialen}{19}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Afgeleiden - fundamentele integralen}{20}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Partiële integratie}{20}{subsection.8.7}%
+\contentsline {section}{\numberline {9}Statistiek}{21}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{21}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Test van een hypothese over een populatieproportie}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{22}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Test van een hypothese over een populatieproportie via de P-waarde}{22}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Diversen}{23}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Wiskundige Symbolen (ISO 31/XI)}{23}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Logische symbolen}{23}{subsection.10.2}%

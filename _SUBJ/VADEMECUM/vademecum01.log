@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  12 SEP 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  7 SEP 2025 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./vademecum.tex
-(vademecum.tex
+**./vademecum01.tex
+(vademecum01.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 
@@ -529,84 +529,42 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\matht
-ools.sty
-Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
-
-(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count308
-\calc@Bcount=\count309
-\calc@Adimen=\dimen268
-\calc@Bdimen=\dimen269
-\calc@Askip=\skip54
-\calc@Bskip=\skip55
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count310
-\calc@Cskip=\skip56
-)
-(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhset
-up.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-\g_MT_multlinerow_int=\count311
-\l_MT_multwidth_dim=\dimen270
-\origjot=\skip57
-\l_MT_shortvdotswithinadjustabove_dim=\dimen271
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen272
-\l_MT_above_intertext_sep=\dimen273
-\l_MT_below_intertext_sep=\dimen274
-\l_MT_above_shortintertext_sep=\dimen275
-\l_MT_below_shortintertext_sep=\dimen276
-\xmathstrut@box=\box65
-\xmathstrut@dim=\dimen277
-)
-(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
-Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
-Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumit
 em.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip58
-\enit@outerparindent=\dimen278
+\labelindent=\skip54
+\enit@outerparindent=\dimen268
 \enit@toks=\toks36
-\enit@inbox=\box66
-\enit@count@id=\count312
-\enitdp@description=\count313
+\enit@inbox=\box65
+\enit@count@id=\count308
+\enitdp@description=\count309
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.
 sty
 Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count314
-\mult@box=\box67
-\multicol@leftmargin=\dimen279
-\c@unbalance=\count315
-\c@collectmore=\count316
-\doublecol@number=\count317
-\multicoltolerance=\count318
-\multicolpretolerance=\count319
-\full@width=\dimen280
-\page@free=\dimen281
-\premulticols=\dimen282
-\postmulticols=\dimen283
-\multicolsep=\skip59
-\multicolbaselineskip=\skip60
-\partial@page=\box68
-\last@line=\box69
-\mc@boxedresult=\box70
-\maxbalancingoverflow=\dimen284
-\mult@rightbox=\box71
-\mult@grightbox=\box72
-\mult@firstbox=\box73
-\mult@gfirstbox=\box74
+\c@tracingmulticols=\count310
+\mult@box=\box66
+\multicol@leftmargin=\dimen269
+\c@unbalance=\count311
+\c@collectmore=\count312
+\doublecol@number=\count313
+\multicoltolerance=\count314
+\multicolpretolerance=\count315
+\full@width=\dimen270
+\page@free=\dimen271
+\premulticols=\dimen272
+\postmulticols=\dimen273
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box67
+\last@line=\box68
+\mc@boxedresult=\box69
+\maxbalancingoverflow=\dimen274
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
+\@tempa=\box74
 \@tempa=\box75
 \@tempa=\box76
 \@tempa=\box77
@@ -642,29 +600,28 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box107
 \@tempa=\box108
 \@tempa=\box109
-\@tempa=\box110
-\c@minrows=\count320
-\c@columnbadness=\count321
-\c@finalcolumnbadness=\count322
-\last@try=\dimen285
-\multicolovershoot=\dimen286
-\multicolundershoot=\dimen287
-\mult@nat@firstbox=\box111
-\colbreak@box=\box112
-\mc@col@check@num=\count323
+\c@minrows=\count316
+\c@columnbadness=\count317
+\c@finalcolumnbadness=\count318
+\last@try=\dimen275
+\multicolovershoot=\dimen276
+\multicolundershoot=\dimen277
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count319
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titles
 ec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box113
-\beforetitleunit=\skip61
-\aftertitleunit=\skip62
-\ttl@plus=\dimen288
-\ttl@minus=\dimen289
+\ttl@box=\box112
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen278
+\ttl@minus=\dimen279
 \ttl@toksa=\toks37
-\titlewidth=\dimen290
-\titlewidthlast=\dimen291
-\titlewidthfirst=\dimen292
+\titlewidth=\dimen280
+\titlewidthlast=\dimen281
+\titlewidthfirst=\dimen282
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperr
 ef.sty
@@ -719,21 +676,21 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 ions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count324
+\c@section@level=\count320
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolb
 ox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count325
+\etb@tempcnta=\count321
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\str
 ingenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen293
-\Hy@linkcounter=\count326
-\Hy@pagecounter=\count327
+\@linkdim=\dimen283
+\Hy@linkcounter=\count322
+\Hy@pagecounter=\count323
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc
 .def
@@ -745,7 +702,7 @@ Now handling font encoding PD1 ...
 lc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count328
+\Hy@SavedSpaceFactor=\count324
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.
 def
@@ -760,14 +717,14 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count329
+\c@Hy@tempcnt=\count325
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen294
+\XeTeXLinkMargin=\dimen284
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset
 .sty
@@ -778,9 +735,9 @@ gintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count330
-\Field@Width=\dimen295
-\Fld@charsize=\dimen296
+\Fld@menulength=\count326
+\Field@Width=\dimen285
+\Fld@charsize=\dimen286
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -794,9 +751,9 @@ tx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count331
-\c@Item=\count332
-\c@Hfootnote=\count333
+\Hy@abspage=\count327
+\c@Item=\count328
+\c@Hfootnote=\count329
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -810,8 +767,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count334
-\c@bookmark@seq@number=\count335
+\Fld@listcount=\count330
+\c@bookmark@seq@number=\count331
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\
 rerunfilecheck.sty
@@ -824,7 +781,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip63
+\Hy@SectionHShift=\skip59
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjus
 tbox.sty
@@ -841,7 +798,7 @@ ils.tex
 \XKV@toks=\toks38
 \XKV@tempa@toks=\toks39
 )
-\XKV@depth=\count336
+\XKV@depth=\count332
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjca
@@ -856,39 +813,39 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\coll
 ectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box114
+\collectedbox=\box113
 )
-\tc@llx=\dimen297
-\tc@lly=\dimen298
-\tc@urx=\dimen299
-\tc@ury=\dimen300
+\tc@llx=\dimen287
+\tc@lly=\dimen288
+\tc@urx=\dimen289
+\tc@ury=\dimen290
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pd
 ftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen301
-\adjbox@Height=\dimen302
-\adjbox@Depth=\dimen303
-\adjbox@Totalheight=\dimen304
-\adjbox@pwidth=\dimen305
-\adjbox@pheight=\dimen306
-\adjbox@pdepth=\dimen307
-\adjbox@ptotalheight=\dimen308
+\adjbox@Width=\dimen291
+\adjbox@Height=\dimen292
+\adjbox@Depth=\dimen293
+\adjbox@Totalheight=\dimen294
+\adjbox@pwidth=\dimen295
+\adjbox@pheight=\dimen296
+\adjbox@pdepth=\dimen297
+\adjbox@ptotalheight=\dimen298
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifodd
 page.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count337
+\c@checkoddpage=\count333
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwid
 th.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box115
-\sift@deathcycles=\count338
-\@vwid@loff=\dimen309
-\@vwid@roff=\dimen310
+\@vwid@box=\box114
+\sift@deathcycles=\count334
+\@vwid@loff=\dimen299
+\@vwid@roff=\dimen300
 ))
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.
 sty
@@ -896,29 +853,29 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen311
-\ar@mcellbox=\box116
-\extrarowheight=\dimen312
+\col@sep=\dimen301
+\ar@mcellbox=\box115
+\extrarowheight=\dimen302
 \NC@list=\toks40
-\extratabsurround=\skip64
-\backup@length=\skip65
-\ar@cellbox=\box117
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box116
 )
-\TX@col@width=\dimen313
-\TX@old@table=\dimen314
-\TX@old@col=\dimen315
-\TX@target=\dimen316
-\TX@delta=\dimen317
-\TX@cols=\count339
+\TX@col@width=\dimen303
+\TX@old@table=\dimen304
+\TX@old@col=\dimen305
+\TX@target=\dimen306
+\TX@delta=\dimen307
+\TX@cols=\count335
 \TX@ftn=\toks41
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count340
+\c@float@type=\count336
 \float@exts=\toks42
-\float@box=\box118
+\float@box=\box117
 \@float@everytoks=\toks43
-\@floatcapt=\box119
+\@floatcapt=\box118
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplo
 ts.sty
@@ -933,9 +890,9 @@ lotscore.code.tex
 \t@pgfplots@toka=\toks44
 \t@pgfplots@tokb=\toks45
 \t@pgfplots@tokc=\toks46
-\pgfplots@tmpa=\dimen318
-\c@pgfplots@coordindex=\count341
-\c@pgfplots@scanlineindex=\count342
+\pgfplots@tmpa=\dimen308
+\c@pgfplots@coordindex=\count337
+\c@pgfplots@scanlineindex=\count338
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\
 pgfplotssysgeneric.code.tex))
@@ -960,13 +917,13 @@ structure\pgfplotsliststructure.code.tex)
 structure\pgfplotsliststructureext.code.tex)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/list
 structure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count343
+\c@pgfplotsarray@tmp=\count339
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/list
 structure\pgfplotsmatrix.code.tex)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numt
 able\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count344
+\c@pgfplotstable@counta=\count340
 \t@pgfplotstable@a=\toks50
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/list
@@ -979,7 +936,7 @@ structure\pgfplotsdeque.code.tex)
 \pgfplotsutil.verb.code.tex)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs
 \pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count345
+\c@pgfplotslibrarysurf@no=\count341
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\
 pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -1011,16 +968,16 @@ lots.paths.code.tex)
 ayer/tikz/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
 gfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen319
-\pgfdecoratedremainingdistance=\dimen320
-\pgfdecoratedinputsegmentcompleteddistance=\dimen321
-\pgfdecoratedinputsegmentremainingdistance=\dimen322
-\pgf@decorate@distancetomove=\dimen323
-\pgf@decorate@repeatstate=\count346
-\pgfdecorationsegmentamplitude=\dimen324
-\pgfdecorationsegmentlength=\dimen325
+\pgfdecoratedcompleteddistance=\dimen309
+\pgfdecoratedremainingdistance=\dimen310
+\pgfdecoratedinputsegmentcompleteddistance=\dimen311
+\pgfdecoratedinputsegmentremainingdistance=\dimen312
+\pgf@decorate@distancetomove=\dimen313
+\pgf@decorate@repeatstate=\count342
+\pgfdecorationsegmentamplitude=\dimen314
+\pgfdecorationsegmentlength=\dimen315
 )
-\tikz@lib@dec@box=\box120
+\tikz@lib@dec@box=\box119
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -1032,13 +989,13 @@ ayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 /decorations\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs
 \tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count347
-\pgfplots@xmin@reg=\dimen326
-\pgfplots@xmax@reg=\dimen327
-\pgfplots@ymin@reg=\dimen328
-\pgfplots@ymax@reg=\dimen329
-\pgfplots@zmin@reg=\dimen330
-\pgfplots@zmax@reg=\dimen331
+\pgfplots@numplots=\count343
+\pgfplots@xmin@reg=\dimen316
+\pgfplots@xmax@reg=\dimen317
+\pgfplots@ymin@reg=\dimen318
+\pgfplots@ymax@reg=\dimen319
+\pgfplots@zmin@reg=\dimen320
+\pgfplots@zmax@reg=\dimen321
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibraryplotmarks.code.tex
@@ -1055,65 +1012,65 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption
 3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen332
-\captionmargin=\dimen333
-\caption@leftmargin=\dimen334
-\caption@rightmargin=\dimen335
-\caption@width=\dimen336
-\caption@indent=\dimen337
-\caption@parindent=\dimen338
-\caption@hangindent=\dimen339
+\caption@tempdima=\dimen322
+\captionmargin=\dimen323
+\caption@leftmargin=\dimen324
+\caption@rightmargin=\dimen325
+\caption@width=\dimen326
+\caption@indent=\dimen327
+\caption@parindent=\dimen328
+\caption@hangindent=\dimen329
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count348
-\c@continuedfloat=\count349
+\c@caption@flags=\count344
+\c@continuedfloat=\count345
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3bac
 kend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count350
-\l__pdf_internal_box=\box121
-) (vademecum.aux
+\l__color_backend_stack_int=\count346
+\l__pdf_internal_box=\box120
+) (vademecum01.aux
 
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 )
-\openout1 = `vademecum.aux'.
+\openout1 = `vademecum01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\sup
 p-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen340
-\scratchbox=\box122
-\nofMPsegments=\count352
-\nofMParguments=\count353
+\scratchcounter=\count347
+\scratchdimen=\dimen330
+\scratchbox=\box121
+\nofMPsegments=\count348
+\nofMParguments=\count349
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen341
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen331
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
 \everyMPtoPDFconversion=\toks52
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\ep
@@ -1160,10 +1117,10 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 32.
-(vademecum.out) (vademecum.out)
+Package hyperref Info: Link coloring OFF on input line 29.
+(vademecum01.out) (vademecum01.out)
 \@outlinefile=\write4
-\openout4 = `vademecum.out'.
+\openout4 = `vademecum01.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1171,236 +1128,176 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
 d
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
 d
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (vademecum.toc
+) (vademecum01.toc
 
 [1
 
-{C:/Users/Administrator/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+{C:/Users/Administrator/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+[2])
 \tf@toc=\write5
-\openout5 = `vademecum.toc'.
-
-
-
-[2]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
+\openout5 = `vademecum01.toc'.
 
 
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
+(hyperref)                removing `math shift' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 127.
+(hyperref)                removing `math shift' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 127.
+(hyperref)                removing `math shift' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
+(hyperref)                removing `math shift' on input line 103.
 
 
 
 [4]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 124.
+
+
+
 [5]
 
 [6]
-<image_goniometrie.png, id=316, 298.2342pt x 177.7842pt>
+
+[7]
+<image_goniometrie.png, id=725, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
-Package pdftex.def Info: image_goniometrie.png  used on input line 309.
+Package pdftex.def Info: image_goniometrie.png  used on input line 306.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=318, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=727, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
-317.
+314.
 (pdftex.def)             Requested size: 157.05682pt x 80.06776pt.
 
 
-[7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=328, 306.9066pt x 193.2018pt>
+[8 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
+<image_goniometrie_verwante_hoeken.png, id=736, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
-ine 372.
+ine 369.
 (pdftex.def)             Requested size: 392.64806pt x 247.20015pt.
 
 
-[8 <./image_goniometrie_verwante_hoeken.png>]
+[9 <./image_goniometrie_verwante_hoeken.png>]
 
-[9]
-<image_goniometrie_sin_cos_regel.png, id=343, 158.994pt x 134.904pt>
+[10]
+<image_goniometrie_sin_cos_regel.png, id=751, 158.994pt x 134.904pt>
 File: image_goniometrie_sin_cos_regel.png Graphic file (type png)
 <use image_goniometrie_sin_cos_regel.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_regel.png  used on input lin
-e 548.
+e 542.
 (pdftex.def)             Requested size: 141.35017pt x 119.93861pt.
 
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 560.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 562.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 565.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 566.
-
-
-
-Overfull \hbox (12.08176pt too wide) in paragraph at lines 607--621
+Overfull \hbox (12.08176pt too wide) in paragraph at lines 600--614
 $[]$ 
  []
 
 
 
-[10 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=350, 820.86674pt x 322.20375pt>
+[11 <./image_goniometrie_sin_cos_regel.png>]
+<image_goniometrie_cyclof.png, id=758, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
-Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 631.
+Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 624.
 (pdftex.def)             Requested size: 235.59122pt x 92.47307pt.
 
 
-[11 <./image_goniometrie_cyclof.png>]
-Overfull \hbox (9.94469pt too wide) in paragraph at lines 649--680
+[12 <./image_goniometrie_cyclof.png>]
+Overfull \hbox (9.94469pt too wide) in paragraph at lines 642--673
 []$ 
  []
 
-<image_ellips.png, id=357, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=765, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
-Package pdftex.def Info: image_ellips.png  used on input line 729.
+Package pdftex.def Info: image_ellips.png  used on input line 722.
 (pdftex.def)             Requested size: 141.35017pt x 86.29868pt.
 
 
-[12 <./image_ellips.png>]
-Overfull \hbox (5.91716pt too wide) detected at line 750
+[13 <./image_ellips.png>]
+Overfull \hbox (5.91716pt too wide) detected at line 743
 []
  []
 
-<image_hyperbool.png, id=364, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=773, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
-Package pdftex.def Info: image_hyperbool.png  used on input line 755.
+Package pdftex.def Info: image_hyperbool.png  used on input line 748.
 (pdftex.def)             Requested size: 141.35017pt x 81.17392pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
-
-
-
-[13 <./image_hyperbool.png>]
-Overfull \hbox (14.29434pt too wide) in paragraph at lines 852--853
- [][] 
- []
-
-
-Overfull \hbox (8.5945pt too wide) detected at line 928
-[]
- []
-
-
-Overfull \hbox (9.34904pt too wide) detected at line 946
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 988--988
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
 
 
-[14]
+[14 <./image_hyperbool.png>]
 
 [15]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1014.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 870.
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+Underfull \hbox (badness 10000) in paragraph at lines 921--923
 
  []
 
 
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 
  []
 
@@ -1409,7 +1306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
 [18]
 
 [19]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1263--1303
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1119--1159
 []$ 
  []
 
@@ -1418,12 +1315,12 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 1263--1303
 [20]
 
 [21]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1544--1576
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1400--1432
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1582--1614
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1438--1470
  [] 
  []
 
@@ -1431,7 +1328,44 @@ Overfull \hbox (3.45679pt too wide) in paragraph at lines 1582--1614
 
 [22]
 
-[23] (vademecum.aux)
+[23]
+
+[24
+
+]
+
+[25]
+
+[26]
+
+[27]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1832.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1832.
+
+
+
+[28]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+886.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1886.
+
+
+
+[29]
+
+[30]
+
+[31] (vademecum01.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1440,56 +1374,58 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: D37432E062B99601CE5E6DA2CD593988;9631.
+Package rerunfilecheck Info: File `vademecum01.out' has not changed.
+(rerunfilecheck)             Checksum: A5DFE7D68F5C7E8AB5AA3247103381BD;25070.
  ) 
 Here is how much of TeX's memory you used:
- 36609 strings out of 473682
- 840970 string characters out of 5715408
- 1389014 words of memory out of 5000000
- 59030 multiletter control sequences out of 15000+600000
- 575801 words of font info for 102 fonts, out of 8000000 for 9000
+ 36034 strings out of 473682
+ 830636 string characters out of 5715408
+ 1374275 words of memory out of 5000000
+ 58390 multiletter control sequences out of 15000+600000
+ 570656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,24n,117p,732b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Administrator/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Administrator/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/
-Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra
-/cmex8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Administrator/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Administ
-rator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
-:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Administrator/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Adminis
-trator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr5.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Administrator/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Administr
-ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+ 102i,24n,117p,734b,2416s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Administrator\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\tcrm1000.pk><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Administrator/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Administrator/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Adm
+inistrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cmextra/cmex8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Administrator/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Administra
+tor/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
 Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Administrator/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Administr
-ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+m/cmmi6.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Administrator/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Administr
+ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msam10.pfb><C:/Users/Administrator/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (23 pages, 646102 bytes).
+cm/cmr12.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><C:/Users/Administrator/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Administrator/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Administra
+tor/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/U
+sers/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Administrator/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Administrat
+or/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/U
+sers/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Administrator/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Adm
+inistrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
+am7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum01.pdf (31 pages, 743576 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
- 472 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1024 PDF objects out of 1200 (max. 8388607)
+ 174 named destinations out of 1000 (max. 500000)
+ 1120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

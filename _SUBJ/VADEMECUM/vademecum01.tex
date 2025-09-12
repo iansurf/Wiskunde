@@ -2,7 +2,7 @@
 \usepackage[dutch]{babel}
 \usepackage{tikz}
 \usepackage[margin=0.5cm]{geometry}
-\usepackage{amsmath, amssymb, amsfonts,mathtools,bm}
+\usepackage{amsmath, amssymb, amsfonts}
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{multicol}
@@ -10,9 +10,6 @@
 \usepackage{hyperref}
 \usepackage{adjustbox}
 \usepackage{tabularx}
-
-\providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
-\providecommand{\norm}[1]{\lVert #1\rVert} % norm
 
 \usepackage{array}  % For better table alignment
 \usepackage{float}  % To control the placement of the table
@@ -272,7 +269,7 @@ Wortel &
 & \sqrt{a + bi} = x + yi \iff (x + yi)^2 = a + bi \\ \hline
 Macht & 
 (a + bi)^0 = 1 \quad \forall n \in \mathbb{N}_0: \\
-& (a + bi)^n = (a + bi) \cdot (a + bi) \cdots (a + bi) \\ \hline
+& (a + bi)^n = (a + bi) \cdot (a + bi) \cdot s (a + bi) \\ \hline
 Machten\:of\:i & i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1 \\ \hline
 \end{array}
 \]
@@ -294,7 +291,7 @@ Macht & {z^n} = {r^n}\left[ {\cos \left( {n \cdot \varphi } \right) + i\sin \lef
 Wortel & 
 \sqrt {r(\cos \varphi  + i\sin \varphi )}  =  \pm \sqrt r \left( {\cos \frac{\varphi }{2} + i\sin \frac{\varphi }{2}} \right)\\
 \hline
-\multicolumn{2}{|c|}{\sqrt[n]{{r\left( {\cos \varphi  + i\sin \varphi } \right)}} = \sqrt[n]{r}\left( {\cos \frac{{\varphi  + k \cdot 2\pi }}{n} + i\sin \frac{{\varphi  + k \cdot 2\pi }}{n}} \right)\quad  \wedge \quad k = 0,1, \cdots ,n - 1} \\
+\multicolumn{2}{|c|}{\sqrt[n]{{r\left( {\cos \varphi  + i\sin \varphi } \right)}} = \sqrt[n]{r}\left( {\cos \frac{{\varphi  + k \cdot 2\pi }}{n} + i\sin \frac{{\varphi  + k \cdot 2\pi }}{n}} \right)\quad  \wedge \quad k = 0,1, \cdot s ,n - 1} \\
 \hline
  \end{array}
 \]
@@ -451,8 +448,7 @@ Wortel &
   \draw[help] (P30) -- (0,{sin(30)});
   \fill[pt] (P30);
   \node at (24:0.30) {$30^\circ$};
-  % cos30 = sqrt(3)/2 -> 3 in red; sin30 = sqrt(1)/2 -> 1 in red
-  \node[above right] at (P30) {$\left(\tfrac{\sqrt{\textcolor{red}{3}}}{2},\,\tfrac{\sqrt{\textcolor{red}{1}}}{2}\right)$};
+  \node[above right] at (P30) {$\left(\tfrac{\sqrt{3}}{2},\,\tfrac{1}{2}\right)$};
 
   % --- 45 graden ---
   \coordinate (P45) at (45:1);
@@ -461,8 +457,7 @@ Wortel &
   \draw[help] (P45) -- (0,{sin(45)});
   \fill[pt] (P45);
   \node at (41:0.38) {$45^\circ$};
-  % both sqrt(2)/2 -> 2 in red
-  \node[above right] at (P45) {$\left(\tfrac{\sqrt{\textcolor{red}{2}}}{2},\,\tfrac{\sqrt{\textcolor{red}{2}}}{2}\right)$};
+  \node[above right] at (P45) {$\left(\tfrac{\sqrt{2}}{2},\,\tfrac{\sqrt{2}}{2}\right)$};
 
   % --- 60 graden ---
   \coordinate (P60) at (60:1);
@@ -471,8 +466,7 @@ Wortel &
   \draw[help] (P60) -- (0,{sin(60)});
   \fill[pt] (P60);
   \node at (56:0.48) {$60^\circ$};
-  % cos60 = sqrt(1)/2 -> 1 in red; sin60 = sqrt(3)/2 -> 3 in red
-  \node[above right] at (P60) {$\left(\tfrac{\sqrt{\textcolor{red}{1}}}{2},\,\tfrac{\sqrt{\textcolor{red}{3}}}{2}\right)$};
+  \node[above right] at (P60) {$\left(\tfrac{1}{2},\,\tfrac{\sqrt{3}}{2}\right)$};
 \end{tikzpicture}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.35\linewidth}\vspace{0pt}
@@ -480,9 +474,9 @@ Wortel &
 \[
 \begin{array}{c|cc}
 \theta & \sin\theta & \cos\theta\\\hline
-30^\circ & \tfrac{\sqrt{\textcolor{red}{1}}}{2} & \tfrac{\sqrt{\textcolor{red}{3}}}{2} \\[6pt]
-45^\circ & \tfrac{\sqrt{\textcolor{red}{2}}}{2} & \tfrac{\sqrt{\textcolor{red}{2}}}{2} \\[6pt]
-60^\circ & \tfrac{\sqrt{\textcolor{red}{3}}}{2} & \tfrac{\sqrt{\textcolor{red}{1}}}{2}
+30^\circ & \tfrac{\sqrt{1}}{2} & \tfrac{\sqrt{3}}{2} \\[6pt]
+45^\circ & \tfrac{\sqrt{2}}{2} & \tfrac{\sqrt{2}}{2} \\[6pt]
+60^\circ & \tfrac{\sqrt{3}}{2} & \tfrac{\sqrt{1}}{2}
 \end{array}
 \]
 \end{minipage}
@@ -557,19 +551,18 @@ c^{2} = a^{2} + b^{2} - 2ab \cos \hat C
 \[
 \begin{array}{|l|l|}
 \hline
-\sin(\alpha \pm \beta) = \sin\alpha \cos\beta \pm \cos\alpha \sin\beta \;\; \textcolor{blue}{\scriptsize (hetero's)} & 
+\sin(\alpha \pm \beta) = \sin\alpha \cos\beta \pm \cos\alpha \sin\beta & 
 \sin 2\alpha = 2\sin\alpha \cos\alpha \\ \hline
-\cos(\alpha \pm \beta) = \cos\alpha \cos\beta \mp \sin\alpha \sin\beta \;\; \textcolor{blue}{\scriptsize (homo's)} & 
+\cos(\alpha \pm \beta) = \cos\alpha \cos\beta \mp \sin\alpha \sin\beta & 
 \begin{aligned}
 \cos 2\alpha &= \cos^2\alpha - \sin^2\alpha \\[4pt]
-             &= 1 - 2\sin^2\alpha \quad \textcolor{blue}{\scriptsize (*)} \\[4pt]
-             &= 2\cos^2\alpha - 1 \quad \textcolor{blue}{\scriptsize (**)}
+             &= 1 - 2\sin^2\alpha \quad (*) \\[4pt]
+             &= 2\cos^2\alpha - 1 \quad (**)
 \end{aligned} \\ \hline
 \tan(\alpha \pm \beta) = \dfrac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha \tan\beta} & 
 \tan 2\alpha = \dfrac{2\tan\alpha}{1 - \tan^2\alpha} \\ \hline
 \end{array}
 \]
-
 
 \[
 \begin{array}{|l|l|l|}
@@ -809,143 +802,6 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \hline
 \end{tabular}
 \end{table}
-
-\section{Ruimte meetkunde}
-\subsection{Relatie tussen twee vlakken $\alpha,\beta$ in $\mathbb{R}^3$}
-\[
-\begin{aligned}
-\alpha:\; u_1 x + v_1 y + w_1 z + t_1 = 0
-&\qquad
-\beta:\; u_2 x + v_2 y + w_2 z + t_2 = 0 \\[2mm]
-\alpha_{0}:\; u_1 x + v_1 y + w_1 z = 0
-&\qquad
-\beta_{0}:\; u_2 x + v_2 y + w_2 z = 0
-\qquad(\text{vlakken door }O)
-\end{aligned}
-\]
-
-\begin{center}
-\begin{minipage}[t]{0.32\linewidth}\centering
-\textbf{Parallel, verschillend}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
-  % stijlen
-  \tikzset{
-    planeA/.style={fill=gray!15,draw},
-    planeB/.style={fill=gray!30,draw},
-    plane0/.style={draw=gray!70, dashed, thick}
-  }
-  % assen
-  \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
-  \draw[->] (0,-0.2) -- (0,1.8) node[above] {$z$};
-  \draw[->] (0,0) -- (-1.2,-0.6) node[left] {$y$};
-  % oorsprong
-  \fill (0,0) circle (1pt) node[above left] {$O$};
-  % vlakken (algemeen)
-  \fill[planeA] (0.3,0.3) -- (2.2,0.1) -- (2.0,1.2) -- (0.1,1.4) -- cycle; % α
-  \fill[planeB] (0.3,0.8) -- (2.2,0.6) -- (2.0,1.7) -- (0.1,1.9) -- cycle; % β
-  \node at (1.6,0.9) {$\alpha$};
-  \node at (1.8,1.35) {$\beta$};
-  \draw[<->] (2.35,0.35) -- (2.35,0.85) node[midway,right] {$d(\alpha,\beta)$};
-  % vlakken door O (parallelle kopieën)
-  \draw[plane0] (0,0) -- (1.9,-0.2) -- (1.7,0.9) -- (-0.2,1.1) -- cycle; % α0
-  \node at (1,-0.4) {$\alpha_{0},\beta_{0}$};
-\end{tikzpicture}
-\end{minipage}\hfill
-%
-\begin{minipage}[t]{0.32\linewidth}\centering
-\textbf{Samenvallend}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
-  \tikzset{planeC/.style={fill=gray!20,draw}, plane0/.style={draw=gray!70, dashed, thick}}
-  % assen
-  \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
-  \draw[->] (0,-0.2) -- (0,1.8) node[above] {$z$};
-  \draw[->] (0,0) -- (-1.2,-0.6) node[left] {$y$};
-  % oorsprong
-  \fill (0,0) circle (1pt) node[above left] {$O$};
-  % samenvallend vlak
-  \fill[planeC] (0.2,0.3) -- (2.1,0.1) -- (1.9,1.2) -- (0.0,1.4) -- cycle;
-  \node at (1.2,0.9) {$\alpha=\beta$};
-  % vlakken door O 
-  \draw[plane0] (0,0) -- (1.9,-0.2) -- (1.7,0.9) -- (-0.2,1.1) -- cycle; % α0
-  \node at (1,-0.4) {$\alpha_{0},\beta_{0}$};
-\end{tikzpicture}
-\end{minipage}\hfill
-%
-\begin{minipage}[t]{0.32\linewidth}\centering
-\textbf{Snijdend (lijn)}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
-  \tikzset{plane0/.style={draw=gray!70, dashed, thick}}
-  % assen
-  \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
-  \draw[->] (0,-0.2) -- (0,1.8) node[above] {$z$};
-  \draw[->] (0,0) -- (-1.2,-0.6) node[left] {$y$};
-  % oorsprong
-  \fill (0,0) circle (1pt) node[above left] {$O$};
-  % vlakken (algemeen)
-  \fill[gray!20,draw] (0.2,0.3) -- (2.2,0.1) -- (2.0,1.2) -- (0.0,1.4) -- cycle; % α
-  \fill[gray!35,draw] (0.6,0.0) -- (2.4,0.6) -- (1.8,1.7) -- (0.0,1.1) -- cycle; % β
-  \node at (1.05,0.95) {$\alpha$};
-  \node at (1.9,1.35) {$\beta$};
-% snijlijn d
-  \draw[very thick] (0.3,0.55) -- (2.1,1.05) node[right] {$d$};
-
-% evenwijdige door O: d_0  (zelfde richting als d)
-  \draw[gray,very thick, dashed] (0,0) -- (2.52,0.70) node[right] {$d_{0}$};
-  
-  % door O: α0 en β0 als gestreepte vlakken
-  \draw[plane0] (0,0) -- (1.9,-0.2) -- (1.7,0.9) -- (-0.2,1.1) -- cycle; % α0
-  \draw[plane0] (0,0) -- (2.0,0.4) -- (1.4,1.5) -- (-0.6,1.1) -- cycle;   % β0
-  \node at (1,-0.4) {$\alpha_{0}$};
-  \node at (1.8,0.3) {$\beta_{0}$};
-\end{tikzpicture}
-\end{minipage}
-\end{center}
-
-
-
-\begin{center}
-% optioneel wat instellingen voor de rand
-\setlength{\fboxsep}{1pt}   % binnenmarge
-\setlength{\fboxrule}{0.6pt}% lijndikte
-
-\fbox{%
-  \begin{minipage}[t]{0.47\linewidth}
-  \[
-  \begin{array}{c @{\qquad} c}
-  \alpha_0 \cap \beta_0 = \Box_0 &
-  \begin{bmatrix}
-  u_{1} & v_{1} & w_{1} & \vdots \\
-  u_{2} & v_{2} & w_{2} & \vdots
-  \end{bmatrix}
-  \;\;
-  \begin{array}{c}
-  \alpha_{0} \\
-  \beta_{0}
-  \end{array}
-  \end{array}
-  \]
-  \end{minipage}
-}
-\fbox{%
-  \begin{minipage}[t]{0.47\linewidth}
-  \[
-  \begin{array}{c @{\qquad} c}
-  \alpha \cap \beta = \Box &
-  \begin{bmatrix}
-  u_{1} & v_{1} & w_{1} & t_{1} & \vdots \\
-  u_{2} & v_{2} & w_{2} & t_{2} & \vdots
-  \end{bmatrix}
-  \;\;
-  \begin{array}{c}
-  \alpha \\
-  \beta
-  \end{array}
-  \end{array}
-  \]
-  \end{minipage}
-}\hfill
-\end{center}
-
 
 \subsection{Basis reële functies}
 
@@ -1663,4 +1519,568 @@ p \Leftrightarrow q & \text{equivalentie, de beweringen } p \text{ en } q \text{
 \hline
 \end{array}
 $
+
+
+% ==============================
+% BEGIN: Inhoud geïmporteerd uit Word (automatisch)
+% Bron: Formularium volledig klein 39.docx
+% ==============================
+\clearpage
+\section*{Aanvullingen uit het Word-formularium}
+\addcontentsline{toc}{section}{Aanvullingen uit het Word-formularium}
+\textbf{Formularium}\textbf{ }\textbf{w}\textbf{iskunde}
+
+1	Algebra	3
+
+1.1	Volgorde van bewerkingen	3
+
+1.2	Absolute waard	3
+
+1.3	Machten met gehele exponenten	3
+
+1.4	Machtswortels	4
+
+2	Veeltermen	5
+
+2.1	Vierkantsvergelijking	5
+
+2.2	Merkwaardige producten – ontbinding in factoren.	5
+
+2.3	De euclidische deling	6
+
+2.4	Rekenschema van Horner.	7
+
+3	Complexe getallen	8
+
+4	Goniometrie	9
+
+4.1	De goniometrische cirkel.	9
+
+4.2	Formules uit de goniometrie	9
+
+4.3	Omgekeerde formules van Simpson	12
+
+4.4	Formules van Simpson	12
+
+4.5	Belangrijke goniometrische waarden	12
+
+4.6	Cyclometrische formules	13
+
+5	Meetkunde	14
+
+5.1	De cirkel	14
+
+5.2	De parabool	14
+
+5.3	De ellips	15
+
+5.4	De hyperbool	15
+
+6	Oppervlakte en inhoud belangrijke ruimtefiguren	15
+
+7	Reële functies	16
+
+8	Analyse	17
+
+8.1	Limieten van rijen	17
+
+8.2	Limieten van functies	17
+
+8.3	Methodes bij het berekenen van limieten van functies	18
+
+8.4	Afgeleiden	20
+
+8.5	Differentialen	20
+
+8.6	Afgeleiden - fundamentele integralen	21
+
+8.7	Partiële integratie	21
+
+8.8	Fundamentele integralen	22
+
+8.9	Formules bij het oplossen van goniometrische integralen	23
+
+8.10	Integralen van rationale functies	24
+
+8.11	Integralen van irrationale functies	25
+
+8.12	Integralen inhoud - lengte	25
+
+8.13	Exponentiële en logaritmische functies	26
+
+8.14	Maclaurinreeksen, hyperbolische functies.	27
+
+9	Differentiaal	28
+
+9.1	Partiële differentiaal	28
+
+9.2	Differentiaal vergelijkingen	28
+
+10	Logica en verzamelingen	29
+
+11	Matrices	30
+
+11.1	Symbolen	30
+
+11.2	Rekenregels	30
+
+11.3	Determinanten	31
+
+11.4	Stelsels oplossen	32
+
+12	Combinatieleer	33
+
+12.1	Keuzes zonder herhaling	33
+
+12.2	Keuzes met herhaling	33
+
+13	Kans	34
+
+14	Statistiek	35
+
+14.1	Hypothese testen	37
+
+14.2	Z-tabel	40
+
+15	Diversen	41
+
+15.1	Wiskundige symbolen (ISO 31/XI)	41
+
+15.2	Eenheden en hun veelvouden	45
+
+15.3	Griekse alfabet	46
+
+\textit{16}	Het aanpakken van problemen	46
+
+\section{Algebra}
+\subsection{Volgorde van bewerkingen}
+Haakjes wegwerken
+
+Machtsverheffen
+
+Worteltrekken
+
+Vermenigvuldigen en delen
+
+Optellen en Aftrekken
+
+Om deze volgorde te onthouden zijn verschillende ezelsbruggetjes bedacht. Een ervan is:
+
+\textbf{H}eel \textbf{M}ooie \textbf{W}itte \textbf{V}aatwassers \textbf{D}oen \textbf{O}nze \textbf{A}fwas
+
+\subsection{Absolute waard}
+\subsection{Machten met gehele exponenten}
+\subsection{Machtswortels}
+\subsubsection{Vierkantswortel in}
+\subsubsection{N-de machtswortel in}
+\subsubsection{-de machtswortel in}
+\section{Veeltermen}
+\subsection{Vierkantsvergelijking}
+\subsection{Merkwaardige producten – ontbinding in factoren.}
+\subsection{De euclidische deling}
+\subsection{Rekenschema van Horner.}
+\section{Complexe getallen}
+\textit{Optelling/Aftrekking : }
+
+Vermenigvuldiging :
+
+Deling :
+
+\section{Goniometrie}
+\subsection{De goniometrische cirkel.}
+\subsection{Formules uit de goniometrie}
+waarin:
+
+\subsection{Omgekeerde formules van Simpson}
+\subsection{Formules van Simpson}
+\subsection{Belangrijke goniometrische waarden}
+\subsection{Cyclometrische formules}
+\section{Meetkunde}
+Afstand tussen twee punten :
+
+Midden v/e lijnstuk :
+
+Zwaartepunt van een driehoek :
+
+Vergelijking v/e rechte door punt met rico m :
+
+Vergelijking v/e rechte door 2 punten :
+
+Vergelijking v/e rechte door snijpunt met x-as (r,0) en y-as (0,s) :
+
+Hoek tussen twee rechten a,b met rico m1,m2 :
+
+Afstand tussen rechte a->ux+vy+w=0 en P(x1,y1) :
+
+\subsection{De cirkel}
+Cartesiaanse vgl. :
+
+Algemene vgl. :
+
+Parameter vgl. :
+
+\subsection{De parabool}
+Top vgl. :
+
+Parameter vgl. :
+
+\subsection{De ellips}
+\subsection{De hyperbool}
+\section{Oppervlakte en inhoud belangrijke ruimtefiguren}
+\section{Reële functies}
+\section{Analyse}
+\subsection{Limieten van rijen}
+\subsection{Limieten van functies}
+\subsection{Methodes bij het berekenen van limieten van functies}
+Veeltermfunctie
+
+Eindige a	limiet = functiewaarde
+
+Oneindige a	limiet = limiet van de hoogstegraadsterm
+
+Gebroken rationale functie
+
+Eindige a
+
+Oneindige a
+
+Irrationale functie
+
+Eindige a
+
+Oneindige a
+
+Regel l’Hôpital
+
+\subsection{Afgeleiden - fundamentele integralen}
+\subsection{Partiële integratie}
+\subsection{Fundamentele integralen}
+\subsection{Formules bij het oplossen van goniometrische integralen}
+\subsection{Integralen van rationale functies}
+\textit{Stelling van }\textit{d’Alembert}\textit{ :}
+
+1) als
+
+2)\textit{ }\textit{Stelling van Jacobi }\textit{(}\textit{opsplitsen in }\textit{partieel}\textit{breuken}\textit{)}\textit{:}
+
+\subsection{Integralen van irrationale functies}
+\subsection{Integralen inhoud - lengte}
+Manteloppervlakte van een omwentelingslichaam
+
+\subsection{Exponentiële en logaritmische functies}
+\subsection{Maclaurinreeksen, hyperbolische functies.}
+(1)
+
+(2
+
+\section{Differentiaal}
+\subsection{Partiële differentiaal}
+\subsection{Differentiaal vergelijkingen}
+\section{Logica en verzamelingen}
+\section{Matrices}
+\subsection{Symbolen}
+A			matrix A
+
+het element op rij i en in kolom j
+
+cofactor van hetelement op rij i en in kolom j
+
+I			de eenheidsmatrix
+
+de inverse matrix
+
+de getransponeerde matrix
+
+det A			determinant van de vierkante matrix A
+
+\subsection{Rekenregels}
+Opgelet voorwaarden matrices
+
+A + B = B + A (commutativiteit van de optelling)
+
+A + (B + C) = (A + B) + C (associativiteit van de optelling)
+
+A.I = A = I.A
+
+A(BC) = (AB)C (associativiteit van de vermenigvuldiging)
+
+A(B + C) = AB + AC (links distributiviteit)
+
+(B + C)A = BA + CA (rechts distributiviteit)
+
+AB $\neq$ BA
+
+(A + B)T = AT + BT
+
+(cA) T = cAT
+
+(AC) T = C T.AT
+
+(AT ) T  = A
+
+I. I=I
+
+\[ A \cdot A^{-1} = I = A^{-1} \cdot A \]
+
+\[ (AB)^{-1} = B^{-1} \cdot A^{-1} \]
+
+B=C => A.B=A.C en B.A=C.A (A regulier)
+
+\subsection{Determinanten}
+\subsection{Stelsels oplossen}
+\subsubsection{n vergelijkingen n onbekenden met 	exorpdfstring{$|A|
+eq 0$}{|A| != 0}}
+\subsubsection{homogene 2x3-stelsels}
+\subsubsection{n+1 eerstegraadsvergelijkingen n onbekenden}
+\subsubsection{n eerstegraadsvergelijkingen met n onbekenden ……….}
+\section{Combinatieleer}
+\subsection{Keuzes zonder herhaling}
+\subsection{Keuzes met herhaling}
+\section{Kans}
+\section{Statistiek}
+Discrete data : only a limited number of values is possible
+
+Continuous data :  is a variable such that there are possible values between any two values.
+
+\subsection{Schatters, betrouwbaarheidsintervallen}
+\subsection{Regressie}
+\subsection{Hypothese testen}
+\subsubsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
+\subsubsection{Test van een hypothese over een populatieproportie}
+\subsubsection{Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}
+\subsubsection{Test van een hypothese over een populatieproportie via de P-waarde}
+\subsubsection{significantieniveau (-waarde) : sociaal 0,05 / medisch 0,01}
+\subsubsection{Chi-square test}
+\subsection{Z-tabel}
+\section{Diversen}
+\subsection{Wiskundige symbolen (ISO 31/XI)}
+\subsubsection{Verzamelingen}
+is een element van de verzameling
+
+is geen element van de verzameling
+
+de verzameling door opsomming
+
+de verzameling waar de elementen voldoen aan de eigenschap p(x)
+
+de lege verzameling
+
+de natuurlijke getallen (0,1,2, …..)
+
+de gehele getallen (….. ,-2,-1,0,1,2, …..)
+
+de rationale getallen (breuken van )
+
+de reële getallen
+
+de complexe getallen
+
+BA			B behoort tot A (kan er mee samenvallen)
+
+BA			B behoort strikt tot A
+
+BA			samenvoeging van A en B (unie)
+
+BA			doorsnede van A en B (de gemeenschappelijke elementen)
+
+A \textbackslash{} B			A verschil B, wat tot A behoort en niet tot B
+
+het complement van A in het universum U
+
+(a,b)			het geordend paar
+
+een geordend n-tal
+
+AxB			de productverzameling van A en B
+
+\#			rangnummer of aantal
+
+\subsubsection{Logische symbolen}
+pq			conjunctie, de beweringen p \textbf{en} q zijn geldig
+
+pq			disjunctie, de bewering p \textbf{of }q is geldig
+
+p			negatie, de bewering p is niet geldig
+
+pq			implicatie, als p dan q
+
+pq			equivalentie, de beweringen p en q zijn gelijkwaardig
+
+(x)			universele kwantor, voor alle elementen geldt
+
+(x)			existentiële kwantor, er zijn elementen die voldoen aan
+
+\subsubsection{Diverse symbolen}
+a=b			a is gelijk aan b
+
+ab			a is niet gelijk aan b
+
+a is per definitie gelijk aan b
+
+ab			a is bij benadering gelijk aan b
+
+a<b			a is strikt kleiner dan b
+
+a>b			a is strikt groter dan b
+
+a is kleiner of gelijk b (ook <= kan)
+
+a b			a is groter of gelijk b (ook >= kan)
+
+oneindig
+
+\subsubsection{Bewerkingen}
+a+b			optelling
+
+a-b			aftrekking
+
+a.b, axb, a*b		vermenigvuldiging
+
+, a/b			deling
+
+a tot de macht p
+
+vierkantswortel uit a
+
+n-de machtswortel uit a
+
+a			absolute waarde van a
+
+sgn a			signum a: (1 als a>0, 0 als a=0, -1 als a<0)
+
+gemiddelde waarde voor a
+
+n!			n faculteit; n!=n.(n-1).(n-2). … 2.1
+
+binomiaal coëfficiënten;
+
+int a			het grootste geheel getal  a
+
+\subsubsection{Functies}
+f			functie f
+
+f(x)			functiewaarde
+
+f(b) – f(a) ; gebruikt bij integralen
+
+gf			de samengestelde functie van g en f; g(f(x))
+
+xa			x streeft naar a
+
+limiet van f(x) als x streeft naar a
+
+x			toename van x
+
+Df, f’,		afgeleide van f naar x
+
+Df(a); f’(a); 	waarde van de afgeleide voor x=a
+
+; ;	n-de afgeleide van functie f
+
+partiële afgeleide van functie f naar x
+
+df			differentiaal van functie f; df=f’.dx
+
+de onbepaalde integraal, de verzameling primitieve functies
+
+de bepaalde integraal over het interval [a,b]
+
+\subsubsection{Exponentiële en logaritmische functies}
+e			basis van de natuurlijke logaritmen
+
+exponentiële functies met grondtal e
+
+exponentiële functies met grondtal a
+
+logaritme met grondtal a
+
+ln x			natuurlijk logaritme van x
+
+log x			Briggs logaritme van x (grondtal 10)
+
+\subsubsection{goniometrische functies}
+verhouding tussen de cirkelomtrek en de middellijn
+
+sin x			sinus x
+
+cos x			cosinus x
+
+tan x			tangens x
+
+cot x			contangens x
+
+sec x			secans x =
+
+cosec x			cosecans x =
+
+arcsin x			inverse functie van de sinus
+
+arccos x		inverse functie van de cosinus
+
+arctan x		inverse functie van de tangens
+
+arccot x			inverse functie van de cotangens
+
+arcsec x		inverse functie van de secans
+
+arccosec x		inverse functie van de cosecans
+
+sinh x			sinus hyperbolicus
+
+cosh x			cosinus hyperbolicus
+
+tanh x			tangens hyperbolicus
+
+coth x			cotangens hyperbolicus
+
+sech x			secans hyperbolicus
+
+cosech x		cosecans hyperbolicus
+
+\subsubsection{Complexe getallen}
+i, j			i²=-1 (j wordt gebruikt in de electronica)
+
+z = a+bi		het complex getal z
+
+Re z			reëel gedeelte van z
+
+Im z			imaginair gedeelte van z
+
+z			modulus van z
+
+arg z			argument van het getal z
+
+z*			toegevoegd complex getal van z: a-bi
+
+\subsection{Eenheden en hun veelvouden}
+De taalkundige regels zijn als volgt. Voluit geschreven prefixen beginnen altijd met kleine letter:
+
+\textit{picofarad, milligram, centimeter, kilovolt, megabyte, gigawatt}.
+
+De afgekorte prefixen hebben een kleine letter tot en met \textit{kilo }en daarboven een hoofdletter: \textit{pF}\textit{, mg, cm, kV, Mb, GW.}
+
+Hier moet goed op gelet worden want het kan grote verschillen in betekenis veroorzaken: de notatie \textit{mW}\textit{ }betekent milliwatt en \textit{MW} Megawatt
+
+Voor de eenheden en grootheden is de regel dat wanneer deze van een persoonsnaam afstammen, zowel voluitgeschreven als afgekort een hoofdletter wordt gebruikt en anders een kleine letter: \textit{Farad, gram, meter, Volt, byte, Watt}.
+
+\subsection{Griekse alfabet}
+\section{Het aanpakken van problemen}
+\begin{itemize}
+\item Maak een tekening, een schets, een schematische voorstelling
+\item Proberen met een getallenvoorbeeld / trial and error
+\item Werk omgekeerd – werk van achter naar voor
+\item Gebruik alle gegevens
+\item Splits het probleem op in deelproblemen
+\item Stel het probleem voor als opgelost
+\item Los een (verwant) eenvoudiger probleem op
+\item Zoek een patroon
+\item Teken een hulplijn
+\item Laat tijdelijk één van de voorwaarden vallen
+\item Blikwissel
+\end{itemize}
+% ==============================
+% EINDE: Inhoud geïmporteerd uit Word
+% ==============================
+
+
 \end{document}
