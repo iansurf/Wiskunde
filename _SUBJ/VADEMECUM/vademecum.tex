@@ -948,8 +948,44 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 };
 
 % ----------------- Second row (copy) -----------------
-\node (box3) [draw, inner sep=2pt, minimum width=6cm, below=1cm of box1] {
-  \begin{minipage}{0.47\linewidth}
+\node (box3) [draw, inner sep=2pt, minimum width=5cm, below=1cm of box1] {
+  \begin{minipage}{0.4\linewidth}
+  \[
+  \begin{array}{c}
+  \begin{bmatrix}
+  u_{0} & v_{0} & w_{0} & \vdots \\
+  0 & 0 & 0 & \vdots
+  \end{bmatrix}
+  \;\;
+  \begin{array}{c}
+  \alpha_{0}=\beta_{0} \\
+  .
+  \end{array}
+  \end{array}
+  \]
+  \end{minipage}
+};
+
+\node (box4) [draw, inner sep=2pt, minimum width=5cm, below=1cm of box2] {
+  \begin{minipage}{0.4\linewidth}
+  \[
+  \begin{array}{c}
+  \begin{bmatrix}
+  u' & v' & w' & \vdots \\
+   0 & v" & w" & \vdots
+  \end{bmatrix}
+  \;\;
+  \begin{array}{c}
+  \alpha_0 \cap \beta_0 = d_{0}
+  \end{array}
+  \end{array}
+  \]
+  \end{minipage}
+};
+
+% ----------------- row 3 -----------------
+\node (box5) [draw, inner sep=2pt, minimum width=5cm, below=1cm of box3] {
+  \begin{minipage}{0.4\linewidth}
   \[
   \begin{array}{c}
   \begin{bmatrix}
@@ -966,8 +1002,8 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{minipage}
 };
 
-\node (box4) [draw, inner sep=2pt, minimum width=6cm, below=1cm of box2] {
-  \begin{minipage}{0.47\linewidth}
+\node (box6) [draw, inner sep=2pt, minimum width=5cm, below=1cm of box4] {
+  \begin{minipage}{0.4\linewidth}
   \[
   \begin{array}{c}
   \begin{bmatrix}
@@ -976,7 +1012,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  d_{0}
+  \alpha_0 \cap \beta_0 = d_{0}
   \end{array}
   \end{array}
   \]
@@ -985,8 +1021,11 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 
 
 % ----------------- Arrows -----------------
-\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\scriptstyle \mathrm{RREF} (samenvallend)$};
-\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, right] {$\scriptstyle \mathrm{RREF} (snijdend)$};
+\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\scriptstyle \mathrm{RREF} (\alpha_0 \cap \beta_0)$};
+\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, right] {$\scriptstyle \mathrm{RREF} (\alpha_0 \cap \beta_0)$};
+
+\draw[->, thick] (box3.south) .. controls +(0,-1) and +(0,1) .. (box5.north)node[midway, left] {$\scriptstyle \mathrm{RREF} (\alpha \cap \beta)$};
+\draw[->, thick] (box3.south east) .. controls +(1,-1) and +(-1,1) .. (box6.north west)node[midway, right] {$\scriptstyle \mathrm{RREF} (\alpha \cap \beta)$};
 
 \end{tikzpicture}
 \end{center}
