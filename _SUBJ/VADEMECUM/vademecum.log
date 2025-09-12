@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  12 SEP 2025 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  12 SEP 2025 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1374,32 +1374,17 @@ Overfull \hbox (14.29434pt too wide) in paragraph at lines 855--856
  []
 
 
-Overfull \hbox (36.08273pt too wide) detected at line 927
+Overfull \hbox (8.5945pt too wide) detected at line 927
 []
  []
 
 
-Overfull \hbox (36.83728pt too wide) detected at line 946
+Overfull \hbox (9.34904pt too wide) detected at line 946
 []
  []
 
 
-Overfull \hbox (8.5945pt too wide) detected at line 966
-[]
- []
-
-
-Overfull \hbox (8.5945pt too wide) detected at line 985
-[]
- []
-
-
-Overfull \hbox (6.09042pt too wide) in paragraph at lines 993--994
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
@@ -1408,18 +1393,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
 [14]
 
 [15]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1061.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 1060.
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1113
 
  []
 
 
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
 
  []
 
@@ -1428,7 +1413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 [18]
 
 [19]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1310--1350
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1309--1349
 []$ 
  []
 
@@ -1437,12 +1422,12 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 1310--1350
 [20]
 
 [21]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1591--1623
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1590--1622
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1629--1661
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1628--1660
  [] 
  []
 
@@ -1465,7 +1450,7 @@ Package rerunfilecheck Info: File `vademecum.out' has not changed.
 Here is how much of TeX's memory you used:
  36678 strings out of 473682
  842555 string characters out of 5715408
- 1390714 words of memory out of 5000000
+ 1390693 words of memory out of 5000000
  59096 multiletter control sequences out of 15000+600000
  575801 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1506,7 +1491,7 @@ ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (23 pages, 646675 bytes).
+Output written on vademecum.pdf (23 pages, 646445 bytes).
 PDF statistics:
  559 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)

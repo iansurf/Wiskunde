@@ -829,7 +829,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 
 \begin{center}
 \begin{minipage}[t]{0.32\linewidth}\centering
-\textbf{Parallel, verschillend}\\[2mm]
+\textbf{Evenwijdig, niet samenvallend}\\[2mm]
 \begin{tikzpicture}[scale=0.9, line cap=round]
   % stijlen
   \tikzset{
@@ -909,8 +909,8 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \begin{center}
 \begin{tikzpicture}[>=stealth]
 % ----------------- First row -----------------
-\node (box1) [draw, inner sep=1pt, minimum width=7cm, anchor=north west] at (0,0) {
-  \begin{minipage}{0.4\linewidth}
+\node (box1) [draw, inner sep=2pt, minimum width=6cm, anchor=north west] at (0,0) {
+  \begin{minipage}{0.47\linewidth}
   \[
   \begin{array}{c @{\qquad} c}
   \alpha_0 \cap \beta_0 = \Box_0 &
@@ -928,8 +928,8 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \end{minipage}
 };
 
-\node (box2) [draw, inner sep=1pt, minimum width=7cm, anchor=north west] at (7,0) {
-  \begin{minipage}{0.4\linewidth}
+\node (box2) [draw, inner sep=2pt, minimum width=6cm, anchor=north west] at (7,0) {
+  \begin{minipage}{0.47\linewidth}
   \[
   \begin{array}{c @{\qquad} c}
   \alpha \cap \beta = \Box &
@@ -948,47 +948,46 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 };
 
 % ----------------- Second row (copy) -----------------
-\node (box3) [draw, inner sep=2pt, minimum width=6cm, below=2.5cm of box1] {
+\node (box3) [draw, inner sep=2pt, minimum width=6cm, below=1cm of box1] {
   \begin{minipage}{0.47\linewidth}
   \[
-  \begin{array}{c @{\qquad} c}
-  \alpha_0 \cap \beta_0 = \Box_0 &
+  \begin{array}{c}
   \begin{bmatrix}
-  u_{1} & v_{1} & w_{1} & \vdots \\
-  u_{2} & v_{2} & w_{2} & \vdots
+  u_{0} & v_{0} & w_{0} & \vdots \\
+  0 & 0 & 0 & \vdots
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_{0} \\
-  \beta_{0}
+  \alpha_{0},\beta_{0} \\
+  .
   \end{array}
   \end{array}
   \]
   \end{minipage}
 };
 
-\node (box4) [draw, inner sep=2pt, minimum width=6cm, below=2.5cm of box2] {
+\node (box4) [draw, inner sep=2pt, minimum width=6cm, below=1cm of box2] {
   \begin{minipage}{0.47\linewidth}
   \[
-  \begin{array}{c @{\qquad} c}
-  \alpha_0 \cap \beta_0 = \Box_0 &
+  \begin{array}{c}
   \begin{bmatrix}
-  u_{1} & v_{1} & w_{1} & \vdots \\
-  u_{2} & v_{2} & w_{2} & \vdots
+  u_{0} & v_{0} & w_{0} & \vdots \\
+  0 & 0 & 0 & \vdots
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_{0} \\
-  \beta_{0}
+  \alpha_{0},\beta_{0} \\
+  .
   \end{array}
   \end{array}
   \]
   \end{minipage}
 };
+
 
 % ----------------- Arrows -----------------
-\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\;\;$RREF};
-\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, left] {$\;\;$RREF};
+\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\scriptstyle \mathrm{RREF}$};
+\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, right] {$\scriptstyle \mathrm{RREF}$};
 
 \end{tikzpicture}
 \end{center}
