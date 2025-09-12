@@ -971,13 +971,12 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \[
   \begin{array}{c}
   \begin{bmatrix}
-  u_{0} & v_{0} & w_{0} & \vdots \\
-  0 & 0 & 0 & \vdots
+  u' & v' & w' & \vdots \\
+   0 & v" & w" & \vdots
   \end{bmatrix}
   \;\;
   \begin{array}{c}
-  \alpha_{0},\beta_{0} \\
-  .
+  d_{0}
   \end{array}
   \end{array}
   \]
@@ -986,8 +985,8 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 
 
 % ----------------- Arrows -----------------
-\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\scriptstyle \mathrm{RREF}$};
-\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, right] {$\scriptstyle \mathrm{RREF}$};
+\draw[->, thick] (box1.south) .. controls +(0,-1) and +(0,1) .. (box3.north)node[midway, left] {$\scriptstyle \mathrm{RREF} (samenvallend)$};
+\draw[->, thick] (box1.south east) .. controls +(1,-1) and +(-1,1) .. (box4.north west)node[midway, right] {$\scriptstyle \mathrm{RREF} (snijdend)$};
 
 \end{tikzpicture}
 \end{center}

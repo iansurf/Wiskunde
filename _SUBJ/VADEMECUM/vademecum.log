@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  12 SEP 2025 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  12 SEP 2025 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,7 +1384,7 @@ Overfull \hbox (9.34904pt too wide) detected at line 946
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
@@ -1393,18 +1393,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
 [14]
 
 [15]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1060.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 1059.
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
 
  []
 
 
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
@@ -1413,7 +1413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
 [18]
 
 [19]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1309--1349
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1308--1348
 []$ 
  []
 
@@ -1422,12 +1422,12 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 1309--1349
 [20]
 
 [21]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1590--1622
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1589--1621
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1628--1660
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1627--1659
  [] 
  []
 
@@ -1448,10 +1448,10 @@ Package rerunfilecheck Info: File `vademecum.out' has not changed.
 (rerunfilecheck)             Checksum: D37432E062B99601CE5E6DA2CD593988;9631.
  ) 
 Here is how much of TeX's memory you used:
- 36678 strings out of 473682
- 842555 string characters out of 5715408
+ 36684 strings out of 473682
+ 842644 string characters out of 5715408
  1390693 words of memory out of 5000000
- 59096 multiletter control sequences out of 15000+600000
+ 59102 multiletter control sequences out of 15000+600000
  575801 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,24n,117p,732b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1491,7 +1491,7 @@ ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (23 pages, 646445 bytes).
+Output written on vademecum.pdf (23 pages, 646864 bytes).
 PDF statistics:
  559 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
