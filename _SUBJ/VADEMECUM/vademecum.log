@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  14 SEP 2025 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.4)  15 SEP 2025 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,6 +418,22 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarybabel.code.tex
+File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
 ry.sty
@@ -1086,24 +1102,24 @@ LaTeX Warning: Label `fig:enter-label' multiply defined.
 )
 \openout1 = `vademecum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\sup
 p-pdf.mkii
@@ -1164,7 +1180,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 37.
 (vademecum.out) (vademecum.out)
 \@outlinefile=\write4
 \openout4 = `vademecum.out'.
@@ -1175,14 +1191,14 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
 d
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
@@ -1201,50 +1217,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 111.
 
 
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 130.
+(hyperref)                removing `\begingroup' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 130.
+(hyperref)                removing `\endgroup' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 130.
+(hyperref)                removing `\@@over' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 132.
 
 
 
@@ -1253,199 +1269,290 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5]
 
 [6]
-<image_goniometrie.png, id=316, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=361, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
-Package pdftex.def Info: image_goniometrie.png  used on input line 312.
+Package pdftex.def Info: image_goniometrie.png  used on input line 314.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=318, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=363, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
-320.
+322.
 (pdftex.def)             Requested size: 157.05682pt x 80.06776pt.
 
 
 [7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=328, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=373, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
-ine 375.
+ine 377.
 (pdftex.def)             Requested size: 392.64806pt x 247.20015pt.
 
 
 [8 <./image_goniometrie_verwante_hoeken.png>]
 
 [9]
-<image_goniometrie_sin_cos_regel.png, id=343, 158.994pt x 134.904pt>
-File: image_goniometrie_sin_cos_regel.png Graphic file (type png)
-<use image_goniometrie_sin_cos_regel.png>
-Package pdftex.def Info: image_goniometrie_sin_cos_regel.png  used on input lin
-e 551.
-(pdftex.def)             Requested size: 141.35017pt x 119.93861pt.
+Overfull \hbox (5.56638pt too wide) in paragraph at lines 535--583
+ [][] 
+ []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 563.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 588.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 565.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 589.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 568.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 590.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 569.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 592.
 
 
 
-Overfull \hbox (12.08176pt too wide) in paragraph at lines 610--624
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 595.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 596.
+
+
+
+Overfull \hbox (12.08176pt too wide) in paragraph at lines 644--658
 $[]$ 
  []
 
 
 
-[10 <./image_goniometrie_sin_cos_regel.png>]
-<image_goniometrie_cyclof.png, id=350, 820.86674pt x 322.20375pt>
+[10]
+<image_goniometrie_cyclof.png, id=393, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
-Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 634.
+Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 668.
 (pdftex.def)             Requested size: 235.59122pt x 92.47307pt.
 
 
 [11 <./image_goniometrie_cyclof.png>]
-Overfull \hbox (9.94469pt too wide) in paragraph at lines 652--683
-[]$ 
- []
-
-<image_ellips.png, id=357, 143.03438pt x 87.32625pt>
-File: image_ellips.png Graphic file (type png)
-<use image_ellips.png>
-Package pdftex.def Info: image_ellips.png  used on input line 732.
-(pdftex.def)             Requested size: 141.35017pt x 86.29868pt.
-
-
-[12 <./image_ellips.png>]
-Overfull \hbox (5.91716pt too wide) detected at line 753
-[]
- []
-
-<image_hyperbool.png, id=364, 152.06813pt x 87.32625pt>
-File: image_hyperbool.png Graphic file (type png)
-<use image_hyperbool.png>
-Package pdftex.def Info: image_hyperbool.png  used on input line 758.
-(pdftex.def)             Requested size: 141.35017pt x 81.17392pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 817.
+(hyperref)                removing `superscript' on input line 730.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 817.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 817.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 817.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 817.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 817.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 817.
-
-
-
-[13 <./image_hyperbool.png>]
-Overfull \hbox (14.29434pt too wide) in paragraph at lines 855--856
- [][] 
- []
-
-
-Overfull \hbox (15.3794pt too wide) detected at line 982
+Overfull \hbox (30.92839pt too wide) detected at line 787
 []
  []
 
 
-Overfull \hbox (16.61427pt too wide) detected at line 1017
+
+[12]
+Overfull \hbox (66.96909pt too wide) in paragraph at lines 856--857
+[][] 
+ []
+
+
+Overfull \hbox (170.70767pt too wide) detected at line 897
 []
  []
 
 
-Overfull \hbox (21.43024pt too wide) detected at line 1034
-[]
- []
 
-
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 1048--1049
- [] 
- []
-
-
+[13]
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
-[]|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 916.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\not' on input line 916.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 916.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 923.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 923.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 923.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 935.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 935.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 935.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 935.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 951.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 951.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 951.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 951.
+
+
+Overfull \hbox (9.94469pt too wide) in paragraph at lines 958--989
+[]$ 
  []
 
 
 
 [15]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1119.
+<image_ellips.png, id=423, 143.03438pt x 87.32625pt>
+File: image_ellips.png Graphic file (type png)
+<use image_ellips.png>
+Package pdftex.def Info: image_ellips.png  used on input line 1038.
+(pdftex.def)             Requested size: 141.35017pt x 86.29868pt.
 
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 1170--1172
+[16 <./image_ellips.png>]
+Overfull \hbox (5.91716pt too wide) detected at line 1059
+[]
+ []
 
+<image_hyperbool.png, id=430, 152.06813pt x 87.32625pt>
+File: image_hyperbool.png Graphic file (type png)
+<use image_hyperbool.png>
+Package pdftex.def Info: image_hyperbool.png  used on input line 1064.
+(pdftex.def)             Requested size: 141.35017pt x 81.17392pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1123.
+
+
+
+[17 <./image_hyperbool.png>]
+Overfull \hbox (14.29434pt too wide) in paragraph at lines 1161--1162
+ [][] 
  []
 
 
+Overfull \hbox (15.3794pt too wide) detected at line 1288
+[]
+ []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
 
+Overfull \hbox (16.61427pt too wide) detected at line 1323
+[]
+ []
+
+
+Overfull \hbox (21.43024pt too wide) detected at line 1340
+[]
+ []
+
+
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 1354--1355
+ [] 
  []
 
 
 
 [18]
-
-[19]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1368--1408
-[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+[]|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
+
+
+[19]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 1425.
 
 
 [20]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1478
 
-[21]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1649--1681
- [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1687--1719
- [] 
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1559
+
  []
 
 
 
 [22]
 
-[23] (vademecum.aux)
+[23]
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1674--1714
+[]$ 
+ []
+
+
+
+[24]
+
+[25]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1955--1987
+ [] 
+ []
+
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1993--2025
+ [] 
+ []
+
+
+
+[26]
+
+[27] (vademecum.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1455,16 +1562,16 @@ L3 programming layer <2024-11-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: D37432E062B99601CE5E6DA2CD593988;9631.
+(rerunfilecheck)             Checksum: 6147701F4DE3C57445B2EACE4F3D9842;11173.
  ) 
 Here is how much of TeX's memory you used:
- 36705 strings out of 473682
- 842953 string characters out of 5715408
- 1391111 words of memory out of 5000000
- 59123 multiletter control sequences out of 15000+600000
- 575801 words of font info for 102 fonts, out of 8000000 for 9000
+ 37036 strings out of 473682
+ 850317 string characters out of 5715408
+ 1397147 words of memory out of 5000000
+ 59425 multiletter control sequences out of 15000+600000
+ 577827 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,24n,117p,732b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,26n,117p,732b,2533s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Administrator/AppData/Local/Progr
@@ -1496,14 +1603,17 @@ al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Administr
 ator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
 /Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msam10.pfb><C:/Users/Administrator/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Administrator
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msbm7.pfb>
-Output written on vademecum.pdf (23 pages, 646911 bytes).
+public/amsfonts/cm/cmti10.pfb><C:/Users/Administrator/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Administrator/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/Admini
+strator/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/symbols/msam7.pfb><C:/Users/Administrator/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Administrator/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (27 pages, 695467 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
- 472 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 
