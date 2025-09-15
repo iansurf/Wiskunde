@@ -539,14 +539,14 @@ Wortel &
 \[
 \begin{aligned}
 \text{Sinusregel:}\quad 
-& \frac{a}{\sin \widehat{A}} 
-= \frac{b}{\sin \widehat{B}} 
-= \frac{c}{\sin \widehat{C}} \\[6pt]
+& \frac{a}{\sin \alpha} 
+= \frac{b}{\sin \beta} 
+= \frac{c}{\sin \gamma} \\[6pt]
 \text{Cosinusregel:}\quad
 & \begin{cases}
-a^{2} = b^{2} + c^{2} - 2bc \cos \widehat{A} \\[6pt]
-b^{2} = c^{2} + a^{2} - 2ca \cos \widehat{B} \\[6pt]
-c^{2} = a^{2} + b^{2} - 2ab \cos \widehat{C}
+a^{2} = b^{2} + c^{2} - 2bc \cos \alpha \\[6pt]
+b^{2} = c^{2} + a^{2} - 2ca \cos \beta \\[6pt]
+c^{2} = a^{2} + b^{2} - 2ab \cos \gamma
 \end{cases}
 \end{aligned}
 \]
@@ -606,11 +606,11 @@ c^{2} = a^{2} + b^{2} - 2ab \cos \widehat{C}
 \hline
 \sin^2\alpha = \dfrac{1 - \cos 2\alpha}{2} \quad (*) & 
 \parbox{3.5cm}{\centering Verdubbelingsformules \\ $f(\tan\alpha)$} & 
-\sin\alpha = \dfrac{2t}{1 + t^2}, \quad \tan\dfrac{\alpha}{2} = t \\ \hline
+t-formules, \quad \tan\dfrac{\alpha}{2} = t \\ \hline
 
 \cos^2\alpha = \dfrac{1 + \cos 2\alpha}{2} \quad (**) & 
 \sin 2\alpha = \dfrac{2\tan\alpha}{1 + \tan^2\alpha} & 
-\cos\alpha = \dfrac{1 - t^2}{1 + t^2} \\ \hline
+\sin\alpha = \dfrac{2t}{1 + t^2} \\ \hline
 
 Halveringsformules & 
 \cos 2\alpha = \dfrac{1 - \tan^2\alpha}{1 + \tan^2\alpha} & 
@@ -624,26 +624,30 @@ Halveringsformules &
 \end{array}
 \]
 
-\subsection{Omgekeerde formules van Simpson}
-$
+
+\[
 \begin{array}{|c|c|}
 \hline
-\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta & 
+& \text{Omgekeerde formules van Simpson} \\ \hline
+
+\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta &
 \sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta \\
-& 
-\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta \\
-\hline
-\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta & 
+
+& \sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta \\ \hline
+
+\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta &
 \cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha\cos\beta \\
-& 
-\cos(\alpha + \beta) - \cos(\alpha - \beta) = -2\sin\alpha\sin\beta \\
-\hline
+
+& \cos(\alpha + \beta) - \cos(\alpha - \beta) = -2\sin\alpha\sin\beta \\ \hline
+
 \end{array}
-$
-\subsection{Formules van Simpson}
-$
+\]
+
+
+\[
 \begin{array}{|c|c|}
 \hline
+\multicolumn{2}{|c|}{\text{Formules van Simpson}} \\ \hline
 \begin{aligned}
 \sin \alpha + \sin \beta &= 2\sin\left(\frac{\alpha + \beta}{2}\right)\cos\left(\frac{\alpha - \beta}{2}\right) \\
 \sin \alpha - \sin \beta &= 2\cos\left(\frac{\alpha + \beta}{2}\right)\sin\left(\frac{\alpha - \beta}{2}\right)
@@ -654,7 +658,7 @@ $
 \end{aligned} \\
 \hline
 \end{array}
-$
+\]
 \newpage
 
 \subsection{Cyclometrische formules}
