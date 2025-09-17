@@ -739,13 +739,8 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
   \def\cell{0.9} % celgrootte
 
   % buitenste haakjes [   ]
-  \draw[thick] (0,0) -- (0,\n*\cell);
-  \draw[thick] (-0.25,\n*\cell) -- (0,\n*\cell);
-  \draw[thick] (-0.25,0) -- (0,0);
-
-  \draw[thick] (\n*\cell,0) -- (\n*\cell,\n*\cell);
-  \draw[thick] (\n*\cell, \n*\cell) -- (\n*\cell + 0.25, \n*\cell);
-  \draw[thick] (\n*\cell, 0) -- (\n*\cell + 0.25, 0);
+  \draw[thin,dashed] (0,0) -- (0,\n*\cell);
+  \draw[thin,dashed] (\n*\cell,0) -- (\n*\cell,\n*\cell);
 
   % gestippelde diagonalen (familie met helling -1)
   \foreach \m in {1,...,\numexpr\n-1\relax}{
@@ -774,19 +769,49 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 
 \begin{center}
 \begin{tikzpicture}[>=stealth]
-% ----------------- First row -----------------
-\node (box1) [draw, inner sep=2pt, minimum width=6cm, anchor=north west] at (0,0) {%
-  \begin{minipage}{0.47\linewidth}
+\node (box1) [draw, inner sep=2pt, minimum width=10cm] at (0,0) {%
+  \begin{minipage}{0.8\linewidth}
   \[
-  \begin{array}{c @{\qquad} c @{\qquad} c}
+  \begin{array}{c @{\qquad} c}
     {\displaystyle
       \left|\begin{matrix} a & b \\[2pt] c & d \end{matrix}\right|
       = ad - bc}
     &
     {\displaystyle
-      \left|\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}\right|->}
-    &
-    sarrus
+      \left|\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}\right|
+      \xrightarrow{\text{Sarrus}}\;
+      % ---- inline mini-TikZ placed AFTER the arrow ----
+      \tikz[scale=0.65, baseline=-0.5ex]{
+        \def\cell{0.45}
+        % helper: 3x3 dot grid at (ox,oy)
+        \foreach \i in {0,1,2}{
+          \foreach \j in {0,1,2}{
+            \fill[white] (\j*\cell,-\i*\cell) circle(0.04);
+            \draw        (\j*\cell,-\i*\cell) circle(0.04);
+          }
+        }
+        % plus block (left)
+        \begin{scope}[shift={(0,0)}]
+          \node[above=6pt] at (\cell,0) {\scriptsize $\mathbf{+}$};
+          \draw[thick] (0,0) -- (\cell,-\cell) -- (2*\cell,-2*\cell);
+          \draw[thick] (\cell,0) -- (2*\cell,-\cell);
+          \draw[thick] (0,-\cell) -- (\cell,-2*\cell);
+        \end{scope}
+        % draw a second grid for the minus block
+        \begin{scope}[shift={(2.2,0)}]
+          \foreach \i in {0,1,2}{
+            \foreach \j in {0,1,2}{
+              \fill[white] (\j*\cell,-\i*\cell) circle(0.04);
+              \draw        (\j*\cell,-\i*\cell) circle(0.04);
+            }
+          }
+          \node[above=6pt] at (\cell,0) {\scriptsize $\mathbf{-}$};
+          \draw[thick] (0,-2*\cell) -- (\cell,-\cell) -- (2*\cell,0);
+          \draw[thick] (0,-\cell) -- (\cell,0);
+          \draw[thick] (\cell,-2*\cell) -- (2*\cell,-\cell);
+        \end{scope}
+      }
+    }
   \end{array}
   \]
   \end{minipage}%
@@ -795,120 +820,10 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 \end{center}
 
 
-\begin{tikzpicture}[x=1cm,y=1cm, every node/.style={font=\large}]
-% ==== Rij 1: 2x2 en 3x3 + Sarrus (+ / -) =====================================
 
-% Sarrus: plus-diagonalen
-\begin{scope}[shift={(6,0.1)}]
-  \node at (0,1.3) {\Large $+$};
-  \def\cell{0.55}
-  \foreach \i in {0,1,2}{
-    \foreach \j in {0,1,2}{
-      \fill[white] (\j*\cell,-\i*\cell) circle(0.05);
-      \draw (\j*\cell,-\i*\cell) circle(0.05);
-    }
-  }
-  \draw[thick] (0,0) -- (\cell,-\cell) -- (2*\cell,-2*\cell);
-  \draw[thick] (\cell,0) -- (2*\cell,-\cell);
-  \draw[thick] (0,-\cell) -- (\cell,-2*\cell);
-\end{scope}
 
-% Sarrus: min-diagonalen
-\begin{scope}[shift={(8,0.1)}]
-  \node at (0,1.3) {\Large $-$};
-  \def\cell{0.55}
-  \foreach \i in {0,1,2}{
-    \foreach \j in {0,1,2}{
-      \fill[white] (\j*\cell,-\i*\cell) circle(0.05);
-      \draw (\j*\cell,-\i*\cell) circle(0.05);
-    }
-  }
-  \draw[thick] (0,-2*\cell) -- (\cell,-\cell) -- (2*\cell,0);
-  \draw[thick] (0,-\cell) -- (\cell,0);
-  \draw[thick] (\cell,-2*\cell) -- (2*\cell,-\cell);
-\end{scope}
 
-% ==== Rij 2: cofactor/minor -> adjA ===========================================
-% linkse grote determinant met a_ij aangeduid
-\begin{scope}[shift={(0,-3.2)}]
-\node (minorHint) at (3.9,1.1) {\footnotesize \itshape minor $a_{ij}$ (\,$\times$ weglaten)};
-% schets matrix met kruisen in rij/kolom van a_ij
-\draw[very thick] (3.0,1.05) .. controls (3.4,1.05) and (3.5,1.05) .. (6.0,1.05); % accolade-achtig
-\draw[very thick] (3.0,-1.65) -- (3.0,1.05);
-\draw[very thick] (6.0,-1.65) -- (6.0,1.05);
 
-% mini-rooster met kruisjes
-\foreach \r/\c in {0/0,0/1,0/2,1/0,1/2,2/0,2/1,2/2}{
-  \node at (3.45+0.75*\c,0.65-0.75*\r) {$\times$};
-}
-\node at (3.45+0.75*1,0.65-0.75*1) {$a_{ij}$};
-
-% pijlen-tekst
-\node (cofact) at (0,0) {$\displaystyle
-\left|\begin{matrix}\cdots&\cdots&\cdots\\[2pt]\cdots&a_{ij}&\cdots\\[2pt]\cdots&\cdots&\cdots\end{matrix}\right|
-\;\;\Rightarrow\;\; \textit{cofactor } a_{ij}=A_{ij}=(-1)^{i+j}$};
-
-\node (toAdj) at (6.9,-0.55) {$\Rightarrow$};
-
-% adjugaat
-\node (adj) at (9.6,-0.55) {$\displaystyle
-\operatorname{adj}A=\Big[\;A_{ij}\;\Big]^{T}$};
-\draw[very thick] (8.3,0.6) -- (8.3,-1.7);
-\draw[very thick] (11.0,0.6) -- (11.0,-1.7);
-\end{scope}
-
-\end{tikzpicture}
-
-% Laplace regel (onderaan in één lijn)
-{\large \itshape laplace:}\;
-\[
-\det(A)=\sum_{k=1}^{n} a_{ik}A_{ik}
-\;=\;
-\sum_{r=1}^{n} a_{rj}A_{rj},
-\qquad
-A\in\mathbb{R}^{n\times n}.
-\]
-% 
-Dat wil zeggen: som van de producten van de drie ``dalende'' diagonalen \emph{minus} de som van de producten van de drie ``stijgende'' diagonalen.
-
-% Minor, cofactor, adjugate
-\medskip
-\textbf{Minor en cofactor.} Laat $M_{ij}$ de minor van $a_{ij}$ zijn (rij $i$ en kolom $j$ weggelaten).
-De cofactor is
-\[
-A_{ij} = (-1)^{i+j} \, M_{ij},
-\qquad
-\mathrm{adj}\,A = (A_{ij})^{T}.
-\]
-
-% Laplace-expansie
-\textbf{Laplace-expansie.} Voor $A\in\mathbb{R}^{n\times n}$ en om het even welke vaste rij $i$ of kolom $j$:
-\[
-\det(A)=\sum_{k=1}^{n} a_{ik}\,A_{ik}
-\;=\;
-\sum_{r=1}^{n} a_{rj}\,A_{rj}.
-\]
-
-% Regels
-\textbf{Rekenregels voor determinanten.}
-\begin{align*}
-\det(I_n)&=1, & \det(A^T)&=\det(A), & \det(AB)&=\det(A)\det(B). \\[1mm]
-\intertext{Rij-/kolombewerkingen (analoog voor kolommen):}
-\text{(i) vermenigvuldig rij $i$ met $k$} &\Rightarrow \det \text{ vermenigvuldigt met } k, \\
-\text{(ii) wissel twee rijen} &\Rightarrow \det \text{ verandert van teken}, \\
-\text{(iii) voeg een veelvoud van een rij bij een andere} &\Rightarrow \det \text{ blijft gelijk}, \\
-\text{(iv) een gelijke of nulrij} &\Rightarrow \det = 0.
-\end{align*}
-
-% adjugaat-relatie en inverse
-\textbf{Adjugaatrelatie.}
-\[
-A\,\mathrm{adj}\,A = \mathrm{adj}\,A\,A = \det(A)\,I.
-\]
-\textbf{Invertibiliteit.} $\det(A)\neq 0 \;\Rightarrow\; A$ is inverteerbaar en
-\[
-A^{-1} = \frac{1}{\det(A)}\,\mathrm{adj}\,A.
-\]
 % -----------------------------------------------------------------------------
 
 
@@ -921,7 +836,8 @@ A^{-1} = \frac{1}{\det(A)}\,\mathrm{adj}\,A.
 $ \operatorname{rang}(A) = \text{het aantal lineair onafhankelijke rijen van } A $
 
 \begin{enumerate}
-  \item Breng de matrix in \textbf{gereduceerde rij-echelonvorm (RREF)}.
+  \item Breng de matrix in \textbf{gereduceerde rij-echelonvorm \scriptsize \\ (RREF=Reduced Row-Echelon Form)}.
+  
   \item Het aantal niet-nulrijen in deze trapvorm is de rang van \(A\).
 \end{enumerate}
 
@@ -937,7 +853,7 @@ waar $A_j$ ontstaat uit $A$ door de $j$-de kolom te vervangen door de vector $B$
 a_1 x + b_1 y + c_1 z &= 0, \\
 a_2 x + b_2 y + c_2 z &= 0.
 \end{align*}
-Indien $\det\!\begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix}\neq0$, dan is de oplossingsruimte
+Indien $\det\!\begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix}\neq0$, dan is de oplossingenverzameling
 \[
 V = \{\, \lambda \cdot (\det\!\begin{pmatrix} b_1 & c_1 \\ b_2 & c_2 \end{pmatrix}, \;
           -\det\!\begin{pmatrix} a_1 & c_1 \\ a_2 & c_2 \end{pmatrix}, \;
@@ -960,8 +876,6 @@ a_3 & b_3 & c_3
 \end{pmatrix}=0.
 \]
 
-\subsection{$n$ vergelijkingen met $n$ onbekenden}
-Meer in het algemeen geldt: $AX=B$ met $A\in\mathbb{R}^{m\times n}$ heeft een oplossing als en slechts als $\mathrm{rang}(A)=\mathrm{rang}(A|B)$ (Stelling van Kronecker–Capelli).
 % -----------------------------------------------------------------------------
 
 

@@ -28,35 +28,34 @@
 \contentsline {subsection}{\numberline {6.2}Rekenregels}{12}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Cofactor-tekenpatroon $(-1)^{i+j}$}{12}{subsection.6.3}%
 \contentsline {section}{\numberline {7}Determinanten}{13}{section.7}%
-\contentsline {section}{\numberline {8}Stelsels oplossen}{15}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Rang van een matrix}{15}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}n vergelijkingen met n onbekenden, $|A|\neq 0$ (Cramer)}{15}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Homogene $2\times 3$-stelsels}{15}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}$n+1$ vergelijkingen met $n$ onbekenden}{15}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}$n$ vergelijkingen met $n$ onbekenden}{15}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Meetkunde}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}De cirkel}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}De parabool}{16}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}De ellips}{16}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}De hyperbool}{17}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Oppervlakte Formules}{17}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Volume Formules}{17}{subsection.9.6}%
-\contentsline {section}{\numberline {10}Ruimte meetkunde}{18}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{18}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Basis reële functies}{19}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Analyse}{20}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Limieten van rijen)}{20}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Limieten van functies}{20}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Limieten van goniometrische}{20}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Methodes bij het berekenen van limieten van functies}{21}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Afgeleiden - differentialen}{23}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Afgeleiden - fundamentele integralen}{24}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}Partiële integratie}{24}{subsection.11.7}%
-\contentsline {section}{\numberline {12}Statistiek}{25}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{25}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Test van een hypothese over een populatieproportie}{25}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{26}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Test van een hypothese over een populatieproportie via de P-waarde}{26}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Diversen}{27}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Wiskundige Symbolen (ISO 31/XI)}{27}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Logische symbolen}{27}{subsection.13.2}%
+\contentsline {section}{\numberline {8}Stelsels oplossen}{14}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Rang van een matrix}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}n vergelijkingen met n onbekenden, $|A|\neq 0$ (Cramer)}{14}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Homogene $2\times 3$-stelsels}{14}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}$n+1$ vergelijkingen met $n$ onbekenden}{14}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Meetkunde}{15}{section.9}%
+\contentsline {subsection}{\numberline {9.1}De cirkel}{15}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}De parabool}{15}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}De ellips}{15}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}De hyperbool}{16}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Oppervlakte Formules}{16}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Volume Formules}{16}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Ruimte meetkunde}{17}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{17}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Basis reële functies}{18}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Analyse}{19}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Limieten van rijen)}{19}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Limieten van functies}{19}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Limieten van goniometrische}{19}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Methodes bij het berekenen van limieten van functies}{20}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Afgeleiden - differentialen}{22}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Afgeleiden - fundamentele integralen}{23}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Partiële integratie}{23}{subsection.11.7}%
+\contentsline {section}{\numberline {12}Statistiek}{24}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{24}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Test van een hypothese over een populatieproportie}{24}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{25}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Test van een hypothese over een populatieproportie via de P-waarde}{25}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Diversen}{26}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Wiskundige Symbolen (ISO 31/XI)}{26}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Logische symbolen}{26}{subsection.13.2}%
