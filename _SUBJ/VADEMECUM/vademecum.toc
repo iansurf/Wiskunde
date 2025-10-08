@@ -41,25 +41,28 @@
 \contentsline {subsection}{\numberline {9.5}Oppervlakte Formules}{16}{subsection.9.5}%
 \contentsline {subsection}{\numberline {9.6}Volume Formules}{16}{subsection.9.6}%
 \contentsline {section}{\numberline {10}Ruimte meetkunde}{17}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Rechte}{17}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Vlak}{17}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Snijlijn 2 vlakken}{17}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Vlakkenwaaier van 2 vlakken}{17}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{18}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Basis reële functies}{19}{subsection.10.6}%
-\contentsline {section}{\numberline {11}Analyse}{20}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Limieten van rijen)}{20}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Limieten van functies}{20}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Limieten van goniometrische functies}{20}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Methodes bij het berekenen van limieten van functies}{21}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Afgeleiden - differentialen}{23}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Afgeleiden - fundamentele integralen}{24}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}Partiële integratie}{24}{subsection.11.7}%
-\contentsline {section}{\numberline {12}Statistiek}{25}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{25}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Test van een hypothese over een populatieproportie}{25}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{26}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Test van een hypothese over een populatieproportie via de P-waarde}{26}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Diversen}{27}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Wiskundige Symbolen (ISO 31/XI)}{27}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Logische symbolen}{27}{subsection.13.2}%
+\contentsline {subsection}{\numberline {10.1}Vectoren}{17}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Inwendige product — scalaire product}{17}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Rechte}{18}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Vlak}{18}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Snijlijn 2 vlakken}{18}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Vlakkenwaaier van 2 vlakken}{18}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Loodlijn op een vlak / loodvlak op een rechte}{18}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{19}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Basis reële functies}{20}{subsection.10.9}%
+\contentsline {section}{\numberline {11}Analyse}{21}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Limieten van rijen)}{21}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Limieten van functies}{21}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Limieten van goniometrische functies}{21}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Methodes bij het berekenen van limieten van functies}{22}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Afgeleiden - differentialen}{24}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Afgeleiden - fundamentele integralen}{25}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Partiële integratie}{25}{subsection.11.7}%
+\contentsline {section}{\numberline {12}Statistiek}{26}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{26}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Test van een hypothese over een populatieproportie}{26}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{27}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Test van een hypothese over een populatieproportie via de P-waarde}{27}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Diversen}{28}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Wiskundige Symbolen (ISO 31/XI)}{28}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Logische symbolen}{28}{subsection.13.2}%

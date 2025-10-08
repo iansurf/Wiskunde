@@ -1045,13 +1045,46 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \newpage
 
 \section{Ruimte meetkunde}
+\subsection{Vectoren}
+\subsection{Inwendige product — scalaire product}
+% Requires: \usetikzlibrary{angles,quotes}
+\begin{center}
+\begin{tikzpicture}[scale=0.9, line cap=round, line join=round, >=stealth]
+  %--- axes (same style/orientation as your examples) ----------------------
+  \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
+  \draw[->] (0,-0.2) -- (0,1.8) node[above] {$z$};
+  \draw[->] (0,0) -- (-1.2,-0.6) node[left] {$y$};
+
+  % origin
+  \coordinate (O) at (0,0);
+  \fill (O) circle (1pt) node[above left] {$O$};
+
+  %--- vectors u and v -----------------------------------------------------
+  \coordinate (U) at (2.0,0.55);   % adjust to taste
+  \coordinate (V) at (0.7,1.45);   % adjust to taste
+
+  \draw[->,very thick] (O) -- (U) node[below right] {$\vec u$};
+  \draw[->,very thick] (O) -- (V) node[above] {$\vec v$};
+
+  %--- angle between u and v at O -----------------------------------------
+  \pic [draw,->,angle radius=10pt, angle eccentricity=1.25] {angle = U--O--V};
+  \node at (0.44,0.36) {$\theta$};
+\end{tikzpicture}
+\end{center}
+
+\[
+\vec u \cdot \vec v \;=\; \|\vec u\|\,\|\vec v\| \cos\theta,
+\]
+
+\newpage
+
 \subsection{Rechte}
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|}
 \hline
-{\small $
+{\small $e \leftrightarrow
 \begin{bmatrix}
 x \\
 y \\
@@ -1071,7 +1104,7 @@ c
 \end{bmatrix}
 $}
 &
-$
+$e \leftrightarrow
 \frac{x - x_1}{a}
 =
 \frac{y - y_1}{b}
@@ -1084,11 +1117,39 @@ $ \\
 
 \subsection{Vlak}
 
+\begin{tikzpicture}[scale=1,>=stealth,line cap=round,line join=round]
+  %--- Skewed plane alpha --------------------------------------------------
+  \coordinate (P1) at (-3,0);
+  \coordinate (P2) at ( 3,0.6);
+  \coordinate (P3) at ( 2,2);
+  \coordinate (P4) at (-4,1.4);
+
+  \fill[gray!10] (P1)--(P2)--(P3)--(P4)--cycle;
+  \draw (P1)--(P2)--(P3)--(P4)--cycle node[above right] {$\alpha$};
+
+  %--- Point A and spanning vectors on the plane ---------------------------
+  \coordinate (A) at (-1.5,0.8);
+  \fill (A) circle (1.2pt) node[above left] {$A(x_1,y_1,z_1)$};
+
+  % Spanning vectors a1 and a2 on the plane
+  \draw[->] (A) -- ++(1.0,0.15) node[below right,xshift=2pt] {$\vec a_1=(a_1,b_1,c_1)$};
+  \draw[->] (A) -- ++(-0.35,1.0) node[left] {$\vec a_2=(a_2,b_2,c_2)$};
+
+  %--- Normal vector outside the plane -------------------------------------
+  \coordinate (N) at (1.3,1.1);
+
+  % Normal vector drawn perpendicular to the plane (upwards)
+  \draw[->,very thick] (N) -- ++(0,1.0)
+       node[above right] {$\vec{N}(u,v,w)$};
+\end{tikzpicture}
+
+
 \begin{table}[h!]
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|}
 \hline
 {\small $
+\alpha \leftrightarrow
 \begin{bmatrix}
 x \\[3pt]
 y \\[3pt]
@@ -1115,6 +1176,7 @@ c_2
 $}
 &
 $
+\alpha \leftrightarrow
 \begin{vmatrix}
 x & y & z & 1 \\[3pt]
 x_1 & y_1 & z_1 & 1 \\[3pt]
@@ -1122,12 +1184,9 @@ a_1 & b_1 & c_1 & 0 \\[3pt]
 a_2 & b_2 & c_2 & 0
 \end{vmatrix}
 = 0
-$
-&
-$ ux+vy+wz+t = 0 $ \\
+$ \\
 \hline
-$normaal \leftrightarrow \vec{N}(u, v, w)
- $ & $ $ & $ $ \\
+$\alpha \leftrightarrow ux+vy+wz+t = 0 $ & $normaal \leftrightarrow \vec{N}(u, v, w)$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -1170,6 +1229,32 @@ $
 \hline
 \end{tabular}
 \end{table}
+
+\subsection{Loodlijn op een vlak / loodvlak op een rechte}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$
+e \leftrightarrow
+\frac{x - x_1}{u}
+=
+\frac{y - y_1}{v}
+=
+\frac{z - z_1}{w}
+$
+& 
+$
+\alpha \leftrightarrow a(x - x_1) + b(y - y_1) + c(z - z_1) = 0
+$
+\\
+\hline
+\end{tabular}
+\end{table}
+
+
+
 
 \newpage
 

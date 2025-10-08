@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  8 OCT 2025 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  8 OCT 2025 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,12 +1192,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5]
 
 [6]
-<image_goniometrie.png, id=371, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=386, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
 Package pdftex.def Info: image_goniometrie.png  used on input line 311.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=373, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=388, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
@@ -1206,7 +1206,7 @@ Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line
 
 
 [7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=383, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=398, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
@@ -1253,7 +1253,7 @@ Overfull \hbox (12.08176pt too wide) detected at line 658
 
 
 [10]
-<image_goniometrie_cyclof.png, id=405, 820.86674pt x 322.20375pt>
+<image_goniometrie_cyclof.png, id=420, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
 Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 669.
@@ -1323,7 +1323,7 @@ Overfull \hbox (9.94469pt too wide) in paragraph at lines 881--912
 
 
 [14]
-<image_ellips.png, id=428, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=443, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
 Package pdftex.def Info: image_ellips.png  used on input line 961.
@@ -1335,7 +1335,7 @@ Overfull \hbox (5.91716pt too wide) detected at line 982
 []
  []
 
-<image_hyperbool.png, id=435, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=450, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
 Package pdftex.def Info: image_hyperbool.png  used on input line 987.
@@ -1346,111 +1346,113 @@ Package pdftex.def Info: image_hyperbool.png  used on input line 987.
 
 [17]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1176.
-
+[18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 1176.
+(hyperref)                removing `math shift' on input line 1261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 1176.
+(hyperref)                removing `\alpha' on input line 1261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1176.
+(hyperref)                removing `\beta' on input line 1261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1176.
+(hyperref)                removing `math shift' on input line 1261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1176.
+(hyperref)                removing `math shift' on input line 1261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1176.
+(hyperref)                removing `superscript' on input line 1261.
 
 
-Overfull \hbox (14.29434pt too wide) in paragraph at lines 1214--1215
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1261.
+
+
+Overfull \hbox (14.29434pt too wide) in paragraph at lines 1299--1300
  [][] 
  []
 
 
-Overfull \hbox (15.3794pt too wide) detected at line 1341
+Overfull \hbox (15.3794pt too wide) detected at line 1426
 []
  []
 
 
-Overfull \hbox (16.61427pt too wide) detected at line 1376
+Overfull \hbox (16.61427pt too wide) detected at line 1461
 []
  []
 
 
-Overfull \hbox (21.43024pt too wide) detected at line 1393
+Overfull \hbox (21.43024pt too wide) detected at line 1478
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 1407--1408
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 1492--1493
  [] 
  []
 
 
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1537--1537
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
 
 
-[19]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1478.
-
-
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
-
- []
-
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 1563.
 
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1611--1612
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1616
 
  []
 
 
 
 [22]
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1697
+
+ []
+
+
 
 [23]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1727--1767
+
+[24]
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1812--1852
 []$ 
  []
 
 
 
-[24]
-
 [25]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2008--2040
- [] 
- []
-
-
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2046--2078
- [] 
- []
-
-
 
 [26]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2093--2125
+ [] 
+ []
 
-[27] (vademecum.aux)
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2131--2163
+ [] 
+ []
+
+
+
+[27]
+
+[28] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1460,13 +1462,13 @@ L3 programming layer <2025-08-13>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: B58E56752A3ED192508AB05B371BE960;11292.
+(rerunfilecheck)             Checksum: E700EA17AD860BD29854C5EAA044A39C;11956.
  ) 
 Here is how much of TeX's memory you used:
- 36980 strings out of 468133
- 844401 string characters out of 5431680
- 1409501 words of memory out of 5000000
- 64904 multiletter control sequences out of 15000+600000
+ 37064 strings out of 468133
+ 845581 string characters out of 5431680
+ 1410516 words of memory out of 5000000
+ 64983 multiletter control sequences out of 15000+600000
  644557 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,25n,117p,732b,2535s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1504,9 +1506,9 @@ nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (27 pages, 681615 bytes).
+Output written on vademecum.pdf (28 pages, 687569 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 555 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 579 words of extra memory for PDF output out of 10000 (max. 10000000)
 
