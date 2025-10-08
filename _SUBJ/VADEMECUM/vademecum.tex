@@ -124,7 +124,7 @@ n\,\, oneven\Rightarrow\sqrt[n]{a^n}=a
 \end{array}
 \]
 
-\clearpage
+\newpage
 
 \subsection{$\frac{m}{n}$-de machtswortel in $\mathbb{R}$ }
 \[
@@ -186,7 +186,7 @@ ax^2 + bx + c = a(x - x_1)(x - x_2) = a(x^2 - Sx + P) & \\
 \end{array}
 \]
 
-\clearpage
+\newpage
 
 \subsection{Euclidische Deling}
 We gaan de derdegraadsveelterm $2x^3 + 3x^2 - 4x + 5$ delen door de eerstegraadsveelterm $x + 2$ met behulp van de praktische werkwijze van lange deling.
@@ -254,7 +254,7 @@ De rest is $9$, wat een graad heeft die kleiner is dan de graad van de deler $x 
     \draw[thick, -] (3.2, 0) -- (3.2, -0.5); % Vertical axis
 \end{tikzpicture}
 
-\clearpage
+\newpage
 
 \section{Complexe getallen}
 \subsection{Rechthoekige coordinaten}
@@ -301,7 +301,7 @@ Wortel &
  \end{array}
 \]
 
-\clearpage
+\newpage
 
 \section{Goniometrie}
 \subsection{De Goniometrische Cirkel}
@@ -367,7 +367,7 @@ Wortel &
 \boxed{1 + \cot^2{\alpha} = \csc^2{\alpha}}
 \]
 
-\clearpage
+\newpage
 \subsection{Verwante hoeken}
 \begin{figure}
     \centering
@@ -406,7 +406,7 @@ Wortel &
 \end{array}
 \]
 
-\clearpage
+\newpage
 
 \subsection{Belangrijke goniometrische waarden}
 \[
@@ -522,7 +522,7 @@ Wortel &
 
 \end{tikzpicture}
 
-\clearpage
+\newpage
 
 \subsection{Goniometrische formules}
 
@@ -656,7 +656,7 @@ Halveringsformules &
 \hline
 \end{array}
 \]
-\clearpage
+\newpage
 
 \subsection{Cyclometrische formules}
 $\begin{array}{*{20}{l}}
@@ -680,7 +680,7 @@ $\begin{array}{*{20}{l}}
 {Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
 \end{array}$
 
-\clearpage
+\newpage
 
 % --- Section: Matrices -------------------------------------------------------
 \section{Matrices}
@@ -825,7 +825,7 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 
 
 % --- Section: Stelsels oplossen ----------------------------------------------
-\clearpage
+\newpage
 
 \section{Stelsels oplossen}
 
@@ -864,7 +864,7 @@ a_1 x + b_1 y + c_1 &= 0,\\
 a_2 x + b_2 y + c_2 &= 0,\\
 a_3 x + b_3 y + c_3 &= 0
 \end{align*}
-heeft een oplossing $\Leftrightarrow$
+heeft één oplossing $\Leftrightarrow$
 \[
 \det \begin{pmatrix}
 a_1 & b_1 & c_1 \\
@@ -905,7 +905,7 @@ $
 \hline
 \text{Hoek tussen twee rechten a,b met rico m1,m2} & \cos (\widehat {ab}) = \frac{{\left| {1 + {m_1}{m_2}} \right|}}{{\sqrt {1 + {m_1}^2} \sqrt {1 + {m_2}^2} }}  \\
 \hline
-\text{Afstand tussen rechte a->ux+vy+w=0 en P(x1,y1)} & d(P,a) = \frac{{\left| {u{x_1} + v{y_1} + w} \right|}}{{\sqrt {{u^2} + {v^2}} }}  \\
+\text{Afstand tussen rechte a $\leftrightarrow$ ux+vy+w=0 en P(x1,y1)} & d(P,a) = \frac{{\left| {u{x_1} + v{y_1} + w} \right|}}{{\sqrt {{u^2} + {v^2}} }}  \\
 \hline
 \end{array}
 $
@@ -964,7 +964,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
     \end{tabular}
 \end{table}
 
-\clearpage
+\newpage
 
 \subsection{De hyperbool}
 
@@ -1042,6 +1042,8 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \end{tabular}
 \end{table}
 
+\newpage
+
 \section{Ruimte meetkunde}
 \subsection{Rechte}
 
@@ -1084,7 +1086,7 @@ $ \\
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
 {\small $
 \begin{bmatrix}
@@ -1120,13 +1122,56 @@ a_1 & b_1 & c_1 & 0 \\[3pt]
 a_2 & b_2 & c_2 & 0
 \end{vmatrix}
 = 0
+$
+&
+$ ux+vy+wz+t = 0 $ \\
+\hline
+$normaal \leftrightarrow \vec{N}(u, v, w)
+ $ & $ $ & $ $ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Snijlijn 2 vlakken}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$
+\begin{aligned}
+\alpha &\leftrightarrow u_1x + v_1y + w_1z + t_1 = 0 \\
+\beta  &\leftrightarrow u_2x + v_2y + w_2z + t_2 = 0
+\end{aligned}
+$
+&
+$
+d \leftrightarrow 
+\begin{cases}
+u_1x + v_1y + w_1z + t_1 = 0 \\
+u_2x + v_2y + w_2z + t_2 = 0
+\end{cases}
 $ \\
 \hline
 \end{tabular}
 \end{table}
 
+\subsection{Vlakkenwaaier van 2 vlakken}
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|}
+\hline
+$
+k(u_1x + v_1y + w_1z + t_1) + m(u_2x + v_2y + w_2z + t_2) = 0 
+\quad (k, m \in \mathbb{R})
+$
+\\
+\hline
+\end{tabular}
+\end{table}
 
+\newpage
 
 \subsection{Relatie tussen twee vlakken $\alpha,\beta$ in $\mathbb{R}^3$}
 \[
@@ -1362,7 +1407,7 @@ u_{2} & v_{2} & w_{2} & \vdots
 \end{tikzpicture}
 \end{center}
 
-\clearpage
+\newpage
 
 
 
@@ -1425,7 +1470,7 @@ $ \\
 \hline
 \end{tabular}
 
-\clearpage
+\newpage
 
 \section{Analyse}
 \subsection{Limieten van rijen)}
@@ -1457,7 +1502,7 @@ $\begin{array}{|l|}
 \hline
 \end{array}$
 
-\subsection{Limieten van goniometrische}
+\subsection{Limieten van goniometrische functies}
 
 $\begin{array}{|l|l|}
 \hline
@@ -1474,7 +1519,7 @@ $\begin{array}{|l|l|}
 \end{array}$
 \normalsize
 
-\clearpage
+\newpage
 
 \subsection{Methodes bij het berekenen van limieten van functies}
 \par\vspace{0.3cm}
@@ -1560,7 +1605,7 @@ $\begin{array}{l}
 \hline
 \end{tabularx}
 
-\clearpage
+\newpage
 
 \par\vspace{0.3cm}
 \underline{Bewerkingen met oneindig en onbepaalde vormen:} \newline
@@ -1616,7 +1661,7 @@ $\begin{array}{l}
 
 \end{tabular}
 
-\clearpage
+\newpage
 
 \subsection{Afgeleiden - differentialen}
 \fontsize{14pt}{15pt}\selectfont
@@ -1675,7 +1720,7 @@ d\left( {\frac{f}{g}} \right) = \frac{{gdf - fdg}}{{{g^2}}}
 \end{array}$
 \normalsize
 
-\clearpage
+\newpage
 
 \subsection{Afgeleiden - fundamentele integralen}
 \vspace{2mm}
@@ -1731,7 +1776,7 @@ $\int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )$
 $\int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
 
-\clearpage
+\newpage
 \section{Statistiek}
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 
@@ -1955,7 +2000,7 @@ $\displaystyle H_A : \hat{p} \ge g_{+}$ \\
 \end{tabular}
 \end{center}
 
-\clearpage
+\newpage
 
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}
 
@@ -2036,7 +2081,7 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 
 
 
-\clearpage
+\newpage
 \section{Diversen}
 \subsection{Wiskundige Symbolen (ISO 31/XI)}
 $
