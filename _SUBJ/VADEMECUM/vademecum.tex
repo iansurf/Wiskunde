@@ -455,19 +455,18 @@ Wortel &
   \draw[help] (P30) -- ({cos(30)},0);
   \draw[help] (P30) -- (0,{sin(30)});
   \fill[pt] (P30);
-  \node at (24:0.30) {$30^\circ$};
-  % cos30 = sqrt(3)/2 -> 3 in red; sin30 = sqrt(1)/2 -> 1 in red
-  \node[above right] at (P30) {$\left(\tfrac{\sqrt{\textcolor{red}{3}}}{2},\,\tfrac{\sqrt{\textcolor{red}{1}}}{2}\right)$};
-
+\node[anchor=west] at (30:1)
+  {$30^\circ \;\xrightarrow[\text{ }]{\text{ }(x, y)\text{ }}\;
+  \left(\tfrac{\sqrt{\textcolor{red}{3}}}{2},\,\tfrac{\sqrt{\textcolor{red}{1}}}{2}\right)$};
+  
   % --- 45 graden ---
   \coordinate (P45) at (45:1);
   \draw[thick] (0,0) -- (P45);
   \draw[help] (P45) -- ({cos(45)},0);
   \draw[help] (P45) -- (0,{sin(45)});
   \fill[pt] (P45);
-  \node at (41:0.38) {$45^\circ$};
-  % both sqrt(2)/2 -> 2 in red
-  \node[above right] at (P45) {$\left(\tfrac{\sqrt{\textcolor{red}{2}}}{2},\,\tfrac{\sqrt{\textcolor{red}{2}}}{2}\right)$};
+  \node[anchor=west] at (45:1) {$45^\circ \;\xrightarrow[\text{ }]{\text{ }(x, y)\text{ }}\;
+\left(\tfrac{\sqrt{\textcolor{red}{2}}}{2},\,\tfrac{\sqrt{\textcolor{red}{2}}}{2}\right)$};
 
   % --- 60 graden ---
   \coordinate (P60) at (60:1);
@@ -475,21 +474,22 @@ Wortel &
   \draw[help] (P60) -- ({cos(60)},0);
   \draw[help] (P60) -- (0,{sin(60)});
   \fill[pt] (P60);
-  \node at (56:0.48) {$60^\circ$};
-  % cos60 = sqrt(1)/2 -> 1 in red; sin60 = sqrt(3)/2 -> 3 in red
-  \node[above right] at (P60) {$\left(\tfrac{\sqrt{\textcolor{red}{1}}}{2},\,\tfrac{\sqrt{\textcolor{red}{3}}}{2}\right)$};
+\node[anchor=west] at (60:1)
+  {$60^\circ \;\xrightarrow[\text{ }]{\text{ }(x, y)\text{ }}\;
+  \left(\tfrac{\sqrt{\textcolor{red}{1}}}{2},\,\tfrac{\sqrt{\textcolor{red}{3}}}{2}\right)$};
 \end{tikzpicture}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.35\linewidth}\vspace{0pt}
 % --- Rechterzijde: Compacte tabel ---
 \[
 \begin{array}{c|cc}
-\theta & \sin\theta & \cos\theta\\\hline
-30^\circ & \tfrac{\sqrt{\textcolor{red}{1}}}{2} & \tfrac{\sqrt{\textcolor{red}{3}}}{2} \\[6pt]
+\theta & \cos\theta & \sin\theta\\\hline
+60^\circ & \tfrac{\sqrt{\textcolor{red}{1}}}{2} & \tfrac{\sqrt{\textcolor{red}{3}}}{2} \\[6pt]
 45^\circ & \tfrac{\sqrt{\textcolor{red}{2}}}{2} & \tfrac{\sqrt{\textcolor{red}{2}}}{2} \\[6pt]
-60^\circ & \tfrac{\sqrt{\textcolor{red}{3}}}{2} & \tfrac{\sqrt{\textcolor{red}{1}}}{2}
+30^\circ & \tfrac{\sqrt{\textcolor{red}{3}}}{2} & \tfrac{\sqrt{\textcolor{red}{1}}}{2}
 \end{array}
 \]
+
 \end{minipage}
 \end{center}
 
@@ -1046,6 +1046,43 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \end{table}
 
 \section{Ruimte meetkunde}
+\subsection{Rechte}
+
+\begin{table}[h!]
+\begin{tabular}{|c|c|}
+\hline
+{\small $
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
+=
+\begin{bmatrix}
+x_1 \\
+y_1 \\
+z_1
+\end{bmatrix}
++ k \cdot
+\begin{bmatrix}
+a \\
+b \\
+c
+\end{bmatrix}
+$}
+&
+$
+\frac{x - x_1}{a}
+=
+\frac{y - y_1}{b}
+=
+\frac{z - z_1}{c}
+$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
 \subsection{Relatie tussen twee vlakken $\alpha,\beta$ in $\mathbb{R}^3$}
 \[
 \begin{aligned}

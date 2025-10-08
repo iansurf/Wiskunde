@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  22 SEP 2025 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  8 OCT 2025 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,12 +1192,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5]
 
 [6]
-<image_goniometrie.png, id=351, 298.2342pt x 177.7842pt>
+<image_goniometrie.png, id=356, 298.2342pt x 177.7842pt>
 File: image_goniometrie.png Graphic file (type png)
 <use image_goniometrie.png>
 Package pdftex.def Info: image_goniometrie.png  used on input line 314.
 (pdftex.def)             Requested size: 314.11963pt x 187.26213pt.
-<image_goniometrie_sin_cos_tan.png, id=353, 215.00325pt x 109.6095pt>
+<image_goniometrie_sin_cos_tan.png, id=358, 215.00325pt x 109.6095pt>
 File: image_goniometrie_sin_cos_tan.png Graphic file (type png)
 <use image_goniometrie_sin_cos_tan.png>
 Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line 
@@ -1206,7 +1206,7 @@ Package pdftex.def Info: image_goniometrie_sin_cos_tan.png  used on input line
 
 
 [7 <./image_goniometrie.png> <./image_goniometrie_sin_cos_tan.png>]
-<image_goniometrie_verwante_hoeken.png, id=363, 306.9066pt x 193.2018pt>
+<image_goniometrie_verwante_hoeken.png, id=368, 306.9066pt x 193.2018pt>
 File: image_goniometrie_verwante_hoeken.png Graphic file (type png)
 <use image_goniometrie_verwante_hoeken.png>
 Package pdftex.def Info: image_goniometrie_verwante_hoeken.png  used on input l
@@ -1253,7 +1253,7 @@ Overfull \hbox (12.08176pt too wide) detected at line 661
 
 
 [10]
-<image_goniometrie_cyclof.png, id=383, 820.86674pt x 322.20375pt>
+<image_goniometrie_cyclof.png, id=390, 820.86674pt x 322.20375pt>
 File: image_goniometrie_cyclof.png Graphic file (type png)
 <use image_goniometrie_cyclof.png>
 Package pdftex.def Info: image_goniometrie_cyclof.png  used on input line 672.
@@ -1323,7 +1323,7 @@ Overfull \hbox (9.94469pt too wide) in paragraph at lines 884--915
 
 
 [14]
-<image_ellips.png, id=406, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=413, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
 Package pdftex.def Info: image_ellips.png  used on input line 964.
@@ -1335,119 +1335,122 @@ Overfull \hbox (5.91716pt too wide) detected at line 985
 []
  []
 
-<image_hyperbool.png, id=413, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=420, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
 Package pdftex.def Info: image_hyperbool.png  used on input line 990.
 (pdftex.def)             Requested size: 141.35017pt x 81.17392pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1049.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
-
-
 
 [16 <./image_hyperbool.png>]
-Overfull \hbox (14.29434pt too wide) in paragraph at lines 1087--1088
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1086.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1086.
+
+
+Overfull \hbox (14.29434pt too wide) in paragraph at lines 1124--1125
  [][] 
  []
 
 
-Overfull \hbox (15.3794pt too wide) detected at line 1214
+Overfull \hbox (15.3794pt too wide) detected at line 1251
 []
  []
 
 
-Overfull \hbox (16.61427pt too wide) detected at line 1249
+Overfull \hbox (16.61427pt too wide) detected at line 1286
 []
  []
 
 
-Overfull \hbox (21.43024pt too wide) detected at line 1266
+Overfull \hbox (21.43024pt too wide) detected at line 1303
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 1280--1281
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 1317--1318
  [] 
  []
 
 
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1325--1325
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 []|\OT1/cmr/m/n/10 Inverse go-nio-me-tri-sche
  []
 
 
 
-[18]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 1351.
-
-
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1404
-
- []
-
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 1388.
 
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1441
 
  []
 
 
 
 [21]
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
+
+ []
+
+
 
 [22]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 1600--1640
+
+[23]
+Overfull \hbox (2.009pt too wide) in paragraph at lines 1637--1677
 []$ 
  []
 
 
 
-[23]
-
 [24]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1881--1913
- [] 
- []
-
-
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 1919--1951
- [] 
- []
-
-
 
 [25]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1918--1950
+ [] 
+ []
 
-[26] (vademecum.aux)
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 1956--1988
+ [] 
+ []
+
+
+
+[26]
+
+[27] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1457,13 +1460,13 @@ L3 programming layer <2025-08-13>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: E6FDCE1685A000B1846A4DC80E761C88;10714.
+(rerunfilecheck)             Checksum: C6284CC9DB1F71F9600811A300F2DB66;10804.
  ) 
 Here is how much of TeX's memory you used:
- 36971 strings out of 468133
- 844249 string characters out of 5431680
- 1410501 words of memory out of 5000000
- 64904 multiletter control sequences out of 15000+600000
+ 36969 strings out of 468133
+ 844199 string characters out of 5431680
+ 1409501 words of memory out of 5000000
+ 64899 multiletter control sequences out of 15000+600000
  644557 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,25n,117p,732b,2535s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1473,35 +1476,37 @@ s/cm/cmbx12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmex10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ian/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ian/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Ian/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ian
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
-rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9
+KTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/Ian/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ian/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ian/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/User
+s/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
+:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ian/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ian/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ian/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Ian/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ian
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Use
+rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
 .pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ian/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Ian/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ian/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Ian/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Ia
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Us
-ers/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (26 pages, 653992 bytes).
+/cmsy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (27 pages, 677020 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 523 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 
