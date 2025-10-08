@@ -13,9 +13,6 @@
 \usepackage{adjustbox}
 \usepackage{tabularx}
 
-\usepackage{array}   % voor m{..}
-\usepackage{float}   % voor [H]
-
 \providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
 \providecommand{\norm}[1]{\lVert #1\rVert} % norm
 
@@ -127,7 +124,7 @@ n\,\, oneven\Rightarrow\sqrt[n]{a^n}=a
 \end{array}
 \]
 
-\newpage
+\clearpage
 
 \subsection{$\frac{m}{n}$-de machtswortel in $\mathbb{R}$ }
 \[
@@ -189,7 +186,7 @@ ax^2 + bx + c = a(x - x_1)(x - x_2) = a(x^2 - Sx + P) & \\
 \end{array}
 \]
 
-\newpage
+\clearpage
 
 \subsection{Euclidische Deling}
 We gaan de derdegraadsveelterm $2x^3 + 3x^2 - 4x + 5$ delen door de eerstegraadsveelterm $x + 2$ met behulp van de praktische werkwijze van lange deling.
@@ -257,7 +254,7 @@ De rest is $9$, wat een graad heeft die kleiner is dan de graad van de deler $x 
     \draw[thick, -] (3.2, 0) -- (3.2, -0.5); % Vertical axis
 \end{tikzpicture}
 
-\newpage
+\clearpage
 
 \section{Complexe getallen}
 \subsection{Rechthoekige coordinaten}
@@ -304,7 +301,7 @@ Wortel &
  \end{array}
 \]
 
-\newpage
+\clearpage
 
 \section{Goniometrie}
 \subsection{De Goniometrische Cirkel}
@@ -370,7 +367,7 @@ Wortel &
 \boxed{1 + \cot^2{\alpha} = \csc^2{\alpha}}
 \]
 
-\newpage
+\clearpage
 \subsection{Verwante hoeken}
 \begin{figure}
     \centering
@@ -409,7 +406,7 @@ Wortel &
 \end{array}
 \]
 
-\newpage
+\clearpage
 
 \subsection{Belangrijke goniometrische waarden}
 \[
@@ -525,7 +522,7 @@ Wortel &
 
 \end{tikzpicture}
 
-\newpage
+\clearpage
 
 \subsection{Goniometrische formules}
 
@@ -659,7 +656,7 @@ Halveringsformules &
 \hline
 \end{array}
 \]
-\newpage
+\clearpage
 
 \subsection{Cyclometrische formules}
 $\begin{array}{*{20}{l}}
@@ -683,7 +680,7 @@ $\begin{array}{*{20}{l}}
 {Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
 \end{array}$
 
-\newpage
+\clearpage
 
 % --- Section: Matrices -------------------------------------------------------
 \section{Matrices}
@@ -828,7 +825,7 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 
 
 % --- Section: Stelsels oplossen ----------------------------------------------
-\newpage
+\clearpage
 
 \section{Stelsels oplossen}
 
@@ -967,7 +964,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
     \end{tabular}
 \end{table}
 
-\newpage
+\clearpage
 
 \subsection{De hyperbool}
 
@@ -1049,6 +1046,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \subsection{Rechte}
 
 \begin{table}[h!]
+\centering
 \begin{tabular}{|c|c|}
 \hline
 {\small $
@@ -1081,6 +1079,53 @@ $ \\
 \hline
 \end{tabular}
 \end{table}
+
+\subsection{Vlak}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+{\small $
+\begin{bmatrix}
+x \\[3pt]
+y \\[3pt]
+z
+\end{bmatrix}
+=
+\begin{bmatrix}
+x_1 \\[3pt]
+y_1 \\[3pt]
+z_1
+\end{bmatrix}
++ r \cdot
+\begin{bmatrix}
+a_1 \\[3pt]
+b_1 \\[3pt]
+c_1
+\end{bmatrix}
++ s \cdot
+\begin{bmatrix}
+a_2 \\[3pt]
+b_2 \\[3pt]
+c_2
+\end{bmatrix}
+$}
+&
+$
+\begin{vmatrix}
+x & y & z & 1 \\[3pt]
+x_1 & y_1 & z_1 & 1 \\[3pt]
+a_1 & b_1 & c_1 & 0 \\[3pt]
+a_2 & b_2 & c_2 & 0
+\end{vmatrix}
+= 0
+$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
 
 
 \subsection{Relatie tussen twee vlakken $\alpha,\beta$ in $\mathbb{R}^3$}
@@ -1317,7 +1362,7 @@ u_{2} & v_{2} & w_{2} & \vdots
 \end{tikzpicture}
 \end{center}
 
-\newpage
+\clearpage
 
 
 
@@ -1380,7 +1425,7 @@ $ \\
 \hline
 \end{tabular}
 
-\newpage
+\clearpage
 
 \section{Analyse}
 \subsection{Limieten van rijen)}
@@ -1429,7 +1474,7 @@ $\begin{array}{|l|l|}
 \end{array}$
 \normalsize
 
-\newpage
+\clearpage
 
 \subsection{Methodes bij het berekenen van limieten van functies}
 \par\vspace{0.3cm}
@@ -1515,7 +1560,7 @@ $\begin{array}{l}
 \hline
 \end{tabularx}
 
-\newpage
+\clearpage
 
 \par\vspace{0.3cm}
 \underline{Bewerkingen met oneindig en onbepaalde vormen:} \newline
@@ -1571,7 +1616,7 @@ $\begin{array}{l}
 
 \end{tabular}
 
-\newpage
+\clearpage
 
 \subsection{Afgeleiden - differentialen}
 \fontsize{14pt}{15pt}\selectfont
@@ -1630,7 +1675,7 @@ d\left( {\frac{f}{g}} \right) = \frac{{gdf - fdg}}{{{g^2}}}
 \end{array}$
 \normalsize
 
-\newpage
+\clearpage
 
 \subsection{Afgeleiden - fundamentele integralen}
 \vspace{2mm}
@@ -1686,7 +1731,7 @@ $\int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )$
 $\int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
 
-\newpage
+\clearpage
 \section{Statistiek}
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 
@@ -1910,7 +1955,7 @@ $\displaystyle H_A : \hat{p} \ge g_{+}$ \\
 \end{tabular}
 \end{center}
 
-\newpage
+\clearpage
 
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}
 
@@ -1991,7 +2036,7 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 
 
 
-\newpage
+\clearpage
 \section{Diversen}
 \subsection{Wiskundige Symbolen (ISO 31/XI)}
 $

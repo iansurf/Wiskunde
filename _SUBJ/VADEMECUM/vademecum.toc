@@ -42,8 +42,9 @@
 \contentsline {subsection}{\numberline {9.6}Volume Formules}{16}{subsection.9.6}%
 \contentsline {section}{\numberline {10}Ruimte meetkunde}{17}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Rechte}{17}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{17}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Basis reële functies}{19}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.2}Vlak}{17}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Relatie tussen twee vlakken $\alpha ,\beta $ in $\mathbb {R}^3$}{17}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Basis reële functies}{19}{subsection.10.4}%
 \contentsline {section}{\numberline {11}Analyse}{20}{section.11}%
 \contentsline {subsection}{\numberline {11.1}Limieten van rijen)}{20}{subsection.11.1}%
 \contentsline {subsection}{\numberline {11.2}Limieten van functies}{20}{subsection.11.2}%
