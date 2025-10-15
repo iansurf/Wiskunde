@@ -1046,7 +1046,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 
 \section{Ruimte meetkunde}
 \subsection{Vectoren}
-\subsection{Inwendige product — scalaire product}
+\subsubsection{Inwendige product (inproduct,scalaire product)}
 % Requires: \usetikzlibrary{angles,quotes}
 \begin{center}
 \begin{tikzpicture}[scale=0.9, line cap=round, line join=round, >=stealth]
@@ -1063,18 +1063,41 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
   \coordinate (U) at (2.0,0.55);   % adjust to taste
   \coordinate (V) at (0.7,1.45);   % adjust to taste
 
-  \draw[->,very thick] (O) -- (U) node[below right] {$\vec u$};
-  \draw[->,very thick] (O) -- (V) node[above] {$\vec v$};
+  \draw[->,very thick] (O) -- (U) node[above right] {$\vec u (u_x,u_y,u_z)$};
+  \draw[->,very thick] (O) -- (V) node[above right] {$\vec v (v_x,v_y,v_z)$};
 
   %--- angle between u and v at O -----------------------------------------
   \pic [draw,->,angle radius=10pt, angle eccentricity=1.25] {angle = U--O--V};
   \node at (0.44,0.36) {$\theta$};
 \end{tikzpicture}
 \end{center}
-
 \[
-\vec u \cdot \vec v \;=\; \|\vec u\|\,\|\vec v\| \cos\theta,
+\vec u \cdot \vec v \;=\; \|\vec u\|\,\|\vec v\| \cos\theta \;=\; u_x \cdot v_x + u_y \cdot v_y + u_z \cdot v_z
 \]
+\subsubsection{Vectorieel product van vectoren (kruisproduct)}
+\[
+\vec{u} \times \vec{v}
+\;\stackrel{\text{def}}{=}\;
+\bigl(u_y v_z - u_z v_y,\;
+u_z v_x - u_x v_z,\;
+u_x v_y - u_y v_x \bigr)
+=\left(
+\begin{vmatrix}
+u_y & u_z\\
+v_y & v_z
+\end{vmatrix},
+\begin{vmatrix}
+u_z & u_x\\
+v_z & v_x
+\end{vmatrix},
+\begin{vmatrix}
+u_x & u_y\\
+v_x & v_y
+\end{vmatrix}
+\right) \in \mathbb{R}^3.
+\]
+
+
 
 \newpage
 
