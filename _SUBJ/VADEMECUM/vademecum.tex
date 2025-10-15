@@ -760,16 +760,18 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
   }
 \end{tikzpicture}
 \end{center}
-% -----------------------------------------------------------------------------
-% --- 4.3 Determinanten (beeld zoals screenshot) -------------------------------
+% % ----------------------------------------------------------------------------- 
+% --- Determinanten (compact, fits on page) ------------------------------------
 \section{Determinanten}
 
 \begin{center}
 \begin{tikzpicture}[>=stealth]
 \node (box1) [draw, inner sep=2pt, minimum width=10cm] at (0,0) {%
   \begin{minipage}{0.8\linewidth}
+  % smaller intercolumn space than \qquad
   \[
-  \begin{array}{c @{\qquad} c}
+  \setlength{\arraycolsep}{4pt}%
+  \begin{array}{c @{\hspace{6pt}} c}
     {\displaystyle
       \left|\begin{matrix} a & b \\[2pt] c & d \end{matrix}\right|
       = ad - bc}
@@ -777,35 +779,43 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
     {\displaystyle
       \left|\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}\right|
       \xrightarrow{\text{Sarrus}}\;
-      % ---- inline mini-TikZ placed AFTER the arrow ----
-      \tikz[scale=0.65, baseline=-0.5ex]{
-        \def\cell{0.45}
-        % helper: 3x3 dot grid at (ox,oy)
+      % ---- ultra-compact inline mini-TikZ ----
+      \tikz[scale=0.58, baseline=-0.5ex, xshift=-8mm]{%
+        \def\cell{0.40} % was 0.45
+        \tikzset{
+          triPlus/.style={thick,green},
+          triMinus/.style={thick,blue},
+          dot/.style={}
+        }
+        % left grid
         \foreach \i in {0,1,2}{
           \foreach \j in {0,1,2}{
-            \fill[white] (\j*\cell,-\i*\cell) circle(0.04);
-            \draw        (\j*\cell,-\i*\cell) circle(0.04);
+            \draw (\j*\cell,-\i*\cell) circle(0.03); % smaller dots
           }
         }
-        % plus block (left)
+
+        % -------- PLUS (links) ----------
         \begin{scope}[shift={(0,0)}]
-          \node[above=6pt] at (\cell,0) {\scriptsize $\mathbf{+}$};
-          \draw[thick] (0,0) -- (\cell,-\cell) -- (2*\cell,-2*\cell);
-          \draw[thick] (\cell,0) -- (2*\cell,-\cell);
-          \draw[thick] (0,-\cell) -- (\cell,-2*\cell);
+          \node[above=2pt, text=green] at (\cell,0) {\scriptsize $\mathbf{+}$};
+          \draw[triPlus] (0,0) -- (\cell,-\cell) -- (2*\cell,-2*\cell);
+          \draw[triPlus] (1*\cell,0) -- (2*\cell,-1*\cell) -- (0,-2*\cell) -- cycle;
+          \draw[triPlus] (2*\cell,0) -- (0,-1*\cell) -- (1*\cell,-2*\cell) -- cycle;
         \end{scope}
-        % draw a second grid for the minus block
-        \begin{scope}[shift={(2.2,0)}]
+
+        % -------- MIN (rechts) ----------
+        \begin{scope}[shift={(1.6,0)}] % was 2.2 → 2.0 → now 1.6
           \foreach \i in {0,1,2}{
             \foreach \j in {0,1,2}{
-              \fill[white] (\j*\cell,-\i*\cell) circle(0.04);
-              \draw        (\j*\cell,-\i*\cell) circle(0.04);
+              \draw (\j*\cell,-\i*\cell) circle(0.03);
             }
           }
-          \node[above=6pt] at (\cell,0) {\scriptsize $\mathbf{-}$};
-          \draw[thick] (0,-2*\cell) -- (\cell,-\cell) -- (2*\cell,0);
-          \draw[thick] (0,-\cell) -- (\cell,0);
-          \draw[thick] (\cell,-2*\cell) -- (2*\cell,-\cell);
+          \node[above=2pt, text=blue] at (\cell,0) {\scriptsize $\mathbf{-}$};
+          \draw[triMinus] (0,-2*\cell) -- (\cell,-1*\cell) -- (2*\cell,0);
+          \draw[triMinus] (0,-1*\cell) -- (\cell,0);
+          \draw[triMinus] (\cell,-2*\cell) -- (2*\cell,-1*\cell);
+          \draw[triMinus] (2*\cell,0) -- (1*\cell,-1*\cell) -- (0,-2*\cell) -- cycle;
+          \draw[triMinus] (1*\cell,0) -- (0,-1*\cell) -- (2*\cell,-2*\cell) -- cycle;
+          \draw[triMinus] (0,0) -- (2*\cell,-1*\cell) -- (1*\cell,-2*\cell) -- cycle;
         \end{scope}
       }
     }
@@ -816,46 +826,7 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 \end{tikzpicture}
 \end{center}
 
-\begin{tikzpicture}[scale=1.0, baseline=(m.center)]
-  % --- matrix met herhaling van eerste twee kolommen ---
-  \matrix (m) [matrix of math nodes,
-                nodes in empty cells,
-                left delimiter={(}, right delimiter={)},
-                column sep=0.8em, row sep=0.8em] {
-     a & b & c & a & b \\
-     d & e & f & d & e \\
-     g & h & i & g & h \\
-  };
 
-  % ---- positieve diagonalen (blauw) ----
-  \foreach \x/\y in {1/1, 2/1, 3/1} {
-    \draw[thick,blue,->] 
-      (m-\x-1.center) -- ++(2.05, -2.05);
-  }
-  % markeer letters in blauw
-  \foreach \coord in {m-1-1, m-2-2, m-3-3,
-                      m-1-2, m-2-3, m-3-4,
-                      m-1-3, m-2-4, m-3-5}{
-    \node[blue] at (\coord) {$\bullet$};
-  }
-
-  % ---- negatieve diagonalen (rood) ----
-  \foreach \x/\y in {1/3, 2/4, 3/5} {
-    \draw[thick,red,->]
-      (m-\x-3.center) -- ++(-2.05, -2.05);
-  }
-  % markeer rode punten
-  \foreach \coord in {m-3-1, m-2-2, m-1-3,
-                      m-3-2, m-2-3, m-1-4,
-                      m-3-3, m-2-4, m-1-5}{
-    \node[red] at (\coord) {$\bullet$};
-  }
-
-  % labels +
-  \node[blue, above=6pt] at (m-1-2.north) {\Large $\mathbf{+}$};
-  % label −
-  \node[red, below=6pt] at (m-3-3.south) {\Large $\mathbf{-}$};
-\end{tikzpicture}
 
 % -----------------------------------------------------------------------------
 % --- Section: Stelsels oplossen ----------------------------------------------
