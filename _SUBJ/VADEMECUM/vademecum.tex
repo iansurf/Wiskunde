@@ -760,42 +760,40 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
   }
 \end{tikzpicture}
 \end{center}
-% % ----------------------------------------------------------------------------- 
-% --- Determinanten (compact, fits on page) ------------------------------------
+% ----------------------------------------------------------------------------- 
+% --- Determinanten (2x groter diagram, verder naar links) --------------------
 \section{Determinanten}
 
 \begin{center}
 \begin{tikzpicture}[>=stealth]
 \node (box1) [draw, inner sep=2pt, minimum width=10cm] at (0,0) {%
   \begin{minipage}{0.8\linewidth}
-  % smaller intercolumn space than \qquad
+  % compacter kolom-interval dan \qquad
   \[
-  \setlength{\arraycolsep}{4pt}%
-  \begin{array}{c @{\hspace{6pt}} c}
+  \setlength{\arraycolsep}{3pt}%
+  \begin{array}{c @{\hspace{4pt}} c}
     {\displaystyle
       \left|\begin{matrix} a & b \\[2pt] c & d \end{matrix}\right|
       = ad - bc}
     &
     {\displaystyle
       \left|\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}\right|
-      \xrightarrow{\text{Sarrus}}\;
-      % ---- ultra-compact inline mini-TikZ ----
-      \tikz[scale=0.58, baseline=-0.5ex, xshift=-8mm]{%
-        \def\cell{0.40} % was 0.45
+      \mathrel{\smash{\xrightarrow{\scriptstyle\text{Sarrus}}}}\;
+      % ---- inline mini-TikZ (2x groter, verder links) ----
+      \tikz[scale=2, baseline=-5ex, xshift=-3cm]{%
+        \def\cell{0.40}
         \tikzset{
           triPlus/.style={thick,green},
-          triMinus/.style={thick,blue},
-          dot/.style={}
+          triMinus/.style={thick,blue}
         }
-        % left grid
-        \foreach \i in {0,1,2}{
-          \foreach \j in {0,1,2}{
-            \draw (\j*\cell,-\i*\cell) circle(0.03); % smaller dots
-          }
-        }
-
         % -------- PLUS (links) ----------
+                % linker grid
         \begin{scope}[shift={(0,0)}]
+          \foreach \i in {0,1,2}{
+            \foreach \j in {0,1,2}{
+              \draw (\j*\cell,-\i*\cell) circle(0.03);
+            }
+          }
           \node[above=2pt, text=green] at (\cell,0) {\scriptsize $\mathbf{+}$};
           \draw[triPlus] (0,0) -- (\cell,-\cell) -- (2*\cell,-2*\cell);
           \draw[triPlus] (1*\cell,0) -- (2*\cell,-1*\cell) -- (0,-2*\cell) -- cycle;
@@ -803,7 +801,7 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
         \end{scope}
 
         % -------- MIN (rechts) ----------
-        \begin{scope}[shift={(1.6,0)}] % was 2.2 → 2.0 → now 1.6
+        \begin{scope}[shift={(0,0)}] % dichter bij het plus-blok
           \foreach \i in {0,1,2}{
             \foreach \j in {0,1,2}{
               \draw (\j*\cell,-\i*\cell) circle(0.03);
@@ -825,7 +823,6 @@ B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA & $A$ regulier
 };
 \end{tikzpicture}
 \end{center}
-
 
 
 % -----------------------------------------------------------------------------
