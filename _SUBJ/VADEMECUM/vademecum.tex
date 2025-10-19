@@ -664,13 +664,52 @@ $\begin{array}{*{20}{l}}
 {y = {\mathop{\rm Bgcos}\nolimits} x \Leftrightarrow \left( {x = \cos y\;\; \wedge y \in \left[ {0,\pi } \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
 {y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in \mathbb {R} } \right)}
 \end{array}$
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\linewidth]{image_goniometrie_cyclof.png}
-    \label{fig:enter-label}
-\end{figure}
+$\\$
+% Vereist: \usepackage{tikz,pgfplots}
+% \pgfplotsset{compat=1.18}
+\begin{tikzpicture}
+\begin{axis}[
+  width=12cm,height=7.2cm,
+  axis lines=middle,
+  xmin=-4.2,xmax=4.2,
+  ymin=-1.6,ymax=3.4,
+  grid=both, minor tick num=1,
+  xtick={-4,-3,-2,-1,0,1,2,3,4},
+  ytick={-2,-1,0,1,2,3},
+  clip=false,
+  trig format=rad,             % functies in radialen
+  every axis plot/.style={very thick},
+  legend style={
+    draw=none, fill=none,
+    legend columns=1,
+    at={(axis cs:-3.8,2.6)},  % links van de figuur
+    anchor=west
+  },
+  legend image code/.code={\draw[mark=*,mark size=3pt] plot coordinates {(0,0)};},
+  legend cell align=left
+]
 
-$\begin{array}{*{20}{l}}
+% f(x) = asin(x)
+\addplot[green!60!black,domain=-1:1,samples=200] {asin(x)};
+\addlegendentry{$f(x)=Bgsin(x)$}
+
+% g(x) = acos(x)
+\addplot[red!70!black,domain=-1:1,samples=200] {acos(x)};
+\addlegendentry{$g(x)=Bgcos(x)$}
+
+% h(x) = atan(x)
+\addplot[blue!70!black,domain=-4:4,samples=200] {atan(x)};
+\addlegendentry{$h(x)=Bgtan(x)$}
+
+% labels bij de krommen (zoals in het voorbeeld)
+\node[green!60!black] at (axis cs:0.95,1.1) {\small $f$};
+\node[red!70!black]   at (axis cs:-0.95,3.1) {\small $g$};
+\node[blue!70!black]  at (axis cs:3.7,1.28) {\small $h$};
+
+\end{axis}
+\end{tikzpicture}
+
+$\\ \begin{array}{*{20}{l}}
 {\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
 {\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
 {tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \left[ { - 1,1} \right]}\\
