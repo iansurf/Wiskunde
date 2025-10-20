@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.1}Machten met Gehele Exponenten}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Vierkantswortel in $\mathbb {R}$}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}N-de machtswortel in $\mathbb {R}$}{3}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}$\frac {m}{n}$-de machtswortel in $\mathbb {R}$ }{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}$\frac {m}{n}$-de machtswortel in $\mathbb {R}$}{4}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Veeltermen}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Vierkantsvergelijking}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Merkwaardige Producten en Ontbinding in Factoren}{4}{subsection.3.2}%

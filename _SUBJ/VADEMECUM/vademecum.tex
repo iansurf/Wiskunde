@@ -4,24 +4,25 @@
 \usetikzlibrary{positioning,angles,quotes,calc,babel,matrix}
 
 \usepackage[margin=0.5cm]{geometry}
-\usepackage{amsmath, amssymb, amsfonts,mathtools,bm}
+\usepackage{amssymb, amsfonts,mathtools,bm}
+
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{titlesec}
-\usepackage{hyperref}
 \usepackage{adjustbox}
 \usepackage{tabularx}
 
 \providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
 \providecommand{\norm}[1]{\lVert #1\rVert} % norm
 
-\usepackage{array}  % For better table alignment
 \usepackage{float}  % To control the placement of the table
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{caption}
+
+\usepackage{hyperref}
 
 % Adjust spacing for sections and subsections
 \titlespacing*{\section}{0pt}{*1}{0pt} % Reduce spacing after section heading
@@ -126,7 +127,7 @@ n\,\, oneven\Rightarrow\sqrt[n]{a^n}=a
 
 \newpage
 
-\subsection{$\frac{m}{n}$-de machtswortel in $\mathbb{R}$ }
+\subsection{\texorpdfstring{$\frac{m}{n}$-de machtswortel in $\mathbb{R}$}{m/n-de machtswortel in R}}
 \[
 \begin{array}{|c|c|}
 \hline
@@ -659,12 +660,27 @@ Halveringsformules &
 \newpage
 
 \subsection{Cyclometrische formules}
-$\begin{array}{*{20}{l}}
-{y = {\mathop{\rm Bgsin}\nolimits} x \Leftrightarrow \left( {x = \sin y\;\; \wedge y \in \left[ { - \frac{\pi }{2},\frac{\pi }{2}} \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
-{y = {\mathop{\rm Bgcos}\nolimits} x \Leftrightarrow \left( {x = \cos y\;\; \wedge y \in \left[ {0,\pi } \right],\;x \in \left[ { - 1,1} \right]} \right)}\\
-{y = {\mathop{\rm Bgtan}\nolimits} \;x \Leftrightarrow \left( {x = \tan y\;\; \wedge y \in \left] { - \frac{\pi }{2},\frac{\pi }{2}} \right[,\;x \in \mathbb {R} } \right)}
-\end{array}$
-$\\$
+
+% — Definities ---------------------------------------------------------------
+\[
+\begin{aligned}
+y=Bgsin x &\;\Leftrightarrow\; x=\sin y,  && \text{met } y\in\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right],\ x\in[-1,1]\\
+y=Bgcos x &\;\Leftrightarrow\; x=\cos y,  && \text{met } y\in[0,\pi],\ x\in[-1,1]\\
+y=Bgtan x &\;\Leftrightarrow\; x=\tan y,  && \text{met } y\in\left]-\tfrac{\pi}{2},\tfrac{\pi}{2}\right[,\ x\in\mathbb{R}\\
+y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right[,\ x\in\mathbb{R}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+&\forall a \in \mathbb{R}_0^+ : && Bgcot(a) = Bgtan\!\left(\frac{1}{a}\right) \\
+&\forall a \in \mathbb{R}_0^- : && Bgcot(a) = \pi + Bgtan\!\left(\frac{1}{a}\right)
+\end{aligned}
+\]
+
+
+
+% — Figuur -------------------------------------------------------------------
 % Vereist: \usepackage{tikz,pgfplots}
 % \pgfplotsset{compat=1.18}
 \begin{tikzpicture}
@@ -672,7 +688,7 @@ $\\$
   width=12cm,height=7.2cm,
   axis lines=middle,
   xmin=-4.2,xmax=4.2,
-  ymin=-1.6,ymax=3.4,
+  ymin=-2,ymax=4,
   grid=both, minor tick num=1,
   xtick={-4,-3,-2,-1,0,1,2,3,4},
   ytick={-2,-1,0,1,2,3},
@@ -682,7 +698,7 @@ $\\$
   legend style={
     draw=none, fill=none,
     legend columns=1,
-    at={(axis cs:-3.8,2.6)},  % links van de figuur
+    at={(axis cs:-3.8,2.6)},
     anchor=west
   },
   legend image code/.code={\draw[mark=*,mark size=3pt] plot coordinates {(0,0)};},
@@ -701,23 +717,72 @@ $\\$
 \addplot[blue!70!black,domain=-4:4,samples=200] {atan(x)};
 \addlegendentry{$h(x)=Bgtan(x)$}
 
-% labels bij de krommen (zoals in het voorbeeld)
-\node[green!60!black] at (axis cs:0.95,1.1) {\small $f$};
-\node[red!70!black]   at (axis cs:-0.95,3.1) {\small $g$};
-\node[blue!70!black]  at (axis cs:3.7,1.28) {\small $h$};
+% i(x) = acot(x)
+\addplot[orange,domain=-4:-0.01,samples=200] {pi+atan(1/x)};
+\addplot[orange,domain=0.01:4,samples=200] {atan(1/x)};
+\addlegendentry{$h(x)=Bgcot(x)$}
+
+% labels bij de krommen
+\node[green!60!black,anchor=south west] at (axis cs:1,1.5)  {\small $Bgsin(x)$};
+\node[red!70!black,anchor=south west]   at (axis cs:-1,3.1) {\small $Bgcos(x)$};
+\node[blue!70!black]  at (axis cs:3.7,1.5)  {\small $Bgtan(x)$};
+\node[orange]         at (axis cs:3.7,0.1)   {\small $Bgcot(x)$};
 
 \end{axis}
 \end{tikzpicture}
 
-$\\ \begin{array}{*{20}{l}}
-{\sin \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\cos \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{1}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
-{\cos \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = x \wedge \forall x \in \left[ { - 1,1} \right]}&{\sin \left( {{\mathop{\rm Bgtan}\nolimits} x} \right) = \frac{x}{{\sqrt {1 + {x^2}} }}\forall x \in \mathbb {R} }\\
-{tg\left( {{\mathop{\rm Bgtan}\nolimits} } \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgsin}\nolimits} x + {\mathop{\rm Bgcos}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \left[ { - 1,1} \right]}\\
-{cotg\left( {{\mathop{\rm Bgcot}\nolimits} x} \right) = x \wedge \forall x \in \mathbb {R} }&{{\mathop{\rm Bgcot}\nolimits} x + {\mathop{\rm Bgtan}\nolimits} x = \frac{\pi }{2} \wedge \forall x \in \mathbb {R} }\\
-{\cos \left( {{\mathop{\rm Bgsin}\nolimits} x} \right) = \sqrt {1 - {x^2}} \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgtan}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgtan}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
-{\sin \left( {{\mathop{\rm Bgcos}\nolimits} x} \right) = \sqrt {1 - {x^2}}  \wedge\forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcot}\nolimits} \left( { - x} \right) =  - {\mathop{\rm Bgcot}\nolimits} x \wedge \forall x \in \mathbb {R} }\\
-{Bgsin\left( { - x} \right) =  - {\mathop{\rm Bgsin}\nolimits} x \wedge \forall x \in \left[ { - 1,1} \right]}&{{\mathop{\rm Bgcos}\nolimits} \left( { - x} \right) = \pi  - {\mathop{\rm Bgcos}\nolimits} x\forall x \in \left[ { - 1,1} \right]}
-\end{array}$
+% — Identiteiten 
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|} % 2 columns
+  \hline
+    \begin{minipage}{0.45\linewidth}
+    \makebox[\linewidth][l]{%
+      $\begin{aligned}
+      &\sin\bigl(Bgsin(x)\bigr) = x, \; x \in [-1,1] \\
+      &\cos\bigl(Bgcos(x)\bigr) = x, \; x \in [-1,1] \\
+      &\tan\bigl(Bgtan(x)\bigr) = x, \; x \in\mathbb{R}\\
+      &\cot\bigl(Bgcot(x)\bigr) = x, \; x \in\mathbb{R}\\
+    	  &\end{aligned}$%
+    }
+    \end{minipage}
+    &
+    \begin{minipage}{0.45\linewidth}
+    \makebox[\linewidth][l]{%
+      $\begin{aligned}
+  	  &Bgsin(\sin(x)) = x, -\frac{\pi}{2} \le x \le \frac{\pi}{2} \\
+      &Bgcos(\cos(x)) = x, 0 \le x \le \pi \\
+      &Bgtan(\tan(x)) = x, -\frac{\pi}{2} < x < \frac{\pi}{2} \\
+      &Bgcot(\cot(x)) = x, 0 < x < \pi
+    	  &\end{aligned}$%
+    	}
+    \end{minipage}
+    \\
+    \hline
+    \begin{minipage}{0.45\linewidth}
+    \makebox[\linewidth][l]{%
+	  $\begin{aligned}
+	  &\cos(bgsin(x)) = \sqrt{1 - x^2}, \; x \in [-1,1] \\
+	  &\sin(bgcos(x)) = \sqrt{1 - x^2}, \; x \in [-1,1] \\
+	  &\cot(bgtan(x)) = \frac{1}{x}, \; \forall x \in \mathbb{R}_0 \\
+	  &\tan(bgcot(x)) = \frac{1}{x}, \; \forall x \in \mathbb{R}_0 \\
+	  &\cos\bigl(Bgtan(x)\bigr) = \dfrac{1}{\sqrt{1+x^2}}, \; x\in\mathbb{R}\\
+	  &\sin\bigl(Bgtan(x)\bigr) = \dfrac{x}{\sqrt{1+x^2}}, \; x\in\mathbb{R}\\
+	  &\end{aligned}$%
+    	}
+    \end{minipage}
+    &
+    \begin{minipage}{0.45\linewidth}
+    \makebox[\linewidth][l]{%
+      $\begin{aligned}
+      &Bgsin(-x) = -\,Bgsin(x) , \; x\in[-1,1]\\
+      &Bgcos(-x) = \pi-Bgcos(x) , \; x\in[-1,1]\\
+      &Bgsin(x) + Bgcos(x) = \dfrac{\pi}{2} , \; x\in[-1,1]\\
+      &Bgcot(x) + Bgtan(x) = \dfrac{\pi}{2} , \; x\in\mathbb{R}
+    	  &\end{aligned}$%
+    	}
+    \end{minipage}
+    \\
+    \hline
+\end{tabular}
 
 \newpage
 
