@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  20 OCT 2025 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  20 OCT 2025 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,15 +1462,8 @@ Overfull \hbox (3.45679pt too wide) in paragraph at lines 2281--2313
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
-
-
-Package rerunfilecheck Warning: File `vademecum.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `vademecum.out':
-(rerunfilecheck)             Before: 33074D4F00083815D3937202B9DC4133;12449
-(rerunfilecheck)             After:  A7CFCFA42FDD9A5A1A0E597E593B5212;12446.
+Package rerunfilecheck Info: File `vademecum.out' has not changed.
+(rerunfilecheck)             Checksum: A7CFCFA42FDD9A5A1A0E597E593B5212;12446.
  ) 
 Here is how much of TeX's memory you used:
  37180 strings out of 468133
@@ -1514,7 +1507,7 @@ nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (29 pages, 615108 bytes).
+Output written on vademecum.pdf (29 pages, 615105 bytes).
 PDF statistics:
  681 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)
