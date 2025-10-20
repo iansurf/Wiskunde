@@ -81,6 +81,7 @@ a & \text{if } a \geq 0 \\
 \end{array}
 \]
 
+
 \subsection{Vierkantswortel in $\mathbb{R}$}
 
 \[
@@ -307,20 +308,95 @@ Wortel &
 \section{Goniometrie}
 \subsection{De Goniometrische Cirkel}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{image_goniometrie.png}
-\label{fig:goniometrie}
-\end{figure}
+\begin{center}
+\begin{tikzpicture}[>=stealth,scale=5,
+  sincos/.style ={red,thick},
+  tansec/.style ={green!70!black,thick},
+  cotcsc/.style ={blue!70!black,thick},
+  guide/.style  ={black!50}
+]
+  % ----- angle parameter -----
+  \def\ang{35} % degrees
+
+  % ----- basic trig values -----
+  \pgfmathsetmacro{\cx}{cos(\ang)}
+  \pgfmathsetmacro{\sx}{sin(\ang)}
+  \pgfmathsetmacro{\tx}{tan(\ang)}
+  \pgfmathsetmacro{\cotx}{cot(\ang)}
+  \pgfmathsetmacro{\secx}{sec(\ang)}
+  \pgfmathsetmacro{\cscx}{cosec(\ang)} % same as csc
+
+  % ----- reference objects: axes and quarter of unit circle -----
+  \draw[guide,->] (-0.02,0) -- (1.1,0) node[below] {$x$};
+  \draw[guide,->] (0,-0.02) -- (0,1.1) node[above] {$y$};
+  % quarter circle only (first quadrant)
+  \draw[guide] (1,0) arc[start angle=0,end angle=90,radius=1];
+
+  % optional rectangle lines (only within first quadrant)
+  \draw[guide,rounded corners=0.5pt]
+    (0,0) rectangle (\cotx,1);
+
+  % vertical “1” bars (left & right)
+  \draw[cotcsc,<->] (0,0) -- (0,1) node[midway,left=2pt] {$1$};
+  \draw[cotcsc,<->] (\cotx,0) -- (\cotx,1) node[midway,right=2pt] {$1$};
+
+  % ----- angle ray -----
+  \draw[guide,thick] (0,0) -- (\ang:1.1);     % ray
+  \draw[guide] (0.18,0) arc[start angle=0,end angle=\ang,radius=0.18];
+  \node[guide] at ({0.26*cos(\ang/2)},{0.26*sin(\ang/2)}) {$\alpha$};
+
+  % points
+  \coordinate (U) at (\cx,\sx);               % on unit circle
+  \coordinate (X1) at (1,\tx);                % intersect x=1 line
+  \coordinate (Y1) at (\cotx,1);              % intersect y=1 line
+
+  % ----- cos and sin -----
+  \draw[sincos,<->] (0,0) -- (\cx,0) node[midway,above=2pt] {\(\cos\alpha\)};
+  \draw[sincos,<->] (\cx,0) -- (U) node[midway,left=2pt] {\(\sin\alpha\)};
+
+  % ----- tan and sec (x=1) -----
+  \draw[tansec,<->] (1,0) -- (X1) node[midway,right=2pt] {\(\tan\alpha\)};
+  \draw[tansec,<->] (0,0) -- (X1) node[midway,below=2pt,sloped] {\(\sec\alpha\)};
+
+  % ----- cot and csc (y=1) -----
+  \draw[cotcsc,<->] (0,1) -- (Y1) node[midway,above=2pt] {\(\cot\alpha\)};
+  \draw[cotcsc,<->] (-0.01,0.01) -- (\cotx-0.01,1+0.01) node[midway,above=2pt,sloped] {\(\csc\alpha\)};
+\end{tikzpicture}
+\end{center}
+
 
 \subsection{formules uit de goniometrie}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{image_goniometrie_sin_cos_tan.png}
-\label{fig:sin_cos_tan}
-\end{figure}
+\begin{center}
+\begin{tikzpicture}[scale=1.2, line cap=round, line join=round, >=stealth]
+  % vertices
+  \coordinate (B) at (0,0);
+  \coordinate (A) at (5,0);
+  \coordinate (C) at (5,2.2);
 
+  % triangle
+  \draw[thick] (B) -- (A) -- (C) -- cycle;
+
+  % right-angle marker at A (inside the triangle)
+  \draw[thick]
+    ($(A)+(-0.35,0)$) -- ($(A)+(-0.35,0.35)$) -- ($(A)+(0,0.35)$);
+
+  % angle beta at B
+  \pic [draw, "$\beta$", angle radius=10mm, angle eccentricity=1.15]
+       {angle=A--B--C};
+
+  % side labels
+  \node[below]           at ($(A)!0.5!(B)$) {$c$};
+  \node[right]           at ($(A)!0.5!(C)$) {$b$};
+  \node[above,sloped]    at ($(B)!0.5!(C)$) {$a$};
+
+  % vertex labels
+  \node[below left]  at (B) {B};
+  \node[below right] at (A) {A};
+  \node[right]       at (C) {C};
+\end{tikzpicture}
+
+\end{center}
 
 \[\begin{array}{|c|c|}
 \hline
