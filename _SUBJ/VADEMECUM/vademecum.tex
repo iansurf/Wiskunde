@@ -2050,61 +2050,68 @@ $\begin{array}{l}
 
 \newpage
 
-\subsection{Afgeleiden - differentialen}
+\subsection{Afgeleiden}
+\[f'(a)
+= \left( \frac{df}{dx} \right)_{x=a}
+= \lim_{\scriptscriptstyle \Delta x \to 0} \frac{\Delta y}{\Delta x}
+= \lim_{\scriptscriptstyle \Delta x \to 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}
+= \lim_{\scriptscriptstyle x \to a} \frac{f(x) - f(a)}{x - a}
+\\
+\]
+\[g(x) = u, \qquad D_x\!\bigl[f(g(x))\bigr]
+= D_x\!\bigl[f(u)\bigr]
+= \frac{d[f(u)]}{dx}
+= \frac{d[f(u)]}{du} \cdot \frac{du}{dx}
+= D_u\!\bigl[f(u)\bigr] \cdot D_x\!\bigl[u\bigr]\]
+\subsubsection{Afgeleiden - differentialen}
 \fontsize{14pt}{15pt}\selectfont
-$\begin{array}{|l|l|}
+\[
+\begin{array}{|l|l|}
 \hline
-\begin{array}{l}
-Dc = 0\\
-D\;(c.f) = c.Df\\
-D\left( {f \pm g} \right) = Df \pm Dg\\
-D\left( {f.g} \right) = fDg + gDf\\
-D\left( {\frac{f}{g}} \right) = \frac{{gDf - fDg}}{{{g^2}}}\\
-D{x^n} = n{x^{n - 1}}\\
-D{x^{ - 1}} =  - 1.{x^{ - 2}}\\
-D\sin x = \cos x\\
-D\cos x =  - \sin x\\
-D\tan x = {\sec ^2}x = \frac{1}{{{{\cos }^2}x}}\\
-D\cot x =  - cs{c^2}x = \frac{{ - 1}}{{{{\sin }^2}x}}\\
-D{\mathop{\rm Bgsin}\nolimits} x = \frac{1}{{\sqrt {1 - {x^2}} }}\\
-D{\mathop{\rm Bgcos}\nolimits} x = \frac{{ - 1}}{{\sqrt {1 - {x^2}} }}\\
-D{\mathop{\rm Bgtan}\nolimits} x = \frac{1}{{1 + {x^2}}}\\
-D{\mathop{\rm sh}\nolimits} x = {\mathop{\rm ch}\nolimits} x\\
-D{\mathop{\rm ch}\nolimits} x = {\mathop{\rm sh}\nolimits} x\\
-D{\mathop{\rm th}\nolimits} x = \frac{1}{{c{h^2}x}}\\
-D{e^x} = {e^x}\\
-D{a^x} = {a^x}\ln a\\
-D\ln x = \frac{1}{x}\quad D\ln \left| x \right| = \frac{1}{x}\\
-D{}^a\log x = \frac{1}{{x\ln a}}\\
-D\ln \left| {x + \sqrt {{x^2} + k} } \right| = \frac{1}{{\sqrt {{x^2} + k} }}\\
-D{u^v} = v{u^{v - 1}}Du + {u^v}\ln uDv
+Dc = 0, \; D(c f) = c Df & df = 0 \\
+\hline
+D(f \pm g) = Df \pm Dg & d(f \pm g) = df \pm dg \\
+\hline
+D(fg) = f Dg + g Df & d(fg) = f\,dg + g\,df \\
+\hline
+D\!\left(\frac{f}{g}\right) = \frac{gDf - fDg}{g^2} & d\!\left(\frac{f}{g}\right) = \frac{g\,df - f\,dg}{g^2} \\
+\hline
+D(x^n) = n x^{n-1} & d(x^n) = n x^{n-1} dx \\
+\hline
+D(\sin x) = \cos x & d(\sin x) = \cos x\,dx \\
+\hline
+D(\cos x) = -\sin x & d(\cos x) = -\sin x\,dx \\
+\hline
+D(\tan x) = \sec^2 x = \frac{1}{\cos^2 x} & d(\tan x) = \sec^2 x\,dx = \frac{dx}{\cos^2 x} \\
+\hline
+D(\cot x) = -\csc^2 x = -\frac{1}{\sin^2 x} & d(\cot x) = -\csc^2 x\,dx = -\frac{dx}{\sin^2 x} \\
+\hline
+D(\arcsin x) = \frac{1}{\sqrt{1-x^2}} & d(\arcsin x) = \frac{dx}{\sqrt{1-x^2}} \\
+\hline
+D(\arccos x) = \frac{-1}{\sqrt{1-x^2}} & d(\arccos x) = \frac{-dx}{\sqrt{1-x^2}} \\
+\hline
+D(\arctan x) = \frac{1}{1+x^2} & d(\arctan x) = \frac{dx}{1+x^2} \\
+\hline
+D(\sinh x) = \cosh x & d(\sinh x) = \cosh x\,dx \\
+\hline
+D(\cosh x) = \sinh x & d(\cosh x) = \sinh x\,dx \\
+\hline
+D(\tanh x) = \frac{1}{\cosh^2 x} & d(\tanh x) = \frac{dx}{\cosh^2 x} \\
+\hline
+D(e^x)=e^x,\:D(a^x)=a^x \ln a & d(e^x)=e^x\,dx,\:d(a^x)=a^x \ln a\,dx \\
+\hline
+D(\ln x) = \frac{1}{x}, \quad D(\ln|x|) = \frac{1}{x} & d(\ln|x|) = \frac{dx}{x} \\
+\hline
+D({}^a\!\log x) = \frac{1}{x \ln a} & d({}^a\!\log x) = \frac{dx}{x \ln a} \\
+\hline
+D\!\left(\ln|x + \sqrt{x^2 + k}|\right) = \frac{1}{\sqrt{x^2 + k}} &
+d\!\left(\ln|x + \sqrt{x^2 + k}|\right) = \frac{dx}{\sqrt{x^2 + k}} \\
+\hline
+D(u^v) = v u^{v-1} Du + u^v \ln u\, Dv &
+d(u^v) = v u^{v-1} du + u^v \ln u\, dv \\
+\hline
 \end{array}
-&
-\begin{array}{l}
-dc = 0\\
-d{x^n} = n{x^{n - 1}}dx\\
-d{x^{ - 1}} =  - 1.{x^{ - 2}}dx\\
-d\sin x = \cos xdx\\
-d\cos x =  - \sin xdx\\
-d\tan x = {\sec ^2}xdx = \frac{1}{{{{\cos }^2}x}}dx\\
-d\cot x =  - cs{c^2}xdx = \frac{{ - 1}}{{{{\sin }^2}x}}dx\\
-d{\mathop{\rm Bgsin}\nolimits} x = \frac{{dx}}{{\sqrt {1 - {x^2}} }}\\
-d{\mathop{\rm Bgcos}\nolimits} x = \frac{{ - dx}}{{\sqrt {1 - {x^2}} }}\\
-d{\mathop{\rm Bgtan}\nolimits} x = \frac{{dx}}{{1 + {x^2}}}\\
-dshx = chxdx\\
-dchx = shxdx\\
-dthx = \frac{{dx}}{{c{h^2}x}}\\
-d{}^a\log x = \frac{{dx}}{{x\ln a}}\\
-d\ln \left| x \right| = \frac{{dx}}{x}\\
-d{a^x} = {a^x}\ln adx\\
-d{e^x} = {e^x}dx\\
-d\ln \left| {x + \sqrt {{x^2} + k} } \right| = \frac{{dx}}{{\sqrt {{x^2} + k} }}\\
-d\left( {f + g} \right) = df + dg\\
-d\left( {f.g} \right) = fdg + gdf\\
-d\left( {\frac{f}{g}} \right) = \frac{{gdf - fdg}}{{{g^2}}}
-\end{array} \\
-\hline
-\end{array}$
+\]
 \normalsize
 
 \newpage

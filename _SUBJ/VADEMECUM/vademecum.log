@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  21 OCT 2025 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  21 OCT 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,7 +1312,7 @@ Overfull \hbox (9.94469pt too wide) in paragraph at lines 1143--1174
 
 
 [14]
-<image_ellips.png, id=441, 143.03438pt x 87.32625pt>
+<image_ellips.png, id=446, 143.03438pt x 87.32625pt>
 File: image_ellips.png Graphic file (type png)
 <use image_ellips.png>
 Package pdftex.def Info: image_ellips.png  used on input line 1223.
@@ -1324,7 +1324,7 @@ Overfull \hbox (5.91716pt too wide) detected at line 1244
 []
  []
 
-<image_hyperbool.png, id=448, 152.06813pt x 87.32625pt>
+<image_hyperbool.png, id=453, 152.06813pt x 87.32625pt>
 File: image_hyperbool.png Graphic file (type png)
 <use image_hyperbool.png>
 Package pdftex.def Info: image_hyperbool.png  used on input line 1249.
@@ -1419,9 +1419,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1998--1999
 
 
 [24]
+Overfull \hbox (11.98254pt too wide) detected at line 2114
+[]
+ []
+
+
 
 [25]
-Overfull \hbox (2.009pt too wide) in paragraph at lines 2114--2154
+Overfull \hbox (2.009pt too wide) in paragraph at lines 2121--2161
 []$ 
  []
 
@@ -1430,12 +1435,12 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 2114--2154
 [26]
 
 [27]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2395--2427
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2402--2434
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2433--2465
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2440--2472
  [] 
  []
 
@@ -1449,13 +1454,13 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: A7CFCFA42FDD9A5A1A0E597E593B5212;12446.
+(rerunfilecheck)             Checksum: 8D67205480CE11DB660D7700A3A364E5;12566.
  ) 
 Here is how much of TeX's memory you used:
- 37334 strings out of 468133
- 850760 string characters out of 5431680
- 1484219 words of memory out of 5000000
- 65251 multiletter control sequences out of 15000+600000
+ 37336 strings out of 468133
+ 850802 string characters out of 5431680
+ 1484222 words of memory out of 5000000
+ 65252 multiletter control sequences out of 15000+600000
  644557 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,26n,117p,732b,2516s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1493,9 +1498,9 @@ nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (29 pages, 551865 bytes).
+Output written on vademecum.pdf (29 pages, 554280 bytes).
 PDF statistics:
- 672 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 575 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 677 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
