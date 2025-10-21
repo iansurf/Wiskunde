@@ -489,29 +489,37 @@ Wortel &
   \foreach \Q in {P90m,P90p,P180m,P180p,Pneg} \draw[guide] (O) -- (\Q);
 
   % angle labels (now using named coords)
-  \pic[draw,"$\alpha$",angle radius=6mm,angle eccentricity=1.2]
+  \pic[draw,<->,"$\alpha$",angle radius=10mm,angle eccentricity=1.2]
       {angle=X--O--P};
-  \pic[draw,labg,"$90^\circ-\alpha$",angle radius=10mm,angle eccentricity=1.2]
+  \pic [draw,->,labg,angle radius=26mm,angle eccentricity=1.2]
       {angle=X--O--P90m};
-  \pic[draw,labg,"$90^\circ+\alpha$",angle radius=14mm,angle eccentricity=1.2]
+  \pic [draw,->,labg,angle radius=22mm,angle eccentricity=1.2]
       {angle=X--O--P90p};
-  \pic[draw,labg,"$180^\circ-\alpha$",angle radius=18mm,angle eccentricity=2]
+  \pic[draw,->,labg,angle radius=18mm,angle eccentricity=1.2]
       {angle=X--O--P180m};
-  \pic[draw,labg,"$180^\circ+\alpha$",angle radius=22mm,angle eccentricity=1.23]
+  \pic[draw,->,labg,angle radius=14mm,angle eccentricity=1.2]
       {angle=X--O--P180p};
-  \pic[draw,labg,"$-\alpha$",angle radius=26mm,angle eccentricity=1.15]
+  \pic[draw,<->,"$-\alpha$",angle radius=10mm,angle eccentricity=1.2]
       {angle=Pneg--O--X};
 
   % outside captions
-  \node[labg,anchor=east]  at (P180m) {supplementair $\alpha$};
-  \node[labg,anchor=east]  at (P180p) {antisupplementair $\alpha$};
-  \node[labg,anchor=west]  at (Pneg) {tegengestelde $\alpha$};
-  \node[labg,anchor=east] at (P90p) {anticomplementair $\alpha$};
-  \node[labg,anchor=west]  at (P90m) {complementair $\alpha$};
+  \node[anchor=east]  at (P180m) {supplementair $\alpha$ = };
+  \node[anchor=west]  at (P180m) { $ \pi-\alpha$};
+
+  \node[anchor=east]  at (P180p) {antisupplementair $\alpha$ =};
+  \node[anchor=west]  at (P180p) { $  \pi+\alpha$};
+
+  \node[anchor=west]  at (Pneg) {tegengestelde $\alpha$};
+
+  \node[anchor=east] at (P90p) {anticomplementair $\alpha$ =};
+  \node[anchor=west]  at (P90p) { $\;\; \frac{\pi}{2}+\alpha$};
+
+  \node[anchor=east]  at (P90m) { $\frac{\pi}{2}-\alpha \;$};
+  \node[anchor=west]  at (P90m) {= complementair $\alpha$};
 
   % sin & cos for α
   \coordinate (U) at (\cx,\sx);
-  \draw[sincos,<->] (O) -- (\cx,0) node[midway,below=2pt] {\small $\cos\alpha$};
+  \draw[sincos,<->] (O) -- (\cx,0) node[pos=0.6 ,below=2pt] {\small $\cos\alpha$};
   \draw[sincos,<->] (\cx,0) -- (U)    node[midway,left=2pt] {\small $\sin\alpha$};
 
   % tangent (x=1) & cotangent (y=1)
