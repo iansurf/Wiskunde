@@ -446,12 +446,80 @@ Wortel &
 
 \newpage
 \subsection{Verwante hoeken}
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{image_goniometrie_verwante_hoeken.png}
-  
-    \label{fig:enter-label}
-\end{figure}
+
+\begin{center}
+\begin{tikzpicture}[scale=4, line cap=round, line join=round, >=stealth]
+  % styles
+  \tikzset{
+    guide/.style={black!60},
+    labg/.style={guide, font=\footnotesize},
+    sincos/.style={red!80!black, thick},
+    tansec/.style={magenta!80, thick},
+    cotcsc/.style={blue!70!black, thick}
+  }
+
+  % ----- parameter -----
+  \def\ang{30} % degrees
+
+  % ----- base points (avoid commas in \pic arguments) -----
+  \coordinate (O) at (0,0);
+  \coordinate (X) at (1,0);
+  \coordinate (Y) at (0,1);
+  \coordinate (P) at (\ang:1);          % on unit circle, angle α
+  \coordinate (P90m) at (90-\ang:1);
+  \coordinate (P90p) at (90+\ang:1);
+  \coordinate (P180m) at (180-\ang:1);
+  \coordinate (P180) at (180:1);
+  \coordinate (P180p) at (180+\ang:1);
+  \coordinate (Pneg) at (-\ang:1);
+
+  % trig numbers (for sin/cos/tan/cot)
+  \pgfmathsetmacro{\cx}{cos(\ang)}
+  \pgfmathsetmacro{\sx}{sin(\ang)}
+  \pgfmathsetmacro{\tx}{tan(\ang)}
+  \pgfmathsetmacro{\cotx}{cot(\ang)}
+
+  % ----- unit circle & axes -----
+  \draw[thick] (O) circle[radius=1];
+  \draw[guide] (-1,0) -- (1,0);
+  \draw[guide] (0,-1) -- (0,1);
+
+  % rays
+  \draw[guide,thick] (O) -- (P);
+  \foreach \Q in {P90m,P90p,P180m,P180p,Pneg} \draw[guide] (O) -- (\Q);
+
+  % angle labels (now using named coords)
+  \pic[draw,"$\alpha$",angle radius=6mm,angle eccentricity=1.2]
+      {angle=X--O--P};
+  \pic[draw,labg,"$90^\circ-\alpha$",angle radius=10mm,angle eccentricity=1.2]
+      {angle=X--O--P90m};
+  \pic[draw,labg,"$90^\circ+\alpha$",angle radius=14mm,angle eccentricity=1.2]
+      {angle=X--O--P90p};
+  \pic[draw,labg,"$180^\circ-\alpha$",angle radius=18mm,angle eccentricity=2]
+      {angle=X--O--P180m};
+  \pic[draw,labg,"$180^\circ+\alpha$",angle radius=22mm,angle eccentricity=1.23]
+      {angle=X--O--P180p};
+  \pic[draw,labg,"$-\alpha$",angle radius=26mm,angle eccentricity=1.15]
+      {angle=Pneg--O--X};
+
+  % outside captions
+  \node[labg,anchor=east]  at (P180m) {supplementair $\alpha$};
+  \node[labg,anchor=east]  at (P180p) {antisupplementair $\alpha$};
+  \node[labg,anchor=west]  at (Pneg) {tegengestelde $\alpha$};
+  \node[labg,anchor=east] at (P90p) {anticomplementair $\alpha$};
+  \node[labg,anchor=west]  at (P90m) {complementair $\alpha$};
+
+  % sin & cos for α
+  \coordinate (U) at (\cx,\sx);
+  \draw[sincos,<->] (O) -- (\cx,0) node[midway,below=2pt] {\small $\cos\alpha$};
+  \draw[sincos,<->] (\cx,0) -- (U)    node[midway,left=2pt] {\small $\sin\alpha$};
+
+  % tangent (x=1) & cotangent (y=1)
+  \draw[guide] (O) -- ({max(1.25,\cotx)},1);
+  \draw[tansec,<->] (1,0) -- (1,\tx) node[midway,right=3pt] {\small $\tan\alpha$};
+  \draw[cotcsc,<->] (0,1) -- (\cotx,1) node[midway,above=2pt] {\small $\cot\alpha$};
+\end{tikzpicture}
+\end{center}
 
 \[
 \begin{array}{|l|l|l|}
