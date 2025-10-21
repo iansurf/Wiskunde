@@ -1206,7 +1206,7 @@ $
 \subsection{De ellips}
 \vspace{-3mm}
 \begin{table}[h!]
-    \begin{tabular}{|>{\centering\arraybackslash}m{0.5\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+    \begin{tabular}{|>{\centering\arraybackslash}m{0.4\textwidth}|>{\centering\arraybackslash}m{0.55\textwidth}|}
         \hline
         \[\begin{array}{l}
 Cartesiaanse{\rm{ }}vgl.{\rm{ }}:\frac{{{x^2}}}{{{a^2}}} + {\frac{y}{{{b^2}}}^2} = 1\\
@@ -1218,9 +1218,44 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
 \end{array}\]
         &
         \vspace{2mm}
-        \begin{minipage}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[width=0.9\textwidth]{image_ellips.png}
+        \begin{minipage}[t]{0.55\textwidth}
+			\begin{tikzpicture}[scale=0.65, line cap=round]
+			  % Parameters
+			  \pgfmathsetmacro{\a}{3.8}
+			  \pgfmathsetmacro{\b}{2.3}
+			  \pgfmathsetmacro{\c}{sqrt(max(\a*\a-\b*\b,0))} % c^2 = a^2 - b^2 (ellipse)
+			
+			  % Axes
+			  \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+			  \draw[->] (0,-2.5) -- (0,2.5) node[above] {$y$};
+			
+			  % Ellipse
+			  \draw (0,0) ellipse [x radius=\a, y radius=\b];
+			
+			  % Foci and key points
+			  \fill (-\c,0) circle (2pt) node[below right] {$F_1(-c,0)$};
+			  \fill (\c,0)  circle (2pt) node[below ] {$F_2(c,0)$};
+			  \fill (0,0)   circle (2pt) node[above right] {$O$};
+			  \fill (-\a,0) circle (2pt) node[above left] {$(-a,0)$};
+			  \fill (0,-\b) circle (2pt) node[below left] {$(0,-b)$};
+			
+			  % Point P on ellipse (parametric angle t)
+			  \pgfmathsetmacro{\t}{60} % degrees
+			  \pgfmathsetmacro{\xP}{ \a*cos(\t) }
+			  \pgfmathsetmacro{\yP}{ \b*sin(\t) }
+			  \fill (\xP,\yP) circle (1.2pt) node[above right] {$\mathcal{E}$};
+			
+			  % r1 and r2
+			  \draw[gray] (\xP,\yP) -- (-\c,0) node[midway, above] {$r_1$};
+			  \draw[gray] (\xP,\yP) -- (\c,0)  node[midway, above] {$r_2$};
+			
+			  % Projections to axes (x and y)
+			  \draw[gray] (\xP,\yP) -- (\xP,0);   % vertical drop
+			  \draw[gray] (\xP,\yP) -- (0,\yP);   % horizontal to y-axis
+			  \node[below] at (\xP,0) {$x$};
+			  \node[right] at (0,\yP) {$y$};
+			\end{tikzpicture}
+
         \end{minipage} \\ 
         \hline
     \end{tabular}
@@ -1232,7 +1267,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
 
 \vspace{-3mm}
 \begin{table}[h!]
-    \begin{tabular}{|>{\centering\arraybackslash}m{0.5\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+    \begin{tabular}{|>{\centering\arraybackslash}m{0.5\textwidth}|>{\centering\arraybackslash}m{0.45\textwidth}|}
         \hline
         \[\begin{array}{l}
 Cartesiaanse{\rm{ }}vgl.{\rm{ }}:\frac{{{x^2}}}{{{a^2}}} - {\frac{y}{{{b^2}}}^2} = 1\\
@@ -1244,9 +1279,47 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
 \end{array}\]
         &
         \vspace{2mm}
-        \begin{minipage}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[width=0.9\textwidth]{image_hyperbool.png}
+        \begin{minipage}[t]{0.45\textwidth}
+		 \begin{tikzpicture}[scale=0.4, line cap=round]
+		  % Parameters
+		  \pgfmathsetmacro{\a}{3.2}
+		  \pgfmathsetmacro{\b}{2.0}
+		  \pgfmathsetmacro{\c}{sqrt(\a*\a+\b*\b)}  % c^2 = a^2 + b^2 (hyperbola)
+		
+		  % Axes
+		  \draw[->] (-6.2,0) -- (6.2,0) node[right] {$x$};
+		  \draw[->] (0,-3.8) -- (0,3.8) node[above] {$y$};
+		
+		  % Hyperbola branches: y = ± b*sqrt(x^2/a^2 - 1)
+		  \draw[domain=\a:6.1,samples=150,smooth] plot (\x,  { \b*sqrt(\x*\x/(\a*\a) - 1) });
+		  \draw[domain=\a:6.1,samples=150,smooth] plot (\x, -{ \b*sqrt(\x*\x/(\a*\a) - 1) });
+		  \draw[domain=-6.1:-\a,samples=150,smooth] plot (\x,  { \b*sqrt(\x*\x/(\a*\a) - 1) });
+		  \draw[domain=-6.1:-\a,samples=150,smooth] plot (\x, -{ \b*sqrt(\x*\x/(\a*\a) - 1) });
+		
+		  % Foci and key points
+		  \fill (-\c,0) circle (2pt) node[below left] {$F_1(-c,0)$};
+		  \fill (\c,0)  circle (2pt) node[below right] {$F_2(c,0)$};
+		  \fill (0,0)   circle (2pt) node[below left] {$O$};
+		  \fill (-\a,0) circle (2pt) node[above right] {$(-a,0)$};
+		  \fill (0,-\b) circle (2pt) node[below left] {$(0,-b)$};
+		
+		  % Choose a point P on the left-upper branch
+		  \pgfmathsetmacro{\xP}{-6.5}
+		  \pgfmathsetmacro{\yP}{ \b*sqrt(\xP*\xP/(\a*\a) - 1) }
+		  \fill (\xP,\yP) circle (1.2pt) node[above left] {$\mathcal{H}$};
+		
+		  % r1 and r2
+		  \draw[gray] (\xP,\yP) -- (-\c,0) node[midway, below left] {$r_1$};
+		  \draw[gray] (\xP,\yP) -- (\c,0)  node[midway, above] {$r_2$};
+		
+		  % Projections to axes (x and y)
+		  \draw[gray] (\xP,\yP) -- (\xP,1);             % vertical drop
+		  \draw[gray] (\xP,\yP) -- (0,\yP);             % horizontal to y-axis
+		  \draw[gray] (0,-\b) -- (\a,0)    node[midway, below] {$c$};
+		  \node[above] at (\xP,0) {$x$};
+		  \node[right] at (0,\yP) {$y$};
+		\end{tikzpicture}
+
         \end{minipage} \\ 
         \hline
     \end{tabular}
@@ -2051,13 +2124,15 @@ $\begin{array}{l}
 \newpage
 
 \subsection{Afgeleiden}
+\fontsize{13pt}{14pt}\selectfont
 \[f'(a)
-= \left( \frac{df}{dx} \right)_{x=a}
 = \lim_{\scriptscriptstyle \Delta x \to 0} \frac{\Delta y}{\Delta x}
 = \lim_{\scriptscriptstyle \Delta x \to 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}
 = \lim_{\scriptscriptstyle x \to a} \frac{f(x) - f(a)}{x - a}
+= \left( \frac{df}{dx} \right)_{x=a}
 \\
 \]
+\normalsize
 \[g(x) = u, \qquad D_x\!\bigl[f(g(x))\bigr]
 = D_x\!\bigl[f(u)\bigr]
 = \frac{d[f(u)]}{dx}
