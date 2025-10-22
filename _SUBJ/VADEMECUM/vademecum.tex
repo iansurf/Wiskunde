@@ -985,8 +985,11 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
   trim axis left, trim axis right
 ]
   \def\a{2.5}
-  \addplot[smooth, domain=-3:3, samples=200, thick] {(\a^x)};
-  \addplot[smooth, domain=0.05:3.2, samples=200, thick] {ln(x)/ln(\a)};
+  % Exponential (blue)
+  \addplot[smooth, domain=-3:3, samples=200, thick, blue] {(\a^x)} node[pos=0.1, above left, blue] {\small $y=a^x$};
+  % Logarithmic (red)
+  \addplot[smooth, domain=0.05:3.2, samples=200, thick, red] {ln(x)/ln(\a)} node[pos=0.1, above right, red] {\small $y={}^a\!\log x$};
+  % Dashed axis line
   \addplot[dashed] coordinates {(0,-3.2) (0,3.2)};
 \end{axis}
 \end{tikzpicture}
@@ -1014,8 +1017,11 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
   trim axis left, trim axis right
 ]
   \def\a{0.5}
-  \addplot[smooth, domain=-3:3, samples=200, thick] {(\a^x)};
-  \addplot[smooth, domain=0.05:3.2, samples=200, thick] {ln(x)/ln(\a)};
+  % Exponential (blue)
+  \addplot[smooth, domain=-3:3, samples=200, thick, blue] {(\a^x)} node[pos=0.5, right, blue] {\small $y=a^x$};
+  % Logarithmic (red)
+  \addplot[smooth, domain=0.05:3.2, samples=200, thick, red] {ln(x)/ln(\a)} node[pos=0.8, below left, red] {\small $y={}^a\!\log x$};
+  % Dashed axis line
   \addplot[dashed] coordinates {(0,-3.2) (0,3.2)};
 \end{axis}
 \end{tikzpicture}
