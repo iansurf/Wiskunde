@@ -62,6 +62,8 @@
 \contentsline {subsubsection}{\numberline {12.5.1}Afgeleiden - differentialen}{26}{subsubsection.12.5.1}%
 \contentsline {subsection}{\numberline {12.6}Afgeleiden - fundamentele integralen}{27}{subsection.12.6}%
 \contentsline {subsection}{\numberline {12.7}Partiële integratie}{27}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Integralen}{28}{subsection.12.8}%
+\contentsline {subsubsection}{\numberline {12.8.1}Formules voor goniometrische integralen}{28}{subsubsection.12.8.1}%
 \contentsline {section}{\numberline {13}Statistiek}{29}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{29}{subsection.13.1}%
 \contentsline {subsection}{\numberline {13.2}Test van een hypothese over een populatieproportie}{29}{subsection.13.2}%
