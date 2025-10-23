@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 OCT 2025 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 OCT 2025 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1531,7 +1531,9 @@ Overfull \hbox (3.45679pt too wide) in paragraph at lines 2735--2767
 
 [30]
 
-[31] (vademecum.aux)
+[31]
+
+[32] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1542,13 +1544,13 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: 1F1370BA7DA0738125ABDA66359BB777;13209.
+(rerunfilecheck)             Checksum: 3262E0707BAD871D165ECE9650E57184;13521.
  ) 
 Here is how much of TeX's memory you used:
- 38202 strings out of 468133
- 868536 string characters out of 5431680
+ 38208 strings out of 468133
+ 868595 string characters out of 5431680
  1497099 words of memory out of 5000000
- 66113 multiletter control sequences out of 15000+600000
+ 66116 multiletter control sequences out of 15000+600000
  646468 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,34n,117p,732b,2516s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1586,9 +1588,9 @@ nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (31 pages, 592273 bytes).
+Output written on vademecum.pdf (32 pages, 603279 bytes).
 PDF statistics:
- 697 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
- 597 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 613 words of extra memory for PDF output out of 10000 (max. 10000000)
 
