@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  22 OCT 2025 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 OCT 2025 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,22 +1494,44 @@ Overfull \hbox (2.009pt too wide) in paragraph at lines 2298--2338
 
 
 [27]
+Overfull \hbox (4.66725pt too wide) in paragraph at lines 2371--2377
+[]|$[][]$| 
+ []
+
+
+Overfull \hbox (2.81715pt too wide) in paragraph at lines 2383--2388
+[]|$[][]$| 
+ []
+
+
+Overfull \hbox (5.53937pt too wide) in paragraph at lines 2379--2400
+[]|[]| 
+ []
+
+
+Overfull \hbox (19.94534pt too wide) in paragraph at lines 2355--2465
+[][] 
+ []
+
+
 
 [28]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2579--2611
- [] 
- []
-
-
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2617--2649
- [] 
- []
-
-
 
 [29]
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2697--2729
+ [] 
+ []
 
-[30] (vademecum.aux)
+
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2735--2767
+ [] 
+ []
+
+
+
+[30]
+
+[31] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1519,54 +1541,68 @@ L3 programming layer <2025-08-13>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: C7F5C3EB0143142FB69181A788709050;12825.
+
+Package rerunfilecheck Warning: File `vademecum.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `vademecum.out':
+(rerunfilecheck)             Before: C248BF852CBF6969EA3AF2D50993E119;13298
+(rerunfilecheck)             After:  C7F5C3EB0143142FB69181A788709050;12825.
  ) 
 Here is how much of TeX's memory you used:
- 38197 strings out of 468133
- 868455 string characters out of 5431680
- 1497096 words of memory out of 5000000
- 66111 multiletter control sequences out of 15000+600000
+ 38202 strings out of 468133
+ 868536 string characters out of 5431680
+ 1498099 words of memory out of 5000000
+ 66113 multiletter control sequences out of 15000+600000
  646468 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,34n,117p,732b,2516s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/Ian/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ian/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ian/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/User
-s/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
-:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ian/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ian/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ian/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Ian/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ian
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Use
-rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (30 pages, 586155 bytes).
+
+pdfTeX warning (dest): name{subsubsection.12.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.12.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/Ian/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ian/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ian/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/
+Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
+Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ian/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ian/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ian/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Ian/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ian/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users
+/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:
+/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (31 pages, 592346 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 581 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 597 words of extra memory for PDF output out of 10000 (max. 10000000)
 

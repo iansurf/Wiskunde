@@ -2348,6 +2348,124 @@ $\int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
 
 \newpage
+
+%\subsection{integralen}
+\%subsubsection{Formules bij het oplossen van goniometrische integralen}
+
+\begin{tabular}{|p{0.98\linewidth}|}
+\hline
+\vspace{-18pt}% optional adjustment
+\[
+\begin{aligned}
+\int \sin^{m}x \,\cos^{n}x \, dx \qquad m,n\in\mathbb{Z}
+\end{aligned}
+\]
+\vspace{-14pt}% optional adjustment
+\\
+\hline
+\vspace{-7pt}% optional adjustment
+
+% --- Row 2: split into 2 columns ---
+\begin{tabular}{|p{0.2\linewidth}|p{0.73\linewidth}|}
+\hline
+$\begin{aligned}
+&m \; \vee \; n \; oneven\\
+&substitutie\\
+&t=\sin x\;\vee\;\cos x\\
+&\sin^{2}x+\cos^{2}x=1
+\end{aligned}$
+&
+% --- 2nd cell: nested tabular with title "m ^ n even" and 2 columns ---
+\begin{tabular}{|p{0.3\linewidth}|p{0.63\linewidth}|}
+\hline
+\multicolumn{2}{|c|}{$\;m\;\wedge\;n\;\text{even}\;$}\\
+\hline
+$\begin{aligned}
+&m\;\wedge\;n\;\text{positief}\\
+&\sin^{2}\alpha=\dfrac{1-\cos 2\alpha}{2}\\
+&\cos^{2}\alpha=\dfrac{1+\cos 2\alpha}{2}
+\end{aligned}$
+&
+$\begin{aligned}
+&m\;\vee\;n\;\text{negatief} \\
+&\frac{dx}{\cos x}=d(\tan x)\;\;\vee\;\;\frac{dx}{\sin x}=-\,d(\cot x)\\
+&eventueel\\
+&\tan^{2}\alpha+1=\sec^{2}\alpha,\; 1+\cot^{2}\alpha=\csc^{2}\alpha
+\end{aligned}$
+\\
+\hline
+
+\end{tabular}
+\\
+\hline
+
+\end{tabular}
+\\
+\hline
+\vspace{2pt}% optional adjustment
+
+% --- Row 3: integrals with sec, tan, cot ---
+$\begin{aligned}
+&\int \sec x\,dx=\int \frac{\cos x\,dx}{\cos x}
+\qquad \wedge\; \sin x=t
+\qquad \int \sec^{2}x\,dx=\int \frac{1}{\cos^{2}x}\,dx\\
+&\int \sec^{3}x\,dx =\int \sec^{2}x\cdot \sec x\,dx =\int \sec x\,d(\tan x)\;\xrightarrow{\;P.I\;}\; \cdots \xrightarrow{\;\text{terugkeer v/d integrand}\;}\; \cdots\\
+&\int \tan x\,dx=-\ln|\cos x|+c \quad ,\quad \int \cot x\,dx=\ln|\sin x|+c\\
+&\int \tan^{n}x\,dx\;,\;\; \int \cot^{n}x\,dx \quad n\in\mathbb{N}_0\setminus\{1\}\\
+&\tan^{2}\alpha+1=\sec^{2}\alpha\;,\qquad 1+\cot^{2}\alpha=\csc^{2}\alpha
+\end{aligned}$
+\\
+\hline
+% --- Row 4: product-to-sum formulas ---
+\[
+\begin{aligned}
+\sin(mx)\cos(nx)&=\tfrac12\!\left[\sin\!\big(mx-nx\big)+\sin\!\big(mx+nx\big)\right]\\[6pt]
+\cos(mx)\cos(nx)&=\tfrac12\!\left[\cos\!\big(mx-nx\big)+\cos\!\big(mx+nx\big)\right]\\[6pt]
+\sin(mx)\sin(nx)&=\tfrac12\!\left[\cos\!\big(mx-nx\big)-\cos\!\big(mx+nx\big)\right]
+\end{aligned}
+\]
+\vspace{-7pt}% optional adjustment
+\\
+\hline
+
+% --- Row 6: t = tan(x/2) substitution with derivations ---
+$\begin{aligned}
+&Integralen\;van\;rationale\;functies\;van\;cosinus\;en\;sinus \\
+&t=\tan\frac{x}{2}\;\Rightarrow\;\frac{x}{2}=\operatorname{Bgtan}t
+\;\Rightarrow\;x=2\,\operatorname{Bgtan}t \Rightarrow \boxed{dx = \frac{{2dt}}{{1 + {t^2}}}}\\[4pt]
+&\text{Stel: }2\alpha=x \text{ en } \tan\frac{x}{2}=t \Rightarrow
+\left\{
+\begin{aligned}
+\tan 2\alpha&=\dfrac{2\tan\alpha}{\,1-\tan^{2}\alpha\,}\\[6pt]
+\sin 2\alpha&=\dfrac{2\tan\alpha}{\,1+\tan^{2}\alpha\,}\\[6pt]
+\cos 2\alpha&=\dfrac{1-\tan^{2}\alpha}{\,1+\tan^{2}\alpha\,}
+\end{aligned}\right.
+\quad\Rightarrow\quad
+\boxed{
+\begin{cases}
+\displaystyle \tan x=\dfrac{2t}{1-t^{2}},\\[8pt]
+\displaystyle \sin x=\dfrac{2t}{1+t^{2}},\\[8pt]
+\displaystyle \cos x=\dfrac{1-t^{2}}{1+t^{2}}.
+\end{cases}
+}
+\end{aligned}$
+\\
+\hline
+
+% --- Row 7: f(tan x) -> f(t) ---
+\textbf{Integralen van een rationale functie $f(\tan x)$ omvormen naar $f(t)$}
+\\[2pt]
+$\displaystyle
+t=\tan x \;\Rightarrow\; dt=\frac{dx}{\cos^{2}x}=(1+\tan^{2}x)\,dx
+\;\Rightarrow\; dx=\frac{dt}{\,1+t^{2}\,}
+$
+\\
+\hline
+\end{tabular}
+
+
+\newpage
+
 \section{Statistiek}
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 

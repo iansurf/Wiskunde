@@ -62,11 +62,11 @@
 \contentsline {subsubsection}{\numberline {12.5.1}Afgeleiden - differentialen}{26}{subsubsection.12.5.1}%
 \contentsline {subsection}{\numberline {12.6}Afgeleiden - fundamentele integralen}{27}{subsection.12.6}%
 \contentsline {subsection}{\numberline {12.7}Partiële integratie}{27}{subsection.12.7}%
-\contentsline {section}{\numberline {13}Statistiek}{28}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{28}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Test van een hypothese over een populatieproportie}{28}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{29}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}Test van een hypothese over een populatieproportie via de P-waarde}{29}{subsection.13.4}%
-\contentsline {section}{\numberline {14}Diversen}{30}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Wiskundige Symbolen (ISO 31/XI)}{30}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Logische symbolen}{30}{subsection.14.2}%
+\contentsline {section}{\numberline {13}Statistiek}{29}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Test van een hypothese over het gemiddelde van een normaalverdeling}{29}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Test van een hypothese over een populatieproportie}{29}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{30}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Test van een hypothese over een populatieproportie via de P-waarde}{30}{subsection.13.4}%
+\contentsline {section}{\numberline {14}Diversen}{31}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Wiskundige Symbolen (ISO 31/XI)}{31}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Logische symbolen}{31}{subsection.14.2}%
