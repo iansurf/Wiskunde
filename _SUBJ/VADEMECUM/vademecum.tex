@@ -32,6 +32,17 @@
 % Adjust table spacing
 \setlength{\textfloatsep}{0pt} % Reduce spacing before and after tables
 
+% --- operators die LaTeX standaard niet kent ---
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sgn}{sgn}
+
+% nette differentiaal (optioneel, consistent met ISO 80000-2):
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+
 \begin{document}
 
 \title{Formularium Wiskunde}
@@ -2766,60 +2777,151 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 \end{tabular}
 \end{center}
 
-
-
-
-
 \newpage
 \section{Diversen}
-\subsection{Wiskundige Symbolen (ISO 31/XI)}
-$
-\begin{array}{|l|l|}
-\hline
-x \in A & \text{is een element van de verzameling} \\
-x \not\in A & \text{is geen element van de verzameling} \\
-\{x_1, x_2, \dots, x_n\} & \text{de verzameling door opsomming} \\
-\{ x \in \left. A \right|p(x)\} & \text{de verzameling waar de elementen voldoen aan de eigenschap } p(x) \\
-\hline
-\emptyset & \text{de lege verzameling} \\
-\mathbb{N} & \text{de natuurlijke getallen } (0,1,2,\dots) \\
-\mathbb{Z} & \text{de gehele getallen } (\dots, -2,-1,0,1,2,\dots) \\
-\mathbb{Q} & \text{de rationale getallen (breuken van } \mathbb{Z} \text{)} \\
-\mathbb{R} & \text{de reële getallen} \\
-\mathbb{C} & \text{de complexe getallen} \\
-\hline
-B \subseteq A & B \text{ behoort tot } A \text{ (kan er mee samenvallen)} \\
-B \subset A & B \text{ behoort strikt tot } A \\
-A \cup B & \text{samenvoeging van } A \text{ en } B \text{ (unie)} \\
-A \cap B & \text{doorsnede van } A \text{ en } B \text{ (de gemeenschappelijke elementen)} \\
-A \setminus B & A \text{ verschilt } B \text{, wat tot } A \text{ behoort en niet tot } B \\
-\mathcal{C}_U A & \text{het complement van } A \text{ in het universum } U \\
-\hline
-(a,b) & \text{het geordend paar} \\
-(a_1, a_2, \dots, a_n) & \text{een geordend } n \text{-tal} \\
-A \times B & \text{de productverzameling van } A \text{ en } B \\
-\# & \text{rangnummer of aantal} \\
-\hline
-\end{array}
-$
-\subsection{Logische symbolen}
-$
-\begin{array}{|l|l|}
-\hline
-p \land q & \text{conjunctie, de beweringen } p \text{ en } q \text{ zijn geldig} \\
-p \lor q & \text{disjunctie, de bewering } p \text{ of } q \text{ is geldig} \\
-\lnot p & \text{negatie, de bewering } p \text{ is niet geldig} \\
-p \Rightarrow q & \text{implicatie, als } p \text{ dan } q \\
-p \Leftrightarrow q & \text{equivalentie, de beweringen } p \text{ en } q \text{ zijn gelijkwaardig} \\
-\forall x & \text{universele kwantor, voor alle elementen geldt} \\
-\exists x & \text{existentiële kwantor, er zijn elementen die voldoen aan} \\
-\hline
-\end{array}
-$
+\subsection{Wiskundige symbolen (ISO 80000-2)}
+% (ISO 31-11 werd vervangen door ISO 80000-2)
 
-\newpage
+% ---- Typografische richtlijnen volgens ISO 80000-2 ----
+% Variabelen cursief: a, b, x, f, ...
+% Functienamen en vaste constanten recht (roman): \sin, \cos, \ln, \exp, \mathrm e, \mathrm i, \pi, \mathrm d
+% Differentiëlen recht: \mathrm d x i.p.v. dx
+% Voor logaritme grondtal 10: \lg x (i.p.v. \log x om ambiguïteit te vermijden)
 
-\section{Griekse alfabet}
+\renewcommand{\arraystretch}{1.2}
+
+% ------------------------------------------------------------
+\subsubsection{Verzamelingen}
+
+\begin{tabular}{>{$}l<{$} l}
+\in & is een element van de verzameling \\
+\notin & is geen element van de verzameling \\
+\{a,b,c,\dots\} & verzameling door opsomming \\
+\{x \mid p(x)\} & verzameling van $x$ met eigenschap $p(x)$ \\
+\varnothing & de lege verzameling \\
+\mathbb{N} & natuurlijke getallen $(0,1,2,\dots)$ \\
+\mathbb{Z} & gehele getallen $(\dots,-2,-1,0,1,2,\dots)$ \\
+\mathbb{Q} & rationale getallen (breuken van gehele getallen) \\
+\mathbb{R} & reële getallen \\
+\mathbb{C} & complexe getallen \\
+B \subseteq A & $B$ is deelverzameling van $A$ (mag samenvallen) \\
+B \subset A & $B$ is strikte deelverzameling van $A$ \\
+A \cup B & unie van $A$ en $B$ \\
+A \cap B & doorsnede van $A$ en $B$ \\
+A \setminus B & verschil $A - B$ (in $A$ maar niet in $B$) \\
+A^c \text{ of } \overline{A} & complement van $A$ in universum $U$ \\
+(a,b) & geordend paar \\
+(a_1,a_2,\dots,a_n) & geordend $n$-tal \\
+A \times B & cartesisch product van $A$ en $B$ \\
+\#A & aantal elementen (cardinaliteit) van $A$ \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Logische symbolen}
+
+\begin{tabular}{>{$}l<{$} l}
+p \land q & conjunctie: $p$ en $q$ zijn beide waar \\
+p \lor q & disjunctie: $p$ of $q$ is waar (of beide) \\
+\lnot p & negatie: $p$ is niet waar \\
+p \Rightarrow q & implicatie: als $p$, dan $q$ \\
+p \Leftrightarrow q & equivalentie: $p$ en $q$ gelijkwaardig \\
+\forall x & universele kwantor: voor alle $x$ \\
+\exists x & existentiële kwantor: er bestaat (minstens één) $x$ \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Diverse symbolen}
+
+\begin{tabular}{>{$}l<{$} l}
+a = b & $a$ is gelijk aan $b$ \\
+a \ne b & $a$ is niet gelijk aan $b$ \\
+a \coloneqq b & $a$ is per definitie gelijk aan $b$ \\
+a \approx b & $a$ is bij benadering gelijk aan $b$ \\
+a < b & $a$ is strikt kleiner dan $b$ \\
+a > b & $a$ is strikt groter dan $b$ \\
+a \le b & $a$ is kleiner of gelijk aan $b$ \\
+a \ge b & $a$ is groter of gelijk aan $b$ \\
+\infty & oneindig \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Bewerkingen}
+
+\begin{tabular}{>{$}l<{$} l}
+a + b & optelling \\
+a - b & aftrekking \\
+a \cdot b,\; a \times b,\; a*b & vermenigvuldiging \\
+\dfrac{a}{b},\; a/b & deling \\
+a^p & $a$ tot de macht $p$ \\
+\sqrt{a} & vierkantswortel uit $a$ \\
+\sqrt[p]{a} & $p$-de machtswortel uit $a$ \\
+\lvert a\rvert & absolute waarde van $a$ \\
+\operatorname{sgn}(a) & signum van $a$: $(1$ als $a>0$, $0$ als $a=0$, $-1$ als $a<0)$ \\
+\overline{a} & gemiddelde/verwachting (contextafhankelijk) \\
+n! & $n$-faculteit; $n! = n(n-1)\dots 2\cdot 1$ \\
+\binom{n}{k} & binomiaalcoëfficiënt $\displaystyle\binom{n}{k}=\frac{n!}{k!(n-k)!}$ \\
+\lfloor a \rfloor & grootste geheel getal $\le a$ (vloer) \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Functies \& analyse}
+
+\begin{tabular}{>{$}l<{$} l}
+f & functie $f$ \\
+f(x) & functiewaarde \\
+f(b)-f(a) & verschil; gebruikt bij integralen \\
+g \circ f & samengestelde functie: $g(f(x))$ \\
+x \to a & $x$ streeft naar $a$ \\
+\displaystyle \lim_{x \to a} f(x) & limiet van $f(x)$ voor $x \to a$ \\
+\Delta x & toename van $x$ \\
+Df,\; f' & afgeleide van $f$ naar $x$ \\
+Df(a),\; f'(a) & waarde van de afgeleide bij $x=a$ \\
+f^{(n)} & $n$-de afgeleide van $f$ \\
+\displaystyle \frac{\partial f}{\partial x} & partiële afgeleide van $f$ naar $x$ \\
+\mathrm df & differentiaal van $f$: $\mathrm df = f'(x)\,\mathrm dx$ \\
+\displaystyle \int f(x)\,\mathrm dx & onbepaalde integraal (primitieven) \\
+\displaystyle \int_a^b f(x)\,\mathrm dx & bepaalde integraal over $[a,b]$ \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Exponentiële en logaritmische functies}
+
+\begin{tabular}{>{$}l<{$} l}
+\mathrm e & basis van de natuurlijke logaritmen \\
+\mathrm e^{x} & exponentiële functie met grondtal $\mathrm e$ \\
+a^{x} & exponentiële functie met grondtal $a>0,\ a\ne 1$ \\
+\log_a x & logaritme met grondtal $a$ \\
+\ln x & natuurlijke logaritme van $x$ \\
+\lg x & decimale (Briggs) logaritme (grondtal $10$) \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Goniometrische en hyperbolische functies}
+
+\begin{tabular}{>{$}l<{$} l}
+\pi & verhouding tussen omtrek en middellijn van een cirkel \\
+\sin x,\ \cos x,\ \tan x,\ \cot x & sinus, cosinus, tangens, cotangens \\
+\sec x = \dfrac{1}{\cos x},\ \csc x = \dfrac{1}{\sin x} & secans, cosecans \\
+\arcsin x,\ \arccos x,\ \arctan x,\ \arccot x & inverse goniometrische functies \\
+\arcsec x,\ \arccsc x & inverse secans en cosecans \\
+\sinh x,\ \cosh x,\ \tanh x,\ \coth x & hyperbolische functies \\
+\sech x,\ \csch x & hyperbolische secans, cosecans \\
+\end{tabular}
+
+% ------------------------------------------------------------
+\subsubsection{Complexe getallen}
+
+\begin{tabular}{>{$}l<{$} l}
+\mathrm i,\ \mathrm j & imaginaire eenheid ($\mathrm i^2=-1$;\ $\mathrm j$ in elektronica) \\
+z = a + b\,\mathrm i & complex getal $z$ \\
+\Re z,\ \Im z & reëel respectievelijk imaginair deel van $z$ \\
+\lvert z\rvert & modulus van $z$ \\
+\arg z & argument van $z$ \\
+z^\ast & geconjugeerd: $a - b\,\mathrm i$ \\
+\end{tabular}
+
+
+\subsection{Griekse alfabet}
 
 \begin{center}
 \renewcommand{\arraystretch}{1.1}
@@ -2862,8 +2964,63 @@ H & $\eta$ & èta \\
 \end{tabular}
 \end{center}
 
+\subsection{Eenheden en hun veelvouden}
 
-\section{Het aanpakken van problemen}
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{>{\bfseries}r c l c r}
+\hline
+$10^n$ & Prefix & Symbool & Naam & Decimaal equivalent \\
+\hline
+$10^{24}$ & yotta & Y & quadriljoen & 1\,000\,000\,000\,000\,000\,000\,000\,000 \\
+$10^{21}$ & zetta & Z & triljard & 1\,000\,000\,000\,000\,000\,000\,000 \\
+$10^{18}$ & exa & E & triljoen & 1\,000\,000\,000\,000\,000\,000 \\
+$10^{15}$ & peta & P & biljard & 1\,000\,000\,000\,000\,000 \\
+$10^{12}$ & tera & T & biljoen & 1\,000\,000\,000\,000 \\
+$10^{9}$  & giga & G & miljard & 1\,000\,000\,000 \\
+$10^{6}$  & mega & M & miljoen & 1\,000\,000 \\
+$10^{3}$  & kilo & k & duizend & 1\,000 \\
+$10^{2}$  & hecto & h & honderd & 100 \\
+$10^{1}$  & deca & da & tien & 10 \\
+$10^{-1}$ & deci & d & een tiende & 0{,}1 \\
+$10^{-2}$ & centi & c & een honderste & 0{,}01 \\
+$10^{-3}$ & milli & m & een duizendste & 0{,}001 \\
+$10^{-6}$ & micro & $\mu$ & een miljoenste & 0{,}000\,001 \\
+$10^{-9}$ & nano & n & een miljardste & 0{,}000\,000\,001 \\
+$10^{-12}$ & pico & p & een biljoenste & 0{,}000\,000\,000\,001 \\
+$10^{-15}$ & femto & f & een biljardste & 0{,}000\,000\,000\,000\,001 \\
+$10^{-18}$ & atto & a & een triljoenste & 0{,}000\,000\,000\,000\,000\,001 \\
+$10^{-21}$ & zepto & z & een triljardste & 0{,}000\,000\,000\,000\,000\,000\,001 \\
+$10^{-24}$ & yocto & y & een quadriljoenste & 0{,}000\,000\,000\,000\,000\,000\,000\,001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+\noindent
+De taalkundige regels zijn als volgt. Voluit geschreven prefixen beginnen altijd met een kleine letter:
+\emph{picofarad, milligram, centimeter, kilovolt, megabyte, gigawatt.}
+
+\medskip
+\noindent
+De afgekorte prefixen hebben een kleine letter tot en met kilo en daarboven een hoofdletter:
+\emph{pF, mg, cm, kV, Mb, GW.}
+
+\medskip
+\noindent
+Hier moet goed op gelet worden want het kan grote verschillen in betekenis veroorzaken:
+de notatie \textbf{mW} betekent \emph{milliwatt} en \textbf{MW} \emph{Megawatt.}
+
+\medskip
+\noindent
+Voor de eenheden en grootheden is de regel dat wanneer deze van een persoonsnaam afstammen,
+zowel voluit geschreven als afgekort een hoofdletter wordt gebruikt, en anders een kleine letter:
+\emph{Farad, gram, meter, Volt, byte, Watt.}
+
+
+
+\subsection{Het aanpakken van problemen}
 
 \begin{center}
 \renewcommand{\arraystretch}{1.1}

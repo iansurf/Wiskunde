@@ -70,7 +70,15 @@
 \contentsline {subsection}{\numberline {13.3}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{30}{subsection.13.3}%
 \contentsline {subsection}{\numberline {13.4}Test van een hypothese over een populatieproportie via de P-waarde}{30}{subsection.13.4}%
 \contentsline {section}{\numberline {14}Diversen}{31}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Wiskundige Symbolen (ISO 31/XI)}{31}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Logische symbolen}{31}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Griekse alfabet}{32}{section.15}%
-\contentsline {section}{\numberline {16}Het aanpakken van problemen}{32}{section.16}%
+\contentsline {subsection}{\numberline {14.1}Wiskundige symbolen (ISO 80000-2)}{31}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Verzamelingen}{31}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}Logische symbolen}{31}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}Diverse symbolen}{32}{subsubsection.14.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.4}Bewerkingen}{32}{subsubsection.14.1.4}%
+\contentsline {subsubsection}{\numberline {14.1.5}Functies \& analyse}{33}{subsubsection.14.1.5}%
+\contentsline {subsubsection}{\numberline {14.1.6}Exponentiële en logaritmische functies}{33}{subsubsection.14.1.6}%
+\contentsline {subsubsection}{\numberline {14.1.7}Goniometrische en hyperbolische functies}{33}{subsubsection.14.1.7}%
+\contentsline {subsubsection}{\numberline {14.1.8}Complexe getallen}{34}{subsubsection.14.1.8}%
+\contentsline {subsection}{\numberline {14.2}Griekse alfabet}{34}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Eenheden en hun veelvouden}{34}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Het aanpakken van problemen}{35}{subsection.14.4}%
