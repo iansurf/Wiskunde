@@ -1,43 +1,50 @@
+% =====================================================================
+% VADEMECUM WISKUNDE – BASISPREAMBULE
+% Compacte en consistente LaTeX-setup (A5, ISO-notatie, nette wiskunde)
+% =====================================================================
+
 \documentclass[a5paper]{article}
 
-% ----------------------------------------------------------------
-% Taal, encodering & lettertypes
-% ----------------------------------------------------------------
+% ---------------------------------------------------------------------
+% Taal, typografie & microtypografie
+% ---------------------------------------------------------------------
 \usepackage[dutch]{babel}
-% (Modern LaTeX is standaard UTF-8; fontenc/lmodern optioneel)
-% \usepackage[T1]{fontenc}
-% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype} % betere letter- en woordspatiëring
 
-% ----------------------------------------------------------------
-% Pagina-instellingen & layout
-% ----------------------------------------------------------------
+% ---------------------------------------------------------------------
+% Pagina-instellingen & lay-out
+% ---------------------------------------------------------------------
 \usepackage[margin=0.5cm]{geometry}
-\usepackage{titlesec}     % sectiekopjes compacter
+\usepackage{titlesec}
 \titlespacing*{\section}{0pt}{*1}{0pt}
 \titlespacing*{\subsection}{0pt}{*0.5}{0pt}
-\setlength{\textfloatsep}{0pt} % minder witruimte rond fig/tabellen
+\setlength{\textfloatsep}{0pt} % minder witruimte rond figuren/tabellen
 
-% ----------------------------------------------------------------
-% Grafiek, figuren & tekenomgevingen
-% ----------------------------------------------------------------
-\usepackage{graphicx}
+% ---------------------------------------------------------------------
+% Tekenpakketten & grafische hulpmiddelen
+% ---------------------------------------------------------------------
 \usepackage{tikz}
 \usetikzlibrary{positioning,angles,quotes,calc,babel,matrix}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{float}
 
-% ----------------------------------------------------------------
-% Wiskunde
-% ----------------------------------------------------------------
-\usepackage{mathtools}    % laadt amsmath + extra's
-\usepackage{amssymb}      % extra symbolen
-\usepackage{bm}           % vette math-symbolen (\bm)
-% nette differentiaal (consistent met ISO 80000-2)
-\newcommand{\diff}{\mathop{}\!\mathrm{d}}
-% nette partiële differentiaal (consistent met ISO 80000-2)
-\newcommand{\pdiff}{\mathop{}\!\partial}
+% ---------------------------------------------------------------------
+% Wiskunde & symboliek
+% ---------------------------------------------------------------------
+\usepackage{mathtools}   % laadt amsmath + verbeteringen
+\usepackage{amssymb}
+\usepackage{bm}          % vette vectoren
 
-% eigen operatoren
+% nette differentiaaloperatoren (ISO 80000-2)
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}     % totale afgeleide
+\newcommand{\pdiff}{\mathop{}\!\partial}      % partiële afgeleide
+
+% veelgebruikte symbolische operatoren
 \DeclareMathOperator{\arccot}{arccot}
 \DeclareMathOperator{\arcsec}{arcsec}
 \DeclareMathOperator{\arccsc}{arccsc}
@@ -45,28 +52,35 @@
 \DeclareMathOperator{\csch}{csch}
 \DeclareMathOperator{\sgn}{sgn}
 
-% handige vector-commando's
-\providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
-\providecommand{\norm}[1]{\lVert #1\rVert} % norm
+% vectornotatie
+\newcommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
+\newcommand{\norm}[1]{\lVert #1\rVert} % norm
 
-% ----------------------------------------------------------------
-% Tabel- & lijstondersteuning
-% ----------------------------------------------------------------
-\usepackage{array}     % nieuwe kolomtypes
-\usepackage{tabularx}  % tabellen met rekbare kolommen
-\usepackage{multicol}  % meerkoloms tekst
-\usepackage{enumitem}  % compactere lijsten
-\usepackage{adjustbox} % schaal/box voor tabellen/figuren
-\usepackage{float}     % plaatsingscontrole [H]
+% alle \dfrac standaard in displaystijl
+\AtBeginDocument{\renewcommand{\dfrac}{\displaystyle\frac}}
 
-% Math-kolom met displaystyle (voor jouw tabel links)
-\newcolumntype{E}{>{$\displaystyle}l<{$}} % math mode + \displaystyle
+% ---------------------------------------------------------------------
+% Tabellen, lijsten & opmaak
+% ---------------------------------------------------------------------
+\usepackage{array,tabularx,multicol,enumitem}
+\usepackage{booktabs} % mooiere tabellen zonder verticale lijnen
 
-% ----------------------------------------------------------------
-% Opschriften & links
-% ----------------------------------------------------------------
+% nieuwe kolom voor wiskundige formules in displaystijl
+\newcolumntype{E}{>{$\displaystyle}l<{$}}
+
+% ---------------------------------------------------------------------
+% Opschriften & hyperlinks
+% ---------------------------------------------------------------------
 \usepackage{caption}
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+% =====================================================================
+
 
 
 \begin{document}
@@ -810,8 +824,6 @@ Halveringsformules &
 \cos\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1 + \cos\alpha}{2}} & & \\ \hline
 \end{array}
 \]
-
-
 \[
 \begin{array}{|c|c|}
 \hline
@@ -829,8 +841,6 @@ Halveringsformules &
 
 \end{array}
 \]
-
-
 \[
 \begin{array}{|c|c|}
 \hline
