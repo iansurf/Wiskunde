@@ -1,38 +1,41 @@
 \documentclass[a5paper]{article}
+
+% ----------------------------------------------------------------
+% Taal, encodering & lettertypes
+% ----------------------------------------------------------------
 \usepackage[dutch]{babel}
+% (Modern LaTeX is standaard UTF-8; fontenc/lmodern optioneel)
+% \usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+
+% ----------------------------------------------------------------
+% Pagina-instellingen & layout
+% ----------------------------------------------------------------
+\usepackage[margin=0.5cm]{geometry}
+\usepackage{titlesec}     % sectiekopjes compacter
+\titlespacing*{\section}{0pt}{*1}{0pt}
+\titlespacing*{\subsection}{0pt}{*0.5}{0pt}
+\setlength{\textfloatsep}{0pt} % minder witruimte rond fig/tabellen
+
+% ----------------------------------------------------------------
+% Grafiek, figuren & tekenomgevingen
+% ----------------------------------------------------------------
+\usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{positioning,angles,quotes,calc,babel,matrix}
-
-\usepackage[margin=0.5cm]{geometry}
-\usepackage{amssymb, amsfonts,mathtools,bm}
-
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{titlesec}
-\usepackage{adjustbox}
-\usepackage{tabularx}
-
-\providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
-\providecommand{\norm}[1]{\lVert #1\rVert} % norm
-
-\usepackage{float}  % To control the placement of the table
-
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\usepackage{caption}
 
-\usepackage{hyperref}
+% ----------------------------------------------------------------
+% Wiskunde
+% ----------------------------------------------------------------
+\usepackage{mathtools}    % laadt amsmath + extra's
+\usepackage{amssymb}      % extra symbolen
+\usepackage{bm}           % vette math-symbolen (\bm)
+% nette differentiaal (consistent met ISO 80000-2)
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
 
-% Adjust spacing for sections and subsections
-\titlespacing*{\section}{0pt}{*1}{0pt} % Reduce spacing after section heading
-\titlespacing*{\subsection}{0pt}{*0.5}{0pt} % Reduce spacing after subsection heading
-
-
-% Adjust table spacing
-\setlength{\textfloatsep}{0pt} % Reduce spacing before and after tables
-
-% --- operators die LaTeX standaard niet kent ---
+% eigen operatoren
 \DeclareMathOperator{\arccot}{arccot}
 \DeclareMathOperator{\arcsec}{arcsec}
 \DeclareMathOperator{\arccsc}{arccsc}
@@ -40,8 +43,29 @@
 \DeclareMathOperator{\csch}{csch}
 \DeclareMathOperator{\sgn}{sgn}
 
-% nette differentiaal (optioneel, consistent met ISO 80000-2):
-\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+% handige vector-commando's
+\providecommand{\nvec}[1]{\bm n_{#1}}      % normaalvector n_i vet
+\providecommand{\norm}[1]{\lVert #1\rVert} % norm
+
+% ----------------------------------------------------------------
+% Tabel- & lijstondersteuning
+% ----------------------------------------------------------------
+\usepackage{array}     % nieuwe kolomtypes
+\usepackage{tabularx}  % tabellen met rekbare kolommen
+\usepackage{multicol}  % meerkoloms tekst
+\usepackage{enumitem}  % compactere lijsten
+\usepackage{adjustbox} % schaal/box voor tabellen/figuren
+\usepackage{float}     % plaatsingscontrole [H]
+
+% Math-kolom met displaystyle (voor jouw tabel links)
+\newcolumntype{E}{>{$\displaystyle}l<{$}} % math mode + \displaystyle
+
+% ----------------------------------------------------------------
+% Opschriften & links
+% ----------------------------------------------------------------
+\usepackage{caption}
+\usepackage{hyperref}
+
 
 \begin{document}
 
@@ -2847,21 +2871,24 @@ a \ge b & $a$ is groter of gelijk aan $b$ \\
 % ------------------------------------------------------------
 \subsubsection{Bewerkingen}
 
-\begin{tabular}{>{$}l<{$} l}
+\begin{tabular}{E l}
 a + b & optelling \\
 a - b & aftrekking \\
 a \cdot b,\; a \times b,\; a*b & vermenigvuldiging \\
 \dfrac{a}{b},\; a/b & deling \\
 a^p & $a$ tot de macht $p$ \\
-\sqrt{a} & vierkantswortel uit $a$ \\
-\sqrt[p]{a} & $p$-de machtswortel uit $a$ \\
+\sqrt{a} , a^{\frac{1}{2}} & vierkantswortel uit $a$ \\
+\sqrt[p]{a} , a^{\frac{1}{p}} & $p$-de machtswortel uit $a$ \\
 \lvert a\rvert & absolute waarde van $a$ \\
 \operatorname{sgn}(a) & signum van $a$: $(1$ als $a>0$, $0$ als $a=0$, $-1$ als $a<0)$ \\
 \overline{a} & gemiddelde/verwachting (contextafhankelijk) \\
 n! & $n$-faculteit; $n! = n(n-1)\dots 2\cdot 1$ \\
 \binom{n}{k} & binomiaalcoëfficiënt $\displaystyle\binom{n}{k}=\frac{n!}{k!(n-k)!}$ \\
 \lfloor a \rfloor & grootste geheel getal $\le a$ (vloer) \\
+\sum_{i=1}^{n} a_i & som: $a_1 + a_2 + \dots + a_n$ \\
+\prod_{i=1}^{n} a_i & product: $a_1 \cdot a_2 \cdot \dots \cdot a_n$
 \end{tabular}
+
 
 % ------------------------------------------------------------
 \subsubsection{Functies \& analyse}
