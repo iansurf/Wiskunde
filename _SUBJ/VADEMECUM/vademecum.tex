@@ -34,6 +34,8 @@
 \usepackage{bm}           % vette math-symbolen (\bm)
 % nette differentiaal (consistent met ISO 80000-2)
 \newcommand{\diff}{\mathop{}\!\mathrm{d}}
+% nette partiële differentiaal (consistent met ISO 80000-2)
+\newcommand{\pdiff}{\mathop{}\!\partial}
 
 % eigen operatoren
 \DeclareMathOperator{\arccot}{arccot}
@@ -2901,10 +2903,10 @@ g \circ f & samengestelde functie: $g(f(x))$ \\
 x \to a & $x$ streeft naar $a$ \\
 \displaystyle \lim_{x \to a} f(x) & limiet van $f(x)$ voor $x \to a$ \\
 \Delta x & toename van $x$ \\
-Df,\; f' & afgeleide van $f$ naar $x$ \\
-Df(a),\; f'(a) & waarde van de afgeleide bij $x=a$ \\
+Df,\; f',\; \frac{\diff f}{\diff x} & afgeleide van $f$ naar $x$ \\
+Df(a),\; f'(a),\; \left.\frac{\diff f}{\diff x}\right|_{x=a} & waarde van de afgeleide bij $x=a$ \\
 f^{(n)} & $n$-de afgeleide van $f$ \\
-\displaystyle \frac{\partial f}{\partial x} & partiële afgeleide van $f$ naar $x$ \\
+\displaystyle \frac{\pdiff f}{\pdiff x} & partiële afgeleide van $f$ naar $x$ \\
 \mathrm df & differentiaal van $f$: $\mathrm df = f'(x)\,\mathrm dx$ \\
 \displaystyle \int f(x)\,\mathrm dx & onbepaalde integraal (primitieven) \\
 \displaystyle \int_a^b f(x)\,\mathrm dx & bepaalde integraal over $[a,b]$ \\
