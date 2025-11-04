@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  3 NOV 2025 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  4 NOV 2025 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1326,9 +1326,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [3{C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
 ]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+
+
 [4]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 295.
+(Font)              <9> on input line 305.
 
 
 [5]
@@ -1336,7 +1345,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [6]
 
 [7]
-Overfull \hbox (9.60321pt too wide) in paragraph at lines 584--585
+Overfull \hbox (9.60321pt too wide) in paragraph at lines 594--595
  [] 
  []
 
@@ -1345,50 +1354,50 @@ Overfull \hbox (9.60321pt too wide) in paragraph at lines 584--585
 [8]
 
 [9]
-Overfull \hbox (5.56638pt too wide) in paragraph at lines 740--788
+Overfull \hbox (5.56638pt too wide) in paragraph at lines 750--798
  [][] 
  []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 793.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 803.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 794.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 804.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 795.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 805.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 797.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 807.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 800.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 810.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 801.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 811.
 
 
 
-Overfull \hbox (12.4439pt too wide) detected at line 862
+Overfull \hbox (12.4439pt too wide) detected at line 872
 []
  []
 
 
 
 [10]
-Overfull \hbox (0.93275pt too wide) in paragraph at lines 938--989
+Overfull \hbox (0.93275pt too wide) in paragraph at lines 948--999
 [][] 
  []
 
 
 
 [11]
-Overfull \hbox (6.30527pt too wide) detected at line 1009
+Overfull \hbox (6.30527pt too wide) detected at line 1019
 [][]
  []
 
@@ -1397,42 +1406,42 @@ Overfull \hbox (6.30527pt too wide) detected at line 1009
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1140.
+(hyperref)                removing `superscript' on input line 1150.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1192
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1202
 .
 
 
-Overfull \hbox (75.73027pt too wide) detected at line 1233
+Overfull \hbox (75.73027pt too wide) detected at line 1243
  [] 
  []
 
@@ -1443,70 +1452,70 @@ Overfull \hbox (75.73027pt too wide) detected at line 1233
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1256.
+(hyperref)                removing `math shift' on input line 1266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\not' on input line 1256.
+(hyperref)                removing `\not' on input line 1266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1256.
+(hyperref)                removing `math shift' on input line 1266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1263.
+(hyperref)                removing `math shift' on input line 1273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1263.
+(hyperref)                removing `\times' on input line 1273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1263.
+(hyperref)                removing `math shift' on input line 1273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1285.
 
 
-Overfull \hbox (13.47421pt too wide) in paragraph at lines 1296--1327
+Overfull \hbox (13.47421pt too wide) in paragraph at lines 1306--1337
 []$ 
  []
 
 
 
 [15]
-Overfull \hbox (6.73955pt too wide) detected at line 1371
+Overfull \hbox (6.73955pt too wide) detected at line 1381
 []
  []
 
 
-Overfull \hbox (5.56638pt too wide) in paragraph at lines 1362--1415
+Overfull \hbox (5.56638pt too wide) in paragraph at lines 1372--1425
 [][] 
  []
 
 
 
 [16]
-Overfull \hbox (5.98941pt too wide) detected at line 1432
+Overfull \hbox (5.98941pt too wide) detected at line 1442
 []
  []
 
 
-Overfull \hbox (5.56636pt too wide) in paragraph at lines 1423--1479
+Overfull \hbox (5.56636pt too wide) in paragraph at lines 1433--1489
 [][] 
  []
 
@@ -1519,54 +1528,54 @@ Overfull \hbox (5.56636pt too wide) in paragraph at lines 1423--1479
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1770.
+(hyperref)                removing `math shift' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 1770.
+(hyperref)                removing `\alpha' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 1770.
+(hyperref)                removing `\beta' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1770.
+(hyperref)                removing `math shift' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1770.
+(hyperref)                removing `math shift' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1770.
+(hyperref)                removing `superscript' on input line 1780.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1770.
+(hyperref)                removing `math shift' on input line 1780.
 
 
-Overfull \hbox (14.29456pt too wide) in paragraph at lines 1808--1809
+Overfull \hbox (14.29456pt too wide) in paragraph at lines 1818--1819
  [][] 
  []
 
 
-Overfull \hbox (14.8191pt too wide) detected at line 1935
+Overfull \hbox (14.8191pt too wide) detected at line 1945
 []
  []
 
 
-Overfull \hbox (16.61443pt too wide) detected at line 1970
+Overfull \hbox (16.61443pt too wide) detected at line 1980
 []
  []
 
 
-Overfull \hbox (21.43039pt too wide) detected at line 1987
+Overfull \hbox (21.43039pt too wide) detected at line 1997
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 2001--2002
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 2011--2012
  [] 
  []
 
@@ -1575,50 +1584,50 @@ Overfull \hbox (24.31892pt too wide) in paragraph at lines 2001--2002
 [20]
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []|\T1/lmr/m/n/10 (+20) Inverse go-nio-me-tri-sche
  []
 
 
 
 [22]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 2091.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 2101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 2091.
+(Font)              <14> on input line 2101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 2091.
+(Font)              <9.79996> on input line 2101.
 
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2142--2144
+Underfull \hbox (badness 10000) in paragraph at lines 2152--2154
 
  []
 
 
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 2224--2225
+Underfull \hbox (badness 10000) in paragraph at lines 2234--2235
 
  []
 
 
 
 [25]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 2281.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 2291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2281.
+(Font)              <13> on input line 2291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 2281.
+(Font)              <9.09996> on input line 2291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 2281.
+(Font)              <6.5> on input line 2291.
 
-Overfull \hbox (10.34769pt too wide) detected at line 2287
+Overfull \hbox (10.34769pt too wide) detected at line 2297
 \OML/lmm/m/it/13 f[]\OT1/lmr/m/n/13 (\OML/lmm/m/it/13 a\OT1/lmr/m/n/13 ) = [] [
 ] = [] [] = [] [] = [][] [] 
  []
 
 
-Overfull \hbox (1.96335pt too wide) detected at line 2342
+Overfull \hbox (1.96335pt too wide) detected at line 2352
 []
  []
 
@@ -1627,22 +1636,22 @@ Overfull \hbox (1.96335pt too wide) detected at line 2342
 [26]
 
 [27]
-Overfull \hbox (4.73958pt too wide) in paragraph at lines 2422--2428
+Overfull \hbox (4.73958pt too wide) in paragraph at lines 2432--2438
 []|$[][]$| 
  []
 
 
-Overfull \hbox (2.81754pt too wide) in paragraph at lines 2434--2439
+Overfull \hbox (2.81754pt too wide) in paragraph at lines 2444--2449
 []|$[][]$| 
  []
 
 
-Overfull \hbox (5.53937pt too wide) in paragraph at lines 2430--2451
+Overfull \hbox (5.53937pt too wide) in paragraph at lines 2440--2461
 []|[]| 
  []
 
 
-Overfull \hbox (4.94534pt too wide) in paragraph at lines 2406--2516
+Overfull \hbox (4.94534pt too wide) in paragraph at lines 2416--2526
 [] 
  []
 
@@ -1651,12 +1660,12 @@ Overfull \hbox (4.94534pt too wide) in paragraph at lines 2406--2516
 [28]
 
 [29]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2748--2780
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2758--2790
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2786--2818
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2796--2828
  [] 
  []
 
@@ -1667,7 +1676,7 @@ Overfull \hbox (3.45679pt too wide) in paragraph at lines 2786--2818
 [31]
 
 [32]
-Overfull \hbox (27.55226pt too wide) in paragraph at lines 2944--2953
+Overfull \hbox (27.55226pt too wide) in paragraph at lines 2954--2963
 [] 
  []
 
@@ -1683,13 +1692,13 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: 50DDEE16CDFEA98DB5B4A5B28624D587;15061.
+(rerunfilecheck)             Checksum: ED459B49AEAE98B2E82B6F7627AF98FD;15233.
  ) 
 Here is how much of TeX's memory you used:
- 40883 strings out of 468133
- 915065 string characters out of 5431680
- 1570569 words of memory out of 5000000
- 68526 multiletter control sequences out of 15000+600000
+ 40885 strings out of 468133
+ 915095 string characters out of 5431680
+ 1570570 words of memory out of 5000000
+ 68527 multiletter control sequences out of 15000+600000
  788675 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,34n,117p,1008b,2515s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1723,9 +1732,9 @@ mbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (35 pages, 718353 bytes).
+Output written on vademecum.pdf (35 pages, 719682 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 90789 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 785 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 90797 words of extra memory for PDF output out of 106986 (max. 10000000)
 
