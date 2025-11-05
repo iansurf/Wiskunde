@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  4 NOV 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  5 NOV 2025 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1610,24 +1610,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 2234--2235
 
  []
 
-
-
-[25]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 2291.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 2289.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2291.
+(Font)              <13> on input line 2289.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 2291.
+(Font)              <9.09996> on input line 2289.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 2291.
+(Font)              <6.5> on input line 2289.
 
-Overfull \hbox (10.34769pt too wide) detected at line 2297
+Overfull \hbox (10.34769pt too wide) detected at line 2295
 \OML/lmm/m/it/13 f[]\OT1/lmr/m/n/13 (\OML/lmm/m/it/13 a\OT1/lmr/m/n/13 ) = [] [
 ] = [] [] = [] [] = [][] [] 
  []
 
 
-Overfull \hbox (1.96335pt too wide) detected at line 2352
+
+[25]
+Overfull \hbox (1.96335pt too wide) detected at line 2377
 []
  []
 
@@ -1636,22 +1635,22 @@ Overfull \hbox (1.96335pt too wide) detected at line 2352
 [26]
 
 [27]
-Overfull \hbox (4.73958pt too wide) in paragraph at lines 2432--2438
+Overfull \hbox (4.73958pt too wide) in paragraph at lines 2457--2463
 []|$[][]$| 
  []
 
 
-Overfull \hbox (2.81754pt too wide) in paragraph at lines 2444--2449
+Overfull \hbox (2.81754pt too wide) in paragraph at lines 2469--2474
 []|$[][]$| 
  []
 
 
-Overfull \hbox (5.53937pt too wide) in paragraph at lines 2440--2461
+Overfull \hbox (5.53937pt too wide) in paragraph at lines 2465--2486
 []|[]| 
  []
 
 
-Overfull \hbox (4.94534pt too wide) in paragraph at lines 2416--2526
+Overfull \hbox (4.94534pt too wide) in paragraph at lines 2441--2551
 [] 
  []
 
@@ -1660,12 +1659,12 @@ Overfull \hbox (4.94534pt too wide) in paragraph at lines 2416--2526
 [28]
 
 [29]
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2758--2790
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2783--2815
  [] 
  []
 
 
-Overfull \hbox (3.45679pt too wide) in paragraph at lines 2796--2828
+Overfull \hbox (3.45679pt too wide) in paragraph at lines 2821--2853
  [] 
  []
 
@@ -1676,7 +1675,7 @@ Overfull \hbox (3.45679pt too wide) in paragraph at lines 2796--2828
 [31]
 
 [32]
-Overfull \hbox (27.55226pt too wide) in paragraph at lines 2954--2963
+Overfull \hbox (27.55226pt too wide) in paragraph at lines 2979--2988
 [] 
  []
 
@@ -1691,50 +1690,69 @@ Overfull \hbox (27.55226pt too wide) in paragraph at lines 2954--2963
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
-Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: ED459B49AEAE98B2E82B6F7627AF98FD;15233.
+
+
+Package rerunfilecheck Warning: File `vademecum.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `vademecum.out':
+(rerunfilecheck)             Before: C287758FCA3F981ED92581825FBB2318;15523
+(rerunfilecheck)             After:  0C275CEB58257A978A511F9B96755434;15533.
  ) 
 Here is how much of TeX's memory you used:
- 40885 strings out of 468133
- 915095 string characters out of 5431680
+ 40890 strings out of 468133
+ 915187 string characters out of 5431680
  1570570 words of memory out of 5000000
- 68527 multiletter control sequences out of 15000+600000
+ 68528 multiletter control sequences out of 15000+600000
  788675 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,34n,117p,1008b,2515s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/U
-sers/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Use
-rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users
-/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/I
-an/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Ian/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ian/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/lm/lmsy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmsy7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-sy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9
-.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (35 pages, 719682 bytes).
+
+pdfTeX warning (dest): name{subsubsection.12.9.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.12.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.12.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
+:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/
+Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Use
+rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users
+/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/I
+an/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Ian
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Ian/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ian/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmsy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+msy7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
+8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.p
+fb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (35 pages, 722662 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 90797 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 90805 words of extra memory for PDF output out of 106986 (max. 10000000)
 

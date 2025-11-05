@@ -59,8 +59,9 @@
 \contentsline {subsection}{\numberline {12.2}Limieten van functies}{23}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}Limieten van goniometrische functies}{23}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Methodes bij het berekenen van limieten van functies}{24}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Afgeleiden}{26}{subsection.12.5}%
-\contentsline {subsubsection}{\numberline {12.5.1}Afgeleiden - differentialen}{26}{subsubsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5}Afgeleiden}{25}{subsection.12.5}%
+\contentsline {subsubsection}{\numberline {12.5.1}Partiële afgeleiden en totale differentiaal}{25}{subsubsection.12.5.1}%
+\contentsline {subsubsection}{\numberline {12.5.2}Afgeleiden - differentialen}{26}{subsubsection.12.5.2}%
 \contentsline {subsection}{\numberline {12.6}Afgeleiden - fundamentele integralen}{27}{subsection.12.6}%
 \contentsline {subsection}{\numberline {12.7}Partiële integratie}{27}{subsection.12.7}%
 \contentsline {subsection}{\numberline {12.8}Integralen}{28}{subsection.12.8}%

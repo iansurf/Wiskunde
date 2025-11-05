@@ -2284,8 +2284,6 @@ $\begin{array}{l}
 
 \end{tabular}
 
-\newpage
-
 \subsection{Afgeleiden}
 \fontsize{13pt}{14pt}\selectfont
 \[f'(a)
@@ -2301,6 +2299,33 @@ $\begin{array}{l}
 = \frac{d[f(u)]}{dx}
 = \frac{d[f(u)]}{du} \cdot \frac{du}{dx}
 = D_u\!\bigl[f(u)\bigr] \cdot D_x\!\bigl[u\bigr]\]
+
+\subsubsection{Partiële afgeleiden en totale differentiaal}
+\fontsize{13pt}{14pt}\selectfont
+\[
+z = f(x, y)
+\Rightarrow
+\begin{cases}
+    \frac{\partial f}{\partial x}
+	= \lim_{\scriptscriptstyle \Delta x \to 0}
+	\frac{f(x + \Delta x, y) - f(x, y)}{\Delta x} \\
+    \frac{\partial f}{\partial y}
+	= \lim_{\scriptscriptstyle \Delta y \to 0}
+	\frac{f(x, y + \Delta y) - f(x, y)}{\Delta y}
+\end{cases}
+\]
+
+
+
+\[
+dz = \frac{\partial f}{\partial x}\,dx + \frac{\partial f}{\partial y}\,dy
+\]
+\normalsize
+
+
+\newpage
+
+
 \subsubsection{Afgeleiden - differentialen}
 \fontsize{14pt}{15pt}\selectfont
 \[
