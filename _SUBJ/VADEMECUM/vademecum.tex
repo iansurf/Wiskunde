@@ -26,7 +26,7 @@
 % Tekenpakketten & grafische hulpmiddelen
 % ---------------------------------------------------------------------
 \usepackage{tikz}
-\usetikzlibrary{positioning,angles,quotes,calc,babel,matrix}
+\usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,matrix,decorations.pathreplacing,arrows.meta}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{graphicx}
@@ -85,7 +85,7 @@
 
 \begin{document}
 
-\title{Formularium Wiskunde}
+\title{Vademecum-Formularium Wiskunde}
 \author{Ian Claesen}
 \date{\today}
 \maketitle
@@ -2300,28 +2300,109 @@ $\begin{array}{l}
 = \frac{d[f(u)]}{du} \cdot \frac{du}{dx}
 = D_u\!\bigl[f(u)\bigr] \cdot D_x\!\bigl[u\bigr]\]
 
-\subsubsection{Partiële afgeleiden en totale differentiaal}
-\fontsize{13pt}{14pt}\selectfont
+\subsubsection{Differentiaal}
 \[
-z = f(x, y)
+df(x)=Df(x)\cdot dx
+\]
+
+\subsubsection{Partiële afgeleiden en totale differentiaal}
+\begin{tabular}{@{}p{0.60\linewidth}@{\hspace{1em}}p{0.40\linewidth}@{}}
+% -------------------- LEFT COLUMN --------------------
+\noindent
+\begin{minipage}[c]{\linewidth}
+\[
+z = f(x,y)
 \Rightarrow
 \begin{cases}
-    \frac{\partial f}{\partial x}
-	= \lim_{\scriptscriptstyle \Delta x \to 0}
-	\frac{f(x + \Delta x, y) - f(x, y)}{\Delta x} \\
-    \frac{\partial f}{\partial y}
-	= \lim_{\scriptscriptstyle \Delta y \to 0}
-	\frac{f(x, y + \Delta y) - f(x, y)}{\Delta y}
+  \dfrac{\partial f}{\partial x}
+    = \displaystyle\lim_{\scriptscriptstyle \Delta x \to 0}
+      \dfrac{f(x+\Delta x, y)-f(x,y)}{\Delta x} \\[1em]
+  \dfrac{\partial f}{\partial y}
+    = \displaystyle\lim_{\scriptscriptstyle \Delta y \to 0}
+      \dfrac{f(x, y+\Delta y)-f(x,y)}{\Delta y}
 \end{cases}
 \]
-
-
-
 \[
-dz = \frac{\partial f}{\partial x}\,dx + \frac{\partial f}{\partial y}\,dy
+dz = \dfrac{\partial f}{\partial x}\,dx + \dfrac{\partial f}{\partial y}\,dy
 \]
-\normalsize
+\end{minipage}\hfill
+&
+% -------------------- RIGHT COLUMN --------------------
+\begin{minipage}[r]{\linewidth}
+\begin{tikzpicture}[
+  3d view={45}{18},
+  >=Latex, thick,
+  dx/.style={draw, line width=0.9pt, color=blue},
+  dy/.style={draw, line width=0.9pt, color=red},
+  df/.style={draw, line width=0.9pt, color=green!50!black},
+  note/.style={scale=0.6}
+]
+  \def\Bx{2} \def\By{2}
+  \def\ax{0.55}
+  \def\ay{0.35}
 
+  % Base rectangle (z=0)
+  \coordinate (A) at (tpp cs:x=0,y=0,z=0);
+  \coordinate (B) at (tpp cs:x=\Bx,y=0,z=0);
+  \coordinate (C) at (tpp cs:x=\Bx,y=\By,z=0);
+  \coordinate (D) at (tpp cs:x=0,y=\By,z=0);
+
+  % only the x-change
+  \coordinate (Ap) at (tpp cs:x=0,y=0,z=\ax*\Bx);
+  \coordinate (Bp) at (tpp cs:x=\Bx,y=0,z=\ax*\Bx);
+  \coordinate (Cp) at (tpp cs:x=\Bx,y=\By,z=\ax*\Bx);
+  \coordinate (Dp) at (tpp cs:x=0,y=\By,z=\ax*\Bx);
+
+  % the y-change
+  \coordinate (A1) at (tpp cs:x=0,y=0,z=\ax*\Bx);
+  \coordinate (B1) at (tpp cs:x=\Bx,y=0,z=\ax*\Bx);
+  \coordinate (C1) at (tpp cs:x=\Bx,y=\By,z={(\ax*\Bx)+(\ay*\By)});
+  \coordinate (D1) at (tpp cs:x=0,y=\By,z={(\ax*\Bx)+(\ay*\By)});
+
+  % Axes
+  \draw[->, thin, blue!50!black]  (tpp cs:x=0,y=0,z=0) -- (tpp cs:x=2.8,y=0,z=0)
+      node[below left=2pt, note] {$x$};
+  \draw[->, thin, red!50!black]   (tpp cs:x=0,y=0,z=0) -- (tpp cs:x=0,y=2.8,z=0)
+      node[below left=2pt, note] {$y$};
+  \draw[->, thin, black!50!black] (tpp cs:x=0,y=0,z=0) -- (tpp cs:x=0,y=0,z=2.4)
+      node[left=2pt, note] {$z$};
+
+  % Geometry
+  \draw[blue] (A)--(B) node[midway, below, note, blue] {$dx$};
+  \draw[blue] (A)--(Bp);
+  \draw[blue] (B)--(Bp);
+  \draw[blue] (C)--(Cp);
+
+  % right wall
+  \draw[red] (B)--(C) node[midway, below, note, red] {$dy$};
+  \draw[red] (Bp)--(Cp);
+  \draw[red] (Bp)--(C1);
+  \draw[red] (Cp)--(C1);
+
+  % braces and labels
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, blue]
+    ($(B)!0.02!(Bp)$) --
+    node[right=2pt, note, text=blue]{$\displaystyle \frac{\partial f}{\partial x}\,dx$}
+    ($(B)!0.98!(Bp)$);
+    
+   \draw[decorate, decoration={brace, mirror, amplitude=4pt}, blue]
+    ($(C)!0.02!(Cp)$) --
+    node[right=2pt, note, text=blue]{$\displaystyle \frac{\partial f}{\partial x}\,dx$}
+    ($(C)!0.98!(Cp)$);
+
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, red]
+    ($(Cp)!0.02!(C1)$) --
+    node[right=2pt, note, text=red]{$\displaystyle \frac{\partial f}{\partial y}\,dy$}
+    ($(Cp)!0.98!(C1)$);
+
+  \draw[df, decorate, decoration={brace,mirror, raise=20pt, amplitude=5pt}, black ]
+    ($(C)!0.03!(C1)$) --
+    node[midway,right=25pt, note]{$\displaystyle df(x,y)$}
+    ($(C)!0.97!(C1)$);
+\end{tikzpicture}
+\end{minipage}
+\\
+\end{tabular}
 
 \newpage
 
