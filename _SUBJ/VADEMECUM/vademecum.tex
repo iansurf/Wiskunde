@@ -27,6 +27,30 @@
 % ---------------------------------------------------------------------
 \usepackage{tikz}
 \usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,matrix,decorations.pathreplacing,arrows.meta}
+
+\usepackage{tikzpagenodes}
+\usepackage{xcolor}
+
+% Use the optional short title for marks if provided
+\renewcommand{\sectionmark}[1]{%
+  \markboth{\MakeUppercase{\thesection\;#1}}{}%
+}
+
+% Always place section title in RIGHT margin
+\AddToHook{shipout/foreground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[
+      anchor=north east,
+      xshift=1mm, yshift=-3mm,
+      rotate=90,
+      font=\tiny\sffamily\bfseries,
+      text=gray!55
+    ] at (current page text area.north east)
+    {\leftmark};
+  \end{tikzpicture}%
+}
+
+
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{graphicx}
@@ -2634,6 +2658,118 @@ $
 \newpage
 
 \section{Statistiek}
+Discrete data: slechts een eindig of telbaar aantal waarden is mogelijk.\\
+Continue data: variabele die tussen twee waarden oneindig \# waarden kan aannemen.
+
+
+% --------------------------------------------------------
+% 1. Steekproef / Populatie / Normaalverdeling  (3x3 grid)
+% --------------------------------------------------------
+\noindent
+\begin{tabular}{|p{0.30\linewidth}|p{0.30\linewidth}|p{0.31\linewidth}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Steekproef}} &
+\multicolumn{1}{c|}{\textbf{Populatie}} &
+\multicolumn{1}{c|}{\textbf{Normaalverdeling}} \\ \hline
+
+$\displaystyle
+\overline{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$ &
+$\displaystyle
+\mu = \frac{1}{N} \sum_{i=1}^{N} x_i
+$ &
+$\displaystyle
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} 
+e^{-\frac{1}{2}\!\left(\frac{x - \mu}{\sigma}\right)^{\!2}}
+$ \\[8pt]
+
+$\displaystyle
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \overline{x})^2
+$ &
+$\displaystyle
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
+$ &
+$N(\mu, \sigma)$ \\
+\hline
+\end{tabular}
+
+
+% --------------------------------------------------------
+% 2. Discrete en Continue (zelfde buitenbreedte)
+% --------------------------------------------------------
+{\scriptsize
+\noindent
+\begin{tabular}{|p{0.44\linewidth}|p{0.50\linewidth}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Discrete}} &
+\multicolumn{1}{c|}{\textbf{Continue}} \\ \hline
+\(\begin{aligned}
+E[X] &= \mu_X = \sum_{i=1}^{n} X_i\!\cdot\!p_i \\[2pt]
+\sigma_X^2 &= \sum_{i=1}^{n} (x_i - \mu_X)^2\!\cdot\!p_i=\left(\sum_{i=1}^{n} x_i^2\!\cdot\!p_i \right) - \mu_X^2
+\end{aligned}\) &
+\(\begin{aligned}
+E[X] &= \mu_X = \int_a^b x\!\cdot\!f(x)\,dx \\[2pt]
+\sigma_X^2 &= \int_a^b (x - \mu_X)^2\!\cdot\!f(x)\,dx=\int_a^b x^2\!\cdot\!f(x)\,dx - \mu_X^2
+\end{aligned}\) \\[4pt]
+\hline
+\end{tabular}
+\normalsize
+}
+
+% 3. Rekenregels (zelfde buitenbreedte)
+Rekenregels\\
+\noindent
+\begin{tabular}{|p{0.30\linewidth}|p{0.30\linewidth}|p{0.31\linewidth}|}
+\hline
+$T = X + a$ & $T = aX$ & $T = aX + bY$ \\[2pt]
+$\mu_T = \mu_X + a$ & $\mu_T = a\!\cdot\!\mu_X$ & $\mu_T = a\mu_X + b\mu_Y$ \\[2pt]
+$\sigma_T = \sigma_X$ & $\sigma_T = |a|\!\cdot\!\sigma_X$ & $\sigma_T = \sqrt{a^2\!\cdot\!\sigma_X^2 + b^2\!\cdot\!\sigma_Y^2}$ \\
+\hline
+\end{tabular}
+
+% 4. Uniforme, Bernoulli, Binomiaal (zelfde buitenbreedte)
+\noindent
+\begin{tabular}{|p{0.44\linewidth}|p{0.50\linewidth}|}
+\hline
+\textbf{Uniforme continue} &
+\textbf{Uniforme discrete} \\ \hline
+$\begin{aligned}
+\mu &= \frac{a+b}{2} \\
+\sigma &= \frac{b-a}{2\sqrt{3}}
+\end{aligned}$ &
+$\begin{aligned}
+\mu &= \frac{1}{n} \sum_{i=1}^{n} x_i \\
+\sigma^2 &= \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2 \\
+&= \frac{1}{n} \sum_{i=1}^{n} (x_i^2) - \mu^2
+\end{aligned}$ \\
+\hline
+\end{tabular}
+
+\noindent
+\begin{tabular}{|p{0.30\linewidth}|p{0.64\linewidth}|}
+\hline
+\textbf{Bernoulli} &
+\textbf{Binomiaal} \\ \hline
+\(\begin{aligned}
+\mu &= p \\[2pt]
+\sigma &= \sqrt{p\!\cdot\!q}
+\end{aligned}\) 
+&
+\(\begin{aligned}
+P(X = i) = C_i^n \cdot {p^i} \cdot {(1 - p)^{n - i}} \\[6pt]
+\left\{
+\begin{array}{l}
+n \ge 20,\\
+n\,p \ge 5 \;\wedge\; n\,q \ge 5
+\end{array}
+\right.
+&\Rightarrow B(n,p) \approx N(n p,\sqrt{n p q})
+\end{aligned}\) \\[2pt]
+\hline
+\end{tabular}
+
+\newpage
+
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 
 \begin{flushleft}
@@ -3026,20 +3162,28 @@ n! & $n$-faculteit; $n! = n(n-1)\dots 2\cdot 1$ \\
 \subsubsection{Functies \& analyse}
 
 \begin{tabular}{>{$}l<{$} l}
-f & functie $f$ \\
-f(x) & functiewaarde \\
-f(b)-f(a) & verschil; gebruikt bij integralen \\
-g \circ f & samengestelde functie: $g(f(x))$ \\
-x \to a & $x$ streeft naar $a$ \\
-\displaystyle \lim_{x \to a} f(x) & limiet van $f(x)$ voor $x \to a$ \\
-\Delta x & toename van $x$ \\
-Df,\; f',\; \frac{\diff f}{\diff x} & afgeleide van $f$ naar $x$ \\
-Df(a),\; f'(a),\; \left.\frac{\diff f}{\diff x}\right|_{x=a} & waarde van de afgeleide bij $x=a$ \\
-f^{(n)} & $n$-de afgeleide van $f$ \\
-\displaystyle \frac{\pdiff f}{\pdiff x} & partiële afgeleide van $f$ naar $x$ \\
-\mathrm df & differentiaal van $f$: $\mathrm df = f'(x)\,\mathrm dx$ \\
-\displaystyle \int f(x)\,\mathrm dx & onbepaalde integraal (primitieven) \\
-\displaystyle \int_a^b f(x)\,\mathrm dx & bepaalde integraal over $[a,b]$ \\
+f                             & functie $f$ \\
+f(x)                          & functiewaarde \\
+\left[f(x)\right]_a^b = f(b) - f(a)
+                              & verschil gebruikt bij integralen \\
+g \circ f                     & samengestelde functie: $g(f(x))$ \\
+x \to a                       & $x$ streeft naar $a$ \\
+\displaystyle \lim_{x \to a} f(x)
+                              & limiet van $f(x)$ voor $x \to a$ \\
+\Delta x                      & toename van $x$ \\
+Df,\; f',\; \dfrac{\diff f}{\diff x}
+                              & afgeleide van $f$ naar $x$ \\
+Df(a),\; f'(a),\; \left.\dfrac{\diff f}{\diff x}\right|_{x=a}
+                              & waarde van de afgeleide bij $x=a$ \\
+\dfrac{d^{n}f}{dx^{n}},\; f^{(n)},\; D^{n}f
+                              & $n$-de afgeleide van $f$ \\[8pt]
+\displaystyle \frac{\pdiff f}{\pdiff x}
+                              & partiële afgeleide van $f$ naar $x$ \\
+\mathrm df                    & differentiaal van $f$: $\mathrm df = f'(x)\,\mathrm dx$ \\
+\displaystyle \int f(x)\,\mathrm dx
+                              & onbepaalde integraal (primitieven) \\
+\displaystyle \int_a^b f(x)\,\mathrm dx
+                              & bepaalde integraal over $[a,b]$ \\
 \end{tabular}
 
 % ------------------------------------------------------------
@@ -3051,7 +3195,7 @@ f^{(n)} & $n$-de afgeleide van $f$ \\
 a^{x} & exponentiële functie met grondtal $a>0,\ a\ne 1$ \\
 \log_a x & logaritme met grondtal $a$ \\
 \ln x & natuurlijke logaritme van $x$ \\
-\lg x & decimale (Briggs) logaritme (grondtal $10$) \\
+\log_{10},\log,\lg x & decimale (Briggs) logaritme (grondtal $10$) \\
 \end{tabular}
 
 % ------------------------------------------------------------
