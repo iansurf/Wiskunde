@@ -105,9 +105,12 @@
 
 % =====================================================================
 
-
-
 \begin{document}
+
+%To make all tables compact and visually balanced, add before your tables:
+% --- Compact vademecum table style ---
+\AtBeginEnvironment{tabular}{\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{3pt}\small}
+
 
 \title{Vademecum-Formularium Wiskunde}
 \author{Ian Claesen}
@@ -1031,7 +1034,7 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
 \begin{minipage}[t]{\linewidth}\raggedright
 \[
 \begin{aligned}
-&{}^a\!\log x = y \Leftrightarrow x=a^y,\; (x>0,a>0,a\neq 1\ )\\
+&{}^a\!\log x = y \Leftrightarrow x=a^y, (x>0,a>0,a\neq 1)\\
 &{}^a\log {a^y} = y\; \Leftrightarrow x = {a^{{}^a\log x}}\\
 &{}^a\!\log(x_1x_2)={}^a\!\log x_1+{}^a\!\log x_2\\
 &{}^a\!\log\!\left(\frac{x_1}{x_2}\right)={}^a\!\log x_1-{}^a\!\log x_2\\
@@ -2657,6 +2660,105 @@ $
 
 \newpage
 
+%====================================================
+% 3  COMBINATIELEER
+%====================================================
+\section{Combinatieleer}
+
+\subsection{Keuzes zonder herhaling}
+
+\begin{tabular}{|p{0.31\linewidth}|p{0.31\linewidth}|p{0.33\linewidth}|}
+\hline
+\textbf{Variaties} & \textbf{Permutaties} & \textbf{Combinaties} \\ \hline
+
+\textbf{geordende keuze} \newline
+(\textit{volgorde van belang}) \newline
+van $p$ verschillende elementen \newline
+uit $n$ elementen &
+\textbf{Rangschikken} \newline
+(\textit{volgorde van belang}) \newline
+van $n$ verschillende elementen &
+\textbf{ongeordende keuze} \newline
+(\textit{volgorde van geen belang}) \newline
+van $p$ verschillende elementen \newline
+uit $n$ elementen \\ \hline
+
+\[
+V_n^p = \frac{n!}{(n-p)!}
+\] 
+&
+\[{P_n} = V_n^n = \frac{{n!}}{{(n - n)!}} = n!\] &
+\[C_n^p = \frac{{V_n^p}}{{P_p^{}}} = \frac{{\frac{{n!}}{{\left( {n - p} \right)!}}}}{{p!}} = \frac{{n!}}{{\left( {n - p} \right)!p!}}\] \\ \hline
+
+\textit{Internationale notatie:} \newline
+\[
+V_n^p = {}_nP_p = P(n,p)
+\] &
+\textit{Internationale notatie:} \newline
+\[
+P_n = {}_nP_n = P(n) = n!
+\] &
+\textit{Internationale notatie:} \newline
+\[
+C_n^p = C(n,p) = \binom{n}{p}
+\] \\ \hline
+
+\end{tabular}
+
+% ============================================================
+\subsection{Keuzes met herhaling}
+
+\begin{tabular}{|p{0.31\linewidth}|p{0.32\linewidth}|p{0.32\linewidth}|}
+\hline
+\textbf{Variaties met herhaling} &
+\textbf{Permutaties met herhaling} &
+\textbf{Combinaties met herhaling} \\ \hline
+
+\textbf{geordende keuze} \newline
+(\textit{volgorde van belang}) \newline
+van $p$ elementen \newline
+uit $n$ elementen \newline
+\textit{(herhaling toegestaan)} &
+\textbf{rangschikken van $n$ elementen} \newline
+waarvan sommige \newline
+\textit{identiek} zijn &
+\textbf{ongeordende keuze} \newline
+(\textit{volgorde van geen belang}) \newline
+van $p$ elementen \newline
+uit $n$ soorten elementen \newline
+\textit{(herhaling toegestaan)} \\ \hline
+
+\[
+\overline{V}_n^p = n^p
+\] &
+\[\overline P _n^{m_1,m_2,\dotsm m_k} = \frac{{n!}}{{m_1!\,m_2!\,\dotsm m_k!}}\]
+
+\smallskip
+
+met $m_1 + \dotsb + m_k = n$ &
+\[
+\overline{C}_n^p
+= C_{n+p-1}^p
+= \frac{(n+p-1)!}{(n-1)!\,p!}
+\] \\ \hline
+
+\textit{Internationale notatie:} \newline
+\[
+\overline{V}_n^p = n^p
+\] &
+\textit{Internationale notatie:} \newline
+ &
+\textit{Internationale notatie:} \newline
+\[
+\overline{C}_n^p
+= {}_nH_p
+= \binom{n+p-1}{p}
+\] \\ \hline
+
+\end{tabular}
+
+\newpage
+
 \section{Statistiek}
 Discrete data: slechts een eindig of telbaar aantal waarden is mogelijk.\\
 Continue data: variabele die tussen twee waarden oneindig \# waarden kan aannemen.
@@ -2695,6 +2797,7 @@ $N(\mu, \sigma)$ \\
 
 
 % --------------------------------------------------------
+% --------------------------------------------------------
 % 2. Discrete en Continue (zelfde buitenbreedte)
 % --------------------------------------------------------
 {\scriptsize
@@ -2703,29 +2806,63 @@ $N(\mu, \sigma)$ \\
 \hline
 \multicolumn{1}{|c|}{\textbf{Discrete}} &
 \multicolumn{1}{c|}{\textbf{Continue}} \\ \hline
+
 \(\begin{aligned}
-E[X] &= \mu_X = \sum_{i=1}^{n} X_i\!\cdot\!p_i \\[2pt]
-\sigma_X^2 &= \sum_{i=1}^{n} (x_i - \mu_X)^2\!\cdot\!p_i=\left(\sum_{i=1}^{n} x_i^2\!\cdot\!p_i \right) - \mu_X^2
-\end{aligned}\) &
+E[X] &= \mu_X = \sum_{i=1}^{n} X_i\!\cdot\!p_i \\[4pt]
+\sigma_X^2 &= \sum_{i=1}^{n} (x_i - \mu_X)^2\!\cdot\!p_i \\[2pt]
+&= \left(\sum_{i=1}^{n} x_i^2\!\cdot\!p_i \right) - \mu_X^2
+\end{aligned}\)
+&
 \(\begin{aligned}
-E[X] &= \mu_X = \int_a^b x\!\cdot\!f(x)\,dx \\[2pt]
-\sigma_X^2 &= \int_a^b (x - \mu_X)^2\!\cdot\!f(x)\,dx=\int_a^b x^2\!\cdot\!f(x)\,dx - \mu_X^2
-\end{aligned}\) \\[4pt]
+E[X] &= \mu_X = \int_a^b x\!\cdot\!f(x)\,dx \\[4pt]
+\sigma_X^2 &= \int_a^b (x - \mu_X)^2\!\cdot\!f(x)\,dx \\[2pt]
+&= \int_a^b x^2\!\cdot\!f(x)\,dx - \mu_X^2
+\end{aligned}\)
+\\
 \hline
 \end{tabular}
 \normalsize
 }
 
+
 % 3. Rekenregels (zelfde buitenbreedte)
-Rekenregels\\
 \noindent
 \begin{tabular}{|p{0.30\linewidth}|p{0.30\linewidth}|p{0.31\linewidth}|}
 \hline
+\multicolumn{3}{|l|}{\textbf{Rekenregels}} \\ \hline
 $T = X + a$ & $T = aX$ & $T = aX + bY$ \\[2pt]
 $\mu_T = \mu_X + a$ & $\mu_T = a\!\cdot\!\mu_X$ & $\mu_T = a\mu_X + b\mu_Y$ \\[2pt]
 $\sigma_T = \sigma_X$ & $\sigma_T = |a|\!\cdot\!\sigma_X$ & $\sigma_T = \sqrt{a^2\!\cdot\!\sigma_X^2 + b^2\!\cdot\!\sigma_Y^2}$ \\
 \hline
 \end{tabular}
+
+\noindent
+\small
+\begin{tabular}{|p{0.28\linewidth}|p{0.68\linewidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Rekenregels}} \\ \hline
+% --- Left column: somformules ---
+\(\begin{aligned}
+S &= X_1 + \dots + X_n \\[3pt]
+\mu_S &= E(S) = n\mu_X \\[3pt]
+\sigma_S^2 &= n\sigma_X^2 
+\;\Rightarrow\;
+\sigma_S = \sqrt{n}\!\cdot\!\sigma_X
+\end{aligned}\)
+&
+% --- Right column: gemiddelde en CLT ---
+\(\begin{aligned}
+\left. {\begin{array}{*{20}{c}}
+{\overline X  = \frac{{\left( {{X_1} + ... + {X_n}} \right)}}{n}\quad ,\quad {\mu _{\overline X }} = \frac{1}{n}n{\mu _X}}\\
+{{\sigma _{_{\overline X }}}^2 = \frac{1}{{{n^2}}}n{\sigma _X}^2 = \frac{1}{n}{\sigma _X}^2 \Rightarrow {\sigma _{_{\overline X }}} = \frac{{{\sigma _X}}}{{\sqrt n }}}
+\end{array}} \right\}\!CLT \!\to\! \overline X  \!\approx\! N({\mu _{\overline X }},\frac{{{\sigma _X}}}{{\sqrt n }})
+\end{aligned}\)
+\\
+\hline
+\end{tabular}
+\normalsize
+
+
 
 % 4. Uniforme, Bernoulli, Binomiaal (zelfde buitenbreedte)
 \noindent
@@ -2992,8 +3129,6 @@ $\displaystyle H_A : \hat{p} \ge g_{+}$ \\
 \end{tabular}
 \end{center}
 
-\newpage
-
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}
 
 \begin{center}
@@ -3069,7 +3204,6 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 \end{tabular}
 \end{center}
 
-\newpage
 \section{Diversen}
 \subsection{Wiskundige symbolen (ISO 80000-2)}
 % (ISO 31-11 werd vervangen door ISO 80000-2)
