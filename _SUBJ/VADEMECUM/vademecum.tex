@@ -3204,6 +3204,86 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 \end{tabular}
 \end{center}
 
+\section{Kans}
+
+% ---------------------------------------------------
+% Kansrekenen – overzichtstabel (één tabular)
+% ---------------------------------------------------
+\renewcommand{\arraystretch}{1.2}
+
+\begin{tabular}{|p{0.48\linewidth}|p{0.48\linewidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Willekeurige en onafhankelijke gebeurtenissen}} \\ \hline
+\textbf{Willekeurig} & \textbf{Onafhankelijk} \\ \hline
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw (-1.5,-1.5) rectangle (2.5,1.5) node[above left] {$U$};
+  \draw[fill=blue!40,opacity=0.6] (0,0) circle (1);
+  \draw[fill=magenta!40,opacity=0.6] (1,0) circle (1);
+  \node at (-0.5,0) {$A$};
+  \node at (1.5,0) {$B$};
+  \node at (0.5,0) {$A\cap B$};
+\end{tikzpicture}
+\end{center}
+&
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw (-1.5,-1.5) rectangle (1.4,1.5) node[above left] {$U1$};
+  \draw (1.6,-1.5) rectangle (4.5,1.5) node[above left] {$U2$};
+  \draw[fill=blue!40,opacity=0.7] (0,0) circle (1);
+  \node at (0,0) {$A$};
+  \draw[fill=magenta!40,opacity=0.7] (3,0) circle (1);
+  \node at (3,0) {$B$};
+\end{tikzpicture}
+\end{center}
+\\[2pt]
+
+$\begin{aligned}
+P(A\setminus B) &= P(A)-P(A\cap B),\\[2pt]
+P(A\cup B) &= P(A)+P(B)-P(A\cap B)
+\end{aligned}$
+&
+$P(A\wedge B)=P(A)\cdot P(B)$
+\\
+\hline
+
+\multicolumn{2}{|c|}{\textbf{Voorwaardelijke kans}} \\ \hline
+$P(B\mid A)=\dfrac{P(B\cap A)}{P(A)}$ &
+$P(B\mid A)=\dfrac{P(B\wedge A)}{P(A)}$ \\ \hline
+
+\multicolumn{2}{|c|}{\textbf{Productwet}} \\ \hline
+$P(A\cap B)=P(A)\cdot P(B\mid A)$ &
+$P(A\wedge B)=P(A)\cdot P(B\mid A)$ \\ \hline
+
+\multicolumn{2}{|c|}{\textbf{Wet van de totale kans}} \\ \hline
+\textbf{Willekeurig} & \textbf{Onafhankelijk} \\ \hline
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+  \draw (0,0) rectangle (4,2) node[above left] {$U$};
+  \foreach \x/\name in {0.8/$A_1$,2.0/$A_2$,3.2/$A_3$}{
+    \draw[fill=blue!20] (\x,1) circle (0.7) node {\name};
+  }
+\end{tikzpicture}
+\end{center}
+&
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+  \draw (0,0) rectangle (4,2) node[above left] {$U$};
+  \foreach \x/\name in {0.8/$A_1$,2.0/$A_2$,3.2/$A_3$}{
+    \draw[fill=blue!20] (\x,1) circle (0.7) node {\name};
+  }
+\end{tikzpicture}
+\end{center}
+\\[-2pt]
+\multicolumn{2}{|c|}{$\displaystyle P(B) = \sum_{i=1}^{n} P(A_i)\cdot P(B\mid A_i)$} \\ \hline
+
+\multicolumn{2}{|c|}{\textbf{Regel van Bayes}} \\ \hline
+\multicolumn{2}{|c|}{$\displaystyle
+P({A_i}|B) = \frac{{P({A_i} \wedge B)}}{{P(B)}} = \frac{{P({A_i}).P(B|{A_i})}}{{\sum\limits_{i = 1}^n {P({A_i}).P(B|{A_i})} }}
+$} \\ \hline
+\end{tabular}
+
 \section{Diversen}
 \subsection{Wiskundige symbolen (ISO 80000-2)}
 % (ISO 31-11 werd vervangen door ISO 80000-2)
