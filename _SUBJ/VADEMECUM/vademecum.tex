@@ -26,6 +26,7 @@
 % Tekenpakketten & grafische hulpmiddelen
 % ---------------------------------------------------------------------
 \usepackage{tikz}
+\usepackage{tikz-3dplot}
 \usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,matrix,decorations.pathreplacing,arrows.meta}
 
 \usepackage{tikzpagenodes}
@@ -2656,6 +2657,356 @@ $
 \\
 \hline
 \end{tabular}
+\newpage
+
+% =================================================================
+% Integralen van irrationale functies
+% =================================================================
+\subsubsection{Integralen van irrationale functies}
+\begin{center}
+\begin{tabular}{|p{0.48\linewidth}|p{0.48\linewidth}|}
+\hline
+Integrand & Substitutie \\ \hline
+$\sqrt[n]{ax+b}$ &
+$ax+b=t^{\,n},\quad t\ge 0$ \\[0.3em]
+$f\!\big(\sqrt[n_1]{y},\sqrt[n_2]{y},\ldots,\sqrt[n_i]{y}\big),\;
+y=\dfrac{ax+b}{cx+d}$ &
+$\dfrac{ax+b}{cx+d}=t^{\,m},\quad m=\operatorname{k.g.v.}(n_1,\ldots,n_i)$ \\[0.3em]
+$\sqrt{a^{2}-u^{2}},\ a>0$ &
+$u=a\sin t,\quad t\in\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]$ \\[0.3em]
+$\sqrt{u^{2}-a^{2}},\ a>0$ &
+$u=a\sec t,\quad t \in \left[ { - \pi , - \frac{\pi }{2}} \right[ \cup \left[ {0,\frac{\pi }{2}} \right[$ \\[0.3em]
+$\sqrt{u^{2}+a^{2}},\ a>0$ &
+$u=a\tan t,\quad t\in\,]-\dfrac{\pi}{2},\dfrac{\pi}{2}[$ \\ \hline
+\end{tabular}
+\end{center}
+% =================================================================
+% Integralen - inhoud en lengte (2 kolommen: tekst links, figuur rechts)
+% =================================================================
+\subsubsection{Integralen: inhoud en lengte}
+\begin{tabular}{@{}p{0.50\linewidth}@{\hspace{1em}}p{0.30\linewidth}@{}}
+
+% ===================== Row 1 =====================
+\noindent
+\begin{minipage}[c]{\linewidth}
+\textbf{Omwenteling rond de x-as}\par
+Voor $y=f(x)\ge 0$ op $[a,b]$ is het volume van het omwentelingslichaam (washers-methode):
+\[
+V=\int_{a}^{b} \pi\,y^2\,dx.
+\]
+\end{minipage}\hfill
+&
+\begin{minipage}[r]{\linewidth}
+\tdplotsetmaincoords{45}{225}  % elevation, azimuth
+
+% --- helper: disk perpendicular to x-axis at x = X ---
+\newcommand{\diskperp}[1]{%
+  \pgfmathsetmacro{\r}{\f(#1)}
+  % Lateral wall between front (x) and back (x+dr) semicircles
+  \path[fill=gray!25, draw=gray!60, opacity=0.8]
+    plot[domain=-90:90, samples=80, variable=\t]
+      ({#1},      {\r*cos(\t)}, {\r*sin(\t)})
+    --
+    plot[domain=90:-90, samples=80, variable=\t]
+      ({#1+\dr},  {\r*cos(\t)}, {\r*sin(\t)})
+    -- cycle;
+
+  % Front rim (solid)
+  \draw[thick]
+    plot[domain=0:360, samples=120, variable=\t]
+      ({#1}, {\r*cos(\t)}, {\r*sin(\t)});
+
+  % Back rim (dashed)
+  \draw[densely dashed, gray!70]
+    plot[domain=0:360, samples=120, variable=\t]
+      ({#1+\dr}, {\r*cos(\t)}, {\r*sin(\t)});
+}
+
+\begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex]
+
+  % -------------------------------
+  % Axes
+  % -------------------------------
+  \draw[->, thick] (0,0,0) -- (6,0,0) node[above right=-2pt] {$x$};
+  \draw[->, thick] (0,0,0) -- (0,3,0) node[left] {$y$};
+  \draw[->, thick] (0,0,0) -- (0,0,3) node[above left=-1pt] {$z$};
+
+  % -------------------------------
+  % Function y = f(x)
+  % -------------------------------
+  \def\f(#1){0.5 + 0.3*sin(deg(#1))}  % smooth positive function
+
+  % -------------------------------
+  % Parameters
+  % -------------------------------
+  \def\a{1.0}
+  \def\b{3.0}
+  \def\c{5.0}
+  \def\dr{0.15}
+  \def\nrings{14}
+
+  % -------------------------------
+  % Mesh of revolution (rings only)
+  % -------------------------------
+  \newcommand{\ringat}[1]{%
+    \pgfmathsetmacro{\r}{\f(#1)}
+    \draw[gray!55]
+      plot[domain=-180:180, samples=120, variable=\t]
+        ({#1}, {\r*cos(\t)}, {\r*sin(\t)});
+  }
+
+  % Draw all rings (hollow mesh)
+  \foreach \k in {0,...,\nrings} {
+    \pgfmathsetmacro{\xx}{\a + (\c-\a)*\k/\nrings}
+    \ringat{\xx}
+  }
+
+  % -------------------------------
+  % Solid disks at a, x_i, b
+  % -------------------------------
+  \foreach \x in {\a,\b,\c} { \diskperp{\x} }
+  
+    \draw[red!70!black, thick, domain=0:5.8, samples=120, smooth, variable=\x]
+       plot (\x, {\f(\x)}, 0);
+  \node[above right=2pt, red!70!black] at (4, {-2*\f(4)}, 0) {$y=f(x)$};
+
+  % -------------------------------
+  % Labels and dx bracket
+  % -------------------------------
+  \node[above] at (\a,1.2,0) {$a$};
+    \draw[densely dashed, gray!60] (\a,0,0) -- (\a,1.2,0);
+  \node[above] at (\b,1.2,0) {$x_i$};
+    \draw[densely dashed, gray!60] (\b,0,0) -- (\b,1.2,0);
+  \node[above] at (\c,1.2,0) {$b$};
+    \draw[densely dashed, gray!60] (\c,0,0) -- (\c,1.2,0);
+  \draw[|-|, thick] (\b, -0.15, -0.8) --
+        node[fill=white, inner sep=1pt] {$dx$} (\b+\dr, -0.15, -0.8);
+
+\end{tikzpicture}
+\end{minipage}
+
+\\[0.8em]
+
+% ===================== Row 2 =====================
+\noindent
+\begin{minipage}[c]{\linewidth}
+\textbf{Inhoud bepaald door $S(x)$}\par
+Als de doorsnede loodrecht op de $x$-as op positie $x$ oppervlakte $S(x)$ heeft, dan:
+\[
+V=\int_{a}^{b} S(x)\,dx.
+\]
+\end{minipage}\hfill
+&
+\begin{minipage}[c]{\linewidth}
+\tdplotsetmaincoords{45}{225} % same camera
+
+% --------------------------------
+% Cross-sections: rectangles S(x)
+% --------------------------------
+% Height grows linearly with x; depth W is constant
+\def\H(#1){0.6 + 0.25*(#1)}  % height H(x)
+\def\W{1.2}                  % constant depth (|z| <= W/2)
+\def\dr{0.18}                % thickness dx for the slabs
+
+% --- helper: centered rectangular slab at x = X (diagonals cross at y=0) ---
+\newcommand{\rectperp}[1]{%
+  \pgfmathsetmacro{\h}{\H(#1)}
+  \pgfmathsetmacro{\hh}{\h/2}   % half height
+  \pgfmathsetmacro{\w}{\W/2}    % half depth
+  % front rectangle (x)
+  \coordinate (A) at (#1, -\hh, -\w);
+  \coordinate (B) at (#1,  \hh, -\w);
+  \coordinate (C) at (#1,  \hh,  \w);
+  \coordinate (D) at (#1, -\hh,  \w);
+  % back rectangle (x+dx)
+  \coordinate (A2) at (#1+\dr, -\hh, -\w);
+  \coordinate (B2) at (#1+\dr,  \hh, -\w);
+  \coordinate (C2) at (#1+\dr,  \hh,  \w);
+  \coordinate (D2) at (#1+\dr, -\hh,  \w);
+
+  % lateral mantle of thin box
+  \path[fill=gray!25, draw=gray!60, opacity=0.85]
+    (A) -- (B) -- (C) -- (D) -- (D2) -- (C2) -- (B2) -- (A2) -- cycle;
+
+  % front rim (solid)
+  \draw[thick] (A)--(B)--(C)--(D)--cycle;
+  % back rim (dashed)
+  \draw[densely dashed, gray!70] (A2)--(B2)--(C2)--(D2)--cycle;
+}
+
+\begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex, thick]
+
+  % -------------------------------
+  % Axes
+  % -------------------------------
+  \draw[->] (0,0,0) -- (6,0,0) node[above right=-2pt] {$x$};
+  \draw[->] (0,0,0) -- (0,3,0) node[left] {$y$};
+  \draw[->] (0,0,0) -- (0,0,3) node[above left=-1pt] {$z$};
+
+  % -------------------------------
+  % Interval and sample points
+  % -------------------------------
+  \def\a{1.0}
+  \def\b{3.0}  % x_i
+  \def\c{5.2}
+
+  % -------------------------------
+  % Guide rails (centered): top/bottom edges y = ±H(x)/2 at z = ±W/2
+  % -------------------------------
+  \draw[gray!55]
+    plot[domain=\a:\c, samples=120, variable=\x] (\x,{\H(\x)/2},{\W/2});
+  \draw[gray!55]
+    plot[domain=\a:\c, samples=120, variable=\x] (\x,{-\H(\x)/2},{\W/2});
+  \draw[gray!55]
+    plot[domain=\a:\c, samples=120, variable=\x] (\x,{\H(\x)/2},{-\W/2});
+  \draw[gray!55]
+    plot[domain=\a:\c, samples=120, variable=\x] (\x,{-\H(\x)/2},{-\W/2});
+
+  % optional: center guideline along y=0 at both z-edges
+  % \draw[gray!40,dashed] plot[domain=\a:\c,variable=\x] (\x,0,{\W/2});
+  % \draw[gray!40,dashed] plot[domain=\a:\c,variable=\x] (\x,0,{-\W/2});
+
+  % vertical frames at a and c
+  \draw[gray!50] (\a,{-\H(\a)/2},{\W/2}) -- (\a,{\H(\a)/2},{\W/2});
+  \draw[gray!50] (\a,{-\H(\a)/2},{-\W/2}) -- (\a,{\H(\a)/2},{-\W/2});
+  \draw[gray!50] (\c,{-\H(\c)/2},{\W/2}) -- (\c,{\H(\c)/2},{\W/2});
+  \draw[gray!50] (\c,{-\H(\c)/2},{-\W/2}) -- (\c,{\H(\c)/2},{-\W/2});
+
+  % -------------------------------
+  % Three example slabs (centered)
+  % -------------------------------
+  \rectperp{\a}
+  \rectperp{\b}
+  \rectperp{\c}
+
+  % -------------------------------
+  % Labels and dx bracket at x_i
+  % -------------------------------
+  \node[above] at (\a,-1.0,0) {$a$};
+    \draw[densely dashed, gray!60] (\a,0,0) -- (\a,-1.0,0);
+
+  \node[above] at (\b,-1.0,0) {$x_i$};
+    \draw[densely dashed, gray!60] (\b,0,0) -- (\b,-1.0,0);
+  \draw[|-|] (\b, -0.25, -0.9) -- node[fill=white, inner sep=1pt] {$dx$} (\b+\dr, -0.25, -0.9);
+
+  \node[above] at (\c,-1.0,0) {$b$};
+    \draw[densely dashed, gray!60] (\c,0,0) -- (\c,-1.0,0);
+
+  % label S(x_i) on the centered front face (y=0 line)
+  \node[fill=white, inner sep=1pt] at (\b+0.06, 0, {0.55*\W/2}) {$S(x_i)$};
+
+\end{tikzpicture}
+\end{minipage}
+
+\\[0.8em]
+
+% ===================== Row 3 =====================
+\noindent
+\begin{minipage}[c]{\linewidth}
+\textbf{Lengte van een kromme}\par
+Voor $y=f(x)$, $x\in[a,b]$, geldt de booglengte:
+\[\int\limits_a^b {\sqrt {{{\left( {dx} \right)}^2} + {{\left( {dy} \right)}^2}} }  = \int\limits_a^b {\sqrt {1 + {{\left( {\frac{{dy}}{{dx}}} \right)}^2}} \;dx} \]
+\end{minipage}\hfill
+&
+\begin{minipage}[r]{\linewidth}
+\begin{tikzpicture}[x=1.2cm,y=1.2cm,>=Latex,thick]
+  % Axes
+  \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
+  \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
+
+  % Parameters
+  % f(x) = 0.2 * exp(0.5 x)
+  % Parameters
+  \def\fa(#1){0.2*exp(0.5*(#1))}
+% a and b
+\def\xa{0.7}
+\def\xb{4.3}
+\pgfmathsetmacro{\ya}{\fa(\xa)}
+\pgfmathsetmacro{\yb}{\fa(\xb)}
+
+% Grey verticals at a and b (to the curve, not to 2.5)
+\draw[densely dashed, gray!60] (\xa,0) -- (\xa,{\ya});
+\draw[densely dashed, gray!60] (\xb,0) -- (\xb,{\yb});
+
+% Labels a and b under the x-axis
+\node[below=4pt] at (\xa,0) {$a$};
+\node[below=4pt] at (\xb,0) {$b$};
+
+% Curve
+\draw[red!70!black, line width=1pt, domain=0.1:4.8, samples=160]
+  plot (\x,{\fa(\x)});
+
+% Label the function at (b, f(b))
+\node[above left=1pt, red!70!black] at (\xb,{\fa(\xb)}) {$y=f(x)$};
+
+
+
+  % Differential element around xm
+  \def\xm{2.4}
+  \def\dx{0.55}
+  \pgfmathsetmacro{\xB}{\xm+\dx}
+  \pgfmathsetmacro{\yA}{0.2*exp(0.5*\xm)}
+  \pgfmathsetmacro{\yB}{0.2*exp(0.5*\xB)}
+
+  % Small red arc segment on the curve (ds)
+  \draw[red!70!black, line width=1.1pt, domain=\xm:\xB, samples=40]
+    plot (\x,{\fa(\x)});
+
+  % Right triangle (dx, dy, ds) in light grey
+  % hypotenuse from (xm,yA) to (xB,yB)
+  \path[fill=gray!15, draw=gray!60]
+    (\xm,\yA) -- (\xB,\yA) -- (\xB,\yB) -- cycle;
+
+  % Edges of triangle & labels
+  \draw[gray!70] (\xm,\yA) -- (\xB,\yA) node[midway, below=2pt] {$\mathrm{d}x$};
+  \draw[gray!70] (\xB,\yA) -- (\xB,\yB) node[midway, right=2pt] {$\mathrm{d}y$};
+  \draw[gray!70] (\xm,\yA) -- (\xB,\yB)
+        node[pos=0.55, above=2pt, fill=white, inner sep=1pt] {$\mathrm{d}l$};
+
+  % Light construction lines for the element
+  \draw[densely dashed, gray!60] (\xm,0) -- (\xm,{\yA});
+  \draw[densely dashed, gray!60] (\xB,0) -- (\xB,{\yB});
+\end{tikzpicture}
+
+\end{minipage}
+\\[0.8em]
+
+% ===================== Row 4 =====================
+\noindent
+\begin{minipage}[c]{\linewidth}
+\textbf{Polaire booglengte}\par
+Voor een kromme $r=r(\theta)$, $\theta\in[\alpha,\beta]$:
+\[
+L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta.
+\]
+\end{minipage}\hfill
+&
+\begin{minipage}[r]{\linewidth}
+\begin{tikzpicture}[scale=1.05,>=Latex,thick]
+  % assen
+  \draw[-{Latex}] (-0.2,0) -- (4.1,0) node[below] {$x$};
+  \draw[-{Latex}] (0,-0.2) -- (0,3.0) node[left] {$y$};
+
+  % sector
+  \def\r{2.4}
+  \def\th{48}
+  \draw[fill=gray!10, draw=gray!50] (0,0) -- (\th:\r) arc (0:\th:\r) -- cycle;
+
+  % kleine hoek dtheta
+  \def\dth{10}
+  \draw[very thick, red!70!black] (0,0) -- (\th:\r);
+  \draw[very thick, red!70!black] (0,0) -- (\th+\dth:\r);
+  \draw[very thick, blue] (\th:\r) -- (\th+\dth:\r)
+       node[midway, above=2pt, fill=white, inner sep=1pt] {$r\,\mathrm{d}\theta$};
+
+  % dr pijl
+  \draw[densely dashed] (\th:\r) -- (\th:\r+0.9)
+       node[midway, right] {$\mathrm{d}r$};
+  \node at (0.9,0.25) {$\theta$};
+\end{tikzpicture}
+\end{minipage}
+\\
+\end{tabular}
 
 
 \newpage
@@ -2994,6 +3345,56 @@ $z$ & .00 & .01 & .02 & .03 & .04 & .05 & .06 & .07 & .08 & .09\\
 \end{center}
 
 \newpage
+
+\subsection{Schatters, betrouwbaarheidsintervallen}
+
+\begin{flushleft}
+\begin{tabular}{|p{0.22\linewidth}|p{0.38\linewidth}|p{0.38\linewidth}|}
+\hline
+\textbf{Puntschatting} & \textbf{Populatieparameter} & \textbf{Schatter uit de steekproef} \\
+\hline
+ & $p$ (proportie) & $\hat{p}$ \\
+ & $\mu$ (gemiddelde) & $\bar{x}$ of $\hat{\mu}$ \\
+ & $\sigma$ (standaardafwijking) & $s$ of $\hat{\sigma}$ \\
+\hline
+$\alpha\%$ - betrouwbaarheidsinterval &
+Betrouwbaarheid $\alpha$ &
+\begin{tabular}{c|ccccc}
+ & 80\% & 90\% & 95\% & 98\% & 99\% \\ 
+\hline
+$z_\alpha$ & 1{,}28 & 1{,}65 & 1{,}96 & 2{,}33 & 2{,}58 \\
+\end{tabular} \\
+\hline
+\textbf{Intervalschatting proportie} &
+$\mu_{\hat{p}} = p, \quad \sigma_{\hat{p}} = \frac{1}{\sqrt{n}}\sqrt{pq}$ &
+Betrouwbaarheidsinterval: $\hat{p} \pm z_\alpha \cdot \sigma_{\hat{p}}$ \\
+\hline
+\textbf{Intervalschatting normaalverdeling} &
+ &
+Betrouwbaarheidsinterval: $\bar{x} \pm z_\alpha \cdot \frac{\sigma}{\sqrt{n}}$ \\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\subsection{Regressie}
+
+\begin{flushleft}
+\begin{tabular}{|p{0.44\linewidth}|p{0.50\linewidth}|}
+\hline
+\textbf{Regressielijn} &
+$a = \dfrac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2} 
+= \dfrac{S_{XY}^2}{S_X^2}, \quad
+b = \bar{y} - a\bar{x}, \quad
+y - \bar{y} = \dfrac{S_{XY}^2}{S_X^2}(x - \bar{x})$ \\
+\hline
+\textbf{Covariantie} &
+$\mathrm{cov}(X,Y) = S_{XY}^2 = \dfrac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})$ \\
+\hline
+\textbf{Correlatiecoëfficiënt} &
+$r = \dfrac{S_{XY}^2}{S_X S_Y}$ \\
+\hline
+\end{tabular}
+\end{flushleft}
 
 \subsection{Test van een hypothese over het gemiddelde van een normaalverdeling}
 
