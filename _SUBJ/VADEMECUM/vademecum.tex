@@ -2693,7 +2693,8 @@ $u=a\tan t,\quad t\in\,]-\dfrac{\pi}{2},\dfrac{\pi}{2}[$ \\ \hline
 Voor $y=f(x)\ge 0$ op $[a,b]$ is het volume van het omwentelingslichaam (washers-methode):
 \[
 V=\int_{a}^{b} \pi\,y^2\,dx.
-\]
+\]\\
+De manteloppervlakte : \[2\pi \int\limits_a^b {\left| y \right|\sqrt {1 + {{\left( {\frac{{dy}}{{dx}}} \right)}^2}} \;dx} \]
 \end{minipage}\hfill
 &
 \begin{minipage}[r]{\linewidth}
@@ -2743,6 +2744,7 @@ V=\int_{a}^{b} \pi\,y^2\,dx.
   \def\b{3.0}
   \def\c{5.0}
   \def\dr{0.15}
+  \def\dx{0.15}
   \def\nrings{14}
 
   % -------------------------------
@@ -2779,9 +2781,22 @@ V=\int_{a}^{b} \pi\,y^2\,dx.
     \draw[densely dashed, gray!60] (\b,0,0) -- (\b,1.2,0);
   \node[above] at (\c,1.2,0) {$b$};
     \draw[densely dashed, gray!60] (\c,0,0) -- (\c,1.2,0);
-  \draw[|-|, thick] (\b, -0.15, -0.8) --
-        node[fill=white, inner sep=1pt] {$dx$} (\b+\dr, -0.15, -0.8);
 
+   
+   % --- Dotted width (diameter) marker at x = x_i ---
+   \pgfmathsetmacro{\ri}{\f(\b)} % radius at x_i
+   \draw[red!70, ->] (\b, 0, 0) -- (\b, \ri, 0);
+   
+   \node[below, red] at (\b, {0.25*\ri }, 0) {$y$};
+  
+   % --- dimension dx 
+   \draw[densely dashed, gray!60, -]
+  (\b + \dx, 0, 0) -- (\b + \dx, -2*\ri, 0);
+   \draw[densely dashed, gray!60, -]
+  (\b , 0, 0) -- (\b , -2*\ri, 0);
+  
+   \node[below, black] at (\b + 0.3, {-2*\ri - 0.6}, 0) {$dx$};
+  
 \end{tikzpicture}
 \end{minipage}
 
@@ -2984,12 +2999,12 @@ L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta
 \begin{minipage}[r]{\linewidth}
 \begin{tikzpicture}[scale=1.05,>=Latex,thick]
   % assen
-  \draw[-{Latex}] (-0.2,0) -- (4.1,0) node[below] {$x$};
-  \draw[-{Latex}] (0,-0.2) -- (0,3.0) node[left] {$y$};
+  \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
+  \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
 
   % sector
   \def\r{2.4}
-  \def\th{48}
+  \def\th{30}
   \draw[fill=gray!10, draw=gray!50] (0,0) -- (\th:\r) arc (0:\th:\r) -- cycle;
 
   % kleine hoek dtheta
