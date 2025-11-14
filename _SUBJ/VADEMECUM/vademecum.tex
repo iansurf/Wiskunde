@@ -2813,106 +2813,149 @@ V=\int_{a}^{b} S(x)\,dx.
 \end{minipage}\hfill
 &
 \begin{minipage}[c]{\linewidth}
-\tdplotsetmaincoords{45}{225} % same camera
+\tdplotsetmaincoords{45}{225}
 
-% --------------------------------
-% Cross-sections: rectangles S(x)
-% --------------------------------
-% Height grows linearly with x; depth W is constant
-\def\H(#1){0.6 + 0.25*(#1)}  % height H(x)
-\def\W{1.2}                  % constant depth (|z| <= W/2)
-\def\dr{0.18}                % thickness dx for the slabs
+% parameters
+\def\a{1.0}
+\def\b{3.0}   % x_i
+\def\c{5.2}
+\def\Sa{0.9}  % zijde bij x=a
+\def\Sc{2.1}  % zijde bij x=c
+\def\dr{0.18} % dikte dx
 
-% --- helper: centered rectangular slab at x = X (diagonals cross at y=0) ---
-\newcommand{\rectperp}[1]{%
-  \pgfmathsetmacro{\h}{\H(#1)}
-  \pgfmathsetmacro{\hh}{\h/2}   % half height
-  \pgfmathsetmacro{\w}{\W/2}    % half depth
-  % front rectangle (x)
-  \coordinate (A) at (#1, -\hh, -\w);
-  \coordinate (B) at (#1,  \hh, -\w);
-  \coordinate (C) at (#1,  \hh,  \w);
-  \coordinate (D) at (#1, -\hh,  \w);
-  % back rectangle (x+dx)
-  \coordinate (A2) at (#1+\dr, -\hh, -\w);
-  \coordinate (B2) at (#1+\dr,  \hh, -\w);
-  \coordinate (C2) at (#1+\dr,  \hh,  \w);
-  \coordinate (D2) at (#1+\dr, -\hh,  \w);
-
-  % lateral mantle of thin box
-  \path[fill=gray!25, draw=gray!60, opacity=0.85]
-    (A) -- (B) -- (C) -- (D) -- (D2) -- (C2) -- (B2) -- (A2) -- cycle;
-
-  % front rim (solid)
-  \draw[thick] (A)--(B)--(C)--(D)--cycle;
-  % back rim (dashed)
-  \draw[densely dashed, gray!70] (A2)--(B2)--(C2)--(D2)--cycle;
-}
+% resoluties
+\def\nz{16}   % stroken voor boven/onder
+\def\ny{14}   % stroken voor voor/achter
 
 \begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex, thick]
-
-  % -------------------------------
-  % Axes
-  % -------------------------------
+  % assen
   \draw[->] (0,0,0) -- (6,0,0) node[above right=-2pt] {$x$};
   \draw[->] (0,0,0) -- (0,3,0) node[left] {$y$};
   \draw[->] (0,0,0) -- (0,0,3) node[above left=-1pt] {$z$};
 
-  % -------------------------------
-  % Interval and sample points
-  % -------------------------------
-  \def\a{1.0}
-  \def\b{3.0}  % x_i
-  \def\c{5.2}
+  % zijden op a,b,c (lineair tussen a en c)
+  \pgfmathsetmacro{\sa}{\Sa}
+  \pgfmathsetmacro{\sb}{\Sa + (\Sc-\Sa)*(\b-\a)/(\c-\a)}
+  \pgfmathsetmacro{\sc}{\Sc}
 
-  % -------------------------------
-  % Guide rails (centered): top/bottom edges y = ±H(x)/2 at z = ±W/2
-  % -------------------------------
-  \draw[gray!55]
-    plot[domain=\a:\c, samples=120, variable=\x] (\x,{\H(\x)/2},{\W/2});
-  \draw[gray!55]
-    plot[domain=\a:\c, samples=120, variable=\x] (\x,{-\H(\x)/2},{\W/2});
-  \draw[gray!55]
-    plot[domain=\a:\c, samples=120, variable=\x] (\x,{\H(\x)/2},{-\W/2});
-  \draw[gray!55]
-    plot[domain=\a:\c, samples=120, variable=\x] (\x,{-\H(\x)/2},{-\W/2});
+  % halve hoogtes/dieptes (vierkant => zelfde in y en z)
+  \pgfmathsetmacro{\ha}{0.5*\sa} \pgfmathsetmacro{\wa}{0.5*\sa}
+  \pgfmathsetmacro{\hb}{0.5*\sb} \pgfmathsetmacro{\wb}{0.5*\sb}
+  \pgfmathsetmacro{\hc}{0.5*\sc} \pgfmathsetmacro{\wc}{0.5*\sc}
 
-  % optional: center guideline along y=0 at both z-edges
-  % \draw[gray!40,dashed] plot[domain=\a:\c,variable=\x] (\x,0,{\W/2});
-  % \draw[gray!40,dashed] plot[domain=\a:\c,variable=\x] (\x,0,{-\W/2});
+  % ===== 1) BOVEN-vlak (y=+zijde/2), z-stroken =====
+  \foreach \k in {0,...,\nz} {
+    \pgfmathsetmacro{\zaA}{-\wa + (\k   /\nz)*2*\wa}
+    \pgfmathsetmacro{\zaB}{-\wa + ((\k+1)/\nz)*2*\wa}
+    \pgfmathsetmacro{\zbA}{-\wb + (\k   /\nz)*2*\wb}
+    \pgfmathsetmacro{\zbB}{-\wb + ((\k+1)/\nz)*2*\wb}
+    \pgfmathsetmacro{\zcA}{-\wc + (\k   /\nz)*2*\wc}
+    \pgfmathsetmacro{\zcB}{-\wc + ((\k+1)/\nz)*2*\wc}
+    \path[fill=gray!22, draw=gray!45, line width=0.3pt, opacity=0.9]
+      (\a,\ha,\zaA) -- (\b,\hb,\zbA) -- (\c,\hc,\zcA)
+      -- (\c,\hc,\zcB) -- (\b,\hb,\zbB) -- (\a,\ha,\zaB) -- cycle;
+  }
 
-  % vertical frames at a and c
-  \draw[gray!50] (\a,{-\H(\a)/2},{\W/2}) -- (\a,{\H(\a)/2},{\W/2});
-  \draw[gray!50] (\a,{-\H(\a)/2},{-\W/2}) -- (\a,{\H(\a)/2},{-\W/2});
-  \draw[gray!50] (\c,{-\H(\c)/2},{\W/2}) -- (\c,{\H(\c)/2},{\W/2});
-  \draw[gray!50] (\c,{-\H(\c)/2},{-\W/2}) -- (\c,{\H(\c)/2},{-\W/2});
+  % ===== 2) ONDER-vlak (y=-zijde/2), z-stroken =====
+  \foreach \k in {0,...,\nz} {
+    \pgfmathsetmacro{\zaA}{-\wa + (\k   /\nz)*2*\wa}
+    \pgfmathsetmacro{\zaB}{-\wa + ((\k+1)/\nz)*2*\wa}
+    \pgfmathsetmacro{\zbA}{-\wb + (\k   /\nz)*2*\wb}
+    \pgfmathsetmacro{\zbB}{-\wb + ((\k+1)/\nz)*2*\wb}
+    \pgfmathsetmacro{\zcA}{-\wc + (\k   /\nz)*2*\wc}
+    \pgfmathsetmacro{\zcB}{-\wc + ((\k+1)/\nz)*2*\wc}
+    \path[fill=gray!18, draw=gray!40, line width=0.3pt, opacity=0.85]
+      (\a,-\ha,\zaA) -- (\b,-\hb,\zbA) -- (\c,-\hc,\zcA)
+      -- (\c,-\hc,\zcB) -- (\b,-\hb,\zbB) -- (\a,-\ha,\zaB) -- cycle;
+  }
 
-  % -------------------------------
-  % Three example slabs (centered)
-  % -------------------------------
-  \rectperp{\a}
-  \rectperp{\b}
-  \rectperp{\c}
+  % ===== 3) VOOR-wand (z=+w(x)), y-stroken =====
+  \foreach \j in {0,...,\ny} {
+    \pgfmathsetmacro{\yaA}{-\ha + (\j   /\ny)*(\sa)}
+    \pgfmathsetmacro{\yaB}{-\ha + ((\j+1)/\ny)*(\sa)}
+    \pgfmathsetmacro{\ybA}{-\hb + (\j   /\ny)*(\sb)}
+    \pgfmathsetmacro{\ybB}{-\hb + ((\j+1)/\ny)*(\sb)}
+    \pgfmathsetmacro{\ycA}{-\hc + (\j   /\ny)*(\sc)}
+    \pgfmathsetmacro{\ycB}{-\hc + ((\j+1)/\ny)*(\sc)}
+    \path[fill=gray!20, draw=gray!45, line width=0.3pt, opacity=0.9]
+      (\a,\yaA,\wa) -- (\b,\ybA,\wb) -- (\c,\ycA,\wc)
+      -- (\c,\ycB,\wc) -- (\b,\ybB,\wb) -- (\a,\yaB,\wa) -- cycle;
+  }
 
-  % -------------------------------
-  % Labels and dx bracket at x_i
-  % -------------------------------
+  % ===== 4) ACHTER-wand (z=-w(x)), y-stroken =====
+  \foreach \j in {0,...,\ny} {
+    \pgfmathsetmacro{\yaA}{-\ha + (\j   /\ny)*(\sa)}
+    \pgfmathsetmacro{\yaB}{-\ha + ((\j+1)/\ny)*(\sa)}
+    \pgfmathsetmacro{\ybA}{-\hb + (\j   /\ny)*(\sb)}
+    \pgfmathsetmacro{\ybB}{-\hb + ((\j+1)/\ny)*(\sb)}
+    \pgfmathsetmacro{\ycA}{-\hc + (\j   /\ny)*(\sc)}
+    \pgfmathsetmacro{\ycB}{-\hc + ((\j+1)/\ny)*(\sc)}
+    \path[fill=gray!17, draw=gray!40, line width=0.3pt, opacity=0.85]
+      (\a,\yaA,-\wa) -- (\b,\ybA,-\wb) -- (\c,\ycA,-\wc)
+      -- (\c,\ycB,-\wc) -- (\b,\ybB,-\wb) -- (\a,\yaB,-\wa) -- cycle;
+  }
+
+  % ===== 5) Doorsneden als blokjes (dikte dx) op x=a, x=b(=x_i), x=c =====
+  % --- bij x=a ---
+  \coordinate (Aa) at (\a, -\ha, -\wa);
+  \coordinate (Ba) at (\a,  \ha, -\wa);
+  \coordinate (Ca) at (\a,  \ha,  \wa);
+  \coordinate (Da) at (\a, -\ha,  \wa);
+  \coordinate (Aa2) at (\a+\dr, -\ha, -\wa);
+  \coordinate (Ba2) at (\a+\dr,  \ha, -\wa);
+  \coordinate (Ca2) at (\a+\dr,  \ha,  \wa);
+  \coordinate (Da2) at (\a+\dr, -\ha,  \wa);
+  % mantel
+  \path[fill=gray!25, draw=gray!60, opacity=0.85]
+    (Aa)--(Ba)--(Ca)--(Da)--(Da2)--(Ca2)--(Ba2)--(Aa2)--cycle;
+  % randen
+  \draw[gray!65, line width=0.4pt] (Aa)--(Ba)--(Ca)--(Da)--cycle;                  % front
+  \draw[densely dashed, gray!65, line width=0.4pt] (Aa2)--(Ba2)--(Ca2)--(Da2)--cycle; % back
+
+  % --- bij x=b (x_i) ---
+  \coordinate (Ab) at (\b, -\hb, -\wb);
+  \coordinate (Bb) at (\b,  \hb, -\wb);
+  \coordinate (Cb) at (\b,  \hb,  \wb);
+  \coordinate (Db) at (\b, -\hb,  \wb);
+  \coordinate (Ab2) at (\b+\dr, -\hb, -\wb);
+  \coordinate (Bb2) at (\b+\dr,  \hb, -\wb);
+  \coordinate (Cb2) at (\b+\dr,  \hb,  \wb);
+  \coordinate (Db2) at (\b+\dr, -\hb,  \wb);
+  \path[fill=gray!25, draw=gray!60, opacity=0.85]
+    (Ab)--(Bb)--(Cb)--(Db)--(Db2)--(Cb2)--(Bb2)--(Ab2)--cycle;
+  \draw[gray!70, line width=0.5pt] (Ab)--(Bb)--(Cb)--(Db)--cycle;
+  \draw[densely dashed, gray!70, line width=0.5pt] (Ab2)--(Bb2)--(Cb2)--(Db2)--cycle;
+
+  % --- bij x=c ---
+  \coordinate (Ac) at (\c, -\hc, -\wc);
+  \coordinate (Bc) at (\c,  \hc, -\wc);
+  \coordinate (Cc) at (\c,  \hc,  \wc);
+  \coordinate (Dc) at (\c, -\hc,  \wc);
+  \coordinate (Ac2) at (\c+\dr, -\hc, -\wc);
+  \coordinate (Bc2) at (\c+\dr,  \hc, -\wc);
+  \coordinate (Cc2) at (\c+\dr,  \hc,  \wc);
+  \coordinate (Dc2) at (\c+\dr, -\hc,  \wc);
+  \path[fill=gray!25, draw=gray!60, opacity=0.85]
+    (Ac)--(Bc)--(Cc)--(Dc)--(Dc2)--(Cc2)--(Bc2)--(Ac2)--cycle;
+  \draw[gray!65, line width=0.4pt] (Ac)--(Bc)--(Cc)--(Dc)--cycle;
+  \draw[densely dashed, gray!65, line width=0.4pt] (Ac2)--(Bc2)--(Cc2)--(Dc2)--cycle;
+
+  % ===== 6) Labels en dx-bracket (zoals je stijl) =====
   \node[above] at (\a,-1.0,0) {$a$};
-    \draw[densely dashed, gray!60] (\a,0,0) -- (\a,-1.0,0);
+  \draw[densely dashed, gray!60] (\a,0,0) -- (\a,-1.0,0);
 
   \node[above] at (\b,-1.0,0) {$x_i$};
-    \draw[densely dashed, gray!60] (\b,0,0) -- (\b,-1.0,0);
+  \draw[densely dashed, gray!60] (\b,0,0) -- (\b,-1.0,0);
   \draw[|-|] (\b, -0.25, -0.9) -- node[fill=white, inner sep=1pt] {$dx$} (\b+\dr, -0.25, -0.9);
 
   \node[above] at (\c,-1.0,0) {$b$};
-    \draw[densely dashed, gray!60] (\c,0,0) -- (\c,-1.0,0);
+  \draw[densely dashed, gray!60] (\c,0,0) -- (\c,-1.0,0);
 
-  % label S(x_i) on the centered front face (y=0 line)
-  \node[fill=white, inner sep=1pt] at (\b+0.06, 0, {0.55*\W/2}) {$S(x_i)$};
-
+  % label S(x_i)
+  \node[fill=white, inner sep=1pt] at (\b+0.06, 0, {0.28*\sb}) {$S(x_i)$};
 \end{tikzpicture}
-\end{minipage}
 
+\end{minipage}
 \\[0.8em]
 
 % ===================== Row 3 =====================
@@ -2985,7 +3028,6 @@ Voor $y=f(x)$, $x\in[a,b]$, geldt de booglengte:
 
 \end{minipage}
 \\[0.8em]
-
 % ===================== Row 4 =====================
 \noindent
 \begin{minipage}[c]{\linewidth}
@@ -2997,29 +3039,81 @@ L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta
 \end{minipage}\hfill
 &
 \begin{minipage}[r]{\linewidth}
-\begin{tikzpicture}[scale=1.05,>=Latex,thick]
-  % assen
+\begin{tikzpicture}[scale=1,>=Latex,thick]
+  % axes
   \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
   \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
 
-  % sector
-  \def\r{2.4}
-  \def\th{30}
-  \draw[fill=gray!10, draw=gray!50] (0,0) -- (\th:\r) arc (0:\th:\r) -- cycle;
+  % ellipse parameters (semi-axes a on x, b on y)
+  \def\a{5.0}
+  \def\b{3.2}
 
-  % kleine hoek dtheta
-  \def\dth{10}
-  \draw[very thick, red!70!black] (0,0) -- (\th:\r);
-  \draw[very thick, red!70!black] (0,0) -- (\th+\dth:\r);
-  \draw[very thick, blue] (\th:\r) -- (\th+\dth:\r)
-       node[midway, above=2pt, fill=white, inner sep=1pt] {$r\,\mathrm{d}\theta$};
+  % main display angles
+  \pgfmathsetmacro{\thetaplotA}{10}
+  \pgfmathsetmacro{\thetaplotB}{80}
 
-  % dr pijl
-  \draw[densely dashed] (\th:\r) -- (\th:\r+0.9)
-       node[midway, right] {$\mathrm{d}r$};
-  \node at (0.9,0.25) {$\theta$};
+  % helper: r(θ) for the ellipse in polar form (origin at center)
+  % r(θ) = ab / sqrt((b cosθ)^2 + (a sinθ)^2)
+  % (We’ll inline this expression in plots)
+
+  % highlight the ellipse arc between 10° and 80° (polar-by-angle)
+  \draw[line width=1.2pt, black]
+    plot[domain=\thetaplotA:\thetaplotB, samples=280, variable=\t]
+      ({(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*cos(\t)},
+       {(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*sin(\t)});
+
+  % choose a local theta and dtheta for the differential element
+  \pgfmathsetmacro{\th}{50}
+  \pgfmathsetmacro{\dth}{8}
+
+  % compute r(θ) and r(θ+dθ)
+  \pgfmathsetmacro{\rth}{(\a*\b)/sqrt((\b*cos(\th))^2+(\a*sin(\th))^2)}
+  \pgfmathsetmacro{\rthp}{(\a*\b)/sqrt((\b*cos(\th+\dth))^2+(\a*sin(\th+\dth))^2)}
+
+  % fill the small polar "slice" bounded by the ellipse between θ and θ+dθ
+  \path[fill=gray!12, draw=gray!45]
+    (0,0) --
+    (\th:\rth)
+    plot[domain=\th:\th+\dth, samples=80, variable=\t]
+      ({(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*cos(\t)},
+       {(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*sin(\t)})
+    -- (\th+\dth:\rthp) -- cycle;
+
+  % the two rays
+  \draw[very thick, red!70!black] (0,0) -- (\th:\rth);
+  \draw[very thick, red!70!black] (0,0) -- (\th+\dth:\rthp);
+
+  % circular arc at fixed radius r(θ): length ≈ r dθ
+  \draw[very thick, blue]
+    (\th:\rth) arc[start angle=\th, end angle=\th+\dth, radius=\rth]
+    node[midway, above=2pt, fill=white, inner sep=1pt] {$r\,\mathrm d\theta$};
+
+  % radial increment dr along the second ray
+  \draw[densely dashed]
+    (\th+\dth:\rth) -- (\th+\dth:\rthp)
+    node[midway, right=2pt] {$\mathrm dr$};
+
+  % angle markers and labels
+  \draw (0.0,0) 
+    ++(\th:0.55) arc (\th:\th+\dth:0.55)
+      node[midway, below=1pt] {$\mathrm d\theta$};
+  \draw (0,0) ++(8:0.8) arc (8:\th:0.8);
+  \node at (0.95,0.21) {$\theta$};
+
+  % annotate r = f(θ) near the arc
+  \node[rotate=0] at
+    ({(\a*\b)/sqrt((\b*cos(68))^2+(\a*sin(68))^2)*cos(68)},
+     {(\a*\b)/sqrt((\b*cos(68))^2+(\a*sin(68))^2)*sin(68)+0.25})
+     {$r=f(\theta)$};
+
+  % small ticks at 10° and 80° rays for clarity
+  \pgfmathsetmacro{\rmarkA}{(\a*\b)/sqrt((\b*cos(\thetaplotA))^2+(\a*sin(\thetaplotA))^2)}
+  \pgfmathsetmacro{\rmarkB}{(\a*\b)/sqrt((\b*cos(\thetaplotB))^2+(\a*sin(\thetaplotB))^2)}
+
+
 \end{tikzpicture}
 \end{minipage}
+
 \\
 \end{tabular}
 
