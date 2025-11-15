@@ -2820,12 +2820,15 @@ V=\int_{a}^{b} S(x)\,dx.
 \def\b{3.0}   % x_i
 \def\c{5.2}
 \def\Sa{0.9}  % zijde bij x=a
-\def\Sc{2.1}  % zijde bij x=c
-\def\dr{0.18} % dikte dx
+\def\Sc{1.8}  % zijde bij x=c
+\def\dr{0.1} % dikte dx
 
 % resoluties
-\def\nz{16}   % stroken voor boven/onder
-\def\ny{14}   % stroken voor voor/achter
+\def\nz{4}   % stroken voor boven/onder
+\def\ny{3}   % stroken voor voor/achter
+
+\pgfmathtruncatemacro{\NZlast}{\nz-1}
+\pgfmathtruncatemacro{\NYlast}{\ny-1}
 
 \begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex, thick]
   % assen
@@ -2844,53 +2847,53 @@ V=\int_{a}^{b} S(x)\,dx.
   \pgfmathsetmacro{\hc}{0.5*\sc} \pgfmathsetmacro{\wc}{0.5*\sc}
 
   % ===== 1) BOVEN-vlak (y=+zijde/2), z-stroken =====
-  \foreach \k in {0,...,\nz} {
+  \foreach \k in {0,...,\NZlast} {
     \pgfmathsetmacro{\zaA}{-\wa + (\k   /\nz)*2*\wa}
     \pgfmathsetmacro{\zaB}{-\wa + ((\k+1)/\nz)*2*\wa}
     \pgfmathsetmacro{\zbA}{-\wb + (\k   /\nz)*2*\wb}
     \pgfmathsetmacro{\zbB}{-\wb + ((\k+1)/\nz)*2*\wb}
     \pgfmathsetmacro{\zcA}{-\wc + (\k   /\nz)*2*\wc}
     \pgfmathsetmacro{\zcB}{-\wc + ((\k+1)/\nz)*2*\wc}
-    \path[fill=gray!22, draw=gray!45, line width=0.3pt, opacity=0.9]
+    \path[draw=gray!45, line width=0.3pt]
       (\a,\ha,\zaA) -- (\b,\hb,\zbA) -- (\c,\hc,\zcA)
       -- (\c,\hc,\zcB) -- (\b,\hb,\zbB) -- (\a,\ha,\zaB) -- cycle;
   }
 
   % ===== 2) ONDER-vlak (y=-zijde/2), z-stroken =====
-  \foreach \k in {0,...,\nz} {
+  \foreach \k in {0,...,\NZlast} {
     \pgfmathsetmacro{\zaA}{-\wa + (\k   /\nz)*2*\wa}
     \pgfmathsetmacro{\zaB}{-\wa + ((\k+1)/\nz)*2*\wa}
     \pgfmathsetmacro{\zbA}{-\wb + (\k   /\nz)*2*\wb}
     \pgfmathsetmacro{\zbB}{-\wb + ((\k+1)/\nz)*2*\wb}
     \pgfmathsetmacro{\zcA}{-\wc + (\k   /\nz)*2*\wc}
     \pgfmathsetmacro{\zcB}{-\wc + ((\k+1)/\nz)*2*\wc}
-    \path[fill=gray!18, draw=gray!40, line width=0.3pt, opacity=0.85]
+    \path[draw=gray!40, line width=0.3pt]
       (\a,-\ha,\zaA) -- (\b,-\hb,\zbA) -- (\c,-\hc,\zcA)
       -- (\c,-\hc,\zcB) -- (\b,-\hb,\zbB) -- (\a,-\ha,\zaB) -- cycle;
   }
 
   % ===== 3) VOOR-wand (z=+w(x)), y-stroken =====
-  \foreach \j in {0,...,\ny} {
+  \foreach \j in {0,...,\NYlast} {
     \pgfmathsetmacro{\yaA}{-\ha + (\j   /\ny)*(\sa)}
     \pgfmathsetmacro{\yaB}{-\ha + ((\j+1)/\ny)*(\sa)}
     \pgfmathsetmacro{\ybA}{-\hb + (\j   /\ny)*(\sb)}
     \pgfmathsetmacro{\ybB}{-\hb + ((\j+1)/\ny)*(\sb)}
     \pgfmathsetmacro{\ycA}{-\hc + (\j   /\ny)*(\sc)}
     \pgfmathsetmacro{\ycB}{-\hc + ((\j+1)/\ny)*(\sc)}
-    \path[fill=gray!20, draw=gray!45, line width=0.3pt, opacity=0.9]
+    \path[draw=gray!45, line width=0.3pt]
       (\a,\yaA,\wa) -- (\b,\ybA,\wb) -- (\c,\ycA,\wc)
       -- (\c,\ycB,\wc) -- (\b,\ybB,\wb) -- (\a,\yaB,\wa) -- cycle;
   }
 
   % ===== 4) ACHTER-wand (z=-w(x)), y-stroken =====
-  \foreach \j in {0,...,\ny} {
+  \foreach \j in {0,...,\NYlast} {
     \pgfmathsetmacro{\yaA}{-\ha + (\j   /\ny)*(\sa)}
     \pgfmathsetmacro{\yaB}{-\ha + ((\j+1)/\ny)*(\sa)}
     \pgfmathsetmacro{\ybA}{-\hb + (\j   /\ny)*(\sb)}
     \pgfmathsetmacro{\ybB}{-\hb + ((\j+1)/\ny)*(\sb)}
     \pgfmathsetmacro{\ycA}{-\hc + (\j   /\ny)*(\sc)}
     \pgfmathsetmacro{\ycB}{-\hc + ((\j+1)/\ny)*(\sc)}
-    \path[fill=gray!17, draw=gray!40, line width=0.3pt, opacity=0.85]
+    \path[draw=gray!40, line width=0.3pt]
       (\a,\yaA,-\wa) -- (\b,\ybA,-\wb) -- (\c,\ycA,-\wc)
       -- (\c,\ycB,-\wc) -- (\b,\ybB,-\wb) -- (\a,\yaB,-\wa) -- cycle;
   }
@@ -2909,7 +2912,7 @@ V=\int_{a}^{b} S(x)\,dx.
   \path[fill=gray!25, draw=gray!60, opacity=0.85]
     (Aa)--(Ba)--(Ca)--(Da)--(Da2)--(Ca2)--(Ba2)--(Aa2)--cycle;
   % randen
-  \draw[gray!65, line width=0.4pt] (Aa)--(Ba)--(Ca)--(Da)--cycle;                  % front
+  \draw[black, line width=0.4pt] (Aa)--(Ba)--(Ca)--(Da)--cycle;                  % front
   \draw[densely dashed, gray!65, line width=0.4pt] (Aa2)--(Ba2)--(Ca2)--(Da2)--cycle; % back
 
   % --- bij x=b (x_i) ---
@@ -2923,7 +2926,7 @@ V=\int_{a}^{b} S(x)\,dx.
   \coordinate (Db2) at (\b+\dr, -\hb,  \wb);
   \path[fill=gray!25, draw=gray!60, opacity=0.85]
     (Ab)--(Bb)--(Cb)--(Db)--(Db2)--(Cb2)--(Bb2)--(Ab2)--cycle;
-  \draw[gray!70, line width=0.5pt] (Ab)--(Bb)--(Cb)--(Db)--cycle;
+  \draw[black, line width=0.5pt] (Ab)--(Bb)--(Cb)--(Db)--cycle;
   \draw[densely dashed, gray!70, line width=0.5pt] (Ab2)--(Bb2)--(Cb2)--(Db2)--cycle;
 
   % --- bij x=c ---
@@ -2937,22 +2940,30 @@ V=\int_{a}^{b} S(x)\,dx.
   \coordinate (Dc2) at (\c+\dr, -\hc,  \wc);
   \path[fill=gray!25, draw=gray!60, opacity=0.85]
     (Ac)--(Bc)--(Cc)--(Dc)--(Dc2)--(Cc2)--(Bc2)--(Ac2)--cycle;
-  \draw[gray!65, line width=0.4pt] (Ac)--(Bc)--(Cc)--(Dc)--cycle;
+  \draw[black, line width=0.4pt] (Ac)--(Bc)--(Cc)--(Dc)--cycle;
   \draw[densely dashed, gray!65, line width=0.4pt] (Ac2)--(Bc2)--(Cc2)--(Dc2)--cycle;
 
   % ===== 6) Labels en dx-bracket (zoals je stijl) =====
-  \node[above] at (\a,-1.0,0) {$a$};
-  \draw[densely dashed, gray!60] (\a,0,0) -- (\a,-1.0,0);
+  \node[above] at (\a,2.0,0) {$a$};
+  \draw[densely dashed, gray!60] (\a,0,0) -- (\a,2.0,0);
 
-  \node[above] at (\b,-1.0,0) {$x_i$};
-  \draw[densely dashed, gray!60] (\b,0,0) -- (\b,-1.0,0);
-  \draw[|-|] (\b, -0.25, -0.9) -- node[fill=white, inner sep=1pt] {$dx$} (\b+\dr, -0.25, -0.9);
+  \node[above] at (\b,2.0,0) {$x_i$};
+  \draw[densely dashed, gray!60] (\b,0,0) -- (\b,2.0,0);
 
-  \node[above] at (\c,-1.0,0) {$b$};
-  \draw[densely dashed, gray!60] (\c,0,0) -- (\c,-1.0,0);
+  \node[above] at (\c,2.0,0) {$b$};
+  \draw[densely dashed, gray!60] (\c,0,0) -- (\c,2.0,0);
 
   % label S(x_i)
-  \node[fill=white, inner sep=1pt] at (\b+0.06, 0, {0.28*\sb}) {$S(x_i)$};
+  \node[fill=white, inner sep=1pt] at (\b+0.06, 1, -1) {$S(x_i)$};
+  
+  % --- dimension dx 
+  \draw[densely dashed, gray!60, -]
+  (\b + \dr, 0, 0) -- (\b + \dr, -\Sc, 0);
+   \draw[densely dashed, gray!60, -]
+  (\b , 0, 0) -- (\b , -\Sc, 0);
+  
+   \node[below, black] at (\b + 0.3, {-\Sc - 0.6}, 0) {$dx$};
+
 \end{tikzpicture}
 
 \end{minipage}
