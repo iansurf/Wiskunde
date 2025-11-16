@@ -2545,6 +2545,87 @@ $\int {u\;dv}  = u.v - \int {v\;du} $
 \newpage
 
 \subsection{Integralen}
+\subsubsection{Integralen van rationale functies}
+
+\begin{tabular}{|p{0.98\linewidth}|}
+\hline
+$Stelling\;van\;d’Alembert:
+V(x) =
+\prod_{i=0}^{u} (a_i x + b_i)^{n_i} \cdot 
+\prod_{i=0}^{v} (a_i' x^2 + b_i' x + c_i')^{n_i'} \to
+$
+$
+\wedge
+\begin{cases}
+\displaystyle u = (\#\, a_i x + b_i \text{ factoren van } V(x)), \\[6pt]
+\displaystyle v = (\#\, a_i' x^2 + b_i' x + c_i' \text{ factoren van } V(x))
+\end{cases}
+\quad\text{met}\quad
+\begin{cases}
+\displaystyle b_i'^2 - 4a_i'c_i' < 0, \\[6pt]
+\displaystyle a_i' \ne 0
+\end{cases}
+$ \\[2pt]
+\hline
+\textbf{1)} $\displaystyle \int \frac{T(x)}{N(x)}\,dx\) \text{ als } \(\deg(T) \ge \deg(N)\mathop  \Rightarrow \limits^{euclidische\;deling}
+\frac{T(x)}{N(x)} = q(x) + \frac{r(x)}{N(x)}
+\: \Rightarrow \:
+\deg(r) < \deg(N)
+$ \\ \hline
+\footnotesize
+\textbf{2)} \textbf{Stelling van Jacobi (opspitsen in partiële breuken):} \\
+$
+\displaystyle
+\frac{r(x)}{N(x)}\!=\!
+\sum\limits_{i = 1}^u \!\left(
+  \mathop{\frac{c_i}{a_i x + b_i}}\limits_{(a)}
+  + \cdots +
+  \mathop{\frac{c_{n_i}}{(a_i x + b_i)^{n_i}}}\limits_{(b)}
+\right)
+\!+ 
+\sum\limits_{i = 1}^v \!\left(
+  \mathop{\frac{p_i x + q_i}{a'_i x^2 + b'_i x + c'_i}}\limits_{(d)}
+  + \cdots +
+  \mathop{\frac{p_{n_i}x + q_{n_i}}{(a'_i x^2 + b'_i x + c'_i)^{n_i}}}\limits_{(e)}
+\right)
+$
+
+$
+\wedge
+\begin{cases}
+\displaystyle u = (\#  \ne ax + b\;factoren\;van\;N(x))\\[6pt]
+\displaystyle v = (\#  \ne a'x + b'x + c'\;factoren\;van\;N(x))\\[6pt]
+\displaystyle met\;n\;de\;macht\;v/d\;u,v\;factoren
+\end{cases}
+$ \\ \hline
+\normalsize
+
+% --- BEGIN NESTED TABLE 1 --- 
+\parbox{\linewidth}{
+  \begin{tabular}{|p{0.98\linewidth}|}
+  \hline
+  \(\displaystyle \int {\frac{c}{{(ax + b)}}} \,dx= \frac{c}{a}\int {\frac{1}{{(ax + b)}}\,d(ax + b)} \quad (a)\) \\[0.8em]
+  \hline
+  \(\displaystyle \int {\frac{c}{{{{(ax + b)}^n}}}} \,dx= \frac{c}{a}\int {{{(ax + b)}^{ - n}}\,d(ax + b)} \quad (b)\) \\[0.8em]
+  \hline  \(\displaystyle \int {\frac{{px + q}}{{a{x^2} + bx + c}}} \quad (d)\)
+  \\ 
+	% --- BEGIN NESTED TABLE 2 ---
+	\parbox{\linewidth}{
+	  \begin{tabular}{|p{0.98\linewidth}|}
+	  \hline
+	  \(\displaystyle D > 0 \; \text{zie (a)}, \quad D = 0 \; \text{zie (b)}\) \\[0.8em]
+	  \hline
+	  \(\displaystyle D < 0\) \\[0.8em]
+	  \hline
+	  \end{tabular}
+	} \\[3pt]
+	% --- END NESTED TABLE 2 --
+  \end{tabular}
+} \\[3pt]
+% --- END NESTED TABLE 1 --- 
+\hline
+\end{tabular}
+
 \subsubsection{Formules voor goniometrische integralen}
 
 \begin{tabular}{|p{0.98\linewidth}|}

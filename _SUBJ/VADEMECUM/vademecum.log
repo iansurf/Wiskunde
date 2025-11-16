@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  16 NOV 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  16 NOV 2025 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,100 +1651,120 @@ Overfull \hbox (1.96332pt too wide) detected at line 2486
 
 [27]
 
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2552.
+
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 2552--2568
+[]|$\OML/lmm/m/it/9 Stelling van d[]Alembert \OT1/lmr/m/n/9 (+20) : \OML/lmm/m/
+it/9 V\OT1/lmr/m/n/9 (+20) (\OML/lmm/m/it/9 x\OT1/lmr/m/n/9 (+20) ) = [][](\OML
+/lmm/m/it/9 a[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]\OT1/lmr/m/n/9 (+20)
+ )[] \OMS/lmsy/m/n/9 ^^A [][]\OT1/lmr/m/n/9 (+20) (\OML/lmm/m/it/9 a[]x[] \OT1/
+lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 c
+[]\OT1/lmr/m/n/9 (+20) )[] \OMS/lmsy/m/n/9 !$
+ []
+
+
+Overfull \hbox (5.05081pt too wide) in paragraph at lines 2577--2592
+[]|$[]  \OT1/lmr/m/n/9 (-20) =  []  []  + []  []$ 
+ []
+
+
+
 [28]
-Overfull \hbox (14.48297pt too wide) in paragraph at lines 2800--2801
-[][] 
- []
-
-
-Overfull \hbox (34.60213pt too wide) in paragraph at lines 2967--2968
-[][] 
- []
-
-
-Overfull \hbox (83.00232pt too wide) in paragraph at lines 3038--3039
-[][] 
- []
-
-
-Overfull \hbox (53.41187pt too wide) in paragraph at lines 3106--3107
-[][] 
- []
-
-
 
 [29]
+Overfull \hbox (14.48297pt too wide) in paragraph at lines 2881--2882
+[][] 
+ []
+
+
+Overfull \hbox (34.60213pt too wide) in paragraph at lines 3048--3049
+[][] 
+ []
+
+
+Overfull \hbox (83.00232pt too wide) in paragraph at lines 3119--3120
+[][] 
+ []
+
+
+Overfull \hbox (53.41187pt too wide) in paragraph at lines 3187--3188
+[][] 
+ []
+
+
 
 [30]
-Overfull \hbox (1.19557pt too wide) detected at line 3145
+
+[31]
+Overfull \hbox (1.19557pt too wide) detected at line 3226
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3147--3148
+Underfull \hbox (badness 10000) in paragraph at lines 3228--3229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3151--3152
+Underfull \hbox (badness 10000) in paragraph at lines 3232--3233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3155--3156
+Underfull \hbox (badness 10000) in paragraph at lines 3236--3237
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3188
+Overfull \hbox (2.06549pt too wide) detected at line 3269
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3199--3200
+Underfull \hbox (badness 10000) in paragraph at lines 3280--3281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3205--3206
+Underfull \hbox (badness 10000) in paragraph at lines 3286--3287
 
- []
-
-
-
-[31]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3299--3306
-[]|$[][]$| 
  []
 
 
 
 [32]
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3380--3387
+[]|$[][]$| 
+ []
+
+
 
 [33]
-Underfull \hbox (badness 3138) in paragraph at lines 3463--3463
+
+[34]
+Underfull \hbox (badness 3138) in paragraph at lines 3544--3544
 []|$\OML/lmm/m/it/9 \OT1/lmr/m/n/9 (+20) %$ \T1/lmr/m/n/9 (+20) - be-trouw-baa
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3471--3471
+Underfull \hbox (badness 10000) in paragraph at lines 3552--3552
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3475--3475
+Underfull \hbox (badness 10000) in paragraph at lines 3556--3556
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Overfull \hbox (11.75131pt too wide) in paragraph at lines 3455--3480
+Overfull \hbox (11.75131pt too wide) in paragraph at lines 3536--3561
 []  
  []
 
 
-
-[34]
 
 [35]
 
@@ -1756,58 +1776,61 @@ Overfull \hbox (11.75131pt too wide) in paragraph at lines 3455--3480
 
 [39]
 
-[40] (vademecum.aux)
+[40]
+
+[41] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: 7F9C08E311943DC5B6C9ABF16D174FE6;17219.
+(rerunfilecheck)             Checksum: C06B1413FE821C0BF8FB97DF47C018CE;17463.
  ) 
 Here is how much of TeX's memory you used:
- 45183 strings out of 468133
- 1007174 string characters out of 5431680
- 1635040 words of memory out of 5000000
- 72748 multiletter control sequences out of 15000+600000
- 802595 words of font info for 268 fonts, out of 8000000 for 9000
+ 45196 strings out of 468133
+ 1007368 string characters out of 5431680
+ 1635079 words of memory out of 5000000
+ 72754 multiletter control sequences out of 15000+600000
+ 805774 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,37n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
 <C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
 :/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/U
-sers/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/User
-s/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/
-Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Ia
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Ian/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Ian/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ian/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-sy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7
-.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pf
-b><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><
-C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
-msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (40 pages, 926160 bytes).
+sers/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/User
+s/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/I
+an/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Ian
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Ian/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Ian/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Ian/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ian/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+sy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6
+.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pf
+b><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><
+C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/
+Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (41 pages, 958695 bytes).
 PDF statistics:
- 885 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 99077 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
+ 101133 words of extra memory for PDF output out of 106986 (max. 10000000)
 
