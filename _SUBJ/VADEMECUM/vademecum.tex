@@ -28,7 +28,7 @@
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
 \usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,matrix,decorations.pathreplacing,arrows.meta}
-
+\usetikzlibrary{arrows.meta}
 \usepackage{tikzpagenodes}
 \usepackage{booktabs, xcolor, colortbl}
 
@@ -2978,7 +2978,7 @@ Voor $y=f(x)$, $x\in[a,b]$, geldt de booglengte:
 \end{minipage}\hfill
 &
 \begin{minipage}[r]{\linewidth}
-\begin{tikzpicture}[x=1.2cm,y=1.2cm,>=Latex,thick]
+\begin{tikzpicture}[x=1.2cm,y=1.2cm,>=Latex,thick, scale=1]
   % Axes
   \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
   \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
@@ -3059,71 +3059,54 @@ L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta
   \def\a{5.0}
   \def\b{3.2}
 
-  % main display angles
+  % polar radius for ellipse centered at origin:
+  % r(θ) = ab / sqrt((b cosθ)^2 + (a sinθ)^2)
+  \pgfmathdeclarefunction{rellipse}{1}{%
+    \pgfmathparse{(\a*\b)/sqrt((\b*cos(#1))^2+(\a*sin(#1))^2)}%
+  }
+
+  % main display arc range
   \pgfmathsetmacro{\thetaplotA}{10}
   \pgfmathsetmacro{\thetaplotB}{80}
 
-  % helper: r(θ) for the ellipse in polar form (origin at center)
-  % r(θ) = ab / sqrt((b cosθ)^2 + (a sinθ)^2)
-  % (We’ll inline this expression in plots)
-
-  % highlight the ellipse arc between 10° and 80° (polar-by-angle)
-  \draw[line width=1.2pt, black]
+  % highlight only the visible ellipse arc
+  \draw[red!70!black]
     plot[domain=\thetaplotA:\thetaplotB, samples=280, variable=\t]
-      ({(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*cos(\t)},
-       {(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*sin(\t)});
+      ({rellipse(\t)*cos(\t)}, {rellipse(\t)*sin(\t)});
 
-  % choose a local theta and dtheta for the differential element
+  % choose local θ and dθ
   \pgfmathsetmacro{\th}{50}
   \pgfmathsetmacro{\dth}{8}
 
-  % compute r(θ) and r(θ+dθ)
-  \pgfmathsetmacro{\rth}{(\a*\b)/sqrt((\b*cos(\th))^2+(\a*sin(\th))^2)}
-  \pgfmathsetmacro{\rthp}{(\a*\b)/sqrt((\b*cos(\th+\dth))^2+(\a*sin(\th+\dth))^2)}
+  % compute radii
+  \pgfmathsetmacro{\rth}{rellipse(\th)}
+  \pgfmathsetmacro{\rthp}{rellipse(\th+\dth)}
 
-  % fill the small polar "slice" bounded by the ellipse between θ and θ+dθ
-  \path[fill=gray!12, draw=gray!45]
-    (0,0) --
-    (\th:\rth)
-    plot[domain=\th:\th+\dth, samples=80, variable=\t]
-      ({(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*cos(\t)},
-       {(\a*\b)/sqrt((\b*cos(\t))^2+(\a*sin(\t))^2)*sin(\t)})
-    -- (\th+\dth:\rthp) -- cycle;
+  % define key points
+  \path coordinate (P) at (\th:\rth);
+  \path coordinate (Q) at (\th+\dth:\rthp);
 
-  % the two rays
-  \draw[very thick, red!70!black] (0,0) -- (\th:\rth);
-  \draw[very thick, red!70!black] (0,0) -- (\th+\dth:\rthp);
+  % red rays
+  \draw[ black] (0,0) -- (P);
+  \draw[ black] (0,0) -- (Q);
 
-  % circular arc at fixed radius r(θ): length ≈ r dθ
-  \draw[very thick, blue]
-    (\th:\rth) arc[start angle=\th, end angle=\th+\dth, radius=\rth]
-    node[midway, above=2pt, fill=white, inner sep=1pt] {$r\,\mathrm d\theta$};
+% θ arc
+\draw[black, ->, >=stealth']
+  (1.5,0) arc[start angle=0, end angle=\th, radius=1.5];
+\node at ({0.5*\th}:1.7) {$\theta$};
 
-  % radial increment dr along the second ray
-  \draw[densely dashed]
-    (\th+\dth:\rth) -- (\th+\dth:\rthp)
-    node[midway, right=2pt] {$\mathrm dr$};
+% dθ arc
+\draw[black, <->, >=stealth']
+  (\th:3) arc[start angle=\th, end angle=\th+\dth, radius=3];
+\node[black] at ({\th+0.5*\dth}:3.4) {$\mathrm d\theta$};
 
-  % angle markers and labels
-  \draw (0.0,0) 
-    ++(\th:0.55) arc (\th:\th+\dth:0.55)
-      node[midway, below=1pt] {$\mathrm d\theta$};
-  \draw (0,0) ++(8:0.8) arc (8:\th:0.8);
-  \node at (0.95,0.21) {$\theta$};
-
-  % annotate r = f(θ) near the arc
-  \node[rotate=0] at
-    ({(\a*\b)/sqrt((\b*cos(68))^2+(\a*sin(68))^2)*cos(68)},
-     {(\a*\b)/sqrt((\b*cos(68))^2+(\a*sin(68))^2)*sin(68)+0.25})
-     {$r=f(\theta)$};
-
-  % small ticks at 10° and 80° rays for clarity
-  \pgfmathsetmacro{\rmarkA}{(\a*\b)/sqrt((\b*cos(\thetaplotA))^2+(\a*sin(\thetaplotA))^2)}
-  \pgfmathsetmacro{\rmarkB}{(\a*\b)/sqrt((\b*cos(\thetaplotB))^2+(\a*sin(\thetaplotB))^2)}
-
+  % annotate r=f(θ)
+  \node[red!70!black] at ($(P)!0.5!(Q)+(2,0)$) {$r=f(\theta)$};
 
 \end{tikzpicture}
 \end{minipage}
+
+
 
 \\
 \end{tabular}
