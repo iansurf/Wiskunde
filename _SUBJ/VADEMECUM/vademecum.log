@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  16 NOV 2025 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  16 NOV 2025 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1698,75 +1698,75 @@ Overfull \hbox (53.41187pt too wide) in paragraph at lines 3187--3188
 [30]
 
 [31]
-Overfull \hbox (1.19557pt too wide) detected at line 3226
+
+[32]
+Overfull \hbox (1.19557pt too wide) detected at line 3291
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3228--3229
+Underfull \hbox (badness 10000) in paragraph at lines 3293--3294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3232--3233
+Underfull \hbox (badness 10000) in paragraph at lines 3297--3298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3236--3237
+Underfull \hbox (badness 10000) in paragraph at lines 3301--3302
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3269
+Overfull \hbox (2.06549pt too wide) detected at line 3334
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3280--3281
+Underfull \hbox (badness 10000) in paragraph at lines 3345--3346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3287
+Underfull \hbox (badness 10000) in paragraph at lines 3351--3352
 
- []
-
-
-
-[32]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3380--3387
-[]|$[][]$| 
  []
 
 
 
 [33]
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3445--3452
+[]|$[][]$| 
+ []
+
+
 
 [34]
-Underfull \hbox (badness 3138) in paragraph at lines 3544--3544
+
+[35]
+Underfull \hbox (badness 3138) in paragraph at lines 3609--3609
 []|$\OML/lmm/m/it/9 \OT1/lmr/m/n/9 (+20) %$ \T1/lmr/m/n/9 (+20) - be-trouw-baa
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3552--3552
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3617
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3556--3556
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Overfull \hbox (11.75131pt too wide) in paragraph at lines 3536--3561
+Overfull \hbox (11.75131pt too wide) in paragraph at lines 3601--3626
 []  
  []
 
 
-
-[35]
 
 [36]
 
@@ -1778,19 +1778,21 @@ Overfull \hbox (11.75131pt too wide) in paragraph at lines 3536--3561
 
 [40]
 
-[41] (vademecum.aux)
+[41]
+
+[42] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: C06B1413FE821C0BF8FB97DF47C018CE;17463.
+(rerunfilecheck)             Checksum: 9A19EA55C128C11C19F26AC5AD3BF7C6;17855.
  ) 
 Here is how much of TeX's memory you used:
- 45196 strings out of 468133
- 1007368 string characters out of 5431680
- 1635079 words of memory out of 5000000
- 72754 multiletter control sequences out of 15000+600000
+ 45204 strings out of 468133
+ 1007487 string characters out of 5431680
+ 1635121 words of memory out of 5000000
+ 72759 multiletter control sequences out of 15000+600000
  805774 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,37n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1828,9 +1830,9 @@ m10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (41 pages, 958695 bytes).
+Output written on vademecum.pdf (42 pages, 964643 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 101133 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 914 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 101149 words of extra memory for PDF output out of 106986 (max. 10000000)
 
