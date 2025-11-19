@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  16 NOV 2025 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  19 NOV 2025 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1674,22 +1674,22 @@ Overfull \hbox (5.05081pt too wide) in paragraph at lines 2577--2592
 [28]
 
 [29]
-Overfull \hbox (14.48297pt too wide) in paragraph at lines 2881--2882
+Overfull \hbox (14.48297pt too wide) in paragraph at lines 2904--2905
 [][] 
  []
 
 
-Overfull \hbox (34.60213pt too wide) in paragraph at lines 3048--3049
+Overfull \hbox (34.60213pt too wide) in paragraph at lines 3071--3072
 [][] 
  []
 
 
-Overfull \hbox (83.00232pt too wide) in paragraph at lines 3119--3120
+Overfull \hbox (83.00232pt too wide) in paragraph at lines 3142--3143
 [][] 
  []
 
 
-Overfull \hbox (53.41187pt too wide) in paragraph at lines 3187--3188
+Overfull \hbox (53.41187pt too wide) in paragraph at lines 3210--3211
 [][] 
  []
 
@@ -1698,46 +1698,51 @@ Overfull \hbox (53.41187pt too wide) in paragraph at lines 3187--3188
 [30]
 
 [31]
+Overfull \hbox (5.50832pt too wide) in paragraph at lines 3270--3270
+[][] 
+ []
+
+
 
 [32]
-Overfull \hbox (1.19557pt too wide) detected at line 3291
+Overfull \hbox (1.19557pt too wide) detected at line 3316
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3293--3294
+Underfull \hbox (badness 10000) in paragraph at lines 3318--3319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3297--3298
+Underfull \hbox (badness 10000) in paragraph at lines 3322--3323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3301--3302
+Underfull \hbox (badness 10000) in paragraph at lines 3326--3327
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3334
+Overfull \hbox (2.06549pt too wide) detected at line 3359
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3345--3346
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3351--3352
+Underfull \hbox (badness 10000) in paragraph at lines 3376--3377
 
  []
 
 
 
 [33]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3445--3452
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3470--3477
 []|$[][]$| 
  []
 
@@ -1746,23 +1751,23 @@ Overfull \hbox (2.81992pt too wide) in paragraph at lines 3445--3452
 [34]
 
 [35]
-Underfull \hbox (badness 3138) in paragraph at lines 3609--3609
+Underfull \hbox (badness 3138) in paragraph at lines 3634--3634
 []|$\OML/lmm/m/it/9 \OT1/lmr/m/n/9 (+20) %$ \T1/lmr/m/n/9 (+20) - be-trouw-baa
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3617--3617
+Underfull \hbox (badness 10000) in paragraph at lines 3642--3642
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+Underfull \hbox (badness 10000) in paragraph at lines 3646--3646
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Overfull \hbox (11.75131pt too wide) in paragraph at lines 3601--3626
+Overfull \hbox (11.75131pt too wide) in paragraph at lines 3626--3651
 []  
  []
 
@@ -1795,7 +1800,7 @@ Here is how much of TeX's memory you used:
  72759 multiletter control sequences out of 15000+600000
  805774 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,37n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,55n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
 <C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
 :/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/U
@@ -1830,7 +1835,7 @@ m10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (42 pages, 964643 bytes).
+Output written on vademecum.pdf (42 pages, 965817 bytes).
 PDF statistics:
  914 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)

@@ -2599,30 +2599,53 @@ $
 \end{cases}
 $ \\ \hline
 \normalsize
-
-% --- BEGIN NESTED TABLE 1 --- 
-\parbox{\linewidth}{
+  % --- BEGIN NESTED TABLE 1 --- 
+  \parbox{\linewidth}{
   \begin{tabular}{|p{0.98\linewidth}|}
   \hline
   \(\displaystyle \int {\frac{c}{{(ax + b)}}} \,dx= \frac{c}{a}\int {\frac{1}{{(ax + b)}}\,d(ax + b)} \quad (a)\) \\[0.8em]
   \hline
   \(\displaystyle \int {\frac{c}{{{{(ax + b)}^n}}}} \,dx= \frac{c}{a}\int {{{(ax + b)}^{ - n}}\,d(ax + b)} \quad (b)\) \\[0.8em]
-  \hline  \(\displaystyle \int {\frac{{px + q}}{{a{x^2} + bx + c}}} \quad (d)\)
-  \\ 
+  \hline  \(\displaystyle \int {\frac{{px + q}}{{a{x^2} + bx + c}}} \quad (d)\) \\ 
 	% --- BEGIN NESTED TABLE 2 ---
 	\parbox{\linewidth}{
-	  \begin{tabular}{|p{0.98\linewidth}|}
+	\begin{tabular}{|p{0.98\linewidth}|}
+	\hline
+	\(\displaystyle D > 0 \; \text{zie (a)}, \quad D = 0 \; \text{zie (b)}\) \\[0.8em]
+	\hline
+	\(\displaystyle D < 0\) \\[0.8em]
+	  % --- BEGIN NESTED TABLE 3 ---
+	  \parbox{\linewidth}{
+  	  \begin{tabular}{|p{0.98\linewidth}|}
 	  \hline
-	  \(\displaystyle D > 0 \; \text{zie (a)}, \quad D = 0 \; \text{zie (b)}\) \\[0.8em]
+	  \(\displaystyle p = 0\; \to \int {\frac{q}{{a{x^2} + bx + c}}} \,dx = \int {\frac{q}{{\underbrace {(a{x^2} + bx + c')}_{D = 0}\underbrace { - c' + c}_{c''}}}} \,dx = q\int {\frac{1}{{{u^2} + c''}}} \;dx\quad (c) \) \\[0.8em]
 	  \hline
-	  \(\displaystyle D < 0\) \\[0.8em]
+	  \(\displaystyle p \ne 0\) \\[0.8em]
+	  \(\displaystyle\int {\frac{{px + q}}{{a{x^2} + bx + c}}} \,dx = \mathop {\int {\frac{{A.(D(a{x^2} + bx + c)) + B}}{{a{x^2} + bx + c}}} \,dx}\limits_{\left\{ {\begin{array}{*{20}{c}}
+{p = A2a}\\
+{q = Ab + B}
+\end{array} \Rightarrow \left\{ {\begin{array}{*{20}{c}}
+{A = ...}\\
+{B = ...}
+\end{array}} \right.} \right.} \) \\[0.8em]
+       \(\displaystyle= \int {\frac{{A(2ax + b)}}{{a{x^2} + bx + c}}} \,dx + \int {\frac{B}{{a{x^2} + bx + c}}} \,dx = A\int {\frac{{d(a{x^2} + bx + c)}}{{a{x^2} + bx + c}}} \, + \begin{array}{*{20}{c}}
+{\int {\frac{B}{{a{x^2} + bx + c}}} \,dx}\\
+{zie\;(c)} 
+\end{array} \) \\[0.8em]
 	  \hline
-	  \end{tabular}
-	} \\[3pt]
-	% --- END NESTED TABLE 2 --
+	  \end{tabular}  
+	  } \\[3pt]
+  	  % --- END NESTED TABLE 3 --
+	\hline
+	\end{tabular}
+    } \\[8pt]
+    % --- END NESTED TABLE 2 --
+  \hline
   \end{tabular}
-} \\[3pt]
-% --- END NESTED TABLE 1 --- 
+  } \\[8pt]
+  % --- END NESTED TABLE 1 --- 
+  \hline
+\(\displaystyle\int {\frac{{px + q}}{{{{(a{x^2} + bx + c)}^n}}}}\;met\;ICT-software \) \\
 \hline
 \end{tabular}
 
@@ -3223,27 +3246,29 @@ T_n(e^{ix}) &= 1 + \frac{ix}{1!} + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac
 \end{aligned}
 $
 
-\[
-\Rightarrow \quad e^{ix} = \cos x + i\sin x \quad (1)
-\]
-\[
-\Rightarrow \quad e^{i\pi} = -1 \qquad e^{-ix} = \cos x - i\sin x \quad (2)
-\]
-
-\textbf{Afleidingen uit (1) en (2):}
-\[
+$
 \begin{aligned}
-\frac{(1)+(2)}{2} &\Rightarrow \frac{e^{ix}+e^{-ix}}{2} = \cos x, \\[4pt]
-\frac{(1)-(2)}{2} &\Rightarrow \frac{e^{ix}-e^{-ix}}{2} = i\sin x.
+\Rightarrow \quad e^{ix} = \cos x + i\sin x \quad (1) \Rightarrow \quad e^{i\pi} = -1 \Rightarrow \quad e^{-ix} = \cos x - i\sin x \quad (2)
 \end{aligned}
-\]
-\[
-\Rightarrow \quad
-\cos x = \frac{e^{ix}+e^{-ix}}{2},
-\qquad
-\sin x = \frac{e^{ix}-e^{-ix}}{2i}.
-\]
-\\ \hline
+$
+
+\parbox{\linewidth}{
+\begin{tabular}{|p{0.49\linewidth}|p{0.49\linewidth}|}
+\hline
+$\begin{array}{l}
+\frac{{\left( 1 \right) + \left( 2 \right)}}{2} \Rightarrow \frac{{{e^{ix}} + {e^{ - ix}}}}{2} = \cos x\\
+\frac{{\left( 1 \right) - \left( 2 \right)}}{2} \Rightarrow \frac{{{e^{ix}} - {e^{ - ix}}}}{2} = i\,\sin x
+\end{array}$
+&
+$\begin{array}{c}
+\cos x = \frac{{{e^{ix}} + {e^{ - ix}}}}{2}\\
+\sin x = \frac{{{e^{ix}} - {e^{ - ix}}}}{{2i}}
+\end{array}$
+\\ [8pt]
+\hline
+\end{tabular}
+}
+
 \textbf{Hyperbolische functies:}
 \[
 \sinh x = \frac{e^x - e^{-x}}{2}, \qquad
