@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  19 NOV 2025 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  20 NOV 2025 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,6 +628,9 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \minrowclearance=\skip56
 \rownum=\count318
 )
+(C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revis
 ion.tex)
@@ -1145,9 +1148,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 105.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
-9.
+Package hyperref Info: Option `colorlinks' set `true' on input line 109.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+3.
  (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1161,34 +1164,34 @@ Package babel Info: 'dutch' activates 'dutch' shorthands.
 )
 \openout1 = `vademecum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen366
 \MT@vwid@rightmargin=\dimen367
-LaTeX Info: Redefining \microtypecontext on input line 109.
-Package microtype Info: Applying patch `item' on input line 109.
-Package microtype Info: Applying patch `toc' on input line 109.
-Package microtype Info: Applying patch `eqnum' on input line 109.
-Package microtype Info: Applying patch `footnote' on input line 109.
-Package microtype Info: Applying patch `verbatim' on input line 109.
-LaTeX Info: Redefining \microtypesetup on input line 109.
+LaTeX Info: Redefining \microtypecontext on input line 113.
+Package microtype Info: Applying patch `item' on input line 113.
+Package microtype Info: Applying patch `toc' on input line 113.
+Package microtype Info: Applying patch `eqnum' on input line 113.
+Package microtype Info: Applying patch `footnote' on input line 113.
+Package microtype Info: Applying patch `verbatim' on input line 113.
+LaTeX Info: Redefining \microtypesetup on input line 113.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1268,42 +1271,42 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 109.
+Package hyperref Info: Link coloring ON on input line 113.
 (vademecum.out) (vademecum.out)
 \@outlinefile=\write4
 \openout4 = `vademecum.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-20.
+24.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-20.
+24.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-120.
+124.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-120.
+124.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 120.
+(Font)              <9> on input line 124.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 120.
+(Font)              <6> on input line 124.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 120.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 120
+(Font)              <5> on input line 124.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 124
 .
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1312,7 +1315,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 120
+LaTeX Font Info:    Trying to load font information for U+msb on input line 124
 .
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1349,41 +1352,41 @@ ograms/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}])
 
 [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 132.
+(Font)              <10> on input line 136.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 164.
+(Font)              <12> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 164.
+(Font)              <8> on input line 168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 193.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 193.
 
 
 
 Package babel Info: 'dutch' activates 'dutch' shorthands.
-(babel)             Reported on input line 208.
+(babel)             Reported on input line 212.
 [3{C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
+(hyperref)                removing `math shift' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
+(hyperref)                removing `math shift' on input line 274.
 
 
 
@@ -1394,7 +1397,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [6]
 
 [7]
-Overfull \hbox (9.60321pt too wide) in paragraph at lines 622--623
+Overfull \hbox (9.60321pt too wide) in paragraph at lines 626--627
  [] 
  []
 
@@ -1404,23 +1407,15 @@ Overfull \hbox (9.60321pt too wide) in paragraph at lines 622--623
 
 [9]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 831.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 832.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 833.
-
-
-
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 835.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 838.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 836.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 837.
 
 
 
@@ -1428,7 +1423,15 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 839.
 
 
 
-Overfull \hbox (12.44386pt too wide) detected at line 900
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 842.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 843.
+
+
+
+Overfull \hbox (12.44386pt too wide) detected at line 904
 []
  []
 
@@ -1441,43 +1444,32 @@ Overfull \hbox (12.44386pt too wide) detected at line 900
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1178.
+(hyperref)                removing `superscript' on input line 1182.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
+Overfull \hbox (1.36838pt too wide) detected at line 1281
+[] \OT1/lmr/m/n/9 = [][] + [][] + [][][][][][][][]
+ []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
+Overfull \hbox (6.89212pt too wide) detected at line 1358
+[]  \OT1/lmr/m/n/9 =  []  =  \OML/lmm/m/it/9 k []
+ []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
+Overfull \hbox (2.50323pt too wide) detected at line 1369
+[]  \OT1/lmr/m/n/9 =  \OMS/lmsy/m/n/9 ^^@ []  \OT1/lmr/m/n/9 =  \OMS/lmsy/m/n/9
+ ^^@ []
+ []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
+Overfull \hbox (32.5734pt too wide) detected at line 1383
+[] \OT1/lmr/m/n/9 = [] = 0 = [] = []
+ []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
-.
-
-
-Overfull \hbox (75.73021pt too wide) detected at line 1271
- [] 
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1219--1446
+[] 
  []
 
 
@@ -1487,46 +1479,46 @@ Overfull \hbox (75.73021pt too wide) detected at line 1271
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1294.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\not' on input line 1294.
+(hyperref)                removing `\not' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1294.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1301.
+(hyperref)                removing `math shift' on input line 1469.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1301.
+(hyperref)                removing `\times' on input line 1469.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1301.
+(hyperref)                removing `math shift' on input line 1469.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1313.
+(hyperref)                removing `math shift' on input line 1481.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1313.
+(hyperref)                removing `math shift' on input line 1481.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1313.
+(hyperref)                removing `math shift' on input line 1481.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1313.
+(hyperref)                removing `math shift' on input line 1481.
 
 
-Overfull \hbox (13.47418pt too wide) in paragraph at lines 1334--1365
+Overfull \hbox (13.47418pt too wide) in paragraph at lines 1502--1533
 []$ 
  []
 
@@ -1543,54 +1535,54 @@ Overfull \hbox (13.47418pt too wide) in paragraph at lines 1334--1365
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1808.
+(hyperref)                removing `math shift' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 1808.
+(hyperref)                removing `\alpha' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 1808.
+(hyperref)                removing `\beta' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1808.
+(hyperref)                removing `math shift' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1808.
+(hyperref)                removing `math shift' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1808.
+(hyperref)                removing `superscript' on input line 1976.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1808.
+(hyperref)                removing `math shift' on input line 1976.
 
 
-Overfull \hbox (14.29456pt too wide) in paragraph at lines 1846--1847
+Overfull \hbox (14.29456pt too wide) in paragraph at lines 2014--2015
  [][] 
  []
 
 
-Overfull \hbox (14.81902pt too wide) detected at line 1973
+Overfull \hbox (14.81902pt too wide) detected at line 2141
 []
  []
 
 
-Overfull \hbox (16.61432pt too wide) detected at line 2008
+Overfull \hbox (16.61432pt too wide) detected at line 2176
 []
  []
 
 
-Overfull \hbox (21.43028pt too wide) detected at line 2025
+Overfull \hbox (21.43028pt too wide) detected at line 2193
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 2039--2040
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 2207--2208
  [] 
  []
 
@@ -1601,47 +1593,47 @@ Overfull \hbox (24.31892pt too wide) in paragraph at lines 2039--2040
 [21]
 
 [22]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 2129.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 2297.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 2129.
+(Font)              <14> on input line 2297.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 2129.
+(Font)              <9.79996> on input line 2297.
 
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2180--2182
+Underfull \hbox (badness 10000) in paragraph at lines 2348--2350
 
  []
 
 
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 2262--2263
+Underfull \hbox (badness 10000) in paragraph at lines 2430--2431
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 2317.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 2485.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2317.
+(Font)              <13> on input line 2485.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 2317.
+(Font)              <9.09996> on input line 2485.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 2317.
+(Font)              <6.5> on input line 2485.
 
-Overfull \hbox (10.34769pt too wide) detected at line 2323
+Overfull \hbox (10.34769pt too wide) detected at line 2491
 \OML/lmm/m/it/13 f[]\OT1/lmr/m/n/13 (\OML/lmm/m/it/13 a\OT1/lmr/m/n/13 ) = [] [
 ] = [] [] = [] [] = [][] [] 
  []
 
 
-Overfull \hbox (9.2499pt too wide) in paragraph at lines 2337--2434
+Overfull \hbox (9.2499pt too wide) in paragraph at lines 2505--2602
 [] 
  []
 
 
 
 [25]
-Overfull \hbox (1.96332pt too wide) detected at line 2486
+Overfull \hbox (1.96332pt too wide) detected at line 2654
 []
  []
 
@@ -1651,11 +1643,11 @@ Overfull \hbox (1.96332pt too wide) detected at line 2486
 
 [27]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2552.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2720.
 
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 2552--2568
+Underfull \hbox (badness 1184) in paragraph at lines 2720--2736
 []|$\OML/lmm/m/it/9 Stelling van d[]Alembert \OT1/lmr/m/n/9 (+20) : \OML/lmm/m/
 it/9 V\OT1/lmr/m/n/9 (+20) (\OML/lmm/m/it/9 x\OT1/lmr/m/n/9 (+20) ) = [][](\OML
 /lmm/m/it/9 a[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]\OT1/lmr/m/n/9 (+20)
@@ -1665,7 +1657,7 @@ lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 c
  []
 
 
-Overfull \hbox (5.05081pt too wide) in paragraph at lines 2577--2592
+Overfull \hbox (5.05081pt too wide) in paragraph at lines 2745--2760
 []|$[]  \OT1/lmr/m/n/9 (-20) =  []  []  + []  []$ 
  []
 
@@ -1674,22 +1666,22 @@ Overfull \hbox (5.05081pt too wide) in paragraph at lines 2577--2592
 [28]
 
 [29]
-Overfull \hbox (14.48297pt too wide) in paragraph at lines 2904--2905
+Overfull \hbox (14.48297pt too wide) in paragraph at lines 3072--3073
 [][] 
  []
 
 
-Overfull \hbox (34.60213pt too wide) in paragraph at lines 3071--3072
+Overfull \hbox (34.60213pt too wide) in paragraph at lines 3239--3240
 [][] 
  []
 
 
-Overfull \hbox (83.00232pt too wide) in paragraph at lines 3142--3143
+Overfull \hbox (83.00232pt too wide) in paragraph at lines 3310--3311
 [][] 
  []
 
 
-Overfull \hbox (53.41187pt too wide) in paragraph at lines 3210--3211
+Overfull \hbox (53.41187pt too wide) in paragraph at lines 3378--3379
 [][] 
  []
 
@@ -1698,51 +1690,46 @@ Overfull \hbox (53.41187pt too wide) in paragraph at lines 3210--3211
 [30]
 
 [31]
-Overfull \hbox (5.50832pt too wide) in paragraph at lines 3270--3270
-[][] 
- []
-
-
 
 [32]
-Overfull \hbox (1.19557pt too wide) detected at line 3316
+Overfull \hbox (1.19557pt too wide) detected at line 3484
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3318--3319
+Underfull \hbox (badness 10000) in paragraph at lines 3486--3487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3322--3323
+Underfull \hbox (badness 10000) in paragraph at lines 3490--3491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3326--3327
+Underfull \hbox (badness 10000) in paragraph at lines 3494--3495
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3359
+Overfull \hbox (2.06549pt too wide) detected at line 3527
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3370--3371
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3376--3377
+Underfull \hbox (badness 10000) in paragraph at lines 3544--3545
 
  []
 
 
 
 [33]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3470--3477
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3638--3645
 []|$[][]$| 
  []
 
@@ -1751,23 +1738,23 @@ Overfull \hbox (2.81992pt too wide) in paragraph at lines 3470--3477
 [34]
 
 [35]
-Underfull \hbox (badness 3138) in paragraph at lines 3634--3634
+Underfull \hbox (badness 3138) in paragraph at lines 3802--3802
 []|$\OML/lmm/m/it/9 \OT1/lmr/m/n/9 (+20) %$ \T1/lmr/m/n/9 (+20) - be-trouw-baa
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3642--3642
+Underfull \hbox (badness 10000) in paragraph at lines 3810--3810
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3646--3646
+Underfull \hbox (badness 10000) in paragraph at lines 3814--3814
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Overfull \hbox (11.75131pt too wide) in paragraph at lines 3626--3651
+Overfull \hbox (11.75131pt too wide) in paragraph at lines 3794--3819
 []  
  []
 
@@ -1790,54 +1777,59 @@ Overfull \hbox (11.75131pt too wide) in paragraph at lines 3626--3651
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
 (rerunfilecheck)             Checksum: 9A19EA55C128C11C19F26AC5AD3BF7C6;17855.
  ) 
 Here is how much of TeX's memory you used:
- 45204 strings out of 468133
- 1007487 string characters out of 5431680
- 1635121 words of memory out of 5000000
- 72759 multiletter control sequences out of 15000+600000
+ 45263 strings out of 468133
+ 1008647 string characters out of 5431680
+ 1636071 words of memory out of 5000000
+ 72814 multiletter control sequences out of 15000+600000
  805774 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,55n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
-<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/U
-sers/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/User
-s/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/I
-an/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Ian
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Ian/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Ian/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Ian/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ian/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-sy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6
-.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pf
-b><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><
-C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/
-Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (42 pages, 965817 bytes).
+<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxf
+ont/line10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmbx12.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+bx7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8
+.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pf
+b><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb>
+<C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C
+:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/
+Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Use
+rs/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/
+Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Ian
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ian/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Ian/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Ian/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Ian/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ian/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Ian/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/lm/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmsy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmsy7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmsy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+msy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (42 pages, 972530 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
+ 919 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
  101149 words of extra memory for PDF output out of 106986 (max. 10000000)
 
