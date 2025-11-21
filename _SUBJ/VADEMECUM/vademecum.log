@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  20 NOV 2025 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  21 NOV 2025 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1447,28 +1447,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 1182.
 
 
-Overfull \hbox (1.36838pt too wide) detected at line 1281
+Overfull \hbox (1.36838pt too wide) detected at line 1284
 [] \OT1/lmr/m/n/9 = [][] + [][] + [][][][][][][][]
  []
 
 
-Overfull \hbox (6.89212pt too wide) detected at line 1358
+Overfull \hbox (6.89212pt too wide) detected at line 1359
 []  \OT1/lmr/m/n/9 =  []  =  \OML/lmm/m/it/9 k []
  []
 
 
-Overfull \hbox (2.50323pt too wide) detected at line 1369
+Overfull \hbox (2.50323pt too wide) detected at line 1370
 []  \OT1/lmr/m/n/9 =  \OMS/lmsy/m/n/9 ^^@ []  \OT1/lmr/m/n/9 =  \OMS/lmsy/m/n/9
  ^^@ []
  []
 
 
-Overfull \hbox (32.5734pt too wide) detected at line 1383
+Overfull \hbox (32.5734pt too wide) detected at line 1384
 [] \OT1/lmr/m/n/9 = [] = 0 = [] = []
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1219--1446
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1220--1448
 [] 
  []
 
@@ -1479,46 +1479,46 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1219--1446
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1462.
+(hyperref)                removing `math shift' on input line 1464.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\not' on input line 1462.
+(hyperref)                removing `\not' on input line 1464.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1462.
+(hyperref)                removing `math shift' on input line 1464.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1469.
+(hyperref)                removing `math shift' on input line 1471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1469.
+(hyperref)                removing `\times' on input line 1471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1469.
+(hyperref)                removing `math shift' on input line 1471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1481.
+(hyperref)                removing `math shift' on input line 1483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1481.
+(hyperref)                removing `math shift' on input line 1483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1481.
+(hyperref)                removing `math shift' on input line 1483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1481.
+(hyperref)                removing `math shift' on input line 1483.
 
 
-Overfull \hbox (13.47418pt too wide) in paragraph at lines 1502--1533
+Overfull \hbox (13.47418pt too wide) in paragraph at lines 1504--1535
 []$ 
  []
 
@@ -1535,54 +1535,54 @@ Overfull \hbox (13.47418pt too wide) in paragraph at lines 1502--1533
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1976.
+(hyperref)                removing `math shift' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 1976.
+(hyperref)                removing `\alpha' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 1976.
+(hyperref)                removing `\beta' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1976.
+(hyperref)                removing `math shift' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1976.
+(hyperref)                removing `math shift' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1976.
+(hyperref)                removing `superscript' on input line 1978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1976.
+(hyperref)                removing `math shift' on input line 1978.
 
 
-Overfull \hbox (14.29456pt too wide) in paragraph at lines 2014--2015
+Overfull \hbox (14.29456pt too wide) in paragraph at lines 2016--2017
  [][] 
  []
 
 
-Overfull \hbox (14.81902pt too wide) detected at line 2141
+Overfull \hbox (14.81902pt too wide) detected at line 2143
 []
  []
 
 
-Overfull \hbox (16.61432pt too wide) detected at line 2176
+Overfull \hbox (16.61432pt too wide) detected at line 2178
 []
  []
 
 
-Overfull \hbox (21.43028pt too wide) detected at line 2193
+Overfull \hbox (21.43028pt too wide) detected at line 2195
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 2207--2208
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 2209--2210
  [] 
  []
 
@@ -1593,47 +1593,47 @@ Overfull \hbox (24.31892pt too wide) in paragraph at lines 2207--2208
 [21]
 
 [22]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 2297.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 2299.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 2297.
+(Font)              <14> on input line 2299.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 2297.
+(Font)              <9.79996> on input line 2299.
 
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2350
+Underfull \hbox (badness 10000) in paragraph at lines 2350--2352
 
  []
 
 
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 2430--2431
+Underfull \hbox (badness 10000) in paragraph at lines 2432--2433
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 2485.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 2487.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2485.
+(Font)              <13> on input line 2487.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 2485.
+(Font)              <9.09996> on input line 2487.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 2485.
+(Font)              <6.5> on input line 2487.
 
-Overfull \hbox (10.34769pt too wide) detected at line 2491
+Overfull \hbox (10.34769pt too wide) detected at line 2493
 \OML/lmm/m/it/13 f[]\OT1/lmr/m/n/13 (\OML/lmm/m/it/13 a\OT1/lmr/m/n/13 ) = [] [
 ] = [] [] = [] [] = [][] [] 
  []
 
 
-Overfull \hbox (9.2499pt too wide) in paragraph at lines 2505--2602
+Overfull \hbox (9.2499pt too wide) in paragraph at lines 2507--2604
 [] 
  []
 
 
 
 [25]
-Overfull \hbox (1.96332pt too wide) detected at line 2654
+Overfull \hbox (1.96332pt too wide) detected at line 2656
 []
  []
 
@@ -1643,11 +1643,11 @@ Overfull \hbox (1.96332pt too wide) detected at line 2654
 
 [27]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2720.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2722.
 
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 2720--2736
+Underfull \hbox (badness 1184) in paragraph at lines 2722--2738
 []|$\OML/lmm/m/it/9 Stelling van d[]Alembert \OT1/lmr/m/n/9 (+20) : \OML/lmm/m/
 it/9 V\OT1/lmr/m/n/9 (+20) (\OML/lmm/m/it/9 x\OT1/lmr/m/n/9 (+20) ) = [][](\OML
 /lmm/m/it/9 a[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]\OT1/lmr/m/n/9 (+20)
@@ -1657,7 +1657,7 @@ lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 c
  []
 
 
-Overfull \hbox (5.05081pt too wide) in paragraph at lines 2745--2760
+Overfull \hbox (5.05081pt too wide) in paragraph at lines 2747--2762
 []|$[]  \OT1/lmr/m/n/9 (-20) =  []  []  + []  []$ 
  []
 
@@ -1666,22 +1666,22 @@ Overfull \hbox (5.05081pt too wide) in paragraph at lines 2745--2760
 [28]
 
 [29]
-Overfull \hbox (14.48297pt too wide) in paragraph at lines 3072--3073
+Overfull \hbox (14.48297pt too wide) in paragraph at lines 3074--3075
 [][] 
  []
 
 
-Overfull \hbox (34.60213pt too wide) in paragraph at lines 3239--3240
+Overfull \hbox (34.60213pt too wide) in paragraph at lines 3241--3242
 [][] 
  []
 
 
-Overfull \hbox (83.00232pt too wide) in paragraph at lines 3310--3311
+Overfull \hbox (83.00232pt too wide) in paragraph at lines 3312--3313
 [][] 
  []
 
 
-Overfull \hbox (53.41187pt too wide) in paragraph at lines 3378--3379
+Overfull \hbox (53.41187pt too wide) in paragraph at lines 3380--3381
 [][] 
  []
 
@@ -1692,44 +1692,44 @@ Overfull \hbox (53.41187pt too wide) in paragraph at lines 3378--3379
 [31]
 
 [32]
-Overfull \hbox (1.19557pt too wide) detected at line 3484
+Overfull \hbox (1.19557pt too wide) detected at line 3486
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3486--3487
+Underfull \hbox (badness 10000) in paragraph at lines 3488--3489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3490--3491
+Underfull \hbox (badness 10000) in paragraph at lines 3492--3493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3494--3495
+Underfull \hbox (badness 10000) in paragraph at lines 3496--3497
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3527
+Overfull \hbox (2.06549pt too wide) detected at line 3529
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3538--3539
+Underfull \hbox (badness 10000) in paragraph at lines 3540--3541
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3544--3545
+Underfull \hbox (badness 10000) in paragraph at lines 3546--3547
 
  []
 
 
 
 [33]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3638--3645
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3640--3647
 []|$[][]$| 
  []
 
@@ -1738,23 +1738,23 @@ Overfull \hbox (2.81992pt too wide) in paragraph at lines 3638--3645
 [34]
 
 [35]
-Underfull \hbox (badness 3138) in paragraph at lines 3802--3802
+Underfull \hbox (badness 3138) in paragraph at lines 3804--3804
 []|$\OML/lmm/m/it/9 \OT1/lmr/m/n/9 (+20) %$ \T1/lmr/m/n/9 (+20) - be-trouw-baa
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3810--3810
+Underfull \hbox (badness 10000) in paragraph at lines 3812--3812
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3814--3814
+Underfull \hbox (badness 10000) in paragraph at lines 3816--3816
 []|\T1/lmr/bx/n/9 (+20) Intervalschatting
  []
 
 
-Overfull \hbox (11.75131pt too wide) in paragraph at lines 3794--3819
+Overfull \hbox (11.75131pt too wide) in paragraph at lines 3796--3821
 []  
  []
 
@@ -1777,18 +1777,14 @@ Overfull \hbox (11.75131pt too wide) in paragraph at lines 3794--3819
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
 (rerunfilecheck)             Checksum: 9A19EA55C128C11C19F26AC5AD3BF7C6;17855.
  ) 
 Here is how much of TeX's memory you used:
- 45263 strings out of 468133
- 1008647 string characters out of 5431680
- 1636071 words of memory out of 5000000
- 72814 multiletter control sequences out of 15000+600000
+ 45245 strings out of 468133
+ 1008273 string characters out of 5431680
+ 1635993 words of memory out of 5000000
+ 72796 multiletter control sequences out of 15000+600000
  805774 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,55n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1827,7 +1823,7 @@ s/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (42 pages, 972530 bytes).
+Output written on vademecum.pdf (42 pages, 972422 bytes).
 PDF statistics:
  919 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)

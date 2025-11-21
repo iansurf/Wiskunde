@@ -1216,11 +1216,13 @@ $B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA$ & $A$ regulier
 % --- Determinanten (2x groter diagram, beide methodes in kolom)
 %----------------------------------------------- 
 \section{Determinanten}
+\small
 \begin{tabular}{|p{0.46\linewidth}|p{0.46\linewidth}|}
 \hline
 % ======= TOP LEFT =======
 \begin{minipage}[t]{\linewidth}
 \center
+\vspace{-5mm}
 \[
 \left|
 \begin{array}{cc}
@@ -1267,6 +1269,7 @@ c & d
 &
 % ======= TOP RIGHT =======
 \begin{minipage}[t]{\linewidth}
+\vspace{-5mm}
 \center
 \[
 \left|
@@ -1318,19 +1321,18 @@ g & h & i
   \end{scope}
 \end{tikzpicture}
 \end{minipage}
-\vspace{0.8em}
+\vspace{2mm}
 \\ \hline
 \multicolumn{2}{|p{\linewidth}|}{
-\small
 \[\left| {\begin{array}{ccc}
 {\cdots}&{\cdots}&{\cdots}\\
 {\cdots}&{{a_{ij}}}&{\cdots}\\
 {\cdots}&{\cdots}&{\cdots}
-\end{array}} \right|\!\to\!cofactor\;{a_{ij}} = {A_{ij}} = {( - 1)^{i + j}}\!\overbrace {\left| {\begin{array}{ccc}
+\end{array}} \right|\!\to\!cofactor\;{a_{ij}} = {A_{ij}} = {( - 1)^{i + j}}\!\underbrace {\left| {\begin{array}{ccc}
 {\cdots}&{\xcancel\cdots}&{\cdots}\\
 {\xcancel\cdots}&{{\xcancel {a_{ij}}}}&{\xcancel\cdots}\\
 {\cdots}&{\xcancel\cdots}&{\cdots}
-\end{array}} \right|}^{\xcancel\cdots\:\not\in\:|.|}\!\to\!adjA\!=\! {\left[ {\begin{array}{ccc}
+\end{array}} \right|}_{\xcancel\cdots\:\not\in\:|.|}\!\to\!adjA\!=\! {\left[ {\begin{array}{ccc}
 {\cdots}&{\cdots}&{\cdots}\\
 {\cdots}&{{A_{ij}}}&{\cdots}\\
 {\cdots}&{\cdots}&{\cdots}
@@ -1338,7 +1340,6 @@ g & h & i
 }
 \\ \hline
 \multicolumn{2}{|p{0.92\linewidth}|}{
-\normalsize
 \[laplace:\det (A) = \sum\limits_{k = 1}^n {{a_{ik}}.{A_{ik}} = } \sum\limits_{r = 1}^n {{a_{rj}}.{A_{rj}}} \quad A \in {^{nxn}}\]
 }
 \\ \hline
@@ -1443,6 +1444,7 @@ c&{d + kc}
 }
 \\ \hline
 \end{tabular}
+\normalsize
 
 %-----------------------------------------------
 % --- Section: Stelsels oplossen 
