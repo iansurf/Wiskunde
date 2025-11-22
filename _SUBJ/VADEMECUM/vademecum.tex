@@ -1453,51 +1453,84 @@ c&{d + kc}
 
 \section{Stelsels oplossen}
 \subsection{Rang van een matrix}
-$ \operatorname{rang}(A) = \text{het aantal lineair onafhankelijke rijen van } A $
-
 \begin{enumerate}
-  \item Breng de matrix in \textbf{gereduceerde rij-echelonvorm \scriptsize \\ (RREF=Reduced Row-Echelon Form)}.
-  
+  \item RREF(\(A\)) , \scriptsize (RREF=Reduced Row-Echelon Form).
   \item Het aantal niet-nulrijen in deze trapvorm is de rang van \(A\).
 \end{enumerate}
-
 \subsection{n vergelijkingen met n onbekenden, $|A|\neq 0$ (Cramer)}
-Voor $AX=B$ met $A\in\mathbb{R}^{n\times n}$ en $\det(A)\neq0$ geldt
-\[
-x_j = \frac{\det(A_j)}{\det(A)} \qquad (j=1,\dots,n),
-\]
-waar $A_j$ ontstaat uit $A$ door de $j$-de kolom te vervangen door de vector $B$.
+$
+A \cdot X = B
+\quad\Longrightarrow
+\begin{bmatrix}
+\cdots & \cdots & \cdots \\
+\cdots & a_{ij} & \cdots \\
+\cdots & \cdots & \cdots
+\end{bmatrix}
+\begin{bmatrix}
+\vdots \\
+x_i \\
+\vdots
+\end{bmatrix}
+=
+\begin{bmatrix}
+\vdots \\
+b_i \\
+\vdots
+\end{bmatrix}
+\mathop  \Rightarrow \limits^{\det (A) \ne 0} 
+V = \left\{ {\left( {...\;,\;\frac{{\left| {{A_j}} \right|}}{{\left| A \right|}}\;,\;...} \right)} \right\}
+$
+
+$
+A_j =
+\begin{bmatrix}
+\cdots & (\xcancel{\cdots} \;\to\; b_{\cdots}) & \cdots \\
+\cdots & (\xcancel{a_{ij}} \;\to\; b_i) & \cdots \\
+\cdots & (\xcancel{\cdots} \;\to\; b_{\cdots}) & \cdots
+\end{bmatrix}
+\qquad
+\text{(vervang de } j\text{-de kolom)}
+$
+
 
 \subsection{Homogene $2\times 3$-stelsels}
-\begin{align*}
-a_1 x + b_1 y + c_1 z &= 0, \\
-a_2 x + b_2 y + c_2 z &= 0.
-\end{align*}
-Indien $\det\!\begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix}\neq0$, dan is de oplossingenverzameling
-\[
-V = \{\, \lambda \cdot (\det\!\begin{pmatrix} b_1 & c_1 \\ b_2 & c_2 \end{pmatrix}, \;
-          -\det\!\begin{pmatrix} a_1 & c_1 \\ a_2 & c_2 \end{pmatrix}, \;
-           \det\!\begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix}) \mid \lambda\in\mathbb{R}\,\}.
-\]
+$\left\{\!{\begin{array}{*{20}{c}}
+{{a_1}x + {b_1}y + {c_1}z = 0}\\
+{{a_2}x + {b_2}y + {c_2}z = 0}
+\end{array}}\right.\wedge\left| {\begin{array}{*{20}{c}}
+{{a_1}}&{{b_1}}\\
+{{a_2}}&{{b_2}}
+\end{array}} \right|\!\ne\!0\scriptsize\!\Rightarrow\!V=\!\left\{ 
+\begin{array}{*{20}{c}}
+\!{\!\left( {\lambda \left| {\begin{array}{*{20}{c}}
+{{b_1}}&{{c_1}}\\
+{{b_2}}&{{c_2}}
+\end{array}} \right|, - \lambda \left| {\begin{array}{*{20}{c}}
+{{a_1}}&{{c_1}}\\
+{{a_2}}&{{c_2}}
+\end{array}} \right|,\lambda \left| {\begin{array}{*{20}{c}}
+{{a_1}}&{{b_1}}\\
+{{a_2}}&{{b_2}}
+\end{array}}\right|}\right)}\\
+{\wedge\lambda  \in \mathbb{R}}
+\end{array}\!\right\} \normalsize$
 
 \subsection{$n+1$ vergelijkingen met $n$ onbekenden}
-Een stelsel van de vorm
-\begin{align*}
-a_1 x + b_1 y + c_1 &= 0,\\
-a_2 x + b_2 y + c_2 &= 0,\\
-a_3 x + b_3 y + c_3 &= 0
-\end{align*}
-heeft één oplossing $\Leftrightarrow$
-\[
-\det \begin{pmatrix}
-a_1 & b_1 & c_1 \\
-a_2 & b_2 & c_2 \\
-a_3 & b_3 & c_3
-\end{pmatrix}=0.
-\]
+$\left\{ {\begin{array}{*{20}{c}}
+{{a_1}x + {b_1}y + {c_1} = 0}\\
+{{a_2}x + {b_2}y + {c_2} = 0}\\
+{{a_3}x + {b_3}y + {c_3} = 0}
+\end{array}} \right. \wedge \left| {\begin{array}{*{20}{c}}
+{{a_2}}&{{b_2}}\\
+{{a_3}}&{{b_3}}
+\end{array}} \right| \ne 0\;\wedge \left| {\begin{array}{*{20}{c}}
+{{a_1}}&{{b_1}}&{{c_1}}\\
+{{a_2}}&{{b_2}}&{{c_2}}\\
+{{a_3}}&{{b_3}}&{{c_3}}
+\end{array}} \right| = 0 \rightarrow V = \{(x_1, y_1)\}$
 
-% -----------------------------------------------------------------------------
-
+%--------------------------------------------------------------------
+\newpage
 
 \section{Meetkunde}
 
@@ -2658,7 +2691,8 @@ d(u^v) = v u^{v-1} du + u^v \ln u\, dv \\
 
 \newpage
 
-\subsection{Afgeleiden - fundamentele integralen}
+\subsection{Integralen}
+\subsubsection{Afgeleiden - fundamentele integralen}
 \vspace{2mm}
 Bg = arc
 \vspace{2mm}
@@ -2699,24 +2733,23 @@ D{}^a\log x = \frac{1}{{x\ln a}} & * \\
 \hline
 \end{array}
 $
-\normalsize
 
-\vspace{2mm}
-
+\subsection{Substitutie}
+$ \displaystyle u = g(x) \Rightarrow du = g'(x)\,dx.
+\qquad
+\int f(g(x))\,g'(x)\,dx = \int f(u)\,du.
+\\
+\int_a^b f(g(x))\,g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du.
+$
+ 
 \subsection{Partiële integratie}
-\vspace{2mm}
-\fontsize{14pt}{15pt}\selectfont
-$\int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )$
-\vspace{2mm}
-\newline
-$\int {u\;dv}  = u.v - \int {v\;du} $
+$\displaystyle \int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )\\
+\int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
 
 \newpage
 
-\subsection{Integralen}
 \subsubsection{Integralen van rationale functies}
-
 \begin{tabular}{|p{0.98\linewidth}|}
 \hline
 $Stelling\;van\;d’Alembert:
@@ -2764,9 +2797,9 @@ $
 \wedge
 \begin{cases}
 \displaystyle u = (\#  \ne ax + b\;factoren\;van\;N(x))\\[6pt]
-\displaystyle v = (\#  \ne a'x + b'x + c'\;factoren\;van\;N(x))\\[6pt]
-\displaystyle met\;n\;de\;macht\;v/d\;u,v\;factoren
+\displaystyle v = (\#  \ne a'x + b'x + c'\;factoren\;van\;N(x))
 \end{cases}
+\wedge \displaystyle met\;n\;de\;macht\;v/d\;u,v\;factoren
 $ \\ \hline
 \normalsize
   % --- BEGIN NESTED TABLE 1 --- 
@@ -2818,6 +2851,28 @@ $ \\ \hline
 \(\displaystyle\int {\frac{{px + q}}{{{{(a{x^2} + bx + c)}^n}}}}\;met\;ICT-software \) \\
 \hline
 \end{tabular}
+% =================================================================
+% Integralen van irrationale functies
+% =================================================================
+\subsubsection{Integralen van irrationale functies}
+\begin{center}
+\begin{tabular}{|p{0.48\linewidth}|p{0.48\linewidth}|}
+\hline
+$\sqrt[n]{ax+b}$ &
+$ax+b=t^{\,n},\quad t\ge 0$ \\[0.3em]
+$f\!\big(\sqrt[n_1]{y},\sqrt[n_2]{y},\ldots,\sqrt[n_i]{y}\big),\;
+y=\dfrac{ax+b}{cx+d}$ &
+$\dfrac{ax+b}{cx+d}=t^{\,m},\quad m=\operatorname{k.g.v.}(n_1,\ldots,n_i)$ \\[0.3em]
+$\sqrt{a^{2}-u^{2}},\ a>0$ &
+$u=a\sin t,\quad t\in\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]$ \\[0.3em]
+$\sqrt{u^{2}-a^{2}},\ a>0$ &
+$u=a\sec t,\quad t \in \left[ { - \pi , - \frac{\pi }{2}} \right[ \cup \left[ {0,\frac{\pi }{2}} \right[$ \\[0.3em]
+$\sqrt{u^{2}+a^{2}},\ a>0$ &
+$u=a\tan t,\quad t\in\,]-\dfrac{\pi}{2},\dfrac{\pi}{2}[$ \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
 
 \subsubsection{Formules voor goniometrische integralen}
 
@@ -2933,27 +2988,6 @@ $
 \end{tabular}
 \newpage
 
-% =================================================================
-% Integralen van irrationale functies
-% =================================================================
-\subsubsection{Integralen van irrationale functies}
-\begin{center}
-\begin{tabular}{|p{0.48\linewidth}|p{0.48\linewidth}|}
-\hline
-Integrand & Substitutie \\ \hline
-$\sqrt[n]{ax+b}$ &
-$ax+b=t^{\,n},\quad t\ge 0$ \\[0.3em]
-$f\!\big(\sqrt[n_1]{y},\sqrt[n_2]{y},\ldots,\sqrt[n_i]{y}\big),\;
-y=\dfrac{ax+b}{cx+d}$ &
-$\dfrac{ax+b}{cx+d}=t^{\,m},\quad m=\operatorname{k.g.v.}(n_1,\ldots,n_i)$ \\[0.3em]
-$\sqrt{a^{2}-u^{2}},\ a>0$ &
-$u=a\sin t,\quad t\in\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]$ \\[0.3em]
-$\sqrt{u^{2}-a^{2}},\ a>0$ &
-$u=a\sec t,\quad t \in \left[ { - \pi , - \frac{\pi }{2}} \right[ \cup \left[ {0,\frac{\pi }{2}} \right[$ \\[0.3em]
-$\sqrt{u^{2}+a^{2}},\ a>0$ &
-$u=a\tan t,\quad t\in\,]-\dfrac{\pi}{2},\dfrac{\pi}{2}[$ \\ \hline
-\end{tabular}
-\end{center}
 % =================================================================
 % Integralen - inhoud en lengte (2 kolommen: tekst links, figuur rechts)
 % =================================================================
