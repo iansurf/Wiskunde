@@ -10,9 +10,9 @@
 \contentsline {section}{\numberline {3}Veeltermen}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Vierkantsvergelijking}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Merkwaardige Producten en Ontbinding in Factoren}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Deelbaarheid in $\mathbb {R} [x]$}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Euclidische Deling}{5}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Schema van Horner}{5}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.3}Euclidische Deling}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Schema van Horner}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Deelbaarheid in $\mathbb {R} [x]$}{5}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Complexe getallen}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Rechthoekige coordinaten}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Poolcoördinaten}{6}{subsection.4.2}%
@@ -55,22 +55,23 @@
 \contentsline {subsection}{\numberline {11.4}Bol}{21}{subsection.11.4}%
 \contentsline {subsection}{\numberline {11.5}Basis reële functies}{22}{subsection.11.5}%
 \contentsline {section}{\numberline {12}Analyse}{23}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Limieten van rijen)}{23}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Limieten van functies}{23}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Limieten van goniometrische functies}{23}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Methodes bij het berekenen van limieten van functies}{24}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Afgeleiden}{25}{subsection.12.5}%
-\contentsline {subsubsection}{\numberline {12.5.1}Differentiaal}{25}{subsubsection.12.5.1}%
-\contentsline {subsubsection}{\numberline {12.5.2}Partiële afgeleiden en totale differentiaal}{25}{subsubsection.12.5.2}%
-\contentsline {subsubsection}{\numberline {12.5.3}Afgeleiden - differentialen}{26}{subsubsection.12.5.3}%
-\contentsline {subsection}{\numberline {12.6}Integralen}{27}{subsection.12.6}%
-\contentsline {subsubsection}{\numberline {12.6.1}Afgeleiden - fundamentele integralen}{27}{subsubsection.12.6.1}%
-\contentsline {subsection}{\numberline {12.7}Substitutie}{27}{subsection.12.7}%
-\contentsline {subsection}{\numberline {12.8}Partiële integratie}{27}{subsection.12.8}%
-\contentsline {subsubsection}{\numberline {12.8.1}Integralen van rationale functies}{28}{subsubsection.12.8.1}%
-\contentsline {subsubsection}{\numberline {12.8.2}Integralen van irrationale functies}{28}{subsubsection.12.8.2}%
-\contentsline {subsubsection}{\numberline {12.8.3}Formules voor goniometrische integralen}{29}{subsubsection.12.8.3}%
-\contentsline {subsubsection}{\numberline {12.8.4}Integralen: inhoud en lengte}{30}{subsubsection.12.8.4}%
+\contentsline {subsection}{\numberline {12.1}Limieten}{23}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Limieten van rijen)}{23}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Limieten van functies}{23}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Limieten van goniometrische functies}{23}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.4}Methodes bij het berekenen van limieten van functies}{24}{subsubsection.12.1.4}%
+\contentsline {subsection}{\numberline {12.2}Afgeleiden}{25}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Differentiaal}{25}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Partiële afgeleiden en totale differentiaal}{25}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.3}Afgeleiden - differentialen}{26}{subsubsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.3}Integralen}{27}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Afgeleiden - fundamentele integralen}{27}{subsubsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.2}Substitutie}{27}{subsubsection.12.3.2}%
+\contentsline {subsubsection}{\numberline {12.3.3}Partiële integratie}{27}{subsubsection.12.3.3}%
+\contentsline {subsubsection}{\numberline {12.3.4}Integralen van rationale functies}{28}{subsubsection.12.3.4}%
+\contentsline {subsubsection}{\numberline {12.3.5}Integralen van irrationale functies}{28}{subsubsection.12.3.5}%
+\contentsline {subsubsection}{\numberline {12.3.6}Formules voor goniometrische integralen}{29}{subsubsection.12.3.6}%
+\contentsline {subsubsection}{\numberline {12.3.7}Integralen: inhoud en lengte}{30}{subsubsection.12.3.7}%
 \contentsline {section}{\numberline {13}Rijen - Reeksen}{31}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Maclaurinreeksen, hyperbolische functies}{31}{subsection.13.1}%
 \contentsline {section}{\numberline {14}Combinatieleer}{32}{section.14}%

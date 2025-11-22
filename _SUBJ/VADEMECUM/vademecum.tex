@@ -271,26 +271,15 @@ ax^2 + bx + c = a(x - x_1)(x - x_2) = a(x^2 - Sx + P) & \\
 \end{array}
 \]
 
-\subsection{Deelbaarheid in $\mathbb{R} [x]$}
-
-\[
-V(x),\:D(x),\:Q(x),\:R(x)\:\in \mathbb{R}[x] : \frac{V(x)}{D(x)}= Q(x) + R(x)
-\]
-
-\[
-Reststelling\; : \;\frac{V(x)}{x-a}\Rightarrow R(x)=V(a)
-\]
-
 \newpage
 
 \subsection{Euclidische Deling}
-We gaan de derdegraadsveelterm $2x^3 + 3x^2 - 4x + 5$ delen door de eerstegraadsveelterm $x + 2$ met behulp van de praktische werkwijze van lange deling.
-
+\Large $\frac{V(x)}{D(x)}$ \normalsize
 \[
 \begin{array}{r !{\vrule width 1pt} l}
-   2x^3 + 3x^2 - 4x + 5\; & x + 2 \\
+  V(x)\leftarrow 2x^3 + 3x^2 - 4x + 5\; & x + 2 \rightarrow D(x) \\
   \noalign{\hrule height 1pt}
-  -(2x^3 + 4x^2 + 0x + 0) & 2x^2 \\
+  -(2x^3 + 4x^2 + 0x + 0) & 2x^2 \textcolor{red}{-x} \textcolor{blue}{-2} \rightarrow Q(x)  \\
   \hline
   \textcolor{red}{- 1x^2 - 4x + 5\;} & \\
   \textcolor{red}{-(-1x^2 - 2x + 0)} & \textcolor{red}{-x} \\
@@ -298,16 +287,24 @@ We gaan de derdegraadsveelterm $2x^3 + 3x^2 - 4x + 5$ delen door de eerstegraads
   \textcolor{blue}{-2x + 5} & \\
   \textcolor{blue}{-(-2x - 4)} & \textcolor{blue}{-2} \\
   \hline
-  \textcolor{purple}{9} & 
+  R(x)\leftarrow \textcolor{purple}{9} & 
 \end{array}
 \]
 
-We kunnen de deling als volgt uitdrukken:
-\[
-2x^3 + 3x^2 - 4x + 5 = (x + 2)(2x^2 - x - 2) + 9
-\]
+$
+\underbrace{2x^3 + 3x^2 - 4x + 5}_{\text{deeltal}}
+\;=\;
+\underbrace{(2x^2 - x - 2)}_{\text{quotiënt}}
+\;\cdot\;
+\underbrace{(x + 2)}_{\text{deler}}
+\;+\;
+\underbrace{9}_{\text{rest}}
+$
 
-De rest is $9$, wat een graad heeft die kleiner is dan de graad van de deler $x + 2$.
+$
+V(x)=Q(x)\cdot D(x)+R(x) \Rightarrow \deg R(x) < \deg D(x)
+\quad\quad\quad$ deg = graad
+
 
 
 \subsection{Schema van Horner}
@@ -352,6 +349,23 @@ De rest is $9$, wat een graad heeft die kleiner is dan de graad van de deler $x 
     \draw[thick, -] (3.2, 0) -- (3.2, -0.5); % Vertical axis
 \end{tikzpicture}
 
+\subsection{Deelbaarheid in $\mathbb{R} [x]$}
+
+\[
+\begin{array}{|l|l|}
+\hline
+\displaystyle V(x),\:D(x),\:Q(x),\:R(x)\:\in \mathbb{R}[x] : \frac{V(x)}{D(x)}\xrightarrow{\text{Euclid }} (Q(x),R(x)) \\ \xrightarrow\!V(x)=Q(x) \cdot D(x)+ R(x) \rightarrow \frac{V(x)}{D(x)}=Q(x)+\frac{R(x)}{D(x)} \\ 
+\hline
+\displaystyle (x-a)|V(x)\Rightarrow V(x)=Q(x).D(x) \Leftrightarrow R(x)=0 \\
+\hline
+\displaystyle \frac{V(x)}{(x-a)}\Rightarrow V(a)=R(x) \\
+\hline
+\displaystyle x - a \;\big|\; a_n x^{\,n} + a_{n-1} x^{\,n-1} + \cdots + a_1 x + a_0
+\;\Rightarrow\;
+a \,\big|\, a_0 \\
+\hline
+\end{array}
+\]
 
 \newpage
 
@@ -2327,7 +2341,8 @@ $ \\
 \newpage
 
 \section{Analyse}
-\subsection{Limieten van rijen)}
+\subsection{Limieten}
+\subsubsection{Limieten van rijen)}
 \fontsize{14pt}{15pt}\selectfont
 $\begin{array}{|l|}
 \hline
@@ -2337,7 +2352,7 @@ $\begin{array}{|l|}
 \hline
 \end{array}$
 \normalsize
-\subsection{Limieten van functies}
+\subsubsection{Limieten van functies}
 \fontsize{14pt}{15pt}\selectfont
 $\begin{array}{|l|}
 \hline
@@ -2356,7 +2371,7 @@ $\begin{array}{|l|}
 \hline
 \end{array}$
 
-\subsection{Limieten van goniometrische functies}
+\subsubsection{Limieten van goniometrische functies}
 
 $\begin{array}{|l|l|}
 \hline
@@ -2375,7 +2390,7 @@ $\begin{array}{|l|l|}
 
 \newpage
 
-\subsection{Methodes bij het berekenen van limieten van functies}
+\subsubsection{Methodes bij het berekenen van limieten van functies}
 \par\vspace{0.3cm}
 % 
 % VEELTERM F
@@ -2734,7 +2749,7 @@ D{}^a\log x = \frac{1}{{x\ln a}} & * \\
 \end{array}
 $
 
-\subsection{Substitutie}
+\subsubsection{Substitutie}
 $ \displaystyle u = g(x) \Rightarrow du = g'(x)\,dx.
 \qquad
 \int f(g(x))\,g'(x)\,dx = \int f(u)\,du.
@@ -2742,7 +2757,7 @@ $ \displaystyle u = g(x) \Rightarrow du = g'(x)\,dx.
 \int_a^b f(g(x))\,g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du.
 $
  
-\subsection{Partiële integratie}
+\subsubsection{Partiële integratie}
 $\displaystyle \int {f(x)\;d(g(x)} ) = f(x).g(x) - \int {g(x)\;d(f(x)} )\\
 \int {u\;dv}  = u.v - \int {v\;du} $
 \normalsize
@@ -3374,39 +3389,56 @@ L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta
   }
 
   % main display arc range
-  \pgfmathsetmacro{\thetaplotA}{10}
-  \pgfmathsetmacro{\thetaplotB}{80}
-
-  % highlight only the visible ellipse arc
-  \draw[red!70!black]
-    plot[domain=\thetaplotA:\thetaplotB, samples=280, variable=\t]
-      ({rellipse(\t)*cos(\t)}, {rellipse(\t)*sin(\t)});
-
+  \pgfmathsetmacro{\thetaA}{10}
+  \pgfmathsetmacro{\thetaB}{80}
   % choose local θ and dθ
   \pgfmathsetmacro{\th}{50}
   \pgfmathsetmacro{\dth}{8}
 
+  % highlight only the visible ellipse arc
+  \draw[blue!70!black , <->]
+    plot[domain=\thetaA:\thetaB, samples=280, variable=\t]
+      ({rellipse(\t)*cos(\t)}, {rellipse(\t)*sin(\t)});
+
   % compute radii
   \pgfmathsetmacro{\rth}{rellipse(\th)}
   \pgfmathsetmacro{\rthp}{rellipse(\th+\dth)}
+  \pgfmathsetmacro{\rA}{rellipse(\thetaA)}
+  \pgfmathsetmacro{\rB}{rellipse(\thetaB)}
 
   % define key points
   \path coordinate (P) at (\th:\rth);
   \path coordinate (Q) at (\th+\dth:\rthp);
-
-  % red rays
+  \path coordinate (A) at (\thetaA:\rA);
+  \path coordinate (B) at (\thetaB:\rB);
+  
+  % black rays
   \draw[ black] (0,0) -- (P);
   \draw[ black] (0,0) -- (Q);
+  
+  % red rays
+  \draw[ red] (0,0) -- (A);
+  \draw[ red] (0,0) -- (B);
 
-% θ arc
-\draw[black, ->, >=stealth']
-  (1.5,0) arc[start angle=0, end angle=\th, radius=1.5];
-\node at ({0.5*\th}:1.7) {$\theta$};
+  % θ arc
+  \draw[black, ->, >=stealth']
+  (0:3) arc[start angle=0, end angle=\th, radius=3];
+  \node at ({0.5*\th}:3.2) {$\theta$};
 
-% dθ arc
-\draw[black, <->, >=stealth']
+  % dθ arc
+  \draw[black, <->, >=stealth']
   (\th:3) arc[start angle=\th, end angle=\th+\dth, radius=3];
-\node[black] at ({\th+0.5*\dth}:3.4) {$\mathrm d\theta$};
+  \node[black] at ({\th+0.5*\dth}:3.4) {$\mathrm d\theta$};
+
+  % A arc
+  \draw[red, ->, >=stealth']
+  (0:1.5) arc[start angle=0, end angle=\thetaA, radius=1.5];
+  \node[red] at ({0.5*\thetaA}:1.7) {$\alpha$};
+
+  % B arc
+  \draw[red, ->, >=stealth']
+  (0:2) arc[start angle=0, end angle=\thetaB, radius=2];
+  \node[red] at ({0.5*\thetaB}:2.2) {$\beta$};
 
   % annotate r=f(θ)
   \node[red!70!black] at ($(P)!0.5!(Q)+(2,0)$) {$r=f(\theta)$};
@@ -3827,37 +3859,79 @@ $z$ & .00 & .01 & .02 & .03 & .04 & .05 & .06 & .07 & .08 & .09\\
 \subsection{Schatters, betrouwbaarheidsintervallen}
 
 \begin{flushleft}
-\begin{tabular}{|p{0.22\linewidth}|p{0.38\linewidth}|p{0.38\linewidth}|}
+\begin{tabular}{|p{0.2\linewidth}|p{0.32\linewidth}|p{0.42\linewidth}|}
 \hline
-\textbf{Puntschatting} & \textbf{Populatieparameter} & \textbf{Schatter uit de steekproef} \\
+\textbf{puntschatting} &
+\textbf{Populatieparameter} &
+\textbf{Schatter uit de steekproef} \\
 \hline
- & $p$ (proportie) & $\hat{p}$ \\
- & $\mu$ (gemiddelde) & $\bar{x}$ of $\hat{\mu}$ \\
- & $\sigma$ (standaardafwijking) & $s$ of $\hat{\sigma}$ \\
+
+% ---------- Row 1 ----------
+&
+\(
+\begin{array}{l}
+p\;(\text{proportie})\\
+\mu\;(\text{gemiddelde})\\
+\sigma\;(\text{standaardafwijking})
+\end{array}
+\)
+&
+\(
+\begin{array}{l}
+\hat{p} \\
+\bar{x}\ \text{of}\ \hat{\mu} \\
+s\ \text{of}\ \hat{\sigma}
+\end{array}
+\)
+\\
 \hline
-$\alpha\%$ - betrouwbaarheidsinterval &
-Betrouwbaarheid $\alpha$ &
-\begin{tabular}{c|ccccc}
- & 80\% & 90\% & 95\% & 98\% & 99\% \\ 
+
+% ---------- Row 2 (nested array) ----------
+\(
+\begin{array}{c}
+\alpha\%\text{-} \\
+\text{betrouw-} \\
+\text{baarheids-} \\
+\text{interval}
+\end{array}
+\)
+&
+\multicolumn{2}{l|}{%
+\(
+\begin{array}{c|c|c|c|c|c}
+\text{Betrouwbaarheid } \alpha & 80\% & 90\% & 95\% & 98\% & 99\% \\ \hline
+\text{Kritieke waarde } z_\alpha & 1{,}28 & 1{,}65 & 1{,}96 & 2{,}33 & 2{,}58
+\end{array}
+\)
+}
+\\
 \hline
-$z_\alpha$ & 1{,}28 & 1{,}65 & 1{,}96 & 2{,}33 & 2{,}58 \\
-\end{tabular} \\
-\hline
+
+% ---------- Row 4: Proportie ----------
 \textbf{Intervalschatting proportie} &
-$\mu_{\hat{p}} = p, \quad \sigma_{\hat{p}} = \frac{1}{\sqrt{n}}\sqrt{pq}$ &
-Betrouwbaarheidsinterval: $\hat{p} \pm z_\alpha \cdot \sigma_{\hat{p}}$ \\
+\(
+\mu_{\hat{p}} = p,\quad
+\sigma_{\hat{p}} = \frac{1}{\sqrt{n}}\sqrt{pq}
+\)
+&
+Betrouwbaarheidsinterval: \(\hat{p} \pm z_\alpha \cdot \sigma_{\hat{p}}\)
+\\
 \hline
+
+% ---------- Row 5: Normaalverdeling ----------
 \textbf{Intervalschatting normaalverdeling} &
  &
-Betrouwbaarheidsinterval: $\bar{x} \pm z_\alpha \cdot \frac{\sigma}{\sqrt{n}}$ \\
+Betrouwbaarheidsinterval: \(\bar{x} \pm z_\alpha \cdot \frac{\sigma}{\sqrt{n}}\)
+\\
 \hline
+
 \end{tabular}
 \end{flushleft}
 
 \subsection{Regressie}
 
 \begin{flushleft}
-\begin{tabular}{|p{0.44\linewidth}|p{0.50\linewidth}|}
+\begin{tabular}{|p{0.25\linewidth}|p{0.73\linewidth}|}
 \hline
 \textbf{Regressielijn} &
 $a = \dfrac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2} 
