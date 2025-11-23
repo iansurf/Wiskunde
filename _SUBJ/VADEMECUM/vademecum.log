@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 NOV 2025 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 NOV 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1750,6 +1750,40 @@ Overfull \hbox (5.34532pt too wide) in paragraph at lines 3984--3999
 
 [35]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4298.
+
+
+Overfull \hbox (3.89668pt too wide) in paragraph at lines 4301--4356
+[] 
+ []
+
+
+
 [36]
 
 [37]
@@ -1760,20 +1794,22 @@ Overfull \hbox (5.34532pt too wide) in paragraph at lines 3984--3999
 
 [40]
 
-[41] (vademecum.aux)
+[41]
+
+[42] (vademecum.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: D915B52C6191E99873DEB566EB425812;17928.
+(rerunfilecheck)             Checksum: AC41C939D7543886A1E51731235E65C0;18303.
  ) 
 Here is how much of TeX's memory you used:
- 45290 strings out of 468133
- 1009113 string characters out of 5431680
- 1635975 words of memory out of 5000000
- 72831 multiletter control sequences out of 15000+600000
- 813849 words of font info for 284 fonts, out of 8000000 for 9000
+ 45293 strings out of 468133
+ 1009156 string characters out of 5431680
+ 1636014 words of memory out of 5000000
+ 72833 multiletter control sequences out of 15000+600000
+ 809563 words of font info for 283 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,55n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxf
@@ -1798,22 +1834,21 @@ rams/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Ian/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Ian/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/lm/lmr9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/font
-s/type1/public/lm/lmri10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmsy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmsy7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-m/lmsy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-msy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (41 pages, 975913 bytes).
+s/type1/public/lm/lmri9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmssbx10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmsy10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy5.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmsy6.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmsy7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmsy8.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmsy9.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on vademecum.pdf (42 pages, 966673 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
- 105253 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 155 named destinations out of 1000 (max. 500000)
+ 103213 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -4295,6 +4295,68 @@ Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \alpha$ & Vergelijk: $P \leq \al
 \end{tabular}
 \end{center}
 
+\subsection{Significantieniveau ($\alpha$-waarde: sociaal $0{,}05$ / medisch $0{,}01$)}
+
+\small
+\begin{tabular}{|p{0.20\linewidth}|p{0.38\linewidth}|p{0.38\linewidth}|}
+\hline
+\rowcolor{gray!15}
+\textbf{Data} &
+\textbf{1 Sample $(n,\bar{x},s)$} &
+\textbf{2 Samples $(n_1,\bar{x}_1,s_1),(n_2,\bar{x}_2,s_2)$} \\
+\hline
+
+\textbf{Hypothese} & $H_0:\ \mu=\mu_0$ & $H_0:\ \mu_1=\mu_2$ \\
+& $H_A:\ \mu\neq \mu_0$ & $H_A:\ \mu_1\neq\mu_2$ \\
+\hline
+
+\textbf{Continue \& normaal verdeeld}\\
+$\mu,\sigma$ bekend \\[1ex]
+$n\ge 30$ &
+\[
+Z_{\bar{x}}=\frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)
+\]
+\[
+\text{One-sample Z-test}
+\] &
+\[
+Z=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma^2}{n_1}+\frac{\sigma^2}{n_2}}}
+\]
+\[
+\text{Two-sample Z-test}
+\] \\
+\hline
+
+\textbf{$\mu,\sigma$ onbekend} &
+\[
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}
+\]
+One-sample T-test &
+\[
+t=\frac{(\bar{x}_1-\bar{x}_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+\]
+\[
+\text{Two-sample T-test}
+\] \\
+\hline
+
+\textbf{Binomiale verdeling $p$}\\
+$pn\ge 10$ \& $(1-p)n\ge 10$ &
+\[
+z=\frac{\hat{p}-p_0}{\sqrt{p_0(1-p_0)/n}}
+\]
+Z-test voor proporties &
+\[
+z=\frac{\hat{p}_1-\hat{p}_2}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+\]
+met $\displaystyle \hat{p}=\frac{x_1+x_2}{n_1+n_2}$
+\\
+\hline
+\end{tabular}
+
+
+
+
 \section{Kans}
 
 % ---------------------------------------------------
