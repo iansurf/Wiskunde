@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {15.5}Test van een hypothese over een populatieproportie}{35}{subsection.15.5}%
 \contentsline {subsection}{\numberline {15.6}Test van een hypothese over het gemiddelde van een normaalverdeling via de P-waarde}{36}{subsection.15.6}%
 \contentsline {subsection}{\numberline {15.7}Test van een hypothese over een populatieproportie via de P-waarde}{36}{subsection.15.7}%
-\contentsline {subsection}{\numberline {15.8}Significantieniveau ($\alpha $-waarde: sociaal $0{,}05$ / medisch $0{,}01$)}{37}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.8}IN ONTWERP : Significantieniveau ($\alpha $-waarde: sociaal $0{,}05$ / medisch $0{,}01$)}{37}{subsection.15.8}%
 \contentsline {section}{\numberline {16}Kans}{38}{section.16}%
 \contentsline {section}{\numberline {17}Diversen}{39}{section.17}%
 \contentsline {subsection}{\numberline {17.1}Wiskundige symbolen (ISO 80000-2)}{39}{subsection.17.1}%

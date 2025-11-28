@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  23 NOV 2025 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.18)  28 NOV 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -176,12 +176,31 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen162
 \titlewidthfirst=\dimen163
 )
+(C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip54
+\f@nch@offset@elh=\skip55
+\f@nch@offset@erh=\skip56
+\f@nch@offset@olh=\skip57
+\f@nch@offset@orh=\skip58
+\f@nch@offset@elf=\skip59
+\f@nch@offset@erf=\skip60
+\f@nch@offset@olf=\skip61
+\f@nch@offset@orf=\skip62
+\f@nch@height=\skip63
+\f@nch@footalignment=\skip64
+\f@nch@widthL=\skip65
+\f@nch@widthC=\skip66
+\f@nch@widthR=\skip67
+\@temptokenb=\toks22
+)
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.st
 y (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-c
 ommon.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks23
 \pgfutil@tempdima=\dimen164
 \pgfutil@tempdimb=\dimen165
 )
@@ -224,12 +243,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.c
 ode.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysli
 braryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks26
 ))
 \pgf@x=\dimen168
 \pgf@y=\dimen169
@@ -247,9 +266,9 @@ braryfiltered.code.tex
 \c@pgf@countb=\count292
 \c@pgf@countc=\count293
 \c@pgf@countd=\count294
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
 \pgf@sys@id@count=\count295
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
@@ -307,9 +326,9 @@ code.tex
 \pgfmath@dimen=\dimen178
 \pgfmath@count=\count298
 \pgfmath@box=\box56
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
 ns.code.tex)
@@ -468,8 +487,8 @@ de.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen261
 \pgffor@skip=\dimen262
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
 ))
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\
 tikz.code.tex
@@ -619,13 +638,13 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen297
 \ar@mcellbox=\box67
 \extrarowheight=\dimen298
-\NC@list=\toks34
-\extratabsurround=\skip54
-\backup@length=\skip55
+\NC@list=\toks35
+\extratabsurround=\skip68
+\backup@length=\skip69
 \ar@cellbox=\box68
 )
-\everycr=\toks35
-\minrowclearance=\skip56
+\everycr=\toks36
+\minrowclearance=\skip70
 \rownum=\count318
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
@@ -640,9 +659,9 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 tex
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.c
 ode.tex
-\t@pgfplots@toka=\toks36
-\t@pgfplots@tokb=\toks37
-\t@pgfplots@tokc=\toks38
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
 \pgfplots@tmpa=\dimen299
 \c@pgfplots@coordindex=\count319
 \c@pgfplots@scanlineindex=\count320
@@ -656,9 +675,9 @@ ibrary.code.tex)
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
 yfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib
 \pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -677,7 +696,7 @@ pgfplotsmatrix.code.tex)
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfpl
 otstableshared.code.tex
 \c@pgfplotstable@counta=\count322
-\t@pgfplotstable@a=\toks42
+\t@pgfplotstable@a=\toks43
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\
 pgfplotsdeque.code.tex)
@@ -747,8 +766,8 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks43
-\XKV@tempa@toks=\toks44
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
 )
 \XKV@depth=\count325
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -790,9 +809,9 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ) (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count327
-\float@exts=\toks45
+\float@exts=\toks46
 \float@box=\box71
-\@float@everytoks=\toks46
+\@float@everytoks=\toks47
 \@floatcapt=\box72
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
@@ -804,19 +823,19 @@ Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count329
 \calc@Adimen=\dimen320
 \calc@Bdimen=\dimen321
-\calc@Askip=\skip57
-\calc@Bskip=\skip58
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count330
-\calc@Cskip=\skip59
+\calc@Cskip=\skip73
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
-\@mathmargin=\skip60
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -824,7 +843,7 @@ Package: amstext 2024/11/17 v2.01 AMS text
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks47
+\@emptytoks=\toks48
 \ex@=\dimen322
 ))
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -864,27 +883,27 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count338
 \dspbrk@lvl=\count339
-\tag@help=\toks48
+\tag@help=\toks49
 \row@=\count340
 \column@=\count341
 \maxfields@=\count342
-\andhelp@=\toks49
+\andhelp@=\toks50
 \eqnshift@=\dimen325
 \alignsep@=\dimen326
 \tagshift@=\dimen327
 \tagwidth@=\dimen328
 \totwidth@=\dimen329
 \lineht@=\dimen330
-\@envbody=\toks50
-\multlinegap=\skip61
-\multlinetaggap=\skip62
-\mathdisplay@stack=\toks51
+\@envbody=\toks51
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks52
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 )
 \g_MT_multlinerow_int=\count343
 \l_MT_multwidth_dim=\dimen331
-\origjot=\skip63
+\origjot=\skip77
 \l_MT_shortvdotswithinadjustabove_dim=\dimen332
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen333
 \l_MT_above_intertext_sep=\dimen334
@@ -923,7 +942,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@target=\dimen342
 \TX@delta=\dimen343
 \TX@cols=\count344
-\TX@ftn=\toks52
+\TX@ftn=\toks53
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
@@ -939,8 +958,8 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \page@free=\dimen346
 \premulticols=\dimen347
 \postmulticols=\dimen348
-\multicolsep=\skip64
-\multicolbaselineskip=\skip65
+\multicolsep=\skip78
+\multicolbaselineskip=\skip79
 \partial@page=\box77
 \last@line=\box78
 \mc@boxedresult=\box79
@@ -998,9 +1017,9 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip66
+\labelindent=\skip80
 \enit@outerparindent=\dimen353
-\enit@toks=\toks53
+\enit@toks=\toks54
 \enit@inbox=\box122
 \enit@count@id=\count356
 \enitdp@description=\count357
@@ -1146,11 +1165,11 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip67
+\Hy@SectionHShift=\skip81
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 109.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-3.
+8.
  (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1164,34 +1183,34 @@ Package babel Info: 'dutch' activates 'dutch' shorthands.
 )
 \openout1 = `vademecum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen366
 \MT@vwid@rightmargin=\dimen367
-LaTeX Info: Redefining \microtypecontext on input line 113.
-Package microtype Info: Applying patch `item' on input line 113.
-Package microtype Info: Applying patch `toc' on input line 113.
-Package microtype Info: Applying patch `eqnum' on input line 113.
-Package microtype Info: Applying patch `footnote' on input line 113.
-Package microtype Info: Applying patch `verbatim' on input line 113.
-LaTeX Info: Redefining \microtypesetup on input line 113.
+LaTeX Info: Redefining \microtypecontext on input line 118.
+Package microtype Info: Applying patch `item' on input line 118.
+Package microtype Info: Applying patch `toc' on input line 118.
+Package microtype Info: Applying patch `eqnum' on input line 118.
+Package microtype Info: Applying patch `footnote' on input line 118.
+Package microtype Info: Applying patch `verbatim' on input line 118.
+LaTeX Info: Redefining \microtypesetup on input line 118.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1227,7 +1246,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=30.0pt
+* \footskip=8.5359pt
 * \marginparwidth=3.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
@@ -1249,12 +1268,12 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 \scratchbox=\box123
 \nofMPsegments=\count373
 \nofMParguments=\count374
-\everyMPshowfont=\toks54
+\everyMPshowfont=\toks55
 \MPscratchCnt=\count375
 \MPscratchDim=\dimen369
 \MPnumerator=\count376
 \makeMPintoPDFobject=\count377
-\everyMPtoPDFconversion=\toks55
+\everyMPtoPDFconversion=\toks56
 )
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-bas
 e.sty
@@ -1271,42 +1290,42 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 113.
+Package hyperref Info: Link coloring ON on input line 118.
 (vademecum.out) (vademecum.out)
 \@outlinefile=\write4
 \openout4 = `vademecum.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-24.
+29.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-24.
+29.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-124.
+129.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-124.
+129.
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 124.
+(Font)              <9> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 124.
+(Font)              <6> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 124.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 124
+(Font)              <5> on input line 129.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 129
 .
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1315,7 +1334,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 124
+LaTeX Font Info:    Trying to load font information for U+msb on input line 129
 .
 
 (C:\Users\Ian\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1338,6 +1357,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported on input line 45.
  [1
 
 {C:/Users/Ian/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Ian/Ap
@@ -1350,79 +1371,109 @@ ograms/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}])
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 136.
+(Font)              <10> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 168.
+(Font)              <12> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 168.
+(Font)              <8> on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 168.
+(hyperref)                removing `math shift' on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 168.
+(hyperref)                removing `math shift' on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 198.
 
 
 
-Package babel Info: 'dutch' activates 'dutch' shorthands.
-(babel)             Reported on input line 212.
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [3{C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
 ]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [4]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 277.
+(Font)              <14.4> on input line 282.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 352.
+(hyperref)                removing `math shift' on input line 357.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 352.
+(hyperref)                removing `math shift' on input line 357.
 
 
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [5]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [6]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [7]
-Overfull \hbox (9.60321pt too wide) in paragraph at lines 640--641
+Overfull \hbox (9.60321pt too wide) in paragraph at lines 645--646
  [] 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [8]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [9]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 849.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 854.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 850.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 851.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 853.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 855.
 
 
 
@@ -1430,215 +1481,313 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 856.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 857.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 858.
 
 
 
-Overfull \hbox (12.44386pt too wide) detected at line 918
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 861.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 862.
+
+
+
+Overfull \hbox (12.44386pt too wide) detected at line 923
 []
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [10]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [11]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [12]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [13]
-Overfull \hbox (1.36838pt too wide) detected at line 1344
+Overfull \hbox (1.36838pt too wide) detected at line 1349
 [] \OT1/lmr/m/n/9 = [][] + [][] + [][][][][][][][]
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1524.
+(hyperref)                removing `math shift' on input line 1529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\not' on input line 1524.
+(hyperref)                removing `\not' on input line 1529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1524.
+(hyperref)                removing `math shift' on input line 1529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1560.
+(hyperref)                removing `math shift' on input line 1565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1560.
+(hyperref)                removing `\times' on input line 1565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1560.
+(hyperref)                removing `math shift' on input line 1565.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1567
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1572
 .
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 1580
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 1585
 .
 
 
-Overfull \hbox (9.56439pt too wide) in paragraph at lines 1561--1581
+Overfull \hbox (9.56439pt too wide) in paragraph at lines 1566--1586
 $[] \OMS/lmsy/m/n/10 ^ []  6\OT1/lmr/m/n/10 (-20) =  0  \OMS/lmsy/m/n/10 )  \OM
 L/lmm/m/it/10 V \OT1/lmr/m/n/10 (-20) =  []$ 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1582.
+(hyperref)                removing `math shift' on input line 1587.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1582.
+(hyperref)                removing `math shift' on input line 1587.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1582.
+(hyperref)                removing `math shift' on input line 1587.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1582.
+(hyperref)                removing `math shift' on input line 1587.
 
 
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [15]
-Overfull \hbox (13.47418pt too wide) in paragraph at lines 1601--1632
+Overfull \hbox (13.47418pt too wide) in paragraph at lines 1606--1637
 []$ 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [16]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [17]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [18]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2075.
+(hyperref)                removing `math shift' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 2075.
+(hyperref)                removing `\alpha' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 2075.
+(hyperref)                removing `\beta' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2075.
+(hyperref)                removing `math shift' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2075.
+(hyperref)                removing `math shift' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 2075.
+(hyperref)                removing `superscript' on input line 2080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2075.
+(hyperref)                removing `math shift' on input line 2080.
 
 
-Overfull \hbox (14.29456pt too wide) in paragraph at lines 2113--2114
+Overfull \hbox (14.29456pt too wide) in paragraph at lines 2118--2119
  [][] 
  []
 
 
-Overfull \hbox (14.81902pt too wide) detected at line 2240
+Overfull \hbox (14.81902pt too wide) detected at line 2245
 []
  []
 
 
-Overfull \hbox (16.61432pt too wide) detected at line 2275
+Overfull \hbox (16.61432pt too wide) detected at line 2280
 []
  []
 
 
-Overfull \hbox (21.43028pt too wide) detected at line 2292
+Overfull \hbox (21.43028pt too wide) detected at line 2297
 []
  []
 
 
-Overfull \hbox (24.31892pt too wide) in paragraph at lines 2306--2307
+Overfull \hbox (24.31892pt too wide) in paragraph at lines 2311--2312
  [] 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [20]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [21]
 
-[22]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 2397.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 2397.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 2397.
 
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
+[22]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 2402.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14> on input line 2402.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.79996> on input line 2402.
+
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2448--2450
+Underfull \hbox (badness 10000) in paragraph at lines 2453--2455
 
  []
 
 
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 2530--2531
+Underfull \hbox (badness 10000) in paragraph at lines 2535--2536
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 2585.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 2590.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2585.
+(Font)              <13> on input line 2590.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 2585.
+(Font)              <9.09996> on input line 2590.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 2585.
+(Font)              <6.5> on input line 2590.
 
-Overfull \hbox (10.34769pt too wide) detected at line 2591
+Overfull \hbox (10.34769pt too wide) detected at line 2596
 \OML/lmm/m/it/13 f[]\OT1/lmr/m/n/13 (\OML/lmm/m/it/13 a\OT1/lmr/m/n/13 ) = [] [
 ] = [] [] = [] [] = [][] [] 
  []
 
 
-Overfull \hbox (9.2499pt too wide) in paragraph at lines 2605--2702
+Overfull \hbox (9.2499pt too wide) in paragraph at lines 2610--2707
 [] 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [25]
-Overfull \hbox (1.96332pt too wide) detected at line 2754
+Overfull \hbox (1.96332pt too wide) detected at line 2759
 []
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [26]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [27]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2820.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2825.
 
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 2820--2836
+Underfull \hbox (badness 1184) in paragraph at lines 2825--2841
 []|$\OML/lmm/m/it/9 Stelling van d[]Alembert \OT1/lmr/m/n/9 (+20) : \OML/lmm/m/
 it/9 V\OT1/lmr/m/n/9 (+20) (\OML/lmm/m/it/9 x\OT1/lmr/m/n/9 (+20) ) = [][](\OML
 /lmm/m/it/9 a[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]\OT1/lmr/m/n/9 (+20)
@@ -1648,153 +1797,228 @@ lmr/m/n/9 (+20) + \OML/lmm/m/it/9 b[]x \OT1/lmr/m/n/9 (+20) + \OML/lmm/m/it/9 c
  []
 
 
-Overfull \hbox (5.05081pt too wide) in paragraph at lines 2845--2860
+Overfull \hbox (5.05081pt too wide) in paragraph at lines 2850--2865
 []|$[]  \OT1/lmr/m/n/9 (-20) =  []  []  + []  []$ 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [28]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [29]
-Overfull \hbox (14.48297pt too wide) in paragraph at lines 3173--3174
+Overfull \hbox (14.48297pt too wide) in paragraph at lines 3178--3179
 [][] 
  []
 
 
-Overfull \hbox (34.60213pt too wide) in paragraph at lines 3340--3341
+Overfull \hbox (34.60213pt too wide) in paragraph at lines 3345--3346
 [][] 
  []
 
 
-Overfull \hbox (83.00232pt too wide) in paragraph at lines 3411--3412
+Overfull \hbox (83.00232pt too wide) in paragraph at lines 3416--3417
 [][] 
  []
 
 
-Overfull \hbox (53.41187pt too wide) in paragraph at lines 3496--3497
+Overfull \hbox (53.41187pt too wide) in paragraph at lines 3501--3502
 [][] 
  []
 
 
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [30]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [31]
-Overfull \hbox (1.19557pt too wide) detected at line 3602
+Overfull \hbox (1.19557pt too wide) detected at line 3607
 \OML/lmm/m/it/9 C[] \OT1/lmr/m/n/9 = [] = [] = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3604--3605
+Underfull \hbox (badness 10000) in paragraph at lines 3609--3610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3608--3609
+Underfull \hbox (badness 10000) in paragraph at lines 3613--3614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3612--3613
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3618
 
  []
 
 
-Overfull \hbox (2.06549pt too wide) detected at line 3645
+Overfull \hbox (2.06549pt too wide) detected at line 3650
 [][] \OT1/lmr/m/n/9 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3656--3657
+Underfull \hbox (badness 10000) in paragraph at lines 3661--3662
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3662--3663
+Underfull \hbox (badness 10000) in paragraph at lines 3667--3668
 
  []
 
 
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [32]
-Overfull \hbox (2.81992pt too wide) in paragraph at lines 3756--3763
+Overfull \hbox (2.81992pt too wide) in paragraph at lines 3761--3768
 []|$[][]$| 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [33]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 3961--3961
+Underfull \hbox (badness 10000) in paragraph at lines 3966--3966
 []|\T1/lmr/bx/n/9 (+1) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3972--3972
+Underfull \hbox (badness 10000) in paragraph at lines 3977--3977
 []|\T1/lmr/bx/n/9 (+1) Intervalschatting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3972--3972
+Underfull \hbox (badness 10000) in paragraph at lines 3977--3977
 \T1/lmr/bx/n/9 (+20) nor-maal-ver-de-
  []
 
 
-Overfull \hbox (5.34532pt too wide) in paragraph at lines 3984--3999
+Overfull \hbox (5.34532pt too wide) in paragraph at lines 3989--4004
 []  
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 4298.
+(hyperref)                removing `\alpha' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4298.
+(hyperref)                removing `math shift' on input line 4303.
 
 
-Overfull \hbox (3.89668pt too wide) in paragraph at lines 4301--4356
+Overfull \hbox (3.89668pt too wide) in paragraph at lines 4306--4361
 [] 
  []
 
 
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [36]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [37]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [38]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [39]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [40]
 
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
+
 [41]
+
+
+Package fancyhdr Warning: \footskip is too small (8.5359pt): 
+(fancyhdr)                Make it at least 9.20001pt, for example:
+(fancyhdr)                \setlength{\footskip}{9.20001pt}.
 
 [42] (vademecum.aux)
  ***********
@@ -1802,13 +2026,13 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `vademecum.out' has not changed.
-(rerunfilecheck)             Checksum: AC41C939D7543886A1E51731235E65C0;18303.
+(rerunfilecheck)             Checksum: 291BDD8994D719172E5073714042B559;18377.
  ) 
 Here is how much of TeX's memory you used:
- 45293 strings out of 468133
- 1009156 string characters out of 5431680
- 1636014 words of memory out of 5000000
- 72833 multiletter control sequences out of 15000+600000
+ 45636 strings out of 468133
+ 1015444 string characters out of 5431680
+ 1644531 words of memory out of 5000000
+ 73172 multiletter control sequences out of 15000+600000
  809563 words of font info for 283 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,55n,117p,1008b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1846,7 +2070,7 @@ nts/symbols/msam10.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/symbols/msam7.pfb><C:/Users/Ian/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Ian/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on vademecum.pdf (42 pages, 966673 bytes).
+Output written on vademecum.pdf (42 pages, 968097 bytes).
 PDF statistics:
  924 PDF objects out of 1000 (max. 8388607)
  155 named destinations out of 1000 (max. 500000)
