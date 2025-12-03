@@ -32,7 +32,9 @@
 % ---------------------------------------------------------------------
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
-\usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,matrix,decorations.pathreplacing,arrows.meta}
+\usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,
+                matrix,decorations.pathreplacing,arrows.meta,
+                backgrounds,shapes.misc}
 \usetikzlibrary{arrows.meta}
 \usepackage{tikzpagenodes}
 \usepackage{booktabs, xcolor, colortbl}
@@ -121,11 +123,43 @@
 % --- Compact vademecum table style ---
 \AtBeginEnvironment{tabular}{\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{3pt}\small}
 
+\title{Vademecum-Formularium Wiskunde
 
-\title{Vademecum-Formularium Wiskunde}
+\tdplotsetmaincoords{55}{5}
+\begin{tikzpicture}
+	[scale=4,
+		tdplot_main_coords,
+		curve/.style={red,densely dotted,thick}]
+
+	\coordinate (O) at (0,0,0);
+	
+	\foreach \angle in {-90,-75,...,90}
+	{
+		%calculate the sine and cosine of the angle
+		\tdplotsinandcos{\sintheta}{\costheta}{\angle}%
+
+		%define a point along the z-axis through which to draw
+		%a circle in the xy-plane
+		\coordinate (P) at (0,0,\sintheta);
+
+		%draw the circle in the main frame
+		\tdplotdrawarc[curve]{(P)}{\costheta}{0}{360}{}{}
+		
+		%define the rotated coordinate frame based on the angle
+		\tdplotsetthetaplanecoords{\angle}
+		
+		%draw the circle in the rotated frame
+		\tdplotdrawarc[curve,tdplot_rotated_coords]{(O)}{1}{0}{360}{}{}
+	}
+\end{tikzpicture}
+}
+
+
 \author{Ian Claesen}
 \date{\today}
 \maketitle
+
+\newpage
 
 \scriptsize
 \tableofcontents
@@ -1793,7 +1827,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
 \begin{table}[h!]
 \begin{tabular}{|l|l|l|}
 \hline
-\textbf{Vorm} & \textbf{Formule} & \textbf{Variabelen} \\
+\textbf{Vorm} & \textbf{Formule} & \textbf{Variabelen} A=oppervlak \\
 \hline
 Vierkant & $A = s^2$ & $s$: zijlengte \\
 \hline
@@ -1810,6 +1844,8 @@ Trapezium & $A = \frac{1}{2} (b_1 + b_2).h$ & $b_1, b_2$: bases, $h$: hoogte \\
 Ellips & $A = \pi a.b$ & $a, b$: halve grote en halve kleine as \\
 \hline
 Regelmatig Veelhoek & $A = \frac{1}{2} P.a$ & $P$: omtrek, $a$: apothema \\
+\hline
+Bol & $A = 4\pi r^2$ & $r$: straal \\
 \hline
 \end{tabular}
 \end{table}
@@ -1872,6 +1908,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \[
 \vec u \cdot \vec v \;=\; \|\vec u\|\,\|\vec v\| \cos\theta \;=\; u_x \cdot v_x + u_y \cdot v_y + u_z \cdot v_z
 \]
+
 \subsubsection{Vectorieel product van vectoren (kruisproduct)}
 \[
 \vec{u} \times \vec{v}
@@ -1894,6 +1931,78 @@ v_x & v_y
 \end{vmatrix}
 \right) \in \mathbb{R}^3
 \]
+
+\subsection{Poolcoördinaten}
+
+\tdplotsetmaincoords{60}{120}
+\begin{tikzpicture}[
+    scale=0.4,
+    tdplot_main_coords,
+    axis/.style={->,blue,thick},
+    vector/.style={blue,very thick},
+    vector guide/.style={dashed,blue,thick},
+    angle/.style={->,red,thick},
+    font=\footnotesize,
+    note/.style={font=\huge}
+]
+
+  % origin
+  \coordinate (O) at (0,0,0);
+
+  % spherical point P = (r,theta,phi)
+  \tdplotsetcoord{P}{10}{55}{60}  % r=10, θ=55°, φ=60°
+
+  %------------------ GRID ON THREE PLANES ------------------
+  \foreach \i in {0,...,8}{
+    % back wall (x–z plane, y = 0)
+    \draw[gray!70] (\i,0,0) -- (\i,0,8);
+    \draw[gray!70] (0,0,\i) -- (8,0,\i);
+
+    % left wall (y–z plane, x = 0)
+    \draw[gray!70] (0,\i,0) -- (0,\i,8);
+    \draw[gray!70] (0,0,\i) -- (0,8,\i);
+
+    % floor (x–y plane, z = 0)
+    \draw[gray!70] (\i,0,0) -- (\i,8,0);
+    \draw[gray!70] (0,\i,0) -- (8,\i,0);
+  }
+
+  % axes (with bigger labels)
+  \draw[thick,->] (0,0,0) coordinate (Oagain) -- (8,0,0) coordinate (X)
+      node[anchor=north east, note] {$x$};
+  \draw[thick,->] (0,0,0) -- (0,8,0) coordinate (Y)
+      node[anchor=north west, note] {$y$};
+  \draw[thick,->] (0,0,0) -- (0,0,8) coordinate (Z)
+      node[anchor=south, note] {$z$};
+
+  %------------------ VECTOR r AND PROJECTIONS ------------------
+  % main vector r with cross and labels
+  \draw[vector] (O) -- (P)
+    node[cross out, draw, blue, thick,
+         minimum size=7pt, inner sep=0pt] {}
+    node[midway, above right, note, blue] {$r$}
+    node[above right=4pt, note, blue] {$(r,\theta,\varphi)$};
+
+  % guide lines to components (Pxy is created by \tdplotsetcoord)
+  \draw[vector guide] (O)  -- (Pxy);
+  \draw[vector guide] (Pxy) -- (P);
+
+  %------------------ ANGLES φ AND θ ------------------
+  % φ: angle from +z axis down to r
+  \tdplotdrawarc[
+    angle
+  ]{(O)}{5}{0}{60}{anchor=north, note}{$\varphi$}
+
+  % rotated coordinate frame for θ
+  \tdplotsetthetaplanecoords{55}
+
+  % θ: angle in the xy-plane from +x axis to projection of r
+  \tdplotdrawarc[
+    tdplot_rotated_coords,
+    angle
+  ]{(O)}{5}{0}{55}{anchor=south west, note}{$\theta$}
+
+\end{tikzpicture}
 
 \newpage
 
