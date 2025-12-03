@@ -1,15 +1,13 @@
-% =====================================================================
+\documentclass[a5paper]{article}
+%=====================================================================
 % VADEMECUM WISKUNDE – BASISPREAMBULE
 % Compacte en consistente LaTeX-setup (A5, ISO-notatie, nette wiskunde)
-% =====================================================================
-
-\documentclass[a5paper]{article}
-
-% ---------------------------------------------------------------------
+%=====================================================================
+%---------------------------------------------------------------------
 % Taal, typografie & microtypografie
-% ---------------------------------------------------------------------
-\usepackage[dutch]{babel}
+%---------------------------------------------------------------------
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{lmodern}
 \usepackage{microtype} % betere letter- en woordspatiëring
 
@@ -19,29 +17,15 @@
 \usepackage[margin=0.5cm]{geometry}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[R]{\scriptsize\thepage}
 \setlength{\footskip}{0.3cm}
+
 \titlespacing*{\section}{0pt}{*1}{0pt}
 \titlespacing*{\subsection}{0pt}{*0.5}{0pt}
 \setlength{\textfloatsep}{0pt} % minder witruimte rond figuren/tabellen
-
-% ---------------------------------------------------------------------
-% Tekenpakketten & grafische hulpmiddelen
-% ---------------------------------------------------------------------
-\usepackage{tikz}
-\usepackage{tikz-3dplot}
-\usetikzlibrary{perspective,positioning,angles,quotes,calc,babel,
-                matrix,decorations.pathreplacing,arrows.meta,
-                backgrounds,shapes.misc}
-\usetikzlibrary{arrows.meta}
-\usepackage{tikzpagenodes}
-\usepackage{booktabs, xcolor, colortbl}
-\usepackage{cancel}
-%\cancel{a}
-%\bcancel{a}   % opposite diagonal
-%\xcancel{a}   % both diagonals (like an X)
 
 % Use the optional short title for marks if provided
 \renewcommand{\sectionmark}[1]{%
@@ -49,6 +33,12 @@
 }
 
 % Always place section title in RIGHT margin
+\usepackage{tikz} % nodig vóór de hook hieronder
+
+% Enable Externalization
+%\usetikzlibrary{external}
+%\tikzexternalize[prefix=tikz/]
+
 \AddToHook{shipout/foreground}{%
   \begin{tikzpicture}[remember picture,overlay]
     \node[
@@ -62,12 +52,41 @@
   \end{tikzpicture}%
 }
 
+% ---------------------------------------------------------------------
+% Tekenpakketten & grafische hulpmiddelen
+% ---------------------------------------------------------------------
+
+\usepackage{tikz-3dplot}
+\usetikzlibrary{
+  perspective,
+  positioning,
+  angles,
+  quotes,
+  calc,
+  babel,
+  matrix,
+  decorations.pathreplacing,
+  arrows.meta,
+  backgrounds,
+  shapes.misc
+}
+\usepackage{tikzpagenodes}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{float}
+
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{cancel}
+% \cancel{a}
+% \bcancel{a}   % opposite diagonal
+% \xcancel{a}   % both diagonals (like an X)
 
 % ---------------------------------------------------------------------
 % Wiskunde & symboliek
@@ -98,8 +117,11 @@
 % ---------------------------------------------------------------------
 % Tabellen, lijsten & opmaak
 % ---------------------------------------------------------------------
-\usepackage{array,tabularx,multicol,enumitem}
-\usepackage{booktabs} % mooiere tabellen zonder verticale lijnen
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{enumitem}
+% booktabs & colortbl & xcolor reeds geladen hierboven
 
 % nieuwe kolom voor wiskundige formules in displaystijl
 \newcolumntype{E}{>{$\displaystyle}l<{$}}
@@ -108,6 +130,7 @@
 % Opschriften & hyperlinks
 % ---------------------------------------------------------------------
 \usepackage{caption}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -153,6 +176,7 @@
 	}
 \end{tikzpicture}
 }
+
 
 
 \author{Ian Claesen}
