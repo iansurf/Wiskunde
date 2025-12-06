@@ -37,7 +37,7 @@
 
 % Enable Externalization
 %\usetikzlibrary{external}
-%\tikzexternalize[prefix=tikz/]
+%\tikzexternalize[prefix=figures-tikz/]
 
 \AddToHook{shipout/foreground}{%
   \begin{tikzpicture}[remember picture,overlay]
@@ -147,50 +147,63 @@
 \AtBeginEnvironment{tabular}{\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{3pt}\small}
 
 \title{Vademecum-Formularium Wiskunde
-
 \tdplotsetmaincoords{55}{5}
-\begin{tikzpicture}
-	[scale=4,
-		tdplot_main_coords,
-		curve/.style={red,densely dotted,thick}]
-
-	\coordinate (O) at (0,0,0);
-	
-	\foreach \angle in {-90,-75,...,90}
-	{
-		%calculate the sine and cosine of the angle
-		\tdplotsinandcos{\sintheta}{\costheta}{\angle}%
-
-		%define a point along the z-axis through which to draw
-		%a circle in the xy-plane
-		\coordinate (P) at (0,0,\sintheta);
-
-		%draw the circle in the main frame
-		\tdplotdrawarc[curve]{(P)}{\costheta}{0}{360}{}{}
-		
-		%define the rotated coordinate frame based on the angle
-		\tdplotsetthetaplanecoords{\angle}
-		
-		%draw the circle in the rotated frame
-		\tdplotdrawarc[curve,tdplot_rotated_coords]{(O)}{1}{0}{360}{}{}
-	}
+\begin{center}
+\begin{tikzpicture}[scale=3]
+  \begin{axis}[
+    view={40}{60},
+    axis equal image,
+    hide axis,
+    clip=false,        % <-- horn may stick out of the cube, no clipping
+    z buffer=sort,     % <-- correct front/back ordering of the surface
+    trig format=rad,
+    declare function={
+      a = 2;
+      b = 6*pi;
+      c = 3*pi;
+    },
+  ]
+     \addplot3[
+      surf,
+      samples=60,
+      samples y=20,
+      domain=0:6*pi,
+      y domain=0:2*pi,
+      shader=interp,   % smooth color interpolation
+      draw=none,       % no mesh lines
+    ]
+    (
+      { a*(exp(x/b)-1)*cos(x)*(cos(y/2))^2 },
+      { a*(1-exp(x/b))*sin(x)*(cos(y/2))^2 },
+      { exp(x/b)*sin(y) - exp(x/c) - sin(y) + 1 }
+    );
+    \addplot3[
+      surf,
+      samples=60,
+      samples y=20,
+      domain=0:6*pi,
+      y domain=0:2*pi,
+      shader=flat,
+      draw=black,
+      mesh/ordering=y varies,
+    ]
+    (
+      { a*(exp(x/b)-1)*cos(x)*(cos(y/2))^2 },
+      { a*(1-exp(x/b))*sin(x)*(cos(y/2))^2 },
+      { exp(x/b)*sin(y) - exp(x/c) - sin(y) + 1 }
+    );
+  \end{axis}
 \end{tikzpicture}
+\end{center}
 }
-
-
-
 \author{Ian Claesen}
 \date{\today}
 \maketitle
-
 \newpage
-
 \scriptsize
 \tableofcontents
-
 \newpage
 \normalsize
-
 \section{Algebra}
 \subsection{Volgorde van Bewerking}
 Haakjes wegwerken, machtsverheffen, worteltrekken, vermenigvuldigen en delen, optellen en aftrekken.
@@ -375,7 +388,7 @@ V(x)=Q(x)\cdot D(x)+R(x) \Rightarrow \deg R(x) < \deg D(x)
 \frac{(3x^3-5x^2+10x-5)}{(x-2)}=3x^2+1x+12+\frac{19}{(x-2)}
 \]
 
-\begin{tikzpicture}[scale=1.5, every node/.style={font=\small}]
+\begin{tikzpicture}[name=Horner,scale=1.5, every node/.style={font=\small}]
     % Draw the axes
     \draw[thick, -] (-0.5, 0) -- (4.5, 0); % Horizontal axis
     \draw[thick, -] (0, -0.5) -- (0, 2); % Vertical axis
@@ -483,7 +496,7 @@ Wortel &
 \subsection{De Goniometrische Cirkel}
 
 \begin{center}
-\begin{tikzpicture}[>=stealth,scale=5,
+\begin{tikzpicture}[name=GonioCirc,>=stealth,scale=5,
   sincos/.style ={red,thick},
   tansec/.style ={green!70!black,thick},
   cotcsc/.style ={blue!70!black,thick},
@@ -542,7 +555,7 @@ Wortel &
 \subsection{formules uit de goniometrie}
 
 \begin{center}
-\begin{tikzpicture}[scale=1.2, line cap=round, line join=round, >=stealth]
+\begin{tikzpicture}[name=GonTriangleRect, scale=1.2, line cap=round, line join=round, >=stealth]
   % vertices
   \coordinate (B) at (0,0);
   \coordinate (A) at (5,0);
@@ -622,7 +635,7 @@ Wortel &
 \subsection{Verwante hoeken}
 
 \begin{center}
-\begin{tikzpicture}[scale=4, line cap=round, line join=round, >=stealth]
+\begin{tikzpicture}[name=RelatedAngles,scale=4, line cap=round, line join=round, >=stealth]
   % styles
   \tikzset{
     guide/.style={black!60},
@@ -755,7 +768,7 @@ Wortel &
 \begin{center}
 \begin{minipage}[t]{0.60\linewidth}\vspace{0pt}
 % --- Linkerzijde: Goniometrische cirkel QI ---
-\begin{tikzpicture}[scale=3.5, font=\footnotesize]
+\begin{tikzpicture}[name=GonValue,scale=3.5, font=\footnotesize]
   \tikzset{
     help/.style={densely dashed, thin, gray},
     pt/.style={circle, fill=black, inner sep=0.6pt}
@@ -818,7 +831,7 @@ Wortel &
 \end{center}
 
 \subsection{Radiaal}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=Radian]
 
 % Draw the circle
 \draw[thick] (0,0) circle(2);
@@ -877,7 +890,7 @@ c^{2} = a^{2} + b^{2} - 2ab \cos \gamma
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering\vspace{2pt}
-\begin{tikzpicture}[scale=1, line cap=round]
+\begin{tikzpicture}[name=GonTrangle,scale=1, line cap=round]
   % punten
   \coordinate (A) at (0,0);
   \coordinate (B) at (4,0);
@@ -1005,7 +1018,7 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
 % — Figuur -------------------------------------------------------------------
 % Vereist: \usepackage{tikz,pgfplots}
 % \pgfplotsset{compat=1.18}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=GonCyclo]
 \begin{axis}[
   width=12cm,height=7.2cm,
   axis lines=middle,
@@ -1146,7 +1159,7 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
 % ======= BOTTOM LEFT =======
 \begin{minipage}[t]{\linewidth}\centering
 \textbf{\(a>1\)}\\[1mm]
-\begin{tikzpicture}
+\begin{tikzpicture}[name=ExpFct-]
 \begin{axis}[
   width=5.2cm, height=4.1cm, scale only axis,
   xmin=-3.2, xmax=3.2, ymin=-3.2, ymax=3.2,
@@ -1178,7 +1191,7 @@ y=Bgcot x &\;\Leftrightarrow\; x=\cot y,  && \text{met } y\in\left]0,{\pi}\right
 % ======= BOTTOM RIGHT =======
 \begin{minipage}[t]{\linewidth}\centering
 \textbf{\(0<a<1\)}\\[1mm]
-\begin{tikzpicture}
+\begin{tikzpicture}[name=ExpFct-]
 \begin{axis}[
   width=5.2cm, height=4.1cm, scale only axis,
   xmin=-3.2, xmax=3.2, ymin=-3.2, ymax=3.2,
@@ -1263,7 +1276,7 @@ $\displaystyle B = C \;\Rightarrow\; AB = AC \;\;\text{en}\;\; BA = CA$ & $A$ re
     \centering
     \textbf{$(-1)^{i+j} \rightarrow$ patroon}\par\medskip
 
-    \begin{tikzpicture}[scale=1, every node/.style={font=\scriptsize}]
+    \begin{tikzpicture}[name=MtrxSignIj,scale=1, every node/.style={font=\scriptsize}]
       \def\n{4}
       \def\cell{0.9}
 
@@ -1355,7 +1368,7 @@ c & d
 \right|
 = {\color{red} ad} - {\color{blue} bc}
 \]
-\begin{tikzpicture}[scale=2, >=stealth]
+\begin{tikzpicture}[name=Det2X2,scale=2, >=stealth]
   \def\cell{0.40}
   \tikzset{
     triPlus/.style={thick,red},
@@ -1405,7 +1418,7 @@ g & h & i
 = {\color{red} aei} + {\color{red} bfg} + {\color{red} cdh}
   {\color{blue} - ceg} {\color{blue} - bdi} {\color{blue} - afh}
 \]
-\begin{tikzpicture}[scale=2, >=stealth, baseline=-5ex, xshift=-3cm]
+\begin{tikzpicture}[name=Det3X3,scale=2, >=stealth, baseline=-5ex, xshift=-3cm]
   \def\cell{0.40}
   \tikzset{
     triPlus/.style={thick,red},
@@ -1740,7 +1753,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
         &
         \vspace{2mm}
         \begin{minipage}[t]{0.55\textwidth}
-			\begin{tikzpicture}[scale=0.65, line cap=round]
+			\begin{tikzpicture}[name=Ellips,scale=0.65, line cap=round]
 			  % Parameters
 			  \pgfmathsetmacro{\a}{3.8}
 			  \pgfmathsetmacro{\b}{2.3}
@@ -1801,7 +1814,7 @@ Parameter{\rm{ }}vgl.{\rm{ }}:\\
         &
         \vspace{2mm}
         \begin{minipage}[t]{0.45\textwidth}
-		 \begin{tikzpicture}[scale=0.4, line cap=round]
+		 \begin{tikzpicture}[name=Hyperbool,scale=0.4, line cap=round]
 		  % Parameters
 		  \pgfmathsetmacro{\a}{3.2}
 		  \pgfmathsetmacro{\b}{2.0}
@@ -1907,7 +1920,7 @@ Prisma & $V = B \times h$ & $B$: basisoppervlakte, $h$: hoogte \\
 \subsubsection{Inwendige product (inproduct,scalaire product)}
 % Requires: \usetikzlibrary{angles,quotes}
 \begin{center}
-\begin{tikzpicture}[scale=0.9, line cap=round, line join=round, >=stealth]
+\begin{tikzpicture}[name=InProd,scale=0.9, line cap=round, line join=round, >=stealth]
   %--- axes (same style/orientation as your examples) ----------------------
   \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
   \draw[->] (0,-0.2) -- (0,1.8) node[above] {$z$};
@@ -1959,7 +1972,7 @@ v_x & v_y
 \subsection{Poolcoördinaten}
 
 \tdplotsetmaincoords{60}{120}
-\begin{tikzpicture}[
+\begin{tikzpicture}[name=PolCoord3D,
     scale=0.4,
     tdplot_main_coords,
     axis/.style={->,blue,thick},
@@ -2069,7 +2082,7 @@ $ \\
 
 \subsection{Vlak}
 
-\begin{tikzpicture}[scale=1,>=stealth,line cap=round,line join=round]
+\begin{tikzpicture}[name=Surface,scale=1,>=stealth,line cap=round,line join=round]
   %--- Skewed plane alpha --------------------------------------------------
   \coordinate (P1) at (-3,0);
   \coordinate (P2) at ( 3,0.6);
@@ -2226,7 +2239,7 @@ $
 \begin{center}
 \begin{minipage}[t]{0.32\linewidth}\centering
 \textbf{Evenwijdig, niet samenvallend}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
+\begin{tikzpicture}[name=SurfacePar,scale=0.9, line cap=round]
   % stijlen
   \tikzset{
     planeA/.style={fill=gray!15,draw},
@@ -2253,7 +2266,7 @@ $
 %
 \begin{minipage}[t]{0.32\linewidth}\centering
 \textbf{Samenvallend}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
+\begin{tikzpicture}[name=SurfaceEqual,scale=0.9, line cap=round]
   \tikzset{planeC/.style={fill=gray!20,draw}, plane0/.style={draw=gray!70, dashed, thick}}
   % assen
   \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
@@ -2272,7 +2285,7 @@ $
 %
 \begin{minipage}[t]{0.32\linewidth}\centering
 \textbf{Snijdend (lijn)}\\[2mm]
-\begin{tikzpicture}[scale=0.9, line cap=round]
+\begin{tikzpicture}[name=name=SurfaceCrossing,scale=0.9, line cap=round]
   \tikzset{plane0/.style={draw=gray!70, dashed, thick}}
   % assen
   \draw[->] (-0.2,0) -- (2.6,0) node[right] {$x$};
@@ -2303,7 +2316,7 @@ $
 
 
 \begin{center}
-\begin{tikzpicture}[>=stealth]
+\begin{tikzpicture}[name=SurfaceOverview,>=stealth]
 % ----------------- First row -----------------
 \node (box1) [draw, inner sep=2pt, minimum width=6cm, anchor=north west] at (0,0) {
 \begin{minipage}{0.47\linewidth}
@@ -2763,7 +2776,7 @@ dz = \dfrac{\partial f}{\partial x}\,dx + \dfrac{\partial f}{\partial y}\,dy
 &
 % -------------------- RIGHT COLUMN --------------------
 \begin{minipage}[r]{\linewidth}
-\begin{tikzpicture}[
+\begin{tikzpicture}[name=DerivativePartial,
   3d view={45}{18},
   >=Latex, thick,
   dx/.style={draw, line width=0.9pt, color=blue},
@@ -3234,7 +3247,7 @@ De manteloppervlakte : \[2\pi \int\limits_a^b {\left| y \right|\sqrt {1 + {{\lef
       ({#1+\dr}, {\r*cos(\t)}, {\r*sin(\t)});
 }
 
-\begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex]
+\begin{tikzpicture}[name=IntegralTurnAx,tdplot_main_coords, scale=1, >=Latex]
 
   % -------------------------------
   % Axes
@@ -3341,7 +3354,7 @@ V=\int_{a}^{b} S(x)\,dx.
 \pgfmathtruncatemacro{\NZlast}{\nz-1}
 \pgfmathtruncatemacro{\NYlast}{\ny-1}
 
-\begin{tikzpicture}[tdplot_main_coords, scale=1, >=Latex, thick]
+\begin{tikzpicture}[name=IntegralExtrude,tdplot_main_coords, scale=1, >=Latex, thick]
   % assen
   \draw[->] (0,0,0) -- (6,0,0) node[above right=-2pt] {$x$};
   \draw[->] (0,0,0) -- (0,3,0) node[left] {$y$};
@@ -3489,7 +3502,7 @@ Voor $y=f(x)$, $x\in[a,b]$, geldt de booglengte:
 \end{minipage}\hfill
 &
 \begin{minipage}[r]{\linewidth}
-\begin{tikzpicture}[x=1.2cm,y=1.2cm,>=Latex,thick, scale=1]
+\begin{tikzpicture}[name=IntegralLen,x=1.2cm,y=1.2cm,>=Latex,thick, scale=1]
   % Axes
   \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
   \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
@@ -3561,7 +3574,7 @@ L=\int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^{\!2}}\,d\theta
 \end{minipage}\hfill
 &
 \begin{minipage}[r]{\linewidth}
-\begin{tikzpicture}[scale=1,>=Latex,thick]
+\begin{tikzpicture}[name=IntegralLenPol,scale=1,>=Latex,thick]
   % axes
   \draw[-{Latex}] (-0.3,0) -- (5.2,0) node[below right] {$x$};
   \draw[-{Latex}] (0,-0.2) -- (0,2.6) node[left] {$y$};
@@ -3960,7 +3973,7 @@ n\,p \ge 5 \;\wedge\; n\,q \ge 5
 \label{sec:ztable}
 
 \begin{center}
-\begin{tikzpicture}[>=Stealth, scale=1]
+\begin{tikzpicture}[name=NormDistr,>=Stealth, scale=1]
   % x-as
   \draw[->] (-3.5,0) -- (3.5,0) node[right] {$z$};
 
@@ -4164,7 +4177,7 @@ H_A : \mu > \mu_0
 % TikZ-plots met α-labels
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrHSite2]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4191,7 +4204,7 @@ H_A : \mu > \mu_0
 &
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrHLeft]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4216,7 +4229,7 @@ H_A : \mu > \mu_0
 &
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrHRight]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4275,7 +4288,7 @@ H_A : p > p_0
 % TikZ-plots voor proportietoets
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrPropSite2]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4302,7 +4315,7 @@ H_A : p > p_0
 &
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrPropL]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4327,7 +4340,7 @@ H_A : p > p_0
 &
 \begin{minipage}{4cm}
 \vspace{2mm}
-\begin{tikzpicture}
+\begin{tikzpicture}[name=NormDistrPropR]
   \begin{axis}[
     axis x line=bottom,
     axis y line=none,
@@ -4507,7 +4520,7 @@ met $\displaystyle \hat{p}=\frac{x_1+x_2}{n_1+n_2}$
 \multicolumn{2}{|c|}{\textbf{Willekeurige en onafhankelijke gebeurtenissen}} \\ \hline
 \textbf{Willekeurig} & \textbf{Onafhankelijk} \\ \hline
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[name=ProbabilityRandom,scale=0.9]
   \draw (-1.5,-1.5) rectangle (2.5,1.5) node[above left] {$U$};
   \draw[fill=blue!40,opacity=0.6] (0,0) circle (1);
   \draw[fill=magenta!40,opacity=0.6] (1,0) circle (1);
@@ -4518,7 +4531,7 @@ met $\displaystyle \hat{p}=\frac{x_1+x_2}{n_1+n_2}$
 \end{center}
 &
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[name=ProbabilityIndependant,scale=0.9]
   \draw (-1.5,-1.5) rectangle (1.4,1.5) node[above left] {$U1$};
   \draw (1.6,-1.5) rectangle (4.5,1.5) node[above left] {$U2$};
   \draw[fill=blue!40,opacity=0.7] (0,0) circle (1);
@@ -4550,7 +4563,7 @@ $P(A\wedge B)=P(A)\cdot P(B\mid A)$ \\ \hline
 \textbf{Willekeurig} & \textbf{Onafhankelijk} \\ \hline
 
 \begin{center}
-\begin{tikzpicture}[scale=0.8,>=Stealth]
+\begin{tikzpicture}[name=ProbabilityBayRandom,  scale=0.8,>=Stealth]
 
 % Center of B
 \coordinate (C) at (0,0);
@@ -4653,7 +4666,7 @@ $P(A\wedge B)=P(A)\cdot P(B\mid A)$ \\ \hline
 % picture onafhankeljk
 %======================
 \begin{center}
-\begin{tikzpicture}[
+\begin{tikzpicture}[name=ProbabilityBayIndipendant,
     >=Stealth,
     every node/.style={font=\scriptsize},
     scale=0.65
